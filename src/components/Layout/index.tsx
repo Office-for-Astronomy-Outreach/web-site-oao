@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header />
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto p-4">{children}</main>
+      <main>{children}</main>
 
       {/* Footer */}
     </div>

@@ -19,3 +19,61 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.imag-carrousel {
+  position: relative!important;
+}
+
+/* SolarSystem.css */
+
+/* Contenedor principal */
+.solar-system-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* Contenedor del sistema solar */
+.solar-system {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  right: 50px;
+}
+
+/* Órbitas */
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.orbit1 {
+  width: 600px;
+  height: 300px;
+}
+
+.orbit2 {
+  width: 500px;
+  height: 250px;
+}
+
+.orbit3 {
+  width: 400px;
+  height: 200px;
+}
+
+/* Planetas */
+.planet {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff9800;
+  border-radius: 50%;
+}
