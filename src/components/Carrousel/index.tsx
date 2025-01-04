@@ -53,14 +53,13 @@ const Carousel: React.FC<CarouselProps> = ({
   };
 
   return (
-    <div
+    <section
       className="relative w-full overflow-hidden"
-      style={{ aspectRatio: '16 / 9' }}
       role="region"
       aria-label="Image Carousel"
     >
       {/* Slides */}
-      <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div className="flex transition-transform duration-500 sm:aspect-[16/9] aspect-[9/16]" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -136,7 +135,7 @@ const Carousel: React.FC<CarouselProps> = ({
           ))}
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
