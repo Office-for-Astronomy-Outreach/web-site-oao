@@ -1,39 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Importa las bases de Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+/* Variables globales de colores */
 :root {
-  --background: #ededed;
-  --foreground: #171717;
+  --background: #ebeffb; /* Fondo claro */
+  --foreground: #666666; /* Texto principal */
+  --primary: #2D4190; /* Color principal */
+  --secondary-button-bg: #212224; /* Fondo de botones secundarios */
+  --secondary-button-text: #ffffff; /* Texto de botones secundarios */
 }
 
+/* Variables para tema oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
-    --foreground: #171717;
+    --background: #181a1b; /* Fondo oscuro */
+    --foreground: #cccccc; /* Texto en tema oscuro */
+    --primary: #3399ff; /* Color principal ajustado para tema oscuro */
+    --secondary-button-bg: #333333; /* Fondo oscuro para botones secundarios */
+    --secondary-button-text: #ffffff; /* Texto de botones secundarios */
   }
 }
 
+/* Estilos globales */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif; /* Usa la fuente Roboto definida */
 }
 
-.imag-carrousel {
-  position: relative!important;
+.imag-carrousel, .content-card-img img{
+  position: relative !important;
 }
 
 /* SolarSystem.css */
 
 /* Contenedor principal */
 .solar-system-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100vh;
-  background-color: #000;
-  overflow: hidden;
+  @apply flex justify-end items-center h-screen overflow-hidden; /* Usa utilidades de Tailwind */
+  background-color: #000; /* Fondo negro específico */
 }
 
 /* Contenedor del sistema solar */

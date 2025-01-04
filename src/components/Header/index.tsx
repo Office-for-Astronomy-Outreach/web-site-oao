@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
+
 import { menuList } from './menuList';
+import MobileNavbar from './MobileNavbar';
 import Navbar from './Navbar';
 import LanguageSelector from '../LanguageSelector';
-import MobileNavbar from './MobileNavbar';
+
+
+
 
 /**
  * Header component: Displays the main navigation bar with desktop and mobile views.
@@ -31,12 +36,12 @@ const Header: React.FC = () => {
   return (
     <>
       {/* Main Header */}
-      <header className="shadow-lg bg-white">
-        <div className="container mx-auto flex justify-between items-center p-4">
+      <header className="shadow-lg z-[1]">
+        <div className="container mx-auto flex justify-between items-center p-4 uppercase">
           {/* Logo */}
           <div className="text-lg font-bold">
             <Link href="/" aria-label="Homepage">
-              Office for Astronomy Outreach
+              <Image src="/images/logo.png" alt="Office for Astronomy Outreach" width={115} height={115}/>
             </Link>
           </div>
 

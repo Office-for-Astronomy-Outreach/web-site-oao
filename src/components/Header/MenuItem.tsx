@@ -15,34 +15,36 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
   if (options && options.length > 0) {
     return (
       <div 
-        className="group relative" 
+        className="flex flex-col justify-center group relative" 
         role="menuitem"
         aria-haspopup="true"
         aria-expanded="false"
       >
-        <span 
-          className="cursor-pointer hover:underline"
-          aria-expanded="false"
-        >
-          {name}
-        </span>
+        <div className="relative">
+          <span 
+            className="cursor-pointer hover:underline"
+            aria-expanded="false"
+          >
+            {name}
+          </span>
 
-        {/* Dropdown menu */}
-        <div className="absolute right-0 w-[200px] hidden group-hover:block bg-white shadow-lg p-4 space-y-2 border rounded"
-          role="menu"
-          aria-labelledby={name} 
-        >
-          {options.map((option) => (
-            <Link 
-              href={option.path} 
-              key={option.name} 
-              className="block hover:underline"
-              role="menuitem"
-              aria-label={option.name}
-            >
-              {option.name}
-            </Link>
-          ))}
+          {/* Dropdown menu */}
+          <div className="absolute right-0 w-[200px] hidden group-hover:block bg-white shadow-lg p-4 space-y-2 border rounded"
+            role="menu"
+            aria-labelledby={name} 
+          >
+            {options.map((option) => (
+              <Link 
+                href={option.path} 
+                key={option.name} 
+                className="block hover:underline"
+                role="menuitem"
+                aria-label={option.name}
+              >
+                {option.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     );
@@ -52,7 +54,7 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
   return (
     <Link 
       href={path!} 
-      className="hover:underline"
+      className="flex flex-col justify-center hover:underline"
       role="menuitem"
       aria-label={name}
     >
