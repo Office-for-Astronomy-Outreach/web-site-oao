@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import classNames from "classnames";
 
+import Button from "@/components/Button";
+
 /**
  * ContentCard Component
  * A flexible card component that displays a title, text, optional image, and an optional link.
@@ -31,46 +33,48 @@ const ContentCard: React.FC<ContentCardProps> = ({
   const cardClass = classNames(
     "flex flex-wrap md:flex-nowrap",
     "items-stretch",
-    "gap-8 px-8 py-16",
+    "gap-8 px-8 md:py-16 py-4",
     "rounded-lg",
     imageUrl ? "justify-between" : "justify-center",
     {
-      "bg-primary shadow-md text-white": type === "primary",
+      "bg-primary-main shadow-md text-white": type === "primary",
       "bg-white shadow-md": type === "secondary",
       "bg-transparent": type === "transparent",
     }
   );
 
-  const titleClass = classNames("font-bold text-h1", {
+  const titleClass = classNames("font-bold text-h2", {
     "text-body": type === "transparent",
-    "text-primary": type === "secondary",
+    "text-primary-main": type === "secondary",
   });
+
+  const colorButton = type === "primary" ? "dark" : "primary";
 
   return (
     <div className={cardClass} role="region" aria-labelledby={`${title}-header`}>
       {/* Title and Text Section */}
       <div
         className={classNames(
-          imageUrl ? "md:w-5/12" : "md:w-7/12",
+          imageUrl ? "md:w-5/12" : "md:w-8/12",
           type === "primary" ? "md:order-last" : ""
         )}
       >
         <div className="flex flex-col gap-6">
-          <h1 id={`${title}-header`} className={titleClass} aria-label="Card Title">
+          <h2 id={`${title}-header`} className={titleClass} aria-label="Card Title">
             {title}
-          </h1>
-          <p className="text-h5" aria-label="Card Description">
+          </h2>
+          <p aria-label="Card Description">
             {text}
           </p>
           {link && (
-            <a
-              href={link.url}
-              className="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-              role="button"
-              aria-label={`Navigate to ${link.label}`}
-            >
-              {link.label}
-            </a>
+            <div>
+              <Button
+                label={link.label}
+                variant="solid"
+                color={colorButton}
+                url={link.url}
+              />
+            </div>
           )}
         </div>
       </div>
@@ -81,7 +85,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
           <div className="w-full md:h-full relative">
             <Image
               src={imageUrl}
-              alt=""
+              alt={title}
               layout="fill"
               objectFit="cover"
               className="rounded-lg"

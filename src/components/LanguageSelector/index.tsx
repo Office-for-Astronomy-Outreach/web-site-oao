@@ -35,7 +35,7 @@ const LanguageSelector: React.FC = () => {
         id="language-selector"
         value={locale}
         onChange={handleLanguageChange}
-        className="rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="rounded-md border border-gray-300 bg-transparent p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         aria-label="Select language"
       >
         {locales.map((lng) => (

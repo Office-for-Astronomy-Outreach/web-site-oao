@@ -7,11 +7,19 @@ import {
 import Carousel from '@/components/Carrousel';
 import ContentCard from '@/components/ContentCard';
 import Parallax from '@/components/Parallax';
+import Button from '@/components/Button';
+import SolarSystem from '@/components/Animations/SolarSystem';
+import { useTranslation } from 'react-i18next';
+import InfoGrid from '@/components/InfoGrid';
 
 export default function Home() {
+
+    // i18n translation function for multi-language support
+    const { t } = useTranslation('home');
+    
   const slides = [
     {
-      image: 'https://static.nationalgeographic.es/files/styles/image_3200/public/5357641277789f0a8de3eo.jpg?w=1280&q=50',
+      image: '/images/parallax-bg.jpg',
       title: 'Welcome to Our Website',
       subtitle: 'Discover amazing content and more',
       button: { label: 'Learn More', url: '/about' },
@@ -24,17 +32,28 @@ export default function Home() {
     },
   ];
 
+  const info = [
+    { title: "EDUCATION", bgColor: "bg-blue-200", url: "/education" },
+    { title: "RULES TO NAME A STAR", bgColor: "bg-blue-300", url: "/rules" },
+    { title: "ASK A QUESTION", bgColor: "bg-blue-400", url: "/questions" },
+    { title: "PLUTO Q & A", bgColor: "bg-blue-500", url: "/pluto" },
+  ];
+
   return (
     <div>
-      <div>
-        <Carousel slides={slides} autoPlay={true} interval={7000} />
+      <div className="bg-home">
+        <div className="md:container md:mx-auto mx-2 md:px-4 md:py-4 py-2 flex flex-col gap-16">
+          <Carousel slides={slides} autoPlay={true} interval={7000} />
+        </div>
       </div>
-      <div className="md:container md:mx-auto my-16 flex flex-col gap-16">
+      <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16">
+       
         {/* Caso con imagen */}
         <ContentCard
-          title="Accessible Astronomy for everyone"
-          text="Office for Astronomy Outreach (OAO) promotes public engagement in astronomy, by providing accessible information, and fostering collaboration within the global astronomy community"
+          title={t("accessible-astronomy.title")}
+          text={t("accessible-astronomy.description")}
           type="secondary"
+          link={{ url: "/about-us", label: t("accessible-astronomy.button") }}
         />
 
         {/* Caso sin imagen */}
@@ -43,6 +62,7 @@ export default function Home() {
           text="The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
           imageUrl="/images/build-community.png"
           type="transparent"
+          link={{ url: "/outreach", label: "Join" }}
         />
 
         {/* Caso sin imagen */}
@@ -51,12 +71,27 @@ export default function Home() {
           text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
           imageUrl="/images/professional-development.png"
           type={'primary'}
+          link={{ url: "/professional-development", label: "Join our team" }}
         />
 
+        <div>
+          <div className="relative">
+            <ContentCard
+              title="A community for the stars"
+              text="In a universe so vast, our shared curiosity lights the way. The knowledge and exploration unite to bring the cosmos closer to home."
+              type="secondary"
+            />
+            <SolarSystem />
+          </div>
+          <div className="w-full pt-4">
+            <InfoGrid items={info} />
+          </div>
+        </div>
+
         <div className="flex flex-col gap-6">
-          <h1 className="text-h1 text-primary font-bold">
+          <h2 className="text-h2 font-bold">
             Global Community of Astronomy Communicator
-          </h1>
+          </h2>
 
           <div className="flex flex-wrap w-full gap-4">
             {/* Primer contenedor con una matriz 2x2 */}
@@ -87,17 +122,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
 
-      <Parallax
-          title="Explora el Universo"
-          subtitle="Los secretos del cosmos te esperan"
+        <Parallax
+          title="Join Our New Letter"
+          subtitle="The secrets of the cosmos await you"
           backgroundImage="/images/parallax-bg-01.jpg"
         >
-        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-          Descubrir Más
-        </button>
-      </Parallax>
+          <Button label="Subscribe" variant="transparent" color="light" />
+        </Parallax>
+      </div>
     </div>
   );
 }

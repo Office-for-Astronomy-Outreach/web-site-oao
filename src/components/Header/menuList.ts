@@ -5,29 +5,15 @@ export const menuList = (t: TFunction): TMenuItem[] => {
   return [
     {
         name: t('menu.about'),
-        path: "/about",
+        path: "/about-us",
     },
     {
       name: t('menu.outreach'),
-      path: "",
-      options: [
-        {
-            name: t('menu.global_programs'),
-            path: ""
-        },
-        {
-            name: "Meet the Astronomers",
-            path: ""
-        },
-        {
-            name: "Resources",
-            path: ""
-        },
-        {
-            name: "Translations",
-            path: ""
-        }
-      ]
+      path: "/outreach",
+    },
+    {
+      name: t('menu.professional-development'),
+      path: "/professional-development",
     },
     {
       name: t('menu.community'),
@@ -35,13 +21,13 @@ export const menuList = (t: TFunction): TMenuItem[] => {
       options: [
         {
           name: "NOCs Network",
-          path: ""
+          path: "/nocs-newtwork"
         },
       ]
     },
     {
-      name: "menu.contact",
-      path: "",
+      name: t('menu.contact'),
+      path: "/contact",
     },
   ];
 };

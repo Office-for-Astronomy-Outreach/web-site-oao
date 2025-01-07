@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
@@ -6,10 +5,6 @@ import Image from 'next/image';
 import { menuList } from './menuList';
 import MobileNavbar from './MobileNavbar';
 import Navbar from './Navbar';
-import LanguageSelector from '../LanguageSelector';
-
-
-
 
 /**
  * Header component: Displays the main navigation bar with desktop and mobile views.
@@ -36,30 +31,29 @@ const Header: React.FC = () => {
   return (
     <>
       {/* Main Header */}
-      <header className="shadow-lg z-[1]">
-        <div className="container mx-auto flex justify-between items-center p-4 uppercase">
-          {/* Logo */}
-          <div className="text-lg font-bold">
-            <Link href="/" aria-label="Homepage">
-              <Image src="/images/logo.png" alt="Office for Astronomy Outreach" width={115} height={115}/>
-            </Link>
+      <header className="shadow-lg z-[1] bg-white rounded-lg">
+        <div className="container mx-auto" >
+          <div className="flex justify-between items-center uppercase sm:mx-0 mx-3">
+            {/* Logo */}
+            <div className="text-lg font-bold">
+                <Image src="/images/logo.png" alt="Office for Astronomy Outreach" width={70} height={70}/>
+            </div>
+
+            {/* Hamburger Menu (Visible only on mobile) */}
+            <button
+              className="md:hidden block"
+              onClick={toggleMobileMenu}
+              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isOpen ? 'true' : 'false'}
+            >
+              ☰
+            </button>
+
+            {/* Desktop Navbar */}
+            <nav className="hidden md:flex space-x-4 relative" role="navigation">
+              <Navbar menuList={menu} />
+            </nav>
           </div>
-
-          {/* Hamburger Menu (Visible only on mobile) */}
-          <button
-            className="sm:hidden block"
-            onClick={toggleMobileMenu}
-            aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
-            aria-expanded={isOpen ? 'true' : 'false'}
-          >
-            ☰
-          </button>
-
-          {/* Desktop Navbar */}
-          <nav className="hidden sm:flex space-x-4 relative" role="navigation">
-            <Navbar menuList={menu} />
-            <LanguageSelector />
-          </nav>
         </div>
       </header>
 

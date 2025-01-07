@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import LanguageSelector from "../LanguageSelector";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12">
-      <div className="container mx-auto px-4">
+    <footer className="">
+      <div className="container mx-auto px-4 py-12">
         {/* Sección de logos y descripción */}
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8">
           {/* Logo */}
@@ -16,7 +17,7 @@ const Footer: React.FC = () => {
               width={150}
               height={50}
             />
-            <p className="ml-4 text-lg">Tu Organización</p>
+            <p className="ml-4 text-lg">Office for Astronomy Outreach</p>
           </div>
 
           {/* Descripción o slogan */}
@@ -115,15 +116,22 @@ const Footer: React.FC = () => {
                   Política de Privacidad
                 </Link>
               </li>
+              <li>
+                
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="text-center">
+       
+      </div>
+      <div className="bg-gray-800 text-white">
+        <div className="flex justify-between align-center p-4">
           <p className="text-sm">
-            &copy; 2025 Tu Organización. Todos los derechos reservados.
+            &copy; 2025 Office for Astronomy Outreach. Todos los derechos reservados.
           </p>
+          <LanguageSelector />
         </div>
       </div>
     </footer>

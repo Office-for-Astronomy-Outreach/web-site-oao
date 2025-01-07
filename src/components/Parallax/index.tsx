@@ -15,22 +15,22 @@ const Parallax: React.FC<ParallaxProps> = ({
 }) => {
   return (
     <div
-      className="relative bg-cover bg-center bg-fixed h-[35rem] flex flex-col justify-center items-center text-center px-4"
+      className="relative shadow-md rounded-lg bg-cover bg-center bg-fixed h-[35rem] flex flex-col justify-center items-center text-center px-4"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
       {/* Overlay para oscurecer la imagen si es necesario */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
 
       {/* Contenido del parallax */}
       <div className="relative z-1">
-        <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">
+        <h2 className="text-white text-h2 font-bold mb-4">
           {title}
-        </h1>
-        <h2 className="text-white text-xl md:text-2xl font-light mb-8">
-          {subtitle}
         </h2>
+        <h3 className="text-white text-h3 font-light mb-8">
+          {subtitle}
+        </h3>
         {children && <div>{children}</div>}
       </div>
     </div>

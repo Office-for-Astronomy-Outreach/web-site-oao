@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
 
 /* Importa las bases de Tailwind */
 @tailwind base;
@@ -8,21 +8,14 @@
 
 /* Variables globales de colores */
 :root {
-  --background: #ebeffb; /* Fondo claro */
-  --foreground: #666666; /* Texto principal */
-  --primary: #2D4190; /* Color principal */
-  --secondary-button-bg: #212224; /* Fondo de botones secundarios */
-  --secondary-button-text: #ffffff; /* Texto de botones secundarios */
+  min-width: 300px;
+  --background: #ebeffb; /* Fondo claro *//* Texto de botones secundarios */
 }
 
 /* Variables para tema oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #181a1b; /* Fondo oscuro */
-    --foreground: #cccccc; /* Texto en tema oscuro */
-    --primary: #3399ff; /* Color principal ajustado para tema oscuro */
-    --secondary-button-bg: #333333; /* Fondo oscuro para botones secundarios */
-    --secondary-button-text: #ffffff; /* Texto de botones secundarios */
+    --background: #212224; /* Fondo oscuro */ /* Texto de botones secundarios */
   }
 }
 
@@ -30,59 +23,103 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Roboto", sans-serif; /* Usa la fuente Roboto definida */
+  font-family: "Roboto", serif; /* Usa la fuente Roboto definida */
 }
 
-.imag-carrousel, .content-card-img img{
+h1, h2, h3, h4, h5, p, span, button, a {
+  font-family: "Space Grotesk", serif !important;
+}
+
+.img-carrousel, .content-card-img img{
   position: relative !important;
 }
 
-/* SolarSystem.css */
-
-/* Contenedor principal */
-.solar-system-container {
-  @apply flex justify-end items-center h-screen overflow-hidden; /* Usa utilidades de Tailwind */
-  background-color: #000; /* Fondo negro específico */
+.bg-home {
+  background: linear-gradient(0deg, #ebeffb 0, #0066d0 100%);
 }
 
-/* Contenedor del sistema solar */
-.solar-system {
+.menu-link {
+  display: inline-block;
   position: relative;
-  width: 600px;
-  height: 300px;
-  right: 50px;
+  text-decoration: none;
 }
 
-/* Órbitas */
-.orbit {
+.menu-link::after {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px dotted rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  border-top: 3px solid #0066d0;
+  opacity: 0;
+  transition: opacity 0.3s ease, height 0.3s ease;
+  color: #0066d0;
 }
 
-.orbit1 {
-  width: 600px;
-  height: 300px;
+.menu-link:hover::after {
+  opacity: 1;
+  height: 3px;
 }
 
-.orbit2 {
-  width: 500px;
-  height: 250px;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.orbit3 {
-  width: 400px;
-  height: 200px;
+.orbit-slow {
+  animation: orbit 12s linear infinite;
 }
 
-/* Planetas */
-.planet {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #ff9800;
-  border-radius: 50%;
+.orbit-medium {
+  animation: orbit 8s linear infinite;
+}
+
+.orbit-fast {
+  animation: orbit 4s linear infinite;
+}
+
+/* Animación para que las órbitas aparezcan */
+@keyframes pulseOrbit {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animación para que el planeta aparezca */
+@keyframes planetAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes orbitPlanet {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

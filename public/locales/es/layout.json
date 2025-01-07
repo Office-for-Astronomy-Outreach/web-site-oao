@@ -1,8 +1,10 @@
 {
     "menu": {
+        "home": "Inicio",
         "about": "Sobre Nosotros",
         "outreach": "Difusión",
-        "community": "Cominidad",
+        "professional-development": "Desarrollo Profesional",
+        "community": "Comunidad", 
         "contact": "Contacto"
     }
 }

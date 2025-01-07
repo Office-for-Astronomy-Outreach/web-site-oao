@@ -20,7 +20,7 @@ interface MobileNavbarProps {
 const MobileNavbar: React.FC<MobileNavbarProps> = ({ menuList, onClose }) => {
   return (
     <nav
-      className="sm:hidden bg-gray-700 text-white w-full absolute top-0 left-0 h-screen z-10"
+      className="md:hidden bg-gray-700 text-white w-full absolute top-0 left-0 h-screen z-10"
       role="navigation"
       aria-label="Mobile Navigation"
     >

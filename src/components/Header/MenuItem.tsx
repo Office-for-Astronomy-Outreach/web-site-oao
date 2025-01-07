@@ -22,7 +22,7 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
       >
         <div className="relative">
           <span 
-            className="cursor-pointer hover:underline"
+            className="cursor-pointer"
             aria-expanded="false"
           >
             {name}
@@ -37,7 +37,7 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
               <Link 
                 href={option.path} 
                 key={option.name} 
-                className="block hover:underline"
+                className="menu-link"
                 role="menuitem"
                 aria-label={option.name}
               >
@@ -54,7 +54,7 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
   return (
     <Link 
       href={path!} 
-      className="flex flex-col justify-center hover:underline"
+      className="menu-link"
       role="menuitem"
       aria-label={name}
     >
