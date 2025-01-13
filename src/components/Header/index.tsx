@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 
@@ -8,35 +8,39 @@ import Navbar from './Navbar';
 
 /**
  * Header component: Displays the main navigation bar with desktop and mobile views.
- * 
- * It includes:
- * - A logo link
- * - A mobile menu toggle button
- * - A desktop navigation bar (with language selector)
- * - A mobile navigation menu (appears on mobile devices)
  */
 const Header: React.FC = () => {
-  // State to toggle the mobile menu visibility
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  // Toggle function for the mobile menu
-  const toggleMobileMenu = useCallback(() => setIsOpen((prev) => !prev), []);
-
-  // i18n translation function for multi-language support
   const { t } = useTranslation('layout');
 
-  // Generate the menu list based on translations
   const menu = menuList(t);
+
+  const toggleMobileMenu = useCallback(() => setIsOpen((prev) => !prev), []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
       {/* Main Header */}
-      <header className="shadow-lg z-[1] bg-white rounded-lg">
-        <div className="container mx-auto" >
-          <div className="flex justify-between items-center uppercase sm:mx-0 mx-3">
+      <header
+        className={`fixed top-0 left-0 w-full z-10 transition-colors duration-300 ${
+          scrolled ? 'bg-white text-black shadow-lg' : 'bg-transparent text-white'
+        }`}
+      >
+        <div className="container mx-auto">
+          <div className="flex justify-between items-center uppercase sm:mx-0 mx-3 py-2 px-4">
             {/* Logo */}
             <div className="text-lg font-bold">
-                <Image src="/images/logo.png" alt="Office for Astronomy Outreach" width={70} height={70}/>
+              <Image src="/images/logo.png" alt="Office for Astronomy Outreach" width={65} height={65} />
             </div>
 
             {/* Hamburger Menu (Visible only on mobile) */}
@@ -50,7 +54,7 @@ const Header: React.FC = () => {
             </button>
 
             {/* Desktop Navbar */}
-            <nav className="hidden md:flex space-x-4 relative" role="navigation">
+            <nav className="hidden md:flex space-x-6 relative px-2" role="navigation">
               <Navbar menuList={menu} />
             </nav>
           </div>
@@ -58,12 +62,7 @@ const Header: React.FC = () => {
       </header>
 
       {/* Mobile Navbar */}
-      {isOpen && (
-        <MobileNavbar
-          menuList={menu}
-          onClose={toggleMobileMenu}
-        />
-      )}
+      {isOpen && <MobileNavbar menuList={menu} onClose={toggleMobileMenu} />}
     </>
   );
 };

@@ -54,12 +54,12 @@ const Carousel: React.FC<CarouselProps> = ({
 
   return (
     <section
-      className="relative w-full overflow-hidden rounded-lg"
+      className="relative w-full overflow-hidden"
       role="banner"
-      aria-label="Image Carousel"
+      aria-label="Carousel"
     >
       {/* Slides */}
-      <div className="flex shadow-md transition-transform duration-500 md:aspect-[16/9] aspect-[9/16]" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div className="flex shadow-md transition-transform duration-500 md:aspect-[16/9] aspect-[12/16]" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -77,7 +77,7 @@ const Carousel: React.FC<CarouselProps> = ({
               role="img"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-4 text-white">
-              <h2 className="text-xl sm:text-3xl font-bold">{slide.title}</h2>
+              <h1 className="text-xl sm:text-4xl font-bold leading-relaxed tracking-wide">{slide.title}</h1>
               {slide.subtitle && (
                 <p className="text-sm sm:text-lg mt-2">{slide.subtitle}</p>
               )}

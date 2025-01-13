@@ -1,0 +1,34 @@
+{
+    "title": "What is the Office for Astronomy Outreach?",
+    "about": {
+        "title": "About Us",
+        "description": "<p>The International Astronomical Union's Office for Astronomy Outreach (OAO) was established as a direct outcome of the global celebration of the IAU's 100th anniversary, “100 Years of Astronomy.” This milestone event highlighted the profound impact that astronomy can have when shared with society, inspiring the creation of a dedicated office to strengthen the connection between the academic and scientific community and the public.</p> <p>The OAO works to break down barriers between professional astronomers and society, fostering inclusive engagement and encouraging dialogue about the universe and humanity's place within it. By opening the doors of the scientific community, we aim to make astronomy accessible to everyone, inspiring curiosity, discovery, and a sense of shared wonder.</p>"
+    },
+    "astronomy-for-everyone": {
+        "title": "Astronomy for everyone",
+        "description": "Through initiatives like the National Outreach Coordinator (NOC) network, global campaigns, and resources for science communication, the OAO is dedicated to bringing the excitement of astronomy to people worldwide. We believe that building meaningful connections between astronomy and society is essential for nurturing a world where science is valued and celebrated by all."
+    },
+    "mission": {
+        "title": "Mission",
+        "description": "The mission of the OAO is to inspire public engagement in astronomy by ensuring access to astronomical information and effectively communicating the science of the cosmos."
+    },
+    "vision": {
+        "title": "Vision",
+        "description": "The OAO envisions itself as a bridge between the IAU and the global astronomy community, connecting amateur astronomers, outreach practitioners, educators, communicators, and the general public. Through international collaboration, we aim to make the science of astronomy accessible to everyone, fostering a deeper understanding and appreciation of the universe."
+    },
+    "strategic-actions": {
+        "title": "Strategic Actions",
+        "description": "Aligned with the IAU Strategic Plan 2020–2030, and specifically with Goal 4, which states that “the IAU engages the public in astronomy through access to astronomical information and communication of the science of astronomy,” the OAO has outlined a series of strategic actions to achieve this vision throughout the decade."
+    },
+    "partners": {
+        "title": "Partners",
+        "description": "The International Astronomical Union (IAU) Office for Astronomy Outreach (OAO) is a joint venture of the International Astronomical Union IAU and the National Astronomical Observatory of Japan (NAOJ). Located in Mitaka, Tokyo, the OAO is a hub for coordinating astronomy public outreach activities worldwide."
+    },
+    "collaborations": {
+        "title": "Collaborations",
+        "description": "The IAU OAO collaborates with many international organizations to bring astronomy to the global public and further work toward fulfilling our Strategic Actions."
+    },
+    "team": {
+        "title": "Our Team"
+    }
+}

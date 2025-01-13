@@ -8,8 +8,9 @@
 
 /* Variables globales de colores */
 :root {
+  overflow-x: hidden !important;
   min-width: 300px;
-  --background: #ebeffb; /* Fondo claro *//* Texto de botones secundarios */
+  --background: #f7f7f8; /* Fondo claro *//* Texto de botones secundarios */
 }
 
 /* Variables para tema oscuro */
@@ -24,6 +25,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Roboto", serif; /* Usa la fuente Roboto definida */
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, p, span, button, a {
@@ -35,7 +37,11 @@ h1, h2, h3, h4, h5, p, span, button, a {
 }
 
 .bg-home {
-  background: linear-gradient(0deg, #ebeffb 0, #0066d0 100%);
+  background: linear-gradient(0deg, #0d9488 0, #277dd7 100%);
+}
+
+.bg-nocs {
+  background: linear-gradient(0deg, #f7f7f8 0, #0d9488 100%);
 }
 
 .menu-link {
@@ -123,3 +129,72 @@ h1, h2, h3, h4, h5, p, span, button, a {
     transform: rotate(360deg);
   }
 }
+
+
+@keyframes comets {
+  0% {
+    width: 0;
+    opacity: 0;
+    transform: rotate(45deg) translate3d(-10%, -100%, 0); /* Comienzan fuera */
+  }
+  4% {
+    width: 2px;
+    opacity: 1;
+  }
+  8% {
+    width: 0;
+    opacity: 0;
+    transform: rotate(45deg) translate3d(10%, 100%, 0); /* Terminan fuera */
+  }
+}
+
+@keyframes cometsLong {
+  0% {
+    width: 0;
+    opacity: 0;
+    transform: rotate(45deg) translate3d(0%, 0%, 0); /* Comienzan fuera */
+  }
+  5% {
+    width: 2px;
+    opacity: 1;
+  }
+  10% {
+    width: 0;
+    opacity: 0;
+    transform: rotate(45deg) translate3d(10%, 200%, 0); /* Terminan fuera */
+  }
+}
+
+.comets {
+  position: absolute;
+  top: 0; /* Asegúrate de que los cometas inicien dentro del contenedor */
+  left: 50%; /* Controla la posición horizontal */
+  width: 5px;
+  height: 212px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  transform-origin: 100% 50%;
+  animation: comets 10s infinite;
+  opacity: 0;
+}
+
+.comets-left {
+  left: 15%;
+  animation-delay: 3.333s !important;
+}
+
+.comets-center {
+  left: 50%;
+}
+
+.comets-top {
+  left: 98%;
+  animation-delay: 6.333s !important;
+}
+
+.comets-long {
+  animation: cometsLong 10s infinite;
+}
+
+

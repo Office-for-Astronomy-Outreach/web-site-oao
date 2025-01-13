@@ -21,7 +21,7 @@ export const menuList = (t: TFunction): TMenuItem[] => {
       options: [
         {
           name: "NOCs Network",
-          path: "/nocs-newtwork"
+          path: "/nocs-network"
         },
       ]
     },

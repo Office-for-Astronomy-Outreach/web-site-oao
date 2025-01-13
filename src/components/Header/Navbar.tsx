@@ -18,7 +18,7 @@ export interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ menuList }) => {
   return (
     <nav
-      className="hidden md:flex space-x-4"
+      className="hidden md:flex space-x-6 p-2"
       role="menubar"
       aria-label="Main Navigation"
     >

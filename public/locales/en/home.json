@@ -1,7 +1,7 @@
 {
     "accessible-astronomy": {
         "title": "Accessible astronomy for everyone",
-        "description": "Office for Astronomy Outreach (OAO) promotes public engagement in astronomy, by providing accessible information, and fostering collaboration within the global astronomy community",
+        "description": "The International Astronomical Union's Office for Astronomy Outreach (OAO) connects the science and discoveries of astronomy with people worldwide. Through global outreach programs and its National Outreach Coordinator network, the OAO fosters a vibrant community passionate about the universe. At the same time, it supports the professional development of astronomers, helping them enhance their science communication skills and bring astronomy closer to society. Together, these efforts aim to inspire curiosity and make astronomy a shared cultural experience.",
         "button": "Read more"
     },
     "build-community": {
@@ -16,10 +16,27 @@
     },
     "community": {
         "title": "A community for the stars",
-        "description": "In a universe so vast, our shared curiosity lights the way. The knowledge and exploration unite to bring the cosmos closer to home."
+        "description": "At the OAO and the IAU, we deeply value the thoughts, questions, and ideas shared by the public. We believe that listening to you is essential for building a stronger connection between society and astronomy. This space is designed for you to easily express your doubts, share your curiosity, and get in touch with an astronomy expert who can guide you. Your voice matters, and we're here to listen."
     },
     "global-community": {
         "title": "Global community of Astronomy Communicator"
+    },
+    "education": {
+        "title": "Education",
+        "description":  "Here you can find basic information to star in the world of astronomy."
+    },
+    "rules-to-name-a-start": {
+        "title": "Rules to name a star",
+        "description": "Check the official rules that the IAU has to name a star."
+    },
+    "ask-a-question": {
+        "title": "Ask a question",
+        "description": "Give us all your questions and thoughts."
+    },
+    "pluto-qa": {
+        "title": "Pluto Q & A",
+        "description": "Here you can ask and learn everything about our dear Pluto."
     }
+
 }
   

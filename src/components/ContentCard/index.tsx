@@ -17,10 +17,12 @@ import Button from "@/components/Button";
  */
 interface ContentCardProps {
   title: string;
-  text: string;
+  text: string | React.ReactElement;
   imageUrl?: string;
   link?: { url: string; label: string };
   type: "primary" | "secondary" | "transparent";
+  twoColums?: boolean,
+  wfull?: boolean, 
 }
 
 const ContentCard: React.FC<ContentCardProps> = ({
@@ -29,11 +31,13 @@ const ContentCard: React.FC<ContentCardProps> = ({
   imageUrl,
   link,
   type,
+  twoColums,
+  wfull,
 }) => {
   const cardClass = classNames(
     "flex flex-wrap md:flex-nowrap",
     "items-stretch",
-    "gap-8 px-8 md:py-16 py-4",
+    "px-8 md:py-16 py-8",
     "rounded-lg",
     imageUrl ? "justify-between" : "justify-center",
     {
@@ -50,12 +54,13 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
   const colorButton = type === "primary" ? "dark" : "primary";
 
+  const wSize = wfull ? "md:w-full" : "md:w-8/12";
   return (
-    <div className={cardClass} role="region" aria-labelledby={`${title}-header`}>
+    <section className={cardClass} role="region" aria-labelledby={`${title}-header`}>
       {/* Title and Text Section */}
       <div
         className={classNames(
-          imageUrl ? "md:w-5/12" : "md:w-8/12",
+          imageUrl ? "md:w-5/12" : wSize,
           type === "primary" ? "md:order-last" : ""
         )}
       >
@@ -63,11 +68,14 @@ const ContentCard: React.FC<ContentCardProps> = ({
           <h2 id={`${title}-header`} className={titleClass} aria-label="Card Title">
             {title}
           </h2>
-          <p aria-label="Card Description">
+          {typeof text === "string" ?
+          <p aria-label="Card Description" className={`${twoColums && "md:columns-2 gap-6"}`}>
             {text}
-          </p>
+          </p> :
+          <div aria-label="Card Description" className={`${twoColums && "md:columns-2 gap-6"}`}>{text}</div>
+          }
           {link && (
-            <div>
+            <div className="flex md:w-1/2 mt-4">
               <Button
                 label={link.label}
                 variant="solid"
@@ -88,13 +96,13 @@ const ContentCard: React.FC<ContentCardProps> = ({
               alt={title}
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className="rounded-lg aspect-[16/9]"
               aria-hidden="true"
             />
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

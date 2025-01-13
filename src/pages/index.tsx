@@ -1,62 +1,120 @@
 import type { GetServerSideProps } from 'next';
 import { ni18nConfig } from '../../ni18n.config';
+import { useTranslation } from 'react-i18next';
+import { loadTranslations } from 'ni18n'
 
-import {
-  loadTranslations,
-} from 'ni18n'
 import Carousel from '@/components/Carrousel';
 import ContentCard from '@/components/ContentCard';
 import Parallax from '@/components/Parallax';
 import Button from '@/components/Button';
 import SolarSystem from '@/components/Animations/SolarSystem';
-import { useTranslation } from 'react-i18next';
 import InfoGrid from '@/components/InfoGrid';
+import GlobalCommunityGrid from '@/components/GlobalCommunity';
 
 export default function Home() {
 
-    // i18n translation function for multi-language support
-    const { t } = useTranslation('home');
+  // i18n translation function for multi-language support
+  const { t } = useTranslation('home');
     
   const slides = [
     {
       image: '/images/parallax-bg.jpg',
-      title: 'Welcome to Our Website',
+      title: 'Welcome to Office for Astronomy Outreach',
       subtitle: 'Discover amazing content and more',
       button: { label: 'Learn More', url: '/about' },
-    },
-    {
-      image: 'https://static.nationalgeographic.es/files/styles/image_3200/public/5357641277789f0a8de3eo.jpg?w=1280&q=50',
-      title: 'Explore the World',
-      subtitle: 'Travel with us to amazing destinations',
-      button: { label: 'View Destinations', url: '/destinations' },
     },
   ];
 
   const info = [
-    { title: "EDUCATION", bgColor: "bg-blue-200", url: "/education" },
-    { title: "RULES TO NAME A STAR", bgColor: "bg-blue-300", url: "/rules" },
-    { title: "ASK A QUESTION", bgColor: "bg-blue-400", url: "/questions" },
-    { title: "PLUTO Q & A", bgColor: "bg-blue-500", url: "/pluto" },
+    {
+      title: t("education.title"),
+      description: t("education.description"),
+      bgColor: "bg-blue-200",
+      url: "/education",
+    },
+    {
+      title: t("rules-to-name-a-start.title"),
+      description: t("rules-to-name-a-start.description"),
+      bgColor: "bg-blue-300",
+      url: "/rules-to-name-a-start",
+    },
+    {
+      title: t("ask-a-question.title"),
+      description: t("ask-a-question.description"),
+      bgColor: "bg-blue-400",
+      url: "/ask-a-question",
+    },
+    {
+      title: t("pluto-qa.title"),
+      description: t("pluto-qa.description"),
+      bgColor: "bg-blue-500",
+      url: "/pluto-qa",
+    },
   ];
+
+  const globalCommunityImages = {
+    firstGrid: [
+      {
+        src: "/images/global-community/iau.jpg",
+        url: "https://example.com/iau",
+        alt: "IAU image",
+      },
+      {
+        src: "/images/global-community/womeninastronomy.jpg",
+        url: "https://example.com/womeninastronomy",
+        alt: "Women in Astronomy image",
+      },
+      {
+        src: "/images/global-community/100hours.jpeg",
+        url: "https://example.com/100hours",
+        alt: "100 Hours of Astronomy image",
+      },
+      {
+        src: "/images/global-community/meet.jpg",
+        url: "https://example.com/meet",
+        alt: "Meet image",
+      },
+    ],
+    secondGrid: [
+      {
+        src: "/images/global-community/onesky.jpg",
+        url: "https://example.com/onesky",
+        alt: "One Sky image",
+      },
+      {
+        src: "/images/global-community/dark-and-quiet-skies.jpeg",
+        url: "https://example.com/dark-and-quiet-skies",
+        alt: "Dark and Quiet Skies image",
+      },
+    ],
+    thirdGrid: [
+      {
+        src: "/images/global-community/quasi-moon.jpg",
+        url: "https://example.com/quasi-moon",
+        alt: "Quasi Moon image",
+      },
+      {
+        src: "/images/global-community/telescopecollaboration.jpg",
+        url: "https://example.com/telescopecollaboration",
+        alt: "Telescope Collaboration image",
+      },
+    ],
+  };
 
   return (
     <div>
-      <div className="bg-home">
-        <div className="md:container md:mx-auto mx-2 md:px-4 md:py-4 py-2 flex flex-col gap-16">
-          <Carousel slides={slides} autoPlay={true} interval={7000} />
-        </div>
-      </div>
-      <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16">
+      <Carousel slides={slides} autoPlay={true} interval={7000} />
+
+      <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16 mt-8">
        
-        {/* Caso con imagen */}
         <ContentCard
           title={t("accessible-astronomy.title")}
           text={t("accessible-astronomy.description")}
           type="secondary"
+          twoColums
           link={{ url: "/about-us", label: t("accessible-astronomy.button") }}
         />
 
-        {/* Caso sin imagen */}
         <ContentCard
           title="Build community thorough astronomy Outreach"
           text="The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
@@ -65,7 +123,6 @@ export default function Home() {
           link={{ url: "/outreach", label: "Join" }}
         />
 
-        {/* Caso sin imagen */}
         <ContentCard
           title="Professional Development"
           text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
@@ -92,35 +149,7 @@ export default function Home() {
           <h2 className="text-h2 font-bold">
             Global Community of Astronomy Communicator
           </h2>
-
-          <div className="flex flex-wrap w-full gap-4">
-            {/* Primer contenedor con una matriz 2x2 */}
-            <div className="w-full md:w-1/2 bg-gray-900 p-4 rounded-lg">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-blue-200 p-6 aspect-[4/3] rounded-lg"></div>
-                <div className="bg-blue-300 p-6 aspect-[4/3] rounded-lg"></div>
-                <div className="bg-blue-400 p-6 aspect-[4/3] rounded-lg"></div>
-                <div className="bg-blue-500 p-6 aspect-[4/3] rounded-lg"></div>
-              </div>
-            </div>
-            <div className="flex flex-1 md:w-1/2 gap-4">
-              {/* Segundo contenedor con una matriz 1x2 */}
-              <div className="w-1/2 bg-gray-900 p-4 rounded-lg">
-                <div className="grid grid-rows-2 gap-4 h-full">
-                  <div className="bg-green-200 p-6 aspect-[4/3] md:aspect-auto rounded-lg"></div>
-                  <div className="bg-green-300 p-6 aspect-[4/3] md:aspect-auto rounded-lg"></div>
-                </div>
-              </div>
-
-              {/* Tercer contenedor con una matriz 1x2 */}
-              <div className="w-1/2 bg-gray-900 p-4 rounded-lg">
-                <div className="grid grid-rows-2 gap-4 h-full">
-                  <div className="bg-yellow-200 p-6 aspect-[4/3] md:aspect-auto rounded-lg"></div>
-                  <div className="bg-yellow-300 p-6 aspect-[4/3] md:aspect-auto rounded-lg"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <GlobalCommunityGrid images={globalCommunityImages} />
         </div>
 
         <Parallax

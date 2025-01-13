@@ -5,7 +5,7 @@ import LanguageSelector from "../LanguageSelector";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="">
+    <footer className="bg-primary-main text-white">
       <div className="container mx-auto px-4 py-12">
         {/* Sección de logos y descripción */}
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8">
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
 
           {/* Descripción o slogan */}
           <p className="text-center sm:text-left">
-            Impulsamos la ciencia y el conocimiento en todo el mundo.
+            
           </p>
         </div>
 
@@ -34,12 +34,12 @@ const Footer: React.FC = () => {
             <ul>
               <li>
                 <Link href="/" className="hover:text-blue-400">
-                  Inicio
+                  Home
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-blue-400">
-                  Acerca de
+                  About Us
                 </Link>
               </li>
               <li>

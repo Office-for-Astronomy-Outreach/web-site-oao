@@ -22,7 +22,7 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
       >
         <div className="relative">
           <span 
-            className="cursor-pointer"
+            className="cursor-pointer capitalize"
             aria-expanded="false"
           >
             {name}
@@ -37,7 +37,7 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
               <Link 
                 href={option.path} 
                 key={option.name} 
-                className="menu-link"
+                className="menu-link capitalize text-body"
                 role="menuitem"
                 aria-label={option.name}
               >
@@ -54,7 +54,7 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
   return (
     <Link 
       href={path!} 
-      className="menu-link"
+      className="menu-link capitalize"
       role="menuitem"
       aria-label={name}
     >

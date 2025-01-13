@@ -2,14 +2,16 @@ import Link from "next/link";
 import React from "react";
 import classNames from "classnames";
 
-interface GridItem {
+
+export interface GridItem {
   title: string;
   description?: string;
-  bgColor: string;
+  bgColor?: string;
   url?: string;
+  target?: "_blank" | "_self" | "_top" | "_parent";
 }
 
-interface InfoGridProps {
+export interface InfoGridProps {
   items: GridItem[];
 }
 
@@ -18,21 +20,24 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items }) => {
   const buttonClass = classNames(
     "flex flex-col items-center justify-center",
     "w-full h-full",
-    "p-6 lg:aspect-square shadow-md rounded-lg",
+    "lg:aspect-square shadow-md rounded-lg",
     "hover:scale-105 transition-transform",
+    "p-4",
+    "content-card-img"
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {items.map((item, index) => (
-        <Link
+          <Link
             key={index}
             href={item.url || "#"}
-            className={`${buttonClass} ${item.bgColor}`}
-        >
+            className={`${buttonClass} ${item?.bgColor}`}
+            target={item?.target ?? "_self" }
+          >
             <span className="text-center uppercase">{item.title}</span>
             {item?.description && <span className="pt-2 text-xs">{item?.description}</span>}
-        </Link>
+          </Link>
       ))}
     </div>
   );
