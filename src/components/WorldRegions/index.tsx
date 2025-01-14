@@ -22,13 +22,13 @@ const WorldRegions: React.FC = () => {
       case "africa":
         newImage = "/images/africa.jpg"; // Ruta de la imagen de África
         break;
-      case "Asia":
+      case "asia":
         newImage = "/images/asia.jpg"; // Ruta de la imagen de Asia
         break;
-      case "Europa":
+      case "europa":
         newImage = "/images/europa.jpg"; // Ruta de la imagen de Europa
         break;
-      case "Oceania":
+      case "oceania":
         newImage = "/images/oceania.jpg"; // Ruta de la imagen de Oceanía
         break;
       default:
