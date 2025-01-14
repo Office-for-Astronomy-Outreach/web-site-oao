@@ -1,4 +1,3 @@
-// components/SolarSystem.tsx
 import { useEffect } from "react";
 
 const SolarSystem: React.FC = () => {
@@ -17,7 +16,7 @@ const SolarSystem: React.FC = () => {
       planets.forEach((planet) => {
         const { element, a, b, speed } = planet;
 
-        if (element) {
+        if (element instanceof HTMLElement) {
           const radians = angle * speed;
           const x = a * Math.cos(radians);
           const y = b * Math.sin(radians);
