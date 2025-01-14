@@ -1,5 +1,5 @@
 {
-  "homepage": "https://usuario.github.io/mi-repositorio",
+  "homepage": "https://office-for-astronomy-outreach.github.io/web-site-oao/",
   "name": "web-site-oao",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "export": "next output",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "classnames": "^2.5.1",
