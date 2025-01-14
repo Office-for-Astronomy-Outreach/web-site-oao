@@ -13,9 +13,10 @@ interface ImageGridItem {
 interface ImageGridProps {
   items: ImageGridItem[];
   title: string;
+  description?: string;
 }
 
-const ImageGrid: React.FC<ImageGridProps> = ({ items, title }) => {
+const ImageGrid: React.FC<ImageGridProps> = ({ items, title, description }) => {
   // Clases comunes reutilizables
   const baseClasses = clsx(
     "relative",
@@ -62,6 +63,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ items, title }) => {
       >
         {title}
       </h2>
+      {description && <p className="text-gray-800 w-full mb-4">{description}</p>}
       
       {/* Primera parte: Cuadrado */}
       {items.slice(0, 1).map((item, index) => (

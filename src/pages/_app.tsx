@@ -6,10 +6,9 @@ import { ni18nConfig } from '../../ni18n.config';
 import Layout from '../components/Layout';
 
 const App = ({ Component, pageProps }: AppProps) =>{
+  const is404 = Component?.is404;
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    is404 ? <Component {...pageProps} /> : <Layout><Component {...pageProps} /></Layout>
   );
 }
 

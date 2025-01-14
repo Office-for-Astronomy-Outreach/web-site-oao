@@ -1,8 +1,10 @@
+import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import ContentCard from "@/components/ContentCard";
 import ImageGrid from "@/components/ImageGrid";
 import InfoGrid from "@/components/InfoGrid";
 import Parallax from "@/components/Parallax";
+import CardTeamMember from "@/components/TeamCard";
 import Image from "next/image";
 
 export default function ProfessionalDevelopment() {
@@ -26,7 +28,7 @@ export default function ProfessionalDevelopment() {
       alt: "Cover of the CAP Journal showing a representation of astronomical outreach.",
     },
     {
-      title: "CAP Working Group Inclusive Astronomy Communication",
+      title: "CAP Inclusive Astronomy  Working Group",
       link: "/rectangular",
       image: "/images/cap-working-group-inclusive.png",
       alt: "Students join the Kottamai Observatory staff for two open days organised in the context of NameExoWorlds 2022 on 18 and 19 November 2022, in Cairo, Egypt.",
@@ -60,54 +62,62 @@ export default function ProfessionalDevelopment() {
     },
   ];
 
+  const group = [
+    {
+      name: "Indigenous studies",
+      role: "",
+      image: "/images/about/about.png",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    },
+    {
+      name: "Education",
+      role: "",
+      image: "/images/about/about.png",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    },
+    {
+      name: "Grant and fundraising for our community",
+      role: "",
+      image: "/images/about/about.png",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    },
+  ];
+
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Professional Development', href: '/professional-development' },
+  ];
+
   return (
     <div role="region" aria-labelledby="professional-development-title">
+
       {/* Hero Section */}
-      <section className="bg-home">
-        <div className="container mx-auto px-4 py-8 flex flex-col gap-8">
-          <div className="flex flex-wrap w-full gap-8">
-            <div className="flex flex-1 items-center">
-              <h1
-                id="professional-development-title"
-                className="text-h1 font-extrabold text-white"
-              >
-                Professional Development
-              </h1>
-            </div>
-            <div className="w-full md:w-1/2 h-64 relative rounded-lg overflow-hidden">
-              <Image
-                src="/images/professional-development.png"
-                alt="Professional Development section"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Banner 
+        image="/images/professional-development.png" 
+        title="Professional Development"
+        breadcrumbs={breadcrumbs}
+      />
 
       <div className="container mx-auto px-4 py-8 flex flex-col gap-16 content-card-img">
         <ContentCard
-          title="Bridge between public and science"
-          text="The Office for Astronomy Outreach (OAO) of the International Astronomical Union (IAU) is a global initiative that connects professionals and enthusiasts to promote astronomy outreach worldwide.
-          Its mission is to professionalize science communication and bring the universe closer to the public by fostering global, educational, and community-driven projects that emphasize inclusion, collaboration, and respect for cultural diversity. This is achieved through innovative programs and its international network of National Outreach Coordinators (NOCs), which spans over 120 countries."
+          title="Professional Development"
+          text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
           type="secondary"
+          twoColums
+          wfull
         />
 
         <ImageGrid
           items={items}
           title="CAP Communicating Astronomy with the Public"
+          description="Is a key initiative of the International Astronomical Union's Office for Astronomy Outreach (OAO). It encompasses various projects, including the CAP Conference, the CAP Journal, CAP Training, and the CAP Inclusive Astronomy Communication working group. These efforts aim to enhance the global exchange of knowledge, improve science communication practices, and promote inclusive and accessible ways of sharing astronomy with diverse audiences. CAP is a core part of the OAO’s mission to bridge the gap between the scientific community and the public."
         />
 
         <section aria-labelledby="naoj-program">
           <div className="container mx-auto px-4 py-8 flex flex-col gap-8">
             <h2 id="naoj-program" className="text-h2 font-bold text-body">
-              NAOJ Visitor Program
+              National Astronomical Observatory of Japan NAOJ Astronomy Outreach Trainee
             </h2>
-            <p className="text-h5 text-body" role="contentinfo">
-              The OAO envisions itself as a bridge between the IAU and the global astronomy community, connecting amateur astronomers, outreach practitioners, educators, communicators, and the general public through international collaboration.
-            </p>
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg sm:aspect-square aspect-video">
                 <Image
@@ -131,7 +141,16 @@ export default function ProfessionalDevelopment() {
                   Open Call
                 </h3>
                 <p className="py-6 text-white">
-                  Aligned with the IAU Strategic Plan 2020-2030, and specifically with Goal 4, which states that the IAU engages the public in astronomy through access to astronomical Information and communication of the science of astronomy, the OAO has outlined a series of strategic actions to achieve this vision throughout the decade.
+                  This program invites a science communicator from any country for  a year-long 
+                  internship or fellowship at the IAU Office for Astronomy Outreach. 
+                  Trainees build skills while 
+                  engaging in IAU OAO and NAOJ outreach and educational 
+                  programming. All tasks and deliverables carried out during the 
+                  training are assigned in alignment with the mission and vision of all 
+                  institutions in mind. 
+                  The programme is built to enhance relations between the National 
+                  Astronomical Observatory of Japan (NAOJ) and the IAU OAO in 
+                  areas of public outreach and astronomy education.
                 </p>
                 <p className="py-6 text-white">Would you like to register?</p>
                 <Button
@@ -144,19 +163,36 @@ export default function ProfessionalDevelopment() {
           </div>
         </section>
 
+        <div className="flex flex-col gap-6">
+            <h2 className="text-h2 font-bold text-body">Working Groups</h2>
+            <p className="text-gray-800 w-full mb-4">We introduce the new working groups, designed to foster dialogue and support community development around the world. These are spaces where you can freely share your ideas, collaborate, and engage in conversations with specialists in the field to help your community grow.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {group.map((grup, index) => (
+                <CardTeamMember
+                  key={index}
+                  name={grup.name}
+                  role={grup.role}
+                  image={grup.image}
+                  description={grup.description}
+                />
+              ))}
+            </div>
+          </div>
+
         {/* Collaboration Section */}
         <section className="flex flex-col gap-6" aria-labelledby="resources-title">
           <h2 id="resources-title" className="text-h2 font-bold text-body">
             Resources
           </h2>
-          <div className="w-full h-80 relative rounded-lg overflow-hidden">
+          <div className="w-full sm:max-h-80 max-h-[30rem] relative rounded-lg overflow-hidden">
             <Image
-              src="/images/resources.jpg"
+              src="/images/about/resources.jpg"
               alt="Resources"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
             />
+            <p className="p-4 text-white absolute bottom-0">The National Outreach Coordinator (NOC) network is a global initiative of the International Astronomical Union (IAU) aimed at connecting astronomy outreach efforts worldwide. Comprising representatives from over 100 countries, the NOC network works to bridge local communities with global astronomy programs, fostering collaboration and promoting the public understanding of science. Together, they create opportunities for cultural exchange, education, and engagement, making astronomy accessible to diverse audiences across the globe.</p>
           </div>
           
           <InfoGrid items={info} />

@@ -37,13 +37,12 @@ const ContentCard: React.FC<ContentCardProps> = ({
   const cardClass = classNames(
     "flex flex-wrap md:flex-nowrap",
     "items-stretch",
-    "px-8 md:py-16 py-8",
     "rounded-lg",
     imageUrl ? "justify-between" : "justify-center",
     {
-      "bg-primary-main shadow-md text-white": type === "primary",
-      "bg-white shadow-md": type === "secondary",
-      "bg-transparent": type === "transparent",
+      "px-8 md:py-16 py-8 bg-primary-main shadow-md text-white": type === "primary",
+      "px-8 md:py-16 py-8 bg-white shadow-md text-gray-600": type === "secondary",
+      "px-0 md:py-8 py-4 bg-transparent text-gray-600": type === "transparent",
     }
   );
 
@@ -69,10 +68,10 @@ const ContentCard: React.FC<ContentCardProps> = ({
             {title}
           </h2>
           {typeof text === "string" ?
-          <p aria-label="Card Description" className={`${twoColums && "md:columns-2 gap-6"}`}>
+          <p aria-label="Card Description" className={`${twoColums ? "md:columns-2 gap-6" : ""}`}>
             {text}
           </p> :
-          <div aria-label="Card Description" className={`${twoColums && "md:columns-2 gap-6"}`}>{text}</div>
+          <div aria-label="Card Description" className={`${twoColums ? "md:columns-2 gap-6" : ""}`}>{text}</div>
           }
           {link && (
             <div className="flex md:w-1/2 mt-4">
@@ -89,8 +88,8 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
       {/* Image Section */}
       {imageUrl && (
-        <div className="w-full md:w-6/12 content-card-img" aria-hidden="true">
-          <div className="w-full md:h-full relative">
+        <div className="content-card-img w-full md:w-6/12" aria-hidden="true">
+          <div className="relative w-full md:h-full md:mt-0 mt-10">
             <Image
               src={imageUrl}
               alt={title}
