@@ -10,8 +10,6 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['static.nationalgeographic.es'], // Agrega el dominio de tus imágenes
   },
-  basePath: '/web-site-oao',  // Ruta base de la página
-  assetPrefix: '/web-site-oao',  // Prefijo para los activos estáticos
   distDir: 'out'
 };
 
