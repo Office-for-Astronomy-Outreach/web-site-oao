@@ -120,7 +120,7 @@ const NotFound = () => {
   <div className="relative max-w-[200px] mt-16 flex items-center justify-end">
     {/* Texto */}
     <span className="text-white text-xs relative">
-      But we're sure what you're looking for is here somewhere.
+      But weIt&aposre sure what youIt&aposre looking for is here somewhere.
     </span>
   </div>
   
@@ -136,7 +136,7 @@ const NotFound = () => {
                 Page Not Found
             </p>
             <p className="md:text-3xl text-md font-bold mt-4">
-                Sorry we could'n find the page you're <br/>lookin for
+                Sorry we couldIt&aposn find the page youIt&aposre <br/>lookin for
             </p>
         </div>
         <div>
@@ -144,7 +144,7 @@ const NotFound = () => {
         </div>
         <div className="flex mt-6 sm:w-1/2">
             <p className="text-xs">
-                Did you know? This is a reference to a photograph showing Earth from about 6 billion kilometers away as a "Pale Blue Dot" captured by Voyager 1.
+                Did you know? This is a reference to a photograph showing Earth from about 6 billion kilometers away as a It&aposPale Blue DotIt&apos captured by Voyager 1.
             </p>
         </div>
       </div>
