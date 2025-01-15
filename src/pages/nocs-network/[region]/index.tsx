@@ -1,3 +1,7 @@
+import type { GetServerSideProps } from 'next';
+import { ni18nConfig } from 'ni18n.config';
+import { loadTranslations } from 'ni18n'
+
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -49,3 +53,11 @@ const RegionPage = () => {
 };
 
 export default RegionPage;
+
+export const get: GetServerSideProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await loadTranslations(ni18nConfig, locale, ['home', 'layout', 'about'])),
+    },
+  };
+};

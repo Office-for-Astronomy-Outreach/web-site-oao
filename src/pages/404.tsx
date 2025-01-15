@@ -1,3 +1,7 @@
+import type { GetServerSideProps } from 'next';
+import { ni18nConfig } from 'ni18n.config';
+import { loadTranslations } from 'ni18n'
+
 import Button from "@/components/Button";
 import { useEffect, useRef } from "react";
 
@@ -155,3 +159,11 @@ const NotFound = () => {
 NotFound.is404 = true;
 
 export default NotFound;
+
+export const get: GetServerSideProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await loadTranslations(ni18nConfig, locale, ['home', 'layout', 'about'])),
+    },
+  };
+};

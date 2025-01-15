@@ -1,3 +1,7 @@
+import type { GetServerSideProps } from 'next';
+import { ni18nConfig } from 'ni18n.config';
+import { loadTranslations } from 'ni18n'
+
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import ContentCard from "@/components/ContentCard";
@@ -209,3 +213,11 @@ export default function ProfessionalDevelopment() {
     </div>
   );
 }
+
+export const get: GetServerSideProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await loadTranslations(ni18nConfig, locale, ['home', 'layout', 'about'])),
+    },
+  };
+};
