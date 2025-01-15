@@ -16,6 +16,8 @@ export default function Home() {
   const { t } = useTranslation('home');
 
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+  console.log(process.env.NEXT_PUBLIC_BASE_PATH)
     
   const slides = [
     {

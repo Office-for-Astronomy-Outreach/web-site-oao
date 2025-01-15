@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     defaultLocale: 'en', 
     locales: ['en', 'es'],
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '', // Lee el prefijo de una variable de entorno
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? '/web-site-oao', // Lee el prefijo de una variable de entorno
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH ?? '/web-site-oao',
   distDir: 'out'
 };
 
