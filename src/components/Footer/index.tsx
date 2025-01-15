@@ -4,6 +4,8 @@ import Image from "next/image";
 import LanguageSelector from "../LanguageSelector";
 
 const Footer: React.FC = () => {
+  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     <footer className="bg-primary-main text-white">
       <div className="container mx-auto px-4 py-12">
@@ -12,8 +14,8 @@ const Footer: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center mb-4 sm:mb-0">
             <Image
-              src="/images/logo.png" // Ruta a tu logo
-              alt="Logo de la empresa"
+              src={`${path}/images/logo.png`} // Ruta a tu logo
+              alt="Logo OAO"
               width={150}
               height={50}
             />
@@ -61,12 +63,7 @@ const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image
-                    src="/images/facebook-icon.svg" // Ruta al ícono de Facebook
-                    alt="Facebook"
-                    width={24}
-                    height={24}
-                  />
+                  Facebook
                 </a>
               </li>
               <li>
@@ -76,12 +73,7 @@ const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image
-                    src="/images/twitter-icon.svg" // Ruta al ícono de Twitter
-                    alt="Twitter"
-                    width={24}
-                    height={24}
-                  />
+                  X
                 </a>
               </li>
               <li>
@@ -91,12 +83,7 @@ const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image
-                    src="/images/instagram-icon.svg" // Ruta al ícono de Instagram
-                    alt="Instagram"
-                    width={24}
-                    height={24}
-                  />
+                  Instagram
                 </a>
               </li>
             </ul>

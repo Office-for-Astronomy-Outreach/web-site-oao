@@ -20,6 +20,8 @@ import Link from 'next/link';
 export default function About() {
   const { t } = useTranslation('about');
 
+  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'About us', href: '/about-us' },
@@ -29,19 +31,19 @@ export default function About() {
     {
       name: "Dr. Kelly Blumenthal",
       role: "Director",
-      image: "/images/kelly.jpeg",
+      image: `${path}/images/kelly.jpeg`,
       description: "She is an astronomer-turned-educator dedicated to science communication, promoting scientific attitudes, and creating educational opportunities for marginalized groups.",
     },
     {
       name: "Dr. Naomi Asabre Frimpong",
       role: "Deputy Director",
-      image: "/images/drnaomi.png",
+      image: `${path}/images/drnaomi.png`,
       description: "Vice President of AfAS, promotes astronomy in Africa through outreach, mentoring, and global collaboration. She holds a Ph.D. in astronomy and serves on the African Network of Women in Astronomy board.",
     },
     {
       name: "Cintia Duran",
       role: "International Outreach Officer",
-      image: "/images/cintia.png",
+      image: `${path}/images/cintia.png`,
       description: "Cintia's work focuses on a unique and interdisciplinary approach to astronomy outreach, at the intersection of planetary science, language, and sound, particularly in communicating complex scientific ideas and our place in the universe.",
     },
   ];
@@ -85,7 +87,7 @@ export default function About() {
     <div>
       {/* Hero Section */}
       <Banner 
-        image="/images/about/sardinia-radio-telescope.jpg" 
+        image={`${path}/images/about/sardinia-radio-telescope.jpg`}
         title={t("title")}
         breadcrumbs={breadcrumbs}
       />
@@ -104,7 +106,7 @@ export default function About() {
           <ContentCard
             title={t("astronomy-for-everyone.title")}
             text={t("astronomy-for-everyone.description")}
-            imageUrl="/images/about/observing-mercury.jpg"
+            imageUrl={`${path}/images/about/observing-mercury.jpg`}
             type="transparent"
           />
 
@@ -112,7 +114,7 @@ export default function About() {
           <ContentCard
             title= {t("strategic-actions.title")}
             text= {t("strategic-actions.description")}
-            imageUrl="/images/about/about-new.png"
+            imageUrl={`${path}/images/about/about-new.png`}
             type="primary"
           />
 
@@ -237,7 +239,7 @@ export default function About() {
                 <div className="flex flex-1 lg:w-1/3 justify-center items-center">
                   <Link className="w-full relative rounded-lg shadow-lg aspect-video bg-white hover:scale-105 transition-transform" href="">
                     <Image
-                      src="/images/naoj-logo.png"
+                      src={`${path}/images/naoj-logo.png`}
                       alt="NAOJ Logo"
                       layout="fill"
                       objectFit="contain"
@@ -248,7 +250,7 @@ export default function About() {
                 <div className="flex flex-1 lg:w-1/3 justify-center items-center">
                   <Link className="w-full relative rounded-lg shadow-lg aspect-video bg-white hover:scale-105 transition-transform" href="">
                     <Image
-                      src="/images/iau-logo.jpg"
+                      src={`${path}/images/iau-logo.jpg`}
                       alt="IAU Logo"
                       layout="fill"
                       objectFit="contain"
@@ -276,7 +278,7 @@ export default function About() {
           <Parallax
             title="Visit Our World"
             subtitle="Astronomy Outreach Map"
-            backgroundImage="/images/parallax-bg.jpg"
+            backgroundImage={`${path}/images/parallax-bg.jpg`}
           >
           </Parallax>
         </div>

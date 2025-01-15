@@ -22,9 +22,7 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
       >
         <div className="relative">
           <span 
-            className="cursor-pointer capitalize"
-            aria-expanded="false"
-          >
+            className="cursor-pointer capitalize">
             {name}
           </span>
 

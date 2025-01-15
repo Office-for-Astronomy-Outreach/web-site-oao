@@ -10,6 +10,8 @@ import Navbar from './Navbar';
  * Header component: Displays the main navigation bar with desktop and mobile views.
  */
 const Header: React.FC = () => {
+  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -40,7 +42,7 @@ const Header: React.FC = () => {
           <div className="flex justify-between items-center uppercase sm:mx-0 mx-3 py-2 px-4">
             {/* Logo */}
             <div className="text-lg font-bold">
-              <Image src="/images/logo.png" alt="Office for Astronomy Outreach" width={65} height={65} />
+              <Image src={`${path}/images/logo.png`} alt="Office for Astronomy Outreach" width={65} height={65} />
             </div>
 
             {/* Hamburger Menu (Visible only on mobile) */}

@@ -8,29 +8,31 @@ import CardTeamMember from "@/components/TeamCard";
 import Image from "next/image";
 
 export default function ProfessionalDevelopment() {
+  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  
   const items = [
     {
       title: "CAP Conference",
       link: "https://capconferences.org/",
-      image: "/images/cap-conference.jpg",
+      image: `${path}/images/cap-conference.jpg`,
       alt: "Invited speaker for the sub-theme “Outreach and Informal Education,” Norio Kaifu, Professor Emeritus of the National Astronomical Observatory of Japan (NAOJ) Advisor to the IAU, writer, and lecturer. CAP 2018",
     },
     {
       title: "CAP Training",
       link: "/naoj",
-      image: "/images/cap-training.jpg",
+      image: `${path}/images/cap-training.jpg`,
       alt: "The Communicating Astronomy with the Public Journal (CAPj) is a free peer-reviewed journal for astronomy communicators.",
     },
     {
       title: "CAP Journal",
       link: "/iau",
-      image: "/images/cap-journal.jpg",
+      image: `${path}/images/cap-journal.jpg`,
       alt: "Cover of the CAP Journal showing a representation of astronomical outreach.",
     },
     {
       title: "CAP Inclusive Astronomy  Working Group",
       link: "/rectangular",
-      image: "/images/cap-working-group-inclusive.png",
+      image: `${path}/images/cap-working-group-inclusive.png`,
       alt: "Students join the Kottamai Observatory staff for two open days organised in the context of NameExoWorlds 2022 on 18 and 19 November 2022, in Cairo, Egypt.",
     },
   ];
@@ -66,19 +68,19 @@ export default function ProfessionalDevelopment() {
     {
       name: "Indigenous studies",
       role: "",
-      image: "/images/about/about.png",
+      image: `${path}/images/about/about.png`,
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Education",
       role: "",
-      image: "/images/about/about.png",
+      image: `${path}/images/about/about.png`,
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Grant and fundraising for our community",
       role: "",
-      image: "/images/about/about.png",
+      image: `${path}/images/about/about.png`,
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
   ];
@@ -93,7 +95,7 @@ export default function ProfessionalDevelopment() {
 
       {/* Hero Section */}
       <Banner 
-        image="/images/professional-development.png" 
+        image={`${path}/images/professional-development.png`}
         title="Professional Development"
         breadcrumbs={breadcrumbs}
       />
@@ -121,7 +123,7 @@ export default function ProfessionalDevelopment() {
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg sm:aspect-square aspect-video">
                 <Image
-                  src="/images/professional-development.png"
+                  src={`${path}/images/professional-development.png`}
                   alt="NAOJ Visitor Program"
                   layout="fill"
                   objectFit="cover"
@@ -186,7 +188,7 @@ export default function ProfessionalDevelopment() {
           </h2>
           <div className="w-full sm:max-h-80 max-h-[30rem] relative rounded-lg overflow-hidden">
             <Image
-              src="/images/about/resources.jpg"
+              src={`${path}/images/about/resources.jpg`}
               alt="Resources"
               layout="fill"
               objectFit="cover"
@@ -201,7 +203,7 @@ export default function ProfessionalDevelopment() {
         <Parallax
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
-          backgroundImage="/images/parallax-bg.jpg"
+          backgroundImage={`${path}/images/parallax-bg.jpg`}
         />
       </div>
     </div>

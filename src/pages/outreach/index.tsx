@@ -8,31 +8,33 @@ import CardTeamMember from "@/components/TeamCard";
 import Image from "next/image";
 
 export default function ProfessionalDevelopment() {
+  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   const items = [
     {
       title: "100 Hours of Astronomy",
       link: "",
-      image: "/images/global-community/100hours.png",
+      image: `${path}/images/global-community/100hours.png`,
       alt: "",
     },
     {
       title: "Dark Skies",
       link: "/",
-      image: "/images/global-community/dark-and-quiet-skies.jpeg",
+      image: `${path}/images/global-community/dark-and-quiet-skies.jpeg`,
       alt: "",
     },
     {
       title: "Annual Contest Call",
       link: "/",
-      image: "/images/global-community/quasi-moon.jpg",
+      image: `${path}/images/global-community/quasi-moon.jpg`,
       alt: "",
     },
     {
-        title: "Girls in Astronomy",
-        link: "/",
-        image: "/images/global-community/womeninastronomy.jpg",
-        alt: "",
-      },
+      title: "Girls in Astronomy",
+      link: "/",
+      image: `${path}/images/global-community/womeninastronomy.jpg`,
+      alt: "",
+    },
   ];
 
   const info = [
@@ -66,19 +68,19 @@ export default function ProfessionalDevelopment() {
     {
       name: "Indigenous studies",
       role: "",
-      image: "/images/about/about.png",
+      image: `${path}/images/about/about.png`,
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Education",
       role: "",
-      image: "/images/about/about.png",
+      image: `${path}/images/about/about.png`,
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Grant and fundraising for our community",
       role: "",
-      image: "/images/about/about.png",
+      image: `${path}/images/about/about.png`,
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
   ];
@@ -93,7 +95,7 @@ export default function ProfessionalDevelopment() {
 
       {/* Hero Section */}
       <Banner 
-        image="/images/outreach.png" 
+        image={`${path}/images/palet-blue-dot.jpg`}
         title="Outreach"
         breadcrumbs={breadcrumbs}
       />
@@ -121,7 +123,7 @@ export default function ProfessionalDevelopment() {
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg aspect-auto">
                 <Image
-                  src="/images/professional-development.jpg"
+                  src={`${path}/images/professional-development.jpg`}
                   alt=""
                   layout="fill"
                   objectFit="cover"
@@ -180,13 +182,15 @@ export default function ProfessionalDevelopment() {
           </h2>
           <div className="w-full sm:max-h-80 max-h-[30rem] relative rounded-lg overflow-hidden">
             <Image
-              src="/images/about/resources.jpg"
+              src={`${path}/images/palet-blue-dot.jpg`}
               alt="Resources"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
             />
-            <p className="p-4 text-white absolute bottom-0">The National Outreach Coordinator (NOC) network is a global initiative of the International Astronomical Union (IAU) aimed at connecting astronomy outreach efforts worldwide. Comprising representatives from over 100 countries, the NOC network works to bridge local communities with global astronomy programs, fostering collaboration and promoting the public understanding of science. Together, they create opportunities for cultural exchange, education, and engagement, making astronomy accessible to diverse audiences across the globe.</p>
+            <p className="p-4 text-white absolute bottom-0">
+              We have gathered a series of educational, practical, and research resources based on strict scientific standards, for anyone interested in getting involved in the dissemination of current astronomy.
+            </p>
           </div>
           
           <InfoGrid items={info} />
@@ -195,7 +199,7 @@ export default function ProfessionalDevelopment() {
         <Parallax
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
-          backgroundImage="/images/parallax-bg.jpg"
+          backgroundImage={`${path}/images/parallax-bg.jpg`}
         />
       </div>
     </div>

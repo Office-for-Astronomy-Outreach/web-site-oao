@@ -3,8 +3,10 @@ import Button from "../Button"; // Asegúrate de importar correctamente tu compo
 import router from "next/router";
 
 const WorldRegions: React.FC = () => {
+  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   // Estado para la imagen de fondo
-  const [backgroundImage, setBackgroundImage] = useState<string>('/images/mapa.jpg'); // Imagen por defecto
+  const [backgroundImage, setBackgroundImage] = useState<string>(`${path}/images/mapa.jpg`); // Imagen por defecto
 
   const handleRegionClick = (region: string) => {
     // Redirige a la página de la región, pasando el nombre de la región como parámetro en la URL
@@ -17,22 +19,22 @@ const WorldRegions: React.FC = () => {
 
     switch (region) {
       case "america":
-        newImage = "/images/america.jpg"; // Ruta de la imagen de América
+        newImage = `${path}/images/america.jpg`; // Ruta de la imagen de América
         break;
       case "africa":
-        newImage = "/images/africa.jpg"; // Ruta de la imagen de África
+        newImage = `${path}/images/africa.jpg`; // Ruta de la imagen de África
         break;
       case "asia":
-        newImage = "/images/asia.jpg"; // Ruta de la imagen de Asia
+        newImage = `${path}/images/asia.jpg`; // Ruta de la imagen de Asia
         break;
       case "europa":
-        newImage = "/images/europa.jpg"; // Ruta de la imagen de Europa
+        newImage = `${path}/images/europa.jpg`; // Ruta de la imagen de Europa
         break;
       case "oceania":
-        newImage = "/images/oceania.jpg"; // Ruta de la imagen de Oceanía
+        newImage = `${path}/images/oceania.jpg`; // Ruta de la imagen de Oceanía
         break;
       default:
-        newImage = "/images/mapa.jpg"; // Imagen por defecto
+        newImage = `${path}/images/mapa.jpg`; // Imagen por defecto
     }
 
     setBackgroundImage(newImage); // Actualizar el estado de la imagen
@@ -40,7 +42,7 @@ const WorldRegions: React.FC = () => {
 
   // Función para restablecer la imagen de fondo
   const handleMouseLeave = () => {
-    setBackgroundImage("/images/mapa.jpg"); // Restaurar la imagen original
+    setBackgroundImage(`${path}/images/mapa.jpg`); // Restaurar la imagen original
   };
 
   return (

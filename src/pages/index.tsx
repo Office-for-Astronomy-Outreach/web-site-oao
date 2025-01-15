@@ -1,5 +1,5 @@
 import type { GetServerSideProps } from 'next';
-import { ni18nConfig } from '../../ni18n.config';
+import { ni18nConfig } from 'ni18n.config';
 import { useTranslation } from 'react-i18next';
 import { loadTranslations } from 'ni18n'
 
@@ -12,16 +12,16 @@ import InfoGrid from '@/components/InfoGrid';
 import GlobalCommunityGrid from '@/components/GlobalCommunity';
 
 export default function Home() {
-
   // i18n translation function for multi-language support
   const { t } = useTranslation('home');
+
+  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
     
   const slides = [
     {
-      image: '/images/parallax-bg.jpg',
+      image: `${path}/images/parallax-bg.jpg`,
       title: 'Welcome to Office for Astronomy Outreach',
       subtitle: 'Discover amazing content and more',
-      button: { label: 'Learn More', url: '/about' },
     },
   ];
 
@@ -55,46 +55,46 @@ export default function Home() {
   const globalCommunityImages = {
     firstGrid: [
       {
-        src: "/images/global-community/iau.jpg",
+        src: `${path}/images/global-community/iau.jpg`,
         url: "https://example.com/iau",
         alt: "IAU image",
       },
       {
-        src: "/images/global-community/womeninastronomy.jpg",
+        src: `${path}/images/global-community/womeninastronomy.jpg`,
         url: "https://example.com/womeninastronomy",
         alt: "Women in Astronomy image",
       },
       {
-        src: "/images/global-community/100hours.jpeg",
+        src: `${path}/images/global-community/100hours.jpeg`,
         url: "https://example.com/100hours",
         alt: "100 Hours of Astronomy image",
       },
       {
-        src: "/images/global-community/meet.jpg",
+        src: `${path}/images/global-community/meet.jpg`,
         url: "https://example.com/meet",
         alt: "Meet image",
       },
     ],
     secondGrid: [
       {
-        src: "/images/global-community/onesky.jpg",
+        src: `${path}/images/global-community/onesky.jpg`,
         url: "https://example.com/onesky",
         alt: "One Sky image",
       },
       {
-        src: "/images/global-community/dark-and-quiet-skies.jpeg",
+        src: `${path}/images/global-community/dark-and-quiet-skies.jpeg`,
         url: "https://example.com/dark-and-quiet-skies",
         alt: "Dark and Quiet Skies image",
       },
     ],
     thirdGrid: [
       {
-        src: "/images/global-community/quasi-moon.jpg",
+        src: `${path}/images/global-community/quasi-moon.jpg`,
         url: "https://example.com/quasi-moon",
         alt: "Quasi Moon image",
       },
       {
-        src: "/images/global-community/telescopecollaboration.jpg",
+        src: `${path}/images/global-community/telescopecollaboration.jpg`,
         url: "https://example.com/telescopecollaboration",
         alt: "Telescope Collaboration image",
       },
@@ -106,7 +106,7 @@ export default function Home() {
       <Carousel slides={slides} autoPlay={true} interval={7000} />
 
       <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16 mt-8">
-       
+        
         <ContentCard
           title={t("accessible-astronomy.title")}
           text={t("accessible-astronomy.description")}
@@ -118,7 +118,7 @@ export default function Home() {
         <ContentCard
           title="Build community thorough astronomy Outreach"
           text="The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
-          imageUrl="/images/build-community.png"
+          imageUrl={`${path}/images/build-community.png`}
           type="transparent"
           link={{ url: "/outreach", label: "Join" }}
         />
@@ -126,7 +126,7 @@ export default function Home() {
         <ContentCard
           title="Professional Development"
           text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
-          imageUrl="/images/professional-development.png"
+          imageUrl={`${path}/images/professional-development.png`}
           type={'primary'}
           link={{ url: "/professional-development", label: "Join our team" }}
         />
@@ -155,7 +155,7 @@ export default function Home() {
         <Parallax
           title="Join Our New Letter"
           subtitle="The secrets of the cosmos await you"
-          backgroundImage="/images/parallax-bg-01.jpg"
+          backgroundImage={`${path}/images/parallax-bg-01.jpg`}
         >
           <Button label="Subscribe" variant="transparent" color="light" />
         </Parallax>
@@ -163,7 +163,6 @@ export default function Home() {
     </div>
   );
 }
-
 
 export const get: GetServerSideProps = async ({ locale }) => {
   return {

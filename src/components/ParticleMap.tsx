@@ -3,6 +3,8 @@ import { useEffect, useRef } from "react";
 const ParticleMap: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
+  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -23,7 +25,7 @@ const ParticleMap: React.FC = () => {
 
     // Cargar la imagen
     const image = new Image();
-    image.src = "/images/mapa-removebg.png"; // Cambia la ruta de la imagen según tu proyecto
+    image.src = `${path}/images/mapa-removebg.png`;
 
     image.onload = () => {
       // Dibujar la imagen en el canvas
