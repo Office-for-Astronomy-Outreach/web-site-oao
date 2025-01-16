@@ -34,18 +34,18 @@ const OrbitSystem = () => {
                 animation: `orbitPlanet ${orbit.duration}s linear infinite`,
               }}
             >
-                {index > 4 &&
-              <div
-                className="absolute bg-primary-main rounded-full opacity-75"
-                style={{
-                  width: "10px",
-                  height: "10px",
-                  top: 0,
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                }}
-              ></div>
-            }
+              {index > 4 && (
+                <div
+                  className="absolute bg-primary-main rounded-full opacity-75"
+                  style={{
+                    width: "10px",
+                    height: "10px",
+                    top: 0,
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                  }}
+                ></div>
+              )}
             </div>
           </div>
         ))}

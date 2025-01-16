@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export interface Breadcrumb {
   label: string;
@@ -18,11 +18,11 @@ const Banner: React.FC<BannerProps> = ({ image, title, breadcrumbs }) => {
     <div className="relative w-full h-80 md:h-96">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image 
-          src={image} 
-          alt={title} 
-          layout="fill" 
-          objectFit="cover" 
+        <Image
+          src={image}
+          alt={title}
+          layout="fill"
+          objectFit="cover"
           className="z-0"
           objectPosition="center"
         />
@@ -31,10 +31,10 @@ const Banner: React.FC<BannerProps> = ({ image, title, breadcrumbs }) => {
 
       {/* Content */}
       <div className="relative z-2 h-full flex flex-col justify-center items-center text-white text-center px-4">
-        
-
         {/* Title */}
-        <h1 className="text-h1 font-bold text-white leading-relaxed tracking-wide">{title}</h1>
+        <h1 className="text-h1 font-bold text-white leading-relaxed tracking-wide">
+          {title}
+        </h1>
         {/* Breadcrumbs */}
         <nav className="mb-4 text-sm">
           <ul className="flex space-x-2">
@@ -44,7 +44,9 @@ const Banner: React.FC<BannerProps> = ({ image, title, breadcrumbs }) => {
                   {breadcrumb.label}
                 </Link>
                 {index < breadcrumbs.length - 1 && (
-                  <span className="mx-2 text-white leading-relaxed tracking-wide">/</span>
+                  <span className="mx-2 text-white leading-relaxed tracking-wide">
+                    /
+                  </span>
                 )}
               </li>
             ))}

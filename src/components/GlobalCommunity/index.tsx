@@ -17,16 +17,18 @@ interface GlobalCommunityGridProps {
 }
 
 const linkClass = classNames(
-    "rounded-lg",
-    "focus:outline-none",
-    "focus:ring-4",
-    "focus:ring-blue-300",
-    "transition-transform",
-    "duration-300",
-    "hover:scale-105",
-  );
+  "rounded-lg",
+  "focus:outline-none",
+  "focus:ring-4",
+  "focus:ring-blue-300",
+  "transition-transform",
+  "duration-300",
+  "hover:scale-105"
+);
 
-const GlobalCommunityGrid: React.FC<GlobalCommunityGridProps> = ({ images }) => {
+const GlobalCommunityGrid: React.FC<GlobalCommunityGridProps> = ({
+  images,
+}) => {
   return (
     <div className="flex flex-wrap w-full gap-4 ">
       {/* Primer contenedor con una matriz 2x2 */}

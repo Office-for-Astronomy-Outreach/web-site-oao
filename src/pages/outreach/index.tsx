@@ -1,6 +1,6 @@
-import type { GetServerSideProps } from 'next';
-import { ni18nConfig } from 'ni18n.config';
-import { loadTranslations } from 'ni18n'
+import type { GetServerSideProps } from "next";
+import { ni18nConfig } from "ni18n.config";
+import { loadTranslations } from "ni18n";
 
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
@@ -73,32 +73,34 @@ export default function ProfessionalDevelopment() {
       name: "Indigenous studies",
       role: "",
       image: `${path}/images/about/about.png`,
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Education",
       role: "",
       image: `${path}/images/about/about.png`,
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Grant and fundraising for our community",
       role: "",
       image: `${path}/images/about/about.png`,
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
   ];
 
   const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Outreach', href: '/outreach' },
+    { label: "Home", href: "/" },
+    { label: "Outreach", href: "/outreach" },
   ];
 
   return (
     <div role="region" aria-labelledby="outreach-title">
-
       {/* Hero Section */}
-      <Banner 
+      <Banner
         image={`${path}/images/palet-blue-dot.jpg`}
         title="Outreach"
         breadcrumbs={breadcrumbs}
@@ -122,7 +124,7 @@ export default function ProfessionalDevelopment() {
         <section aria-labelledby="naoj-program">
           <div className="container mx-auto px-4 py-8 flex flex-col gap-8">
             <h2 id="naoj-program" className="text-h2 font-bold text-body">
-                Meet the Astronomers Program
+              Meet the Astronomers Program
             </h2>
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg aspect-auto">
@@ -141,22 +143,20 @@ export default function ProfessionalDevelopment() {
                 aria-labelledby="open-call-title"
               >
                 <p className="py-6 text-white">
-                    Meet the IAU Astronomers! is a bridge between the public and IAU astronomers. Through this programme, the OAO aims to make the science of the IAU accessible to a wider public. 
+                  Meet the IAU Astronomers! is a bridge between the public and
+                  IAU astronomers. Through this programme, the OAO aims to make
+                  the science of the IAU accessible to a wider public.
                 </p>
                 <p className="py-6 text-white">Would you like to register?</p>
                 <p className="py-4 text-white mb-4">Fill out the form:</p>
                 <div className="flex gap-8 flex-wrap">
-                    <Button
-                        label="Astronomer"
-                        color="light"
-                        variant="solid"
-                        className="w-1/2"
-                    />
-                    <Button
-                        label="Participant"
-                        color="light"
-                        variant="solid"
-                    />
+                  <Button
+                    label="Astronomer"
+                    color="light"
+                    variant="solid"
+                    className="w-1/2"
+                  />
+                  <Button label="Participant" color="light" variant="solid" />
                 </div>
               </div>
             </div>
@@ -164,23 +164,32 @@ export default function ProfessionalDevelopment() {
         </section>
 
         <div className="flex flex-col gap-6">
-            <h2 className="text-h2 font-bold text-body">Working Groups</h2>
-            <p className="text-gray-800 w-full mb-4">We introduce the new working groups, designed to foster dialogue and support community development around the world. These are spaces where you can freely share your ideas, collaborate, and engage in conversations with specialists in the field to help your community grow.</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {group.map((grup, index) => (
-                <CardTeamMember
-                  key={index}
-                  name={grup.name}
-                  role={grup.role}
-                  image={grup.image}
-                  description={grup.description}
-                />
-              ))}
-            </div>
+          <h2 className="text-h2 font-bold text-body">Working Groups</h2>
+          <p className="text-gray-800 w-full mb-4">
+            We introduce the new working groups, designed to foster dialogue and
+            support community development around the world. These are spaces
+            where you can freely share your ideas, collaborate, and engage in
+            conversations with specialists in the field to help your community
+            grow.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {group.map((grup, index) => (
+              <CardTeamMember
+                key={index}
+                name={grup.name}
+                role={grup.role}
+                image={grup.image}
+                description={grup.description}
+              />
+            ))}
           </div>
+        </div>
 
         {/* Collaboration Section */}
-        <section className="flex flex-col gap-6" aria-labelledby="resources-title">
+        <section
+          className="flex flex-col gap-6"
+          aria-labelledby="resources-title"
+        >
           <h2 id="resources-title" className="text-h2 font-bold text-body">
             Resources
           </h2>
@@ -193,10 +202,13 @@ export default function ProfessionalDevelopment() {
               className="rounded-lg"
             />
             <p className="p-4 text-white absolute bottom-0">
-              We have gathered a series of educational, practical, and research resources based on strict scientific standards, for anyone interested in getting involved in the dissemination of current astronomy.
+              We have gathered a series of educational, practical, and research
+              resources based on strict scientific standards, for anyone
+              interested in getting involved in the dissemination of current
+              astronomy.
             </p>
           </div>
-          
+
           <InfoGrid items={info} />
         </section>
 
@@ -213,7 +225,11 @@ export default function ProfessionalDevelopment() {
 export const get: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await loadTranslations(ni18nConfig, locale, ['home', 'layout', 'about'])),
+      ...(await loadTranslations(ni18nConfig, locale, [
+        "home",
+        "layout",
+        "about",
+      ])),
     },
   };
 };

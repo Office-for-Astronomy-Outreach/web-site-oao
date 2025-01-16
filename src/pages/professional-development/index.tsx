@@ -1,6 +1,6 @@
-import type { GetServerSideProps } from 'next';
-import { ni18nConfig } from 'ni18n.config';
-import { loadTranslations } from 'ni18n'
+import type { GetServerSideProps } from "next";
+import { ni18nConfig } from "ni18n.config";
+import { loadTranslations } from "ni18n";
 
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export default function ProfessionalDevelopment() {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  
+
   const items = [
     {
       title: "CAP Conference",
@@ -73,32 +73,34 @@ export default function ProfessionalDevelopment() {
       name: "Indigenous studies",
       role: "",
       image: `${path}/images/about/about.png`,
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Education",
       role: "",
       image: `${path}/images/about/about.png`,
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Grant and fundraising for our community",
       role: "",
       image: `${path}/images/about/about.png`,
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
   ];
 
   const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Professional Development', href: '/professional-development' },
+    { label: "Home", href: "/" },
+    { label: "Professional Development", href: "/professional-development" },
   ];
 
   return (
     <div role="region" aria-labelledby="professional-development-title">
-
       {/* Hero Section */}
-      <Banner 
+      <Banner
         image={`${path}/images/professional-development.png`}
         title="Professional Development"
         breadcrumbs={breadcrumbs}
@@ -122,7 +124,8 @@ export default function ProfessionalDevelopment() {
         <section aria-labelledby="naoj-program">
           <div className="container mx-auto px-4 py-8 flex flex-col gap-8">
             <h2 id="naoj-program" className="text-h2 font-bold text-body">
-              National Astronomical Observatory of Japan NAOJ Astronomy Outreach Trainee
+              National Astronomical Observatory of Japan NAOJ Astronomy Outreach
+              Trainee
             </h2>
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg sm:aspect-square aspect-video">
@@ -147,16 +150,16 @@ export default function ProfessionalDevelopment() {
                   Open Call
                 </h3>
                 <p className="py-6 text-white">
-                  This program invites a science communicator from any country for  a year-long 
-                  internship or fellowship at the IAU Office for Astronomy Outreach. 
-                  Trainees build skills while 
-                  engaging in IAU OAO and NAOJ outreach and educational 
-                  programming. All tasks and deliverables carried out during the 
-                  training are assigned in alignment with the mission and vision of all 
-                  institutions in mind. 
-                  The programme is built to enhance relations between the National 
-                  Astronomical Observatory of Japan (NAOJ) and the IAU OAO in 
-                  areas of public outreach and astronomy education.
+                  This program invites a science communicator from any country
+                  for a year-long internship or fellowship at the IAU Office for
+                  Astronomy Outreach. Trainees build skills while engaging in
+                  IAU OAO and NAOJ outreach and educational programming. All
+                  tasks and deliverables carried out during the training are
+                  assigned in alignment with the mission and vision of all
+                  institutions in mind. The programme is built to enhance
+                  relations between the National Astronomical Observatory of
+                  Japan (NAOJ) and the IAU OAO in areas of public outreach and
+                  astronomy education.
                 </p>
                 <p className="py-6 text-white">Would you like to register?</p>
                 <Button
@@ -170,23 +173,32 @@ export default function ProfessionalDevelopment() {
         </section>
 
         <div className="flex flex-col gap-6">
-            <h2 className="text-h2 font-bold text-body">Working Groups</h2>
-            <p className="text-gray-800 w-full mb-4">We introduce the new working groups, designed to foster dialogue and support community development around the world. These are spaces where you can freely share your ideas, collaborate, and engage in conversations with specialists in the field to help your community grow.</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {group.map((grup, index) => (
-                <CardTeamMember
-                  key={index}
-                  name={grup.name}
-                  role={grup.role}
-                  image={grup.image}
-                  description={grup.description}
-                />
-              ))}
-            </div>
+          <h2 className="text-h2 font-bold text-body">Working Groups</h2>
+          <p className="text-gray-800 w-full mb-4">
+            We introduce the new working groups, designed to foster dialogue and
+            support community development around the world. These are spaces
+            where you can freely share your ideas, collaborate, and engage in
+            conversations with specialists in the field to help your community
+            grow.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {group.map((grup, index) => (
+              <CardTeamMember
+                key={index}
+                name={grup.name}
+                role={grup.role}
+                image={grup.image}
+                description={grup.description}
+              />
+            ))}
           </div>
+        </div>
 
         {/* Collaboration Section */}
-        <section className="flex flex-col gap-6" aria-labelledby="resources-title">
+        <section
+          className="flex flex-col gap-6"
+          aria-labelledby="resources-title"
+        >
           <h2 id="resources-title" className="text-h2 font-bold text-body">
             Resources
           </h2>
@@ -198,9 +210,19 @@ export default function ProfessionalDevelopment() {
               objectFit="cover"
               className="rounded-lg"
             />
-            <p className="p-4 text-white absolute bottom-0">The National Outreach Coordinator (NOC) network is a global initiative of the International Astronomical Union (IAU) aimed at connecting astronomy outreach efforts worldwide. Comprising representatives from over 100 countries, the NOC network works to bridge local communities with global astronomy programs, fostering collaboration and promoting the public understanding of science. Together, they create opportunities for cultural exchange, education, and engagement, making astronomy accessible to diverse audiences across the globe.</p>
+            <p className="p-4 text-white absolute bottom-0">
+              The National Outreach Coordinator (NOC) network is a global
+              initiative of the International Astronomical Union (IAU) aimed at
+              connecting astronomy outreach efforts worldwide. Comprising
+              representatives from over 100 countries, the NOC network works to
+              bridge local communities with global astronomy programs, fostering
+              collaboration and promoting the public understanding of science.
+              Together, they create opportunities for cultural exchange,
+              education, and engagement, making astronomy accessible to diverse
+              audiences across the globe.
+            </p>
           </div>
-          
+
           <InfoGrid items={info} />
         </section>
 
@@ -217,7 +239,11 @@ export default function ProfessionalDevelopment() {
 export const get: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await loadTranslations(ni18nConfig, locale, ['home', 'layout', 'about'])),
+      ...(await loadTranslations(ni18nConfig, locale, [
+        "home",
+        "layout",
+        "about",
+      ])),
     },
   };
 };

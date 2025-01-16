@@ -1,5 +1,18 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"],
+  "extends": [
+    "next/core-web-vitals",
+    "next",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
+    "prettier/prettier": "warn", // Mostrar advertencia cuando Prettier detecta un problema
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_" }
+    ], // Advertir sobre variables no usadas
+    "react/jsx-key": "warn", // Mostrar advertencia si faltan claves en listas de JSX
+    "no-console": "warn" // Advertir sobre el uso de console.log
   }
 }

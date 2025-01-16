@@ -10,7 +10,10 @@
     "lint": "next lint",
     "predeploy": "npm run build",
     "export": "next out",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out",
+    "lintet": "eslint . --ext js,jsx,ts,tsx",
+    "linter:fix": "eslint . --ext js,jsx,ts,tsx --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -27,10 +30,13 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.0.3",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
     "gh-pages": "^6.3.0",
     "postcss": "^8",
+    "prettier": "^3.4.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

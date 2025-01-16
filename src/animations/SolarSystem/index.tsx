@@ -3,9 +3,24 @@ import { useEffect } from "react";
 const SolarSystem: React.FC = () => {
   useEffect(() => {
     const planets = [
-      { element: document.querySelector(".planet1"), a: 300, b: 150, speed: 0.002 },
-      { element: document.querySelector(".planet2"), a: 250, b: 125, speed: 0.004 },
-      { element: document.querySelector(".planet3"), a: 200, b: 100, speed: 0.006 },
+      {
+        element: document.querySelector(".planet1"),
+        a: 300,
+        b: 150,
+        speed: 0.002,
+      },
+      {
+        element: document.querySelector(".planet2"),
+        a: 250,
+        b: 125,
+        speed: 0.004,
+      },
+      {
+        element: document.querySelector(".planet3"),
+        a: 200,
+        b: 100,
+        speed: 0.006,
+      },
     ];
 
     let angle = 0;

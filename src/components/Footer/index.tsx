@@ -23,9 +23,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Descripción o slogan */}
-          <p className="text-center sm:text-left">
-            
-          </p>
+          <p className="text-center sm:text-left"></p>
         </div>
 
         {/* Sección de enlaces */}
@@ -103,20 +101,18 @@ const Footer: React.FC = () => {
                   Política de Privacidad
                 </Link>
               </li>
-              <li>
-                
-              </li>
+              <li></li>
             </ul>
           </div>
         </div>
 
         {/* Copyright */}
-       
       </div>
       <div className="bg-gray-800 text-white">
         <div className="flex justify-between align-center p-4">
           <p className="text-sm">
-            &copy; 2025 Office for Astronomy Outreach. Todos los derechos reservados.
+            &copy; 2025 Office for Astronomy Outreach. Todos los derechos
+            reservados.
           </p>
           <LanguageSelector />
         </div>

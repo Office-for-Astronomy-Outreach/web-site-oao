@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 export interface CarouselItem {
   image: string; // URL of the image
@@ -59,7 +59,10 @@ const Carousel: React.FC<CarouselProps> = ({
       aria-label="Carousel"
     >
       {/* Slides */}
-      <div className="flex shadow-md transition-transform duration-500 md:aspect-[16/9] aspect-[12/16]" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div
+        className="flex shadow-md transition-transform duration-500 md:aspect-[16/9] aspect-[12/16]"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -76,10 +79,12 @@ const Carousel: React.FC<CarouselProps> = ({
               fill
               priority
               sizes="(max-width: 1200px) 100vw"
-              style={{objectFit: "cover"}}
+              style={{ objectFit: "cover" }}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-4 text-white">
-              <h1 className="text-xl sm:text-4xl font-bold leading-relaxed tracking-wide">{slide.title}</h1>
+              <h1 className="text-xl sm:text-4xl font-bold leading-relaxed tracking-wide">
+                {slide.title}
+              </h1>
               {slide.subtitle && (
                 <p className="text-sm sm:text-lg mt-2">{slide.subtitle}</p>
               )}
@@ -130,10 +135,10 @@ const Carousel: React.FC<CarouselProps> = ({
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? 'bg-blue-500' : 'bg-gray-300'
+                index === currentIndex ? "bg-blue-500" : "bg-gray-300"
               }`}
               aria-label={`Go to slide ${index + 1}`}
-              aria-current={index === currentIndex ? 'true' : undefined}
+              aria-current={index === currentIndex ? "true" : undefined}
             />
           ))}
         </div>

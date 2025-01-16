@@ -6,13 +6,15 @@ const WorldRegions: React.FC = () => {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   // Estado para la imagen de fondo
-  const [backgroundImage, setBackgroundImage] = useState<string>(`${path}/images/mapa.jpg`); // Imagen por defecto
+  const [backgroundImage, setBackgroundImage] = useState<string>(
+    `${path}/images/mapa.jpg`
+  ); // Imagen por defecto
 
   const handleRegionClick = (region: string) => {
     // Redirige a la página de la región, pasando el nombre de la región como parámetro en la URL
     router.push(`/nocs-network/${region}`);
   };
-  
+
   // Función para cambiar la imagen de fondo
   const handleMouseEnter = (region: string) => {
     let newImage = "";

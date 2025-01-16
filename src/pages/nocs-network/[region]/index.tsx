@@ -1,6 +1,6 @@
-import type { GetServerSideProps } from 'next';
-import { ni18nConfig } from 'ni18n.config';
-import { loadTranslations } from 'ni18n'
+import type { GetServerSideProps } from "next";
+import { ni18nConfig } from "ni18n.config";
+import { loadTranslations } from "ni18n";
 
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -25,7 +25,9 @@ const RegionPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold text-center mb-4">Countries in {region}</h2>
+      <h2 className="text-2xl font-bold text-center mb-4">
+        Countries in {region}
+      </h2>
       <table className="table-fixed w-full border-separate border-spacing-4">
         <thead>
           <tr className="bg-teal-700 text-white">
@@ -57,7 +59,11 @@ export default RegionPage;
 export const get: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await loadTranslations(ni18nConfig, locale, ['home', 'layout', 'about'])),
+      ...(await loadTranslations(ni18nConfig, locale, [
+        "home",
+        "layout",
+        "about",
+      ])),
     },
   };
 };

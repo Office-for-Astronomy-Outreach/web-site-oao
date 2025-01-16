@@ -12,15 +12,18 @@ export interface MobileMenuItemProps {
 
 /**
  * MobileMenuItem Component
- * 
+ *
  * Represents a mobile menu item. If the item has submenus, it will render
  * a toggleable dropdown. Each submenu item is displayed as a `Link` element.
  * This component is designed for use in a mobile navigation context.
- * 
+ *
  * @param menuItem - The menu item object, containing a name, path, and optional submenu options.
  * @param onClose - A function to close the main navigation menu when triggered.
  */
-const MobileMenuItem: React.FC<MobileMenuItemProps> = ({ menuItem, onClose }) => {
+const MobileMenuItem: React.FC<MobileMenuItemProps> = ({
+  menuItem,
+  onClose,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Case: Item with a submenu
@@ -32,7 +35,7 @@ const MobileMenuItem: React.FC<MobileMenuItemProps> = ({ menuItem, onClose }) =>
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
           aria-controls={`submenu-${menuItem.name}`}
-          role="menuitem" 
+          role="menuitem"
         >
           {menuItem.name}
           <span>{isOpen ? "▲" : "▼"}</span>

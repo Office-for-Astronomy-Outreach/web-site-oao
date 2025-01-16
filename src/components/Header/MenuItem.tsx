@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import { TMenuItem } from './types';
+import Link from "next/link";
+import { TMenuItem } from "./types";
 
 /**
  * MenuItem Component
- * 
+ *
  * Renders a single menu item. If the item has sub-options, it renders a dropdown menu.
- * 
+ *
  * @param name - The name of the menu item.
  * @param path - The path for the link.
  * @param options - The sub-options (if any) for the menu item, each with its own name and path.
@@ -14,27 +14,25 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
   // Case: Item with submenu (Dropdown)
   if (options && options.length > 0) {
     return (
-      <div 
-        className="flex flex-col justify-center group relative" 
+      <div
+        className="flex flex-col justify-center group relative"
         role="menuitem"
         aria-haspopup="true"
         aria-expanded="false"
       >
         <div className="relative">
-          <span 
-            className="cursor-pointer capitalize">
-            {name}
-          </span>
+          <span className="cursor-pointer capitalize">{name}</span>
 
           {/* Dropdown menu */}
-          <div className="absolute right-0 w-[200px] hidden group-hover:block bg-white shadow-lg p-4 space-y-2 border rounded"
+          <div
+            className="absolute right-0 w-[200px] hidden group-hover:block bg-white shadow-lg p-4 space-y-2 border rounded"
             role="menu"
-            aria-labelledby={name} 
+            aria-labelledby={name}
           >
             {options.map((option) => (
-              <Link 
-                href={option.path} 
-                key={option.name} 
+              <Link
+                href={option.path}
+                key={option.name}
                 className="menu-link capitalize text-body"
                 role="menuitem"
                 aria-label={option.name}
@@ -50,8 +48,8 @@ const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
 
   // Case: Simple Link (No submenu)
   return (
-    <Link 
-      href={path!} 
+    <Link
+      href={path!}
       className="menu-link capitalize"
       role="menuitem"
       aria-label={name}

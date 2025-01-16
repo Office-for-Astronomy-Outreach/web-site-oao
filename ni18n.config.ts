@@ -1,10 +1,10 @@
-import type { Ni18nOptions } from 'ni18n';
+import type { Ni18nOptions } from "ni18n";
 
 export const ni18nConfig: Ni18nOptions = {
-  supportedLngs: ['en'],
-  fallbackLng: 'en',
-  ns: ['layout', 'home', 'about'],
-  defaultNS: 'layout',
+  supportedLngs: ["en"],
+  fallbackLng: "en",
+  ns: ["layout", "home", "about"],
+  defaultNS: "layout",
   interpolation: {
     escapeValue: false, // Esto permite usar HTML
   },
@@ -13,8 +13,8 @@ export const ni18nConfig: Ni18nOptions = {
   },
   backend: {
     loadPath:
-      process.env.NODE_ENV === 'production'
-        ? '/web-site-oao/locales/{{lng}}/{{ns}}.json' // Ruta para producción
-        : '/locales/{{lng}}/{{ns}}.json', // Ruta para desarrollo local
+      process.env.NODE_ENV === "production"
+        ? "/web-site-oao/locales/{{lng}}/{{ns}}.json" // Ruta para producción
+        : "/locales/{{lng}}/{{ns}}.json", // Ruta para desarrollo local
   },
 };

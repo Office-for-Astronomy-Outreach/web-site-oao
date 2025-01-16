@@ -18,17 +18,22 @@ import Button from "@/components/Button";
 interface ContentCardProps {
   title: string;
   text: string | React.ReactElement;
-  imageUrl?: string;
+  image?: {
+    imageUrl: string;
+    caption?: string;
+    alt?: string;
+  };
+
   link?: { url: string; label: string };
   type: "primary" | "secondary" | "transparent";
-  twoColums?: boolean,
-  wfull?: boolean, 
+  twoColums?: boolean;
+  wfull?: boolean;
 }
 
 const ContentCard: React.FC<ContentCardProps> = ({
   title,
   text,
-  imageUrl,
+  image,
   link,
   type,
   twoColums,
@@ -38,10 +43,12 @@ const ContentCard: React.FC<ContentCardProps> = ({
     "flex flex-wrap md:flex-nowrap",
     "items-stretch",
     "rounded-lg",
-    imageUrl ? "justify-between" : "justify-center",
+    image?.imageUrl ? "justify-between" : "justify-center",
     {
-      "px-8 md:py-16 py-8 bg-primary-main shadow-md text-white": type === "primary",
-      "px-8 md:py-16 py-8 bg-white shadow-md text-gray-600": type === "secondary",
+      "px-8 md:py-16 py-8 bg-primary-main shadow-md text-white":
+        type === "primary",
+      "px-8 md:py-16 py-8 bg-white shadow-md text-gray-600":
+        type === "secondary",
       "px-0 md:py-8 py-4 bg-transparent text-gray-600": type === "transparent",
     }
   );
@@ -55,24 +62,41 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
   const wSize = wfull ? "md:w-full" : "md:w-8/12";
   return (
-    <section className={cardClass} role="region" aria-labelledby={`${title}-header`}>
+    <section
+      className={cardClass}
+      role="region"
+      aria-labelledby={`${title}-header`}
+    >
       {/* Title and Text Section */}
       <div
         className={classNames(
-          imageUrl ? "md:w-5/12" : wSize,
+          image?.imageUrl ? "md:w-5/12" : wSize,
           type === "primary" ? "md:order-last" : ""
         )}
       >
         <div className="flex flex-col gap-6">
-          <h2 id={`${title}-header`} className={titleClass} aria-label="Card Title">
+          <h2
+            id={`${title}-header`}
+            className={titleClass}
+            aria-label="Card Title"
+          >
             {title}
           </h2>
-          {typeof text === "string" ?
-          <p aria-label="Card Description" className={`${twoColums ? "md:columns-2 gap-6" : ""}`}>
-            {text}
-          </p> :
-          <div aria-label="Card Description" className={`${twoColums ? "md:columns-2 gap-6" : ""}`}>{text}</div>
-          }
+          {typeof text === "string" ? (
+            <p
+              aria-label="Card Description"
+              className={`${twoColums ? "md:columns-2 gap-6" : ""}`}
+            >
+              {text}
+            </p>
+          ) : (
+            <div
+              aria-label="Card Description"
+              className={`${twoColums ? "md:columns-2 gap-6" : ""}`}
+            >
+              {text}
+            </div>
+          )}
           {link && (
             <div className="flex md:w-1/2 mt-4">
               <Button
@@ -87,23 +111,28 @@ const ContentCard: React.FC<ContentCardProps> = ({
       </div>
 
       {/* Image Section */}
-      {imageUrl && (
-        <div className="content-card-img group w-full md:w-6/12" aria-hidden="true">
-          <figure className="relative w-full h-full">
+      {image?.imageUrl && (
+        <div
+          className="content-card-img group w-full md:w-6/12"
+          aria-hidden="true"
+        >
+          <figure className="relativew-full h-full">
             <div className="relative w-full h-full md:mt-0 mt-10">
               <Image
-                src={imageUrl}
-                alt={title}
+                src={image?.imageUrl}
+                alt={image?.alt ?? title}
                 className="rounded-lg"
                 aria-hidden="true"
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw"
                 fill
-                style={{ objectFit: "cover"}}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <figcaption className="absolute z-10 bottom-0 left-0 w-full bg-black/70 text-white text-sm p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
-                hola esto es un ejemplo
+            {image?.caption && (
+              <figcaption className="absolute z-10 bottom-0 left-0 w-full bg-black/70 text-white text-sm p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                {image?.caption}
               </figcaption>
+            )}
           </figure>
         </div>
       )}

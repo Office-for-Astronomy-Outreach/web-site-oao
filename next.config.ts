@@ -4,12 +4,12 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   i18n: {
-    defaultLocale: 'en', 
-    locales: ['en', 'es'],
+    defaultLocale: "en",
+    locales: ["en", "es"],
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? '/web-site-oao', // Lee el prefijo de una variable de entorno
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH ?? '/web-site-oao',
-  distDir: 'out'
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "/web-site-oao", // Lee el prefijo de una variable de entorno
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH ?? "/web-site-oao",
+  distDir: "out",
 };
 
 export default nextConfig;

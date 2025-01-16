@@ -41,23 +41,29 @@ const Button: React.FC<ButtonProps> = ({
       solid: "bg-primary-main text-white hover:bg-primary-light",
       outline:
         "outline-2 border-2 outline-primary-main text-primary-main hover:bg-primary-main hover:text-white",
-      transparent: "bg-transparent text-primary-main hover:bg-primary-light hover:bg-opacity-30",
+      transparent:
+        "bg-transparent text-primary-main hover:bg-primary-light hover:bg-opacity-30",
     },
     secondary: {
       solid: "bg-secondary text-white hover:bg-secondary-light",
       outline:
         "outline-2 border-2 outline-secondary text-secondary hover:bg-secondary hover:text-white",
-      transparent: "bg-transparent text-secondary hover:bg-secondary-light hover:bg-opacity-30",
+      transparent:
+        "bg-transparent text-secondary hover:bg-secondary-light hover:bg-opacity-30",
     },
     dark: {
       solid: "bg-dark-main text-white hover:bg-dark-light",
-      outline: "outline-2 border-2 border-dark-main outline-dark-main text-dark-main hover:bg-dark-main hover:text-white",
-      transparent: "bg-transparent text-dark-main hover:bg-dark-light hover:bg-opacity-30",
+      outline:
+        "outline-2 border-2 border-dark-main outline-dark-main text-dark-main hover:bg-dark-main hover:text-white",
+      transparent:
+        "bg-transparent text-dark-main hover:bg-dark-light hover:bg-opacity-30",
     },
     light: {
       solid: "bg-white text-body hover:bg-dark-light",
-      outline: "outline-2 border-2 outline-white text-white hover:text-body hover:bg-white",
-      transparent: "bg-transparent text-white hover:bg-dark-light hover:bg-opacity-30",
+      outline:
+        "outline-2 border-2 outline-white text-white hover:text-body hover:bg-white",
+      transparent:
+        "bg-transparent text-white hover:bg-dark-light hover:bg-opacity-30",
     },
   };
 

@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router';
-import React from 'react';
+import { useRouter } from "next/router";
+import React from "react";
 
 /**
  * LanguageSelector Component
- * 
- * A dropdown component that allows users to switch between available languages 
+ *
+ * A dropdown component that allows users to switch between available languages
  * while maintaining the current route. Optimized for accessibility and usability.
  */
 const LanguageSelector: React.FC = () => {
@@ -15,7 +15,9 @@ const LanguageSelector: React.FC = () => {
    * Handles the language change by updating the locale and preserving the current route.
    * @param event - The change event triggered by selecting a new language
    */
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleLanguageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     const selectedLocale = event.target.value;
     router.push(router.asPath, router.asPath, { locale: selectedLocale }); // Update the locale while keeping the current route
   };
@@ -29,7 +31,7 @@ const LanguageSelector: React.FC = () => {
       <label htmlFor="language-selector" className="sr-only">
         Select language
       </label>
-      
+
       {/* Language selector dropdown */}
       <select
         id="language-selector"
@@ -42,9 +44,11 @@ const LanguageSelector: React.FC = () => {
           <option
             key={lng}
             value={lng}
-            aria-label={lng === 'en' ? 'English' : lng === 'es' ? 'Español' : lng}
+            aria-label={
+              lng === "en" ? "English" : lng === "es" ? "Español" : lng
+            }
           >
-            {lng === 'en' ? 'English' : lng === 'es' ? 'Español' : lng}
+            {lng === "en" ? "English" : lng === "es" ? "Español" : lng}
           </option>
         ))}
       </select>

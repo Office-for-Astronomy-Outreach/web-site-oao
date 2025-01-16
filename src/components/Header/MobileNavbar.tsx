@@ -9,11 +9,11 @@ interface MobileNavbarProps {
 
 /**
  * MobileNavbar Component
- * 
- * Displays a full-screen navigation menu for mobile devices. This component 
+ *
+ * Displays a full-screen navigation menu for mobile devices. This component
  * uses a `nav` element to define the navigation region and lists the menu items.
- * 
- * @param menuList - Array of menu items, each with a name, path, and optionally 
+ *
+ * @param menuList - Array of menu items, each with a name, path, and optionally
  * a list of submenus (options).
  * @param onClose - A function to close the mobile navigation menu when triggered.
  */
@@ -39,10 +39,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ menuList, onClose }) => {
         <ul role="menu" className="space-y-2">
           {menuList.map((item) => (
             <li key={item.name} role="none">
-              <MobileMenuItem 
-                menuItem={item} 
-                onClose={onClose} 
-              />
+              <MobileMenuItem menuItem={item} onClose={onClose} />
             </li>
           ))}
         </ul>

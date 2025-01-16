@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap");
 
 /* Importa las bases de Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 /* Variables globales de colores */
 :root {
   overflow-x: hidden !important;
   min-width: 300px;
-  --background: linear-gradient(90deg, rgb(59 130 246 / 9%) 0%, #f7f7f8e0 51%, rgb(59 130 246 / 8%) 100%); /* Fondo claro *//* Texto de botones secundarios */
+  --background: linear-gradient(
+    90deg,
+    rgb(59 130 246 / 9%) 0%,
+    #f7f7f8e0 51%,
+    rgb(59 130 246 / 8%) 100%
+  ); /* Fondo claro */ /* Texto de botones secundarios */
 }
 
 /* Variables para tema oscuro */
@@ -28,11 +32,20 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, p, span, button, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+button,
+a {
   font-family: "Space Grotesk", serif !important;
 }
 
-.img-carrousel, .content-card-img img{
+.img-carrousel,
+.content-card-img img {
   position: relative !important;
 }
 
@@ -41,7 +54,7 @@ h1, h2, h3, h4, h5, p, span, button, a {
 }
 
 .bg-nocs {
-  background: linear-gradient(33deg, #003a77 10%, #277dd7eb 48%, #001a36 89%);  
+  background: linear-gradient(33deg, #003a77 10%, #277dd7eb 48%, #001a36 89%);
 }
 
 .bg-gradient {
@@ -55,7 +68,7 @@ h1, h2, h3, h4, h5, p, span, button, a {
 }
 
 .menu-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -63,7 +76,9 @@ h1, h2, h3, h4, h5, p, span, button, a {
   height: 0;
   border-top: 3px solid #0066d0;
   opacity: 0;
-  transition: opacity 0.3s ease, height 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    height 0.3s ease;
   color: #0066d0;
 }
 
@@ -71,7 +86,6 @@ h1, h2, h3, h4, h5, p, span, button, a {
   opacity: 1;
   height: 3px;
 }
-
 
 @keyframes spin {
   0% {

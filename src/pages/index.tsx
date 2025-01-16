@@ -1,29 +1,27 @@
-import type { GetServerSideProps } from 'next';
-import { ni18nConfig } from 'ni18n.config';
-import { useTranslation } from 'react-i18next';
-import { loadTranslations } from 'ni18n'
+import type { GetServerSideProps } from "next";
+import { ni18nConfig } from "ni18n.config";
+import { useTranslation } from "react-i18next";
+import { loadTranslations } from "ni18n";
 
-import Carousel from '@/components/Carrousel';
-import ContentCard from '@/components/ContentCard';
-import Parallax from '@/components/Parallax';
-import Button from '@/components/Button';
-import SolarSystem from '@/components/Animations/SolarSystem';
-import InfoGrid from '@/components/InfoGrid';
-import GlobalCommunityGrid from '@/components/GlobalCommunity';
+import Carousel from "@/components/Carrousel";
+import ContentCard from "@/components/ContentCard";
+import Parallax from "@/components/Parallax";
+import Button from "@/components/Button";
+import SolarSystem from "@/components/Animations/SolarSystem";
+import InfoGrid from "@/components/InfoGrid";
+import GlobalCommunityGrid from "@/components/GlobalCommunity";
 
 export default function Home() {
   // i18n translation function for multi-language support
-  const { t } = useTranslation('home');
+  const { t } = useTranslation("home");
 
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-  console.log(process.env.NEXT_PUBLIC_BASE_PATH)
-    
   const slides = [
     {
       image: `${path}/images/parallax-bg.jpg`,
-      title: 'Welcome to Office for Astronomy Outreach',
-      subtitle: 'Discover amazing content and more',
+      title: "Welcome to Office for Astronomy Outreach",
+      subtitle: "Discover amazing content and more",
     },
   ];
 
@@ -108,30 +106,44 @@ export default function Home() {
       <Carousel slides={slides} autoPlay={true} interval={7000} />
 
       <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16 mt-8">
-        
         <ContentCard
           title={t("accessible-astronomy.title")}
           text={t("accessible-astronomy.description")}
           type="secondary"
           twoColums
-          link={{ url: "/about-us", label: t("accessible-astronomy.button") }}
           wfull
+          link={{
+            url: "/about-us",
+            label: t("accessible-astronomy.button"),
+          }}
         />
 
         <ContentCard
-          title="Build community thorough astronomy Outreach"
-          text="The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
-          imageUrl={`${path}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`}
+          title={t("build-community.title")}
+          text={t("build-community.description")}
           type="transparent"
-          link={{ url: "/outreach", label: "Join" }}
+          image={{
+            imageUrl: `${path}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`,
+            caption: "",
+          }}
+          link={{
+            url: "/outreach",
+            label: "Join",
+          }}
         />
 
         <ContentCard
           title="Professional Development"
           text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
-          imageUrl={`${path}/images/home/AU100 Flagship Event-Brussels-April2019.png`}
-          type={'primary'}
-          link={{ url: "/professional-development", label: "Join our team" }}
+          type={"primary"}
+          image={{
+            imageUrl: `${path}/images/home/AU100 Flagship Event-Brussels-April2019.png`,
+            caption: "",
+          }}
+          link={{
+            url: "/professional-development",
+            label: "Join our team",
+          }}
         />
 
         <div>
@@ -170,7 +182,11 @@ export default function Home() {
 export const get: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await loadTranslations(ni18nConfig, locale, ['home', 'layout', 'about'])),
+      ...(await loadTranslations(ni18nConfig, locale, [
+        "home",
+        "layout",
+        "about",
+      ])),
     },
   };
 };

@@ -1,102 +1,99 @@
 .circleContainer {
-    position: absolute;
-    width: 150px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .halfCircle {
-    position: absolute;
-    bottom: 50%;
-    width: 300px;
-    height: 150px;
-    background: linear-gradient(to bottom, #99b9eb, #f8fafc);
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-    transform: translateY(50%);
-  }
-  
-  .line {
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    background-color: #d1d5db;
-    z-index: 1;
-  }
-  
-  .dot {
-    position: absolute;
-    top: 20%;
-    width: 10px;
-    height: 10px;
-    background-color: #277dd7;
-    border-radius: 50%;
-    transform: translate(0, -50%);
-    z-index: 2;
-  }
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
-  .dotMin {
-    position: absolute;
-    top: 3px;
-    width: 5px;
-    height: 5px;
-    background-color: #99b9eb;
-    border-radius: 50%;
-    transform: translate(0, -50%);
-    z-index: 2;
-  }
+.halfCircle {
+  position: absolute;
+  bottom: 50%;
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(to bottom, #99b9eb, #f8fafc);
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  transform: translateY(50%);
+}
 
-  .dotGray {
-    position: absolute;
-    top: 270px;
-    width: 15px;
-    height: 15px;
-    background-color: #d1d5db;
-    border-radius: 50%;
-    transform: translate(0, -50%);
-    z-index: 2;
-  }
-  
-  .dottedCircle {
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    width: 0px;
-    height: 0px;
-    border: 1px dashed #277dd7;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: all 0.8s ease-in-out;
-  }
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #d1d5db;
+  z-index: 1;
+}
 
-  .dottedCircleTwo {
-    position: absolute;
-    top: 330px;
-    left: 50%;
-    width: 0px;
-    height: 0px;
-    border: 1px solid #d1d5db;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: all 0.8s ease-in-out;
-  }
-  
-  .animate .dottedCircle {
-    width: 75px;
-    height: 75px;
-    opacity: 1;
-  }
-  
-  .animate .dottedCircleTwo {
-    width: 150px;
-    height: 150px;
-    opacity: 1;
-  }
+.dot {
+  position: absolute;
+  top: 20%;
+  width: 10px;
+  height: 10px;
+  background-color: #277dd7;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
 
-  
-  
+.dotMin {
+  position: absolute;
+  top: 3px;
+  width: 5px;
+  height: 5px;
+  background-color: #99b9eb;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+.dotGray {
+  position: absolute;
+  top: 270px;
+  width: 15px;
+  height: 15px;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+.dottedCircle {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  border: 1px dashed #277dd7;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s ease-in-out;
+}
+
+.dottedCircleTwo {
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s ease-in-out;
+}
+
+.animate .dottedCircle {
+  width: 75px;
+  height: 75px;
+  opacity: 1;
+}
+
+.animate .dottedCircleTwo {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}

@@ -8,11 +8,11 @@ export interface NavbarProps {
 
 /**
  * Navbar Component
- * 
- * Renders the main navigation bar for desktop screens, displaying 
+ *
+ * Renders the main navigation bar for desktop screens, displaying
  * a list of menu items with optional dropdowns for submenus.
- * 
- * @param menuList - Array of menu items, each with a name, path, 
+ *
+ * @param menuList - Array of menu items, each with a name, path,
  * and optionally a list of submenus (options).
  */
 const Navbar: React.FC<NavbarProps> = ({ menuList }) => {
