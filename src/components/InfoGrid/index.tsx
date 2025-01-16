@@ -21,7 +21,7 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items }) => {
     "lg:aspect-square shadow-md rounded-lg",
     "hover:scale-105 transition-transform",
     "p-4",
-    "content-card-img"
+    "content-card-img",
   );
 
   return (
@@ -33,7 +33,9 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items }) => {
           className={`${buttonClass} ${item?.bgColor}`}
           target={item?.target ?? "_self"}
         >
-          <span className="text-center uppercase">{item.title}</span>
+          <h5 className="text-center uppercase text-h5 font-medium">
+            {item.title}
+          </h5>
           {item?.description && (
             <span className="pt-2 text-xs">{item?.description}</span>
           )}

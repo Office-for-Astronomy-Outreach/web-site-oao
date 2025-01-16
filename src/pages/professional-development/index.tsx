@@ -229,7 +229,7 @@ export default function ProfessionalDevelopment() {
         <Parallax
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
-          backgroundImage={`${path}/images/parallax-bg.jpg`}
+          backgroundImage={{ imgUrl: `${path}/images/parallax-bg.jpg` }}
         />
       </div>
     </div>

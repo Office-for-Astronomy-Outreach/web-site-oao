@@ -24,7 +24,8 @@ const ContentCard: React.FC<ContentCardProps> = ({
   const wSize = wfull ? "md:w-full" : "md:w-8/12";
 
   const cardClass = classNames(
-    "flex flex-wrap md:flex-nowrap items-stretch rounded-lg px-8 py-8 md:py-16",
+    "flex flex-wrap md:flex-nowrap items-stretch rounded-lg",
+    type === "transparent" ? "px-8 md:py-8 py-6" : "px-8 py-8 md:py-16",
     image?.imageUrl ? "justify-between" : "justify-center",
     {
       "bg-primary-main shadow-md text-white": type === "primary",
@@ -67,7 +68,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
             </div>
           )}
           {link && (
-            <div className="flex md:w-1/2 mt-4">
+            <div className="flex md:w-1/2 md:mt-4">
               <Button
                 label={link.label}
                 variant="solid"
@@ -82,7 +83,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
       {/* Image Section */}
       {image?.imageUrl && (
         <div className="content-card-img group w-full md:w-6/12">
-          <figure className="relative w-full h-full">
+          <figure className="relative md:h-full">
             <div className="relative w-full h-full md:mt-0 mt-10">
               <Image
                 src={image.imageUrl}

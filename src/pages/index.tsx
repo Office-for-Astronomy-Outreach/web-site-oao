@@ -105,7 +105,7 @@ export default function Home() {
     <div>
       <Carousel slides={slides} autoPlay={true} interval={7000} />
 
-      <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16 mt-8">
+      <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16 my-8">
         <ContentCard
           title={t("accessible-astronomy.title")}
           text={t("accessible-astronomy.description")}
@@ -124,9 +124,8 @@ export default function Home() {
           type="transparent"
           image={{
             imageUrl: `${path}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`,
-            caption: `Nine kids standing in a classroom, each with the name of a planet on
-             their chests, written in Turkish. Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz`,
-            alt: "100 Hours of Astronomy-Turkey-Saadet Manaz",
+            caption: t("build-community.caption-img"),
+            alt: t("build-community.alt-img"),
           }}
           link={{
             url: "/outreach",
@@ -135,12 +134,13 @@ export default function Home() {
         />
 
         <ContentCard
-          title="Professional Development"
-          text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
+          title={t("professional-development.title")}
+          text={t("professional-development.description")}
           type={"primary"}
           image={{
             imageUrl: `${path}/images/home/AU100 Flagship Event-Brussels-April2019.png`,
-            caption: "",
+            caption: t("professional-development.description"),
+            alt: t("professional-development.alt"),
           }}
           link={{
             url: "/professional-development",
@@ -151,8 +151,8 @@ export default function Home() {
         <div>
           <div className="relative">
             <ContentCard
-              title="A community for the stars"
-              text="In a universe so vast, our shared curiosity lights the way. The knowledge and exploration unite to bring the cosmos closer to home."
+              title={t("community.title")}
+              text={t("community.description")}
               type="secondary"
             />
             <SolarSystem />
@@ -163,18 +163,23 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <h2 className="text-h2 font-bold">
-            Global Community of Astronomy Communicator
-          </h2>
+          <h2 className="text-h2 font-bold">{t("global-community.title")}</h2>
           <GlobalCommunityGrid images={globalCommunityImages} />
         </div>
 
         <Parallax
-          title="Join Our New Letter"
-          subtitle="The secrets of the cosmos await you"
-          backgroundImage={`${path}/images/parallax-bg-01.jpg`}
+          title={t("new-letter.title")}
+          subtitle={t("new-letter.subtitle")}
+          backgroundImage={{
+            imgUrl: `${path}/images/parallax-bg-01.jpg`,
+            caption: t("new-letter.caption-img"),
+          }}
         >
-          <Button label="Subscribe" variant="transparent" color="light" />
+          <Button
+            label={`${t("new-letter.subscribe")}`}
+            variant="transparent"
+            color="light"
+          />
         </Parallax>
       </div>
     </div>

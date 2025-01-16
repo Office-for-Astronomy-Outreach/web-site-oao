@@ -5,7 +5,10 @@ interface ParallaxProps {
   title: string;
   subtitle: string;
   children?: React.ReactNode;
-  backgroundImage: string;
+  backgroundImage: {
+    imgUrl: string;
+    caption?: string;
+  };
   size?: "xs" | "sm" | "md" | "lg" | "xl";
 }
 
@@ -24,15 +27,19 @@ const Parallax: React.FC<ParallaxProps> = ({
     "h-screen": size === "xl",
   });
 
+  const captionClass = clsx(
+    "absolute z-10 bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+  );
+
   return (
     <div className="relative">
       <div
         className={clsx(
-          "relative shadow-md rounded-lg bg-cover bg-center bg-fixed flex flex-col justify-center items-center text-center px-4",
-          sizeClasses
+          "group relative shadow-md rounded-lg bg-cover bg-center bg-fixed flex flex-col justify-center items-center text-center px-4",
+          sizeClasses,
         )}
         style={{
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: `url(${backgroundImage.imgUrl})`,
         }}
         role="region"
         aria-labelledby="parallax-title"
@@ -57,6 +64,11 @@ const Parallax: React.FC<ParallaxProps> = ({
 
           {children && <div>{children}</div>}
         </div>
+        {backgroundImage?.caption && (
+          <figcaption className={captionClass}>
+            {backgroundImage?.caption}
+          </figcaption>
+        )}
       </div>
       <div className="absolute top-0 w-full">
         <div className="comets comets-left comets-long"></div>
