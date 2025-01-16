@@ -42,7 +42,7 @@ const Header: React.FC = () => {
           <div className="flex justify-between items-center uppercase sm:mx-0 mx-3 py-2 px-4">
             {/* Logo */}
             <div className="text-lg font-bold">
-              <Image src={`${path}/images/logo.png`} alt="Office for Astronomy Outreach" width={65} height={65} />
+              <Image src={`${path}/images/logo.png`} alt="Office for Astronomy Outreach" width={65} height={65} className="aspect-square"/>
             </div>
 
             {/* Hamburger Menu (Visible only on mobile) */}

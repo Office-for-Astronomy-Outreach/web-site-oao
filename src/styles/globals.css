@@ -41,7 +41,11 @@ h1, h2, h3, h4, h5, p, span, button, a {
 }
 
 .bg-nocs {
-  background: linear-gradient(0deg, #f7f7f8 0, #0d9488 100%);
+  background: linear-gradient(33deg, #003a77 10%, #277dd7eb 48%, #001a36 89%);  
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #0066d0 10%, #277dd7eb 48%, #0066d0 89%);
 }
 
 .menu-link {
@@ -120,7 +124,6 @@ h1, h2, h3, h4, h5, p, span, button, a {
   }
 }
 
-
 @keyframes orbitPlanet {
   0% {
     transform: rotate(0deg);
@@ -129,7 +132,6 @@ h1, h2, h3, h4, h5, p, span, button, a {
     transform: rotate(360deg);
   }
 }
-
 
 @keyframes comets {
   0% {
@@ -195,68 +197,4 @@ h1, h2, h3, h4, h5, p, span, button, a {
 
 .comets-long {
   animation: cometsLong 10s infinite;
-}
-
-/* Contenedor del medio círculo */
-.circle-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* Medio círculo degradado */
-.half-circle {
-  position: absolute;
-  bottom: 50hv;
-  width: 300px;
-  height: 150px;
-  background: linear-gradient(to bottom, #99b9eb, #f8fafc);
-  border-top-left-radius: 150px;
-  border-top-right-radius: 150px;
-  transform: translateY(50%);
-}
-
-/* Línea delgada */
-.line {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  background-color: #e5e7e9;
-  z-index: 1;
-}
-
-/* Punto azul */
-.dot {
-  position: absolute;
-  top: 200px;
-  width: 10px;
-  height: 10px;
-  background-color: #277dd7;
-  border-radius: 50%;
-  transform: translate(0%, -50%);
-  z-index: 2;
-}
-
-/* Animación del círculo punteado */
-.dotted-circle {
-  position: absolute;
-  top: 300px;
-  width: 0px;
-  height: 0px;
-  border: 1px dashed #ff5722;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(0%, -50%);
-  transition: all 0.8s ease-in-out;
-}
-
-/* Activar animación */
-.animate .dotted-circle {
-  width: 100px;
-  height: 100px;
-  opacity: 1;
 }

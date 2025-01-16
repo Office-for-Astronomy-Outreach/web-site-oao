@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
-    <footer className="bg-primary-main text-white">
+    <footer className="bg-gradient text-white">
       <div className="container mx-auto px-4 py-12">
         {/* Sección de logos y descripción */}
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8">

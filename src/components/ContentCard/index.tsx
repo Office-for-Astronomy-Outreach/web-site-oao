@@ -88,17 +88,23 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
       {/* Image Section */}
       {imageUrl && (
-        <div className="content-card-img w-full md:w-6/12" aria-hidden="true">
-          <div className="relative w-full md:h-full md:mt-0 mt-10">
-            <Image
-              src={imageUrl}
-              alt={title}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg aspect-[16/9]"
-              aria-hidden="true"
-            />
-          </div>
+        <div className="content-card-img group w-full md:w-6/12" aria-hidden="true">
+          <figure className="relative w-full h-full">
+            <div className="relative w-full h-full md:mt-0 mt-10">
+              <Image
+                src={imageUrl}
+                alt={title}
+                className="rounded-lg"
+                aria-hidden="true"
+                fill
+                style={{ objectFit: "cover"}}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+            <figcaption className="absolute z-10 bottom-0 left-0 w-full bg-black/70 text-white text-sm p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                hola esto es un ejemplo
+              </figcaption>
+          </figure>
         </div>
       )}
     </section>

@@ -71,10 +71,12 @@ const Carousel: React.FC<CarouselProps> = ({
             <Image
               src={slide.image}
               alt={slide.title}
-              layout="fill"
-              objectFit="cover"
               className="w-full h-full img-carrousel"
               role="img"
+              fill
+              priority
+              sizes="(max-width: 1200px) 100vw"
+              style={{objectFit: "cover"}}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-4 text-white">
               <h1 className="text-xl sm:text-4xl font-bold leading-relaxed tracking-wide">{slide.title}</h1>

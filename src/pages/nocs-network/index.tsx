@@ -16,21 +16,20 @@ export default function ProfessionalDevelopment() {
   return (
     <div role="region" aria-labelledby="professional-development-title">
       {/* Hero Section */}
-      <section className="bg-nocs">
+      <section className="bg-nocs mb-8">
         <div className="container aspect-video mx-auto px-4 py-8 relative">
-         
-            <ParticleMap />
+          <ParticleMap />
         </div>
       </section>
 
       <div className="container mx-auto px-4 flex flex-col gap-16">
         <div className="flex flex-col gap-6">
-          <div className="md:p-8 p-4  bg-yellow-300 rounded-lg" aria-labelledby="resources-title" >
+          <div className="md:p-8 p-4 bg-yellow-400 rounded-lg" aria-labelledby="resources-title" >
               <h1 id="resources-title" className="md:text-5xl text-h1 text-end font-bold text-body uppercase">
-                  National <span className="text-teal-700">Outreach</span><br /> Coordinators Network
+                  National <span className="text-primary-main">Outreach</span><br /> Coordinators Network
               </h1>
           </div>
-          <p className="text-h5 text-gray-600 md:columns-2 gap-6" role="contentinfo">
+          <p className="text-h5 md:columns-2 gap-6" role="contentinfo">
             The IAU National Outreach Coordinators (NOCs) are national-level representatives for the IAU Office for Astronomy Outreach (OAO). Members of the network act as a point-of-contact for astronomy outreach for a country or territory. NOCs support the implementation of IAU OAO projects on a national level, share astronomy news and events within their country, and bridge the IAU with local communities. In the process, they receive outreach support from the IAU OAO, such as access to the NOCs Funding Scheme, and a connection with the global network of NOCs.
           </p>
         </div>

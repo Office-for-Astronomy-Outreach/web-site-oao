@@ -115,12 +115,13 @@ export default function Home() {
           type="secondary"
           twoColums
           link={{ url: "/about-us", label: t("accessible-astronomy.button") }}
+          wfull
         />
 
         <ContentCard
           title="Build community thorough astronomy Outreach"
           text="The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
-          imageUrl={`${path}/images/build-community.png`}
+          imageUrl={`${path}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`}
           type="transparent"
           link={{ url: "/outreach", label: "Join" }}
         />
@@ -128,7 +129,7 @@ export default function Home() {
         <ContentCard
           title="Professional Development"
           text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
-          imageUrl={`${path}/images/professional-development.png`}
+          imageUrl={`${path}/images/home/AU100 Flagship Event-Brussels-April2019.png`}
           type={'primary'}
           link={{ url: "/professional-development", label: "Join our team" }}
         />
