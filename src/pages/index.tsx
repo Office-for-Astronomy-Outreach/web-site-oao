@@ -124,7 +124,9 @@ export default function Home() {
           type="transparent"
           image={{
             imageUrl: `${path}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`,
-            caption: "",
+            caption: `Nine kids standing in a classroom, each with the name of a planet on
+             their chests, written in Turkish. Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz`,
+            alt: "100 Hours of Astronomy-Turkey-Saadet Manaz",
           }}
           link={{
             url: "/outreach",
