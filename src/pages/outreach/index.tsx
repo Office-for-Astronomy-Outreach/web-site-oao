@@ -11,13 +11,13 @@ import Parallax from "@/components/Parallax";
 import CardTeamMember from "@/components/TeamCard";
 import Image from "next/image";
 
-export default function ProfessionalDevelopment() {
+export default function Outreach() {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const items = [
     {
       title: "100 Hours of Astronomy",
-      link: "",
+      link: "/outreach/global-projects/100-hours-of-astronomy",
       image: `${path}/images/global-community/100hours.png`,
       alt: "",
     },

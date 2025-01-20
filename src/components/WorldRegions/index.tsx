@@ -1,108 +1,97 @@
-import { useState } from "react";
+import { useState, useMemo, useCallback } from "react";
 import Button from "../Button"; // Asegúrate de importar correctamente tu componente Button
 import router from "next/router";
 
-const WorldRegions: React.FC = () => {
+import { Region } from "@/types";
+
+interface WorldRegionsProps {
+  regions: Region[];
+}
+
+const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+  // Imagen por defecto
+  const defaultBackgroundImage = `${path}/images/mapa.jpg`;
 
   // Estado para la imagen de fondo
   const [backgroundImage, setBackgroundImage] = useState<string>(
-    `${path}/images/mapa.jpg`
-  ); // Imagen por defecto
+    defaultBackgroundImage
+  );
 
-  const handleRegionClick = (region: string) => {
-    // Redirige a la página de la región, pasando el nombre de la región como parámetro en la URL
+  // Memorizar la imagen de fondo
+  const memoizedBackgroundImage = useMemo(
+    () => backgroundImage,
+    [backgroundImage]
+  );
+
+  // Función para redirigir a la página de la región
+  const handleRegionClick = useCallback((region: string) => {
     router.push(`/nocs-network/${region}`);
-  };
+  }, []);
 
-  // Función para cambiar la imagen de fondo
-  const handleMouseEnter = (region: string) => {
-    let newImage = "";
+  // Función para cambiar la imagen de fondo al pasar el ratón por encima
+  const handleMouseEnter = useCallback(
+    (region: string) => {
+      let newImage = defaultBackgroundImage; // Imagen por defecto
 
-    switch (region) {
-      case "america":
-        newImage = `${path}/images/america.jpg`; // Ruta de la imagen de América
-        break;
-      case "africa":
-        newImage = `${path}/images/africa.jpg`; // Ruta de la imagen de África
-        break;
-      case "asia":
-        newImage = `${path}/images/asia.jpg`; // Ruta de la imagen de Asia
-        break;
-      case "europa":
-        newImage = `${path}/images/europa.jpg`; // Ruta de la imagen de Europa
-        break;
-      case "oceania":
-        newImage = `${path}/images/oceania.jpg`; // Ruta de la imagen de Oceanía
-        break;
-      default:
-        newImage = `${path}/images/mapa.jpg`; // Imagen por defecto
-    }
+      switch (region) {
+        case "americas":
+          newImage = `${path}/images/america.jpg`;
+          break;
+        case "africa":
+          newImage = `${path}/images/africa.jpg`;
+          break;
+        case "asia":
+          newImage = `${path}/images/asia.jpg`;
+          break;
+        case "europe":
+          newImage = `${path}/images/europa.jpg`;
+          break;
+        case "oceania":
+          newImage = `${path}/images/oceania.jpg`;
+          break;
+        default:
+          newImage = defaultBackgroundImage;
+      }
 
-    setBackgroundImage(newImage); // Actualizar el estado de la imagen
-  };
+      setBackgroundImage(newImage);
+    },
+    [path]
+  );
 
-  // Función para restablecer la imagen de fondo
-  const handleMouseLeave = () => {
-    setBackgroundImage(`${path}/images/mapa.jpg`); // Restaurar la imagen original
-  };
+  // Función para restaurar la imagen de fondo
+  const handleMouseLeave = useCallback(() => {
+    setBackgroundImage(defaultBackgroundImage); // Restaurar la imagen original
+  }, [defaultBackgroundImage]);
 
   return (
     <section aria-labelledby="">
       <div className="container mx-auto flex flex-col gap-8 p-8 bg-white rounded-lg shadow-md">
         <h2 id="" className="text-h2 font-bold text-teal-700">
-          World Regions
+          World
         </h2>
 
-        <div className="container mx-auto flex md:flex-row flex-col ">
+        <div className="container mx-auto flex md:flex-row flex-col">
           {/* Contenedor para la imagen con la clase de fondo dinámico */}
           <div
             className="flex flex-1 md:w-1/2 w-full relative aspect-video md:aspect-auto bg-contain bg-no-repeat bg-center"
-            style={{ backgroundImage: `url(${backgroundImage})` }} // Establecer la imagen de fondo según el estado
+            style={{ backgroundImage: `url(${memoizedBackgroundImage})` }} // Usamos la versión memoizada de la imagen
           ></div>
 
           <div className="flex md:w-1/2 w-full justify-center items-center flex-wrap gap-3 md:p-4">
-            {/* Botones que llaman a la función para cambiar la imagen de fondo */}
-            <Button
-              label={"America"}
-              color="dark"
-              variant="outline"
-              onMouseEnter={() => handleMouseEnter("america")}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handleRegionClick("america")}
-            />
-            <Button
-              label={"Africa"}
-              color="dark"
-              variant="outline"
-              onMouseEnter={() => handleMouseEnter("africa")}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handleRegionClick("africa")}
-            />
-            <Button
-              label={"Asia"}
-              color="dark"
-              variant="outline"
-              onMouseEnter={() => handleMouseEnter("asia")}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handleRegionClick("asia")}
-            />
-            <Button
-              label={"Europa"}
-              color="dark"
-              variant="outline"
-              onMouseEnter={() => handleMouseEnter("europa")}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handleRegionClick("europa")}
-            />
-            <Button
-              label={"Oceania"}
-              color="dark"
-              variant="outline"
-              onMouseEnter={() => handleMouseEnter("oceania")}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handleRegionClick("oceania")}
-            />
+            {regions.length > 0 &&
+              regions.map((region) => (
+                <Button
+                  key={region.slug} // Cambié `region.name-button` por `region.slug` como key única
+                  label={region.name}
+                  color="dark"
+                  variant="outline"
+                  onMouseEnter={() => handleMouseEnter(region.slug)}
+                  onMouseLeave={handleMouseLeave}
+                  onClick={() => handleRegionClick(region.slug)}
+                />
+              ))}
           </div>
         </div>
       </div>

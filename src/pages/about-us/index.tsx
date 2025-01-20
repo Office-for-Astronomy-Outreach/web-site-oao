@@ -112,7 +112,8 @@ export default function About() {
             title={t("astronomy-for-everyone.title")}
             text={t("astronomy-for-everyone.description")}
             image={{
-              imageUrl: `${path}/images/about/observing-mercury.jpg`,
+              imageUrl: `${path}/images/about/100 Hours of Astronomy Ecuador Observatorio Astronomico de Quito.png`,
+              caption: t("astronomy-for-everyone.caption-img"),
             }}
             type="transparent"
           />
@@ -123,6 +124,7 @@ export default function About() {
             text={t("strategic-actions.description")}
             image={{
               imageUrl: `${path}/images/about/about-new.png`,
+              caption: t("strategic-actions.caption-img"),
             }}
             type="primary"
           />

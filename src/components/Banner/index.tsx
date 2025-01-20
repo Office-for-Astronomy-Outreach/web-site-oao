@@ -32,7 +32,7 @@ const Banner: React.FC<BannerProps> = ({ image, title, breadcrumbs }) => {
       {/* Content */}
       <div className="relative z-2 h-full flex flex-col justify-center items-center text-white text-center px-4">
         {/* Title */}
-        <h1 className="text-h1 font-bold text-white leading-relaxed tracking-wide">
+        <h1 className="text-h1 font-bold text-white md:leading-relaxed tracking-wide mb-4">
           {title}
         </h1>
         {/* Breadcrumbs */}

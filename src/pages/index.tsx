@@ -139,8 +139,8 @@ export default function Home() {
           type={"primary"}
           image={{
             imageUrl: `${path}/images/home/AU100 Flagship Event-Brussels-April2019.png`,
-            caption: t("professional-development.description"),
-            alt: t("professional-development.alt"),
+            caption: t("professional-development.caption-img"),
+            alt: t("professional-development.alt-img"),
           }}
           link={{
             url: "/professional-development",

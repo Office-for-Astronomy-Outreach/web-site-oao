@@ -1,0 +1,3284 @@
+[
+
+    {
+        "group": "Africa",
+        "countries": [
+            {
+                "name": "Algeria",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Algeria",
+                "images": [
+                    "/images/nocs/Algeria/image_1.jpg",
+                    "/images/nocs/Algeria/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Cheima Aminekhodja",
+                            "Affiliation: Sirius Astronomy Association",
+                            "E-mail:--",
+                            "Website: --",
+                            "Appointed by the IAU OAOuntil19Aug 2027"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Mohamed Akram Zermane",
+                            "Affiliation:Laboratoire de Physique Theorique, Faculté des Sciences Exactes Université de Bejaia",
+                            "E-mail:zermane.med.akram [at] gmail.com",
+                            "Website: --",
+                            "Appointed by the IAU OAO until19Aug 2027"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Mourad Hamdouche",
+                            "Affiliation: Sirius Astronomy Association",
+                            "E-mail: mhamdouche [at] gmail.com",
+                            "Website: www.siriusalgeria.net",
+                            "NOC Advisor, appointed by the IAU OAO for the period of 27 Aug 2021to16 Aug 2024."
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Jamal Mimouni",
+                            "Affiliation: Mentouri University at Constantine, Physics Department",
+                            "E-mail: jamalmimouni [at] yahoo.com",
+                            "Former NOC, appointed by the IAU for the period of 1 Sep 2018 to 27 Aug 2021."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Benin",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-benin",
+                "images": [
+                    "/images/nocs/Benin/image_1.jpg",
+                    "/images/nocs/Benin/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Pide Aristide AHANHANZO",
+                            "Affiliation: Club Astronomique Orion-Bénin",
+                            "E-mail: pahanhanzo [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Botswana",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-botswana",
+                "images": [
+                    "/images/nocs/Botswana/image_1.jpg",
+                    "/images/nocs/Botswana/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:  Molly Kgobathe",
+                            "Affiliation: Astronomical Society of Botswana, Events Secretary",
+                            "E-mail: molkgobathe [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Burkina Faso",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/BurkinaFaso",
+                "images": [
+                    "/images/nocs/Burkina Faso/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Zacharie Kam",
+                            "Affiliation: Universite de Ouagadougou",
+                            "E-mail:szachkam@gmail.com",
+                            "Office phone number: +2348064662538",
+                            "Contact address: s/c Noufe Luc BP 1515, Ouagadougou 01 BURKINA FASO",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cameroon",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-cameroon",
+                "images": [
+                    "/images/nocs/Cameroon/image_1.jpg",
+                    "/images/nocs/Cameroon/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Mbonteh Roland Ndunge",
+                            "Affiliation: Cameroon Astronomy and Space Research Organization (CASRO)",
+                            "E-mail: ndungeroland [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Williams Tchaptchet",
+                            "Affiliation: Cameroon Astronomy and Space Research Organization (CASRO)",
+                            "E-mail:christiantchapy [at] yahoo.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Dinka Williet",
+                            "Affiliation: Cameroon Astronomy and Space Research Organization (CASRO)",
+                            "E-mail:dinkawilliet682 [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cape Verde",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/CapeVerde",
+                "images": [
+                    "/images/nocs/Cape Verde/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Ivanilda Maria dos Santos Cabral Semedo",
+                            "Affiliation: Universidade de Cabo Verde",
+                            "E-mail:ivanilda.cabral@docente.unicv.edu.cv",
+                            "Office phone number: -",
+                            "Contact address: Palmarejo, CP 279 – Praia, Ilha de Santiago, CAPE VERDE",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Chad",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-chad",
+                "images": [
+                    "/images/nocs/Chad/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Mamadou Mahamat Djabbi",
+                            "Affiliation:Official at the Chadian Ministry of Education",
+                            "E-mail:mamadou.m.djabbi [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Côte d'Ivoire",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-cotedivoire",
+                "images": [
+                    "/images/nocs/Côte d'Ivoire/image_1.png",
+                    "/images/nocs/Côte d'Ivoire/image_2.png"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Diaby Kassamba Abdel Aziz",
+                            "Affiliation: LASMES / Université Félix Houphouët-Boigny",
+                            "Association Ivoirienne d'Astronomie",
+                            "E-mail: diabyaziz [at] yahoo.fr",
+                            "Social Media: Personal FaceBook / FaceBook Association Ivoirienne d'Astronomie",
+                            "Appointed by the IAU until August, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Egypt",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Egypt",
+                "images": [
+                    "/images/nocs/Egypt/image_1.jpg",
+                    "/images/nocs/Egypt/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Somaya Saad",
+                            "Affiliation:National Research Institute of Astronomy and Geophysics (NRIAG)",
+                            "E-mail:saadmhsaad [at] gmail.com",
+                            "Appointed by the IAU NCA/NMuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Morcos Abd El Fady",
+                            "Affiliation: National Research Institute of Astronomy-Geophysics",
+                            "E-mail: abmorcos [at] yahoo.com , fadymorcos [at] hotmail.com",
+                            "Former NOC appointed by the IAU NCA/NM for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ethiopia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Ethiopia",
+                "images": [
+                    "/images/nocs/Ethiopia/image_1.jpg",
+                    "/images/nocs/Ethiopia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Alemiye Mamo",
+                            "Affiliation: Ethiopian Space Science and Technology Institute (ESSTI)",
+                            "E-mail: malemiye [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Kirubel Menberu",
+                            "Affiliation: Ethiopian Space Science Society",
+                            "E-mail: kirubelmenberu5 [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Gabon",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Gabon",
+                "images": [
+                    "/images/nocs/Gabon/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Patrice M. OKOUMA",
+                            "Affiliation: NOMMO ASTRONOMIA",
+                            "E-mail: okouma [at] hotmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Kenya",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Kenya",
+                "images": [
+                    "/images/nocs/Kenya/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Prof. Paul Baki",
+                            "Affiliation: Technical University of Kenya",
+                            "E-mail:paulbaki@gmail.com",
+                            "Office phone number: +254-20-343672 Ext 244",
+                            "Contact address: School of Physical Sciences and Technology, Technical University of Kenya, P.O Box 52428-00200, City Square, Nairobi, KENYA",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Libya",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-libya",
+                "images": [
+                    "/images/nocs/Libya/image_1.jpg",
+                    "/images/nocs/Libya/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Amjed Khurwat",
+                            "Affiliation:Roaya for Astronomy and Space Applications Foundation",
+                            "E-mail:amjed.kh [at] roayaastro.org",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Abbas Endaisha",
+                            "Affiliation: Misurata University, Department of Physics",
+                            "E-mail:  abbas.endaisha [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Madagascar",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Madagascar",
+                "images": [
+                    "/images/nocs/Madagascar/image_1.jpg",
+                    "/images/nocs/Madagascar/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Zara Randriamanakoto",
+                            "Affiliation: South African Astronomical Observatory and Malagasy Astronomy & Space Science",
+                            "E-mail: zara [at] saao.ac.za",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Deralaza Rafieferantsoa",
+                            "Affiliation: University of Antananarivo and Malagasy Astronomy & Space Science",
+                            "E-mail: deralazarafi [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mauritania",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-mauritania",
+                "images": [
+                    "/images/nocs/Mauritania/image_0.jpg",
+                    "/images/nocs/Mauritania/image_1.jpg",
+                    "/images/nocs/Mauritania/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Ely Cheikh Ould Mohamed Navee",
+                            "Affiliation:Mauritanian Association of Astronomy Group",
+                            "E-mail:astronomieassociationmauritani[at]gmail.com",
+                            "Office phone number:  0022241561782",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mauritius",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Mauritius",
+                "images": [
+                    "/images/nocs/Mauritius/image_1.jpg",
+                    "/images/nocs/Mauritius/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Arvind RAMESSUR",
+                            "Affiliation:Past President of Aurora Toastmasters, Physics Educator - St Andrew’s School",
+                            "E-mail:arvind.iau.mru [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Nadeem Oozeer",
+                            "Affiliation: South African Radio Astronomy Observatory"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Mr Arwin BAICHOO, Software engineer and member of the Space Generation Advisory Council",
+                            "Mr Vijay CHUMROO, Physics educator",
+                            "Ms Madinah DILLMAHOMED, Physics educator",
+                            "Ms Farheen HOSANEE, Open University Student in Software Engineer",
+                            "Dr Mathilde JAUZAC, UK Research & Innovation Future Leaders Fellow and Research Associate in Astronomy at Durham University, United Kingdom",
+                            "Ms Leena RAMESSUR, Physics educator",
+                            "Dr Nitin RUGHOONAUTH, Lecturer in Theoretical Physics, University of Mauritius, and co-founder of “Café Scientifique Maurice” science outreach initiative",
+                            "Ms Zainab SOYFOO, English educator",
+                            "Ms Tasneem ROSSENKHAN, CEO at BeeCubes"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Morocco",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Morocco",
+                "images": [
+                    "/images/nocs/Morocco/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Meriem Elyajouri",
+                            "Affiliation:Titritland S.A.R.L / Spacebus Morocco",
+                            "E-mail:meriemyajouri [at] gmail.com",
+                            "Appointed by the IAU NCA/MNuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Hassane Darhmaoui",
+                            "Affiliation:Al Akhawayn University in Ifrane",
+                            "E-mail:h.darhmaoui[at]aui.ma",
+                            "Appointed by the IAU NCA/MN until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Zouhair Benkhaldoun",
+                            "Affiliation: Cadi Ayyad University / Oukaimeden Observatory",
+                            "E-mail: zouhair [at] uca.ma , zouhair [at] uca.ac.ma",
+                            "Former NOC, appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Facebook:NOCMOROCCO",
+                            "Twitter:@nocmorocco"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Bani Abdelhafid, Association d'astronomie de Rabat, Fun Astronomy.",
+                            "Belhaj Zakaria, La fondation HPS, association SpaceBus Maroc.",
+                            "Benkhaldoun Zouhair, Professeur Université Cadi Ayyad de Marrakech, Directeur de l’Observatoire de l’Oukaimeden.",
+                            "Boskri Abdelkarim, Doctorant en astrophysique à l’université Cadi Ayyad",
+                            "Chennaoui Hasnaa, Professeure Université Hassan II de Casablanca, Présidente ATTARIK Foundation.",
+                            "Darhmaoui Hassane, Professeur Université Al Akhawayn.",
+                            "El  Azhari Youssef, Directeur du Centre National d'Innovation Pédagogique et d’Expérimentation, Maroc.",
+                            "El Yajouri Meriem, Docteur en astrophysique, association SpaceBus Maroc. (Local Coordinator)",
+                            "Nail Naima, Vega/ Association marocaine d'astronomie et sciences de l'espace.",
+                            "Talibi Hassan, Islamic Crescents Observation Project."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mozambique",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Mozambique",
+                "images": [
+                    "/images/nocs/Mozambique/image_1.jpg",
+                    "/images/nocs/Mozambique/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Claudio Moises Paulo",
+                            "Affiliation: Eduardo Mondlane University",
+                            "E-mail: claudiompaulo[at]gmail.com",
+                            "Office phone number: +258 2149 7174",
+                            "Appointed by the IAU NCA/MN until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Yara Herminia Simango,Eduardo Mondlane University",
+                            "Francisco Fenias Macucule,Eduardo Mondlane University",
+                            "Mr. Ramiro Caisse Saide,University of Mauritius",
+                            "Toivo Samuel Mabote,Eduardo Mondlane University",
+                            "Victoria Da Graça Gilberto Samboco,Eduardo Mondlane University",
+                            "Bívar Garcês Felizardo Chavango,Eduardo Mondlane University"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Namibia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Namibia",
+                "images": [
+                    "/images/nocs/Namibia/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Eli Kasai",
+                            "Affiliation: University of Namibia",
+                            "E-mail:ekasai@unam.na",
+                            "Office phone number: +264 61 206 3027",
+                            "Contact address: Private Bag 13301, Windhoek, Namibia",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Senegal",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-senegal",
+                "images": [
+                    "/images/nocs/Senegal/image_1.jpg",
+                    "/images/nocs/Senegal/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Salma Sylla",
+                            "Affiliation: Applied Nuclear Technology Institute, Cheikh Anta Diop University",
+                            "E-mail: samsylla [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Abdoulaye BA",
+                            "Affiliation:  University of Cheikh Anta Diop",
+                            "E-mail: abdoulaye.bakoto [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Cheikh Tidiane Bop",
+                            "Affiliation: University of Cheikh Anta Diop",
+                            "E-mail: -------",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Mariama Balde",
+                            "Affiliation:University of Cheikh Anta Diop",
+                            "E-mail: baldemariama93 [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Sierra Leone",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-sierra-leone",
+                "images": [
+                    "/images/nocs/Sierra Leone/image_1.jpg",
+                    "/images/nocs/Sierra Leone/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Alimamy Lewis Seray Conteh",
+                            "Affiliation: Science, Technology, Engineering and Arts Development Society (STEAD Society)",
+                            "E-mail: alimamyconteh099 [at] gmail.com",
+                            "Appointed by the IAU OAO until August, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "South Africa",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/SouthAfrica",
+                "images": [
+                    "/images/nocs/South Africa/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Mr. Sivuyile Manxoyi",
+                            "Affiliation: South African Astronomical Observatory",
+                            "E-mail:sivuyile@saao.ac.za",
+                            "Office phone number: (+27) 21 460 9315",
+                            "Contact address: South African Astronomical Observatory, Observatory, Cape Town 7925, SOUTH AFRICA",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Sudan",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-sudan",
+                "images": [
+                    "/images/nocs/Sudan/image_1.jpg",
+                    "/images/nocs/Sudan/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Mohammed Yahya Alradi Eldaw",
+                            "Affiliation:Institute of Space Research and Aerospace (ISRA) - Sudan",
+                            "E-mail:memeastro1988 [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Banona Osman",
+                            "Affiliation: Sudanese Association for the advancement of science (SAAS), Sudan",
+                            "E-mail:  ---",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Abubakr Yagob",
+                            "Affiliation: Institute of Space Science (ISE), Spain",
+                            "E-mail: ----",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Eshraga Adel Altyp Abdelsalam",
+                            "Affiliation: Institute of Space Research and Aerospace (ISRA), Sudan",
+                            "E-mail: -----",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Hozyfa Ahmad Brima (Omdurman Islamic University, Sudan)",
+                            "Abubkr Mastor (Omdurman Islamic University, Sudan)",
+                            "Ismail Abdallah (Omdurman Islamic University, Sudan)",
+                            "Nasreldin Adam (Omdurman Islamic University, sudan )",
+                            "Hoyam Abubaker Yousif) (Institute of Space Research and Aerospace(ISRA) , Sudan",
+                            "Yassir Abass (zawaya company, sudan )",
+                            "Anwar Osman (Institute of Space Research and Aerospace(ISRA) , Sudan)",
+                            "Elnazir Ishag (AIMS)",
+                            "Khalid Omer ( Sudanese Matures Astronomy club, sudan )",
+                            "Magdi Elfadil (sudan university of science and Technology (SUST))",
+                            "Aballah Osman (Bahri University , sudan )",
+                            "Omer Souliman (Next Einstein forum ,sudan )",
+                            "Mohammed Mahgoub Hussain (Elemam Elmahdi University ,sudan )",
+                            "Mohammed Hussain(sudan university of science and Technology (SUST))"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Tanzania, United Republic of",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Tanzania",
+                "images": [
+                    "/images/nocs/Tanzania, United Republic of/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Noorali Jiwaji",
+                            "Affiliation: The Open University of Tanzania",
+                            "E-mail: ntjiwaji [at] yahoo.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Togo",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/africa-togo",
+                "images": [
+                    "/images/nocs/Togo/image_1.jpg",
+                    "/images/nocs/Togo/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Doh Koffi ADDOR",
+                            "Affiliation: NGO SG2D 'Science Géologique pour un Développement Durable\" (Geological Science for Sustainable Development), Togo",
+                            "E-mail: sg2dtogo [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Tunisia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Tunisia",
+                "images": [
+                    "/images/nocs/Tunisia/image_1.jpg",
+                    "/images/nocs/Tunisia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: EL YAZIDI Mayssa",
+                            "Affiliation: Centro di Ateneo di Studi e Attività Spaziali \"Giuseppe Colombo\" – CISAS (Italy)",
+                            "E-mail: NOC.IAU.Tunisia [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Moslem Hassiki",
+                            "Affiliation:Youth and Science Association of Tunisia-AJST, Tunisia",
+                            "E-mail:moslemhassiki4 [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Imen Titouhi",
+                            "Affiliation:Tunis Science City-TSC, Tunisia)",
+                            "E-mail:titouhi.imen [at] live.fr",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Farah Hani",
+                            "Affiliation:Tunisian Association of Young Astronomers-TAYA, Tunisia",
+                            "E-mail:farah.hani.030405 [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Sana Ayari (Tunisian Association of Young Astronomers-TAYA, Tunisia)",
+                            "Khaled Segni (Association of Youth and Science of Kairouan-AJSKair , Tunisia)",
+                            "Tayssir Ennafti (Tunisian Association of Young Astronomers-TAYA, Tunisia)",
+                            "Jamel El Jeri (The Tataouine branch of Tunis Sciences City in Tunisia)",
+                            "Ranya Hamdeni (Youth and Science Association of Tunisia-AJST, Tunisia)",
+                            "Riadh Ben Nessib (Tunis Science City-TSC, Tunisia)",
+                            "Lina Jardak (Youth and Science Association of Tunisia-AJST, Tunisia)",
+                            "Wael Jomni (Youth and Science Association of Tunisia-AJST, Tunisia)",
+                            "Asma Bdhief (Tunisian Association of Young Astronomers-TAYA, Tunisia)",
+                            "Ahlem Loudhaief (Astronomy Club of Enfidha 1, Tunisia)",
+                            "Yassine Tahri (Tunisian Association of Young Astronomers-TAYA, Tunisia)",
+                            "Samaher Ben El hadj Slimene (Tunisian Association of Young Astronomers-TAYA, Tunisia)",
+                            "Lassad Akrout (Youth and Science Association of Tunisia, Djerba Club, Tunisia)",
+                            "Olfa Mannai (Tunisian Association of Young Astronomers-TAYA, Tunisia)",
+                            "Sami Elouati (Youth and Science Association of Tunisia, Djerba Club, Tunisia)",
+                            "Ahmed El Fadhel (Tunisian Space Association-TUNSA)",
+                            "Zayneb Jouini (Tunisian Association of Young Astronomers-TAYA, Tunisia)",
+                            "Amine Zribi (Youth and Science Association of Tunisia-AJST, Tunisia)",
+                            "Taha Basly (Youth and Science Association of Tunisia-AJST, Tunisia)",
+                            "Amjed Bachtobji (Youth and Science Association of Tunisia, Kelibia Club, Tunisia)",
+                            "Zied Mejri (AstroMed Club Astronomy Medjez, Tunisia)."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Uganda",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Uganda",
+                "images": [
+                    "/images/nocs/Uganda/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Edward Jurua",
+                            "Affiliation: Mbarara University of Science and Technology",
+                            "E-mail: ejurua[at]must.ac.ug",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Zambia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Zambia",
+                "images": [
+                    "/images/nocs/Zambia/image_1.jpg",
+                    "/images/nocs/Zambia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Prospery C. Simpemba",
+                            "Affiliation: Copperbelt University",
+                            "E-mail: pcs200800 [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Lenganji Mutembo",
+                            "Siantuba Jackson",
+                            "Kangwa Nkonde",
+                            "Lubinda Nabiwa",
+                            "Kaumba Womba",
+                            "Florence Makumbi",
+                            "Daniel Chilukusha",
+                            "Francis Walusa",
+                            "Paul Himoonga",
+                            "Elias Kapambwe",
+                            "Denis Luchembe"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Zimbabwe",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Zimbabwe",
+                "images": [
+                    "/images/nocs/Zimbabwe/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Dr. Shazrene S. Mohamed",
+                            "Affiliation: South African Astronomical Observatory",
+                            "E-mail:shazrene[at]saao.ac.za",
+                            "Office phone number: ----",
+                            "Contact address: ----",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "Americas",
+        "countries": [
+            {
+                "name": "Argentina",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Argentina",
+                "images": [
+                    "/images/nocs/Argentina/image_1.jpg",
+                    "/images/nocs/Argentina/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Andrea Verónica Ahumada",
+                            "Affiliation: Observatorio Astronómico. Universidad Nacional de Córdoba",
+                            "E-mail: andrea.ahumada[at]unc.edu.ar",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Ileana Andruchow",
+                            "Affiliation: Instituto Astrofísica de La Plata, Facultad de Ciencias Astronómicas y Geofísicas. La Plata,Argentina.",
+                            "E-mail: andru[at]fcaglp.unlp.edu.ar",
+                            "Appointed by the IAU NCA/NMuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Beatriz García",
+                            "Affiliation: Instituto en Tecnologias de Deteccion y Astroparticulas (ITeDA)",
+                            "E-mail: beatrizgarciautn [at] gmail.com",
+                            "Former NOC appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Aruba",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/america-aruba",
+                "images": [
+                    "/images/nocs/Aruba/image_1.png"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Darryl R.S. Everon",
+                            "Affiliation: Space and Nature Aruba Foundation",
+                            "E-mail: darryl [at] spacenaturearuba.com",
+                            "Appointed by the IAU until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Barbados",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/america-barbados",
+                "images": [
+                    "/images/nocs/Barbados/image_1.jpg",
+                    "/images/nocs/Barbados/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:David Marshall",
+                            "Affiliation:Barbados Astronomical Society",
+                            "E-mail:marshallwebbox [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Bolivia, Plurinational State of",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Bolivia",
+                "images": [
+                    "/images/nocs/Bolivia, Plurinational State of/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Paola Daniela Ochoa Paniagua",
+                            "Affiliation: -",
+                            "E-mail: coordenada8a [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Brazil",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Brazil",
+                "images": [
+                    "/images/nocs/Brazil/image_1.jpg",
+                    "/images/nocs/Brazil/image_2.jpg",
+                    "/images/nocs/Brazil/image_3.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Eduardo Monfardini Penteado",
+                            "Affiliation: IAU Office of Astronomy for Education (OAE)",
+                            "E-mail: iaunocbrasil [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Josina Nascimento",
+                            "Affiliation: --",
+                            "E-mail: --",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Website:https://iaunocbrasil4.wixsite.com/iaunocbrasil/",
+                            "Facebook:https://www.facebook.com/nocbrasil",
+                            "Instagram: https://www.instagram.com/iaunocbrasil/"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Canada",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Canada",
+                "images": [
+                    "/images/nocs/Canada/image_1.jpg",
+                    "/images/nocs/Canada/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Steven Pellarin",
+                            "Affiliation:CASCA",
+                            "E-mail:pellarin [at] uwindsor.ca",
+                            "Appointed by the IAU NCA untilAugust, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Sharon Morsink",
+                            "Affiliation: Associate Professor, Department of Physics",
+                            "E-mail: morsink [at] ualberta.ca",
+                            "Appointed by the IAU until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Chile",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Chile",
+                "images": [
+                    "/images/nocs/Chile/image_1.jpg",
+                    "/images/nocs/Chile/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: María Fernanda Durán",
+                            "Affiliation: Sociedad Chilena de Astronomía (SOCHIAS) / AUI/NRAO Chile",
+                            "E-mail: iau.noc.chile [at] gmail.com",
+                            "Appointed by the IAU NCA until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Daniela Fernández - Affiliation: Fundación Pequeñas Grandes Estrellas (PGE)",
+                            "Vania Rodríguez",
+                            "Patricio Rojo - Affiliation: Sociedad Chilena de Astronomía (SOCHIAS) / Universidad de Chile",
+                            "Luis Rondón"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Instagram: @iau_noc_chile",
+                            "Facebook: @iau_noc_chile",
+                            "Twitter: @iau_noc_chile"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Dr. Patricio Rojo",
+                            "Affiliation: Sociedad Chilena de Astronomía (SOCHIAS) / Universidad de Chile",
+                            "E-mail:pato@das.uchile.cl",
+                            "Office phone number: +56 (2) 977 1091",
+                            "Contact address: Sociedad Chilena de Astronomía (SOCHIAS), Camino El Observatorio, 1515 Las Condes Casilla 36D Santiago Chile",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Colombia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Colombia",
+                "images": [
+                    "/images/nocs/Colombia/image_1.jpg",
+                    "/images/nocs/Colombia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Andres David Torres Cañas",
+                            "Affiliation:Astronomical Observatory of ITM - General Coordinator",
+                            "E-mail:adncuantico [at] gmail.com",
+                            "Appointed by the IAUNCA/NM until August 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Camilo Delgado-Correal",
+                            "Affiliation: ---",
+                            "E-mail: ---",
+                            "Appointed by the IAU NCA/NMuntilAugust, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Carlos Augusto Molina Velásquez",
+                            "Affiliation: Sociedad Antioqueña de Astronomía (Antioquia Astronomical Society) & University of Antioquia",
+                            "E-mail: camolinav [at] gmail.com",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Costa Rica",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/america-costa-rica",
+                "images": [
+                    "/images/nocs/Costa Rica/image_1.jpg",
+                    "/images/nocs/Costa Rica/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Edwin Santiago-Leandro",
+                            "Affiliation:Universidad de Costa Rica",
+                            "E-mail:edwin.santiago [at] ucr.ac.cr",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Carolina Salas Matamoros",
+                            "Affiliation: Center of Space Research, University of Costa Rica",
+                            "E-mail: carolina.salas_mata [at] ucr.ac.cr",
+                            "Former NOC appointed by the IAU OAO until Aug 27, 2021"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Alejandra León Castellá",
+                            "Affiliation: Fundación CIENTEC",
+                            "E-mail: alejandraleon [at] me.com",
+                            "Appointed by the OAO until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Dominican Republic",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/DominicanRepublic",
+                "images": [
+                    "/images/nocs/Dominican Republic/image_1.jpg",
+                    "/images/nocs/Dominican Republic/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Manuel Euclides Grullon Ulloa",
+                            "Affiliation: Freelance",
+                            "E-mail: noc.rd.uai [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Luis Gonzales, Bavaro Innovation School (lag.bau.an[at]gmail.com)",
+                            "Manuel Ney Gomez, ASTRODOM",
+                            "Veronica Ortega, CAS (Club Astronomico de Santiago)",
+                            "Idauris Contreras, ASTRODOM",
+                            "Luvia Molina, ASTRODOM.",
+                            "Manuela Hiliana Suero Arciniega, Liceo Politecnico Jose Nuez de Caceres"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Instagram:https://www.instagram.com/iau.nocrd/"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Mayte Vasquez",
+                            "E-mail:mayte.vasquez [at] gmail.com"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ecuador",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Ecuador",
+                "images": [
+                    "/images/nocs/Ecuador/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Ericson López Izurieta",
+                            "Affiliation: Observatorio Astronomico de Quito, Observatorio Nacional de la Escuela Politecnica Nacional de Ecuador",
+                            "E-mail: ericsson.lopez[at]epn.edu.ec, lopezericsson[at]gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "El Salvador",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/america-el-salvador",
+                "images": [
+                    "/images/nocs/El Salvador/image_1.jpg",
+                    ""
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Leonel Ernesto Hernández",
+                            "Affiliation: Salvadorean Astronomical Association - ASTRO",
+                            "E-mail: infoastro [at] gmail.com",
+                            "Office phone number: ----",
+                            "Contact address: San Salvador, El Salvador",
+                            "Appointed by the IAU until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Guatemala",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Guatemala",
+                "images": [
+                    "/images/nocs/Guatemala/image_1.jpg",
+                    "/images/nocs/Guatemala/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: José Rodrigo Sacahui Reyes",
+                            "Affiliation: Escuela de Ciencias Físicas y Matemáticas, Universidad de San Carlos de Guatemala",
+                            "E-mail: nociau.gt [at] gmail.com",
+                            "Appointed IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Sofía Coyoy, Asociación Quetzalteca de Astronomos Aficionados ( Quetzaltentango)"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Eleonora Poitevin, Asociación Guatemalteca de Astronomía"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Guyana",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/america-guyana",
+                "images": [
+                    "/images/nocs/Guyana/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Ferlin Pedro",
+                            "Affiliation: Amateur Astronomers Association of Guyana",
+                            "E-mail: ffpedrojr [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Ataa Ul Mujeeb Athar Khan",
+                            "Affiliation: Amateur Astronomers Association of Guyana",
+                            "E-mail: aumakhan396c [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Ariel Kimberly Ann Bailey Ganesh",
+                            "Affiliation: Amateur Astronomers Association of Guyana",
+                            "E-mail: baileyari17 [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Haiti",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/america-haiti",
+                "images": [
+                    "/images/nocs/Haiti/image_1.jpg",
+                    "/images/nocs/Haiti/image_2.jpeg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Rulx Narcisse",
+                            "Affiliation: Société Haïtienne d'Astronomie",
+                            "E-mail: haitianastronomicalsociety [at] rocketmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Honduras",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Honduras",
+                "images": [
+                    "/images/nocs/Honduras/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Javier Mejuto",
+                            "Affiliation: Universidad Nacional Autónoma de Honduras",
+                            "E-mail:javier.mejuto [at] unah.edu.hn",
+                            "Website:http://faces.unah.edu.hn/nochn/",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Ricardo Pastrana",
+                            "Affiliation: Universidad Nacional Autónoma de Honduras",
+                            "E-mail: r_pastrana [at] hotmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mexico",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Mexico",
+                "images": [
+                    "/images/nocs/Mexico/image_1.jpg",
+                    "/images/nocs/Mexico/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Patricia Hernández Reséndiz",
+                            "Affiliation: UNAM&ASTROFISICOS EN ACCION",
+                            "E-mail:noc.mexico.uai[at]gmail.com",
+                            "Social Media:FaceBook, andInstagram",
+                            "Appointed by the IAUOAOuntil August 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: René Alberto Ortega Minakata",
+                            "Affiliation: Instituto de Radioastronomía y Astrofísica (IRyA) at Universidad Nacional Autónoma de México (UNAM), Campus Morelia",
+                            "E-mail: r.ortega [at] irya.unam.mx",
+                            "Appointed by the IAU NCA/NMin 2021 (until April 2022)"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Alejandro Farah",
+                            "Affiliation: Instituto de Astronomía, Universidad Nacional Autonoma de Mexico",
+                            "E-mail: farah [at] atastro.unam.mx",
+                            "Former NOC appointed by the IAU NCA/NM for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Nicaragua",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Nicaragua",
+                "images": [
+                    "/images/nocs/Nicaragua/image_1.jpg",
+                    "/images/nocs/Nicaragua/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Emilio Zuniga Hernández",
+                            "Affiliation: The Association of Amateur Astronomers of Leon, Nicaragua",
+                            "E-mail: emiliozuniga77 [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Panama",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/america-panama",
+                "images": [
+                    "/images/nocs/Panama/image_1.jpg",
+                    "/images/nocs/Panama/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Carlos Fernandez Valdes",
+                            "Affiliation:Universidad Latina de Panama, Asociación Panameña de Aficionados a la Astronomía (APAA)",
+                            "E-mail:abacab1 [at] hotmail.com",
+                            "Appointed by the IAUNCA/NMuntil Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Madelaine Rojas",
+                            "Affiliation: National Secretariat of Science, Technology and Innovation (SENACYT)",
+                            "E-mail: mrojas [at] senacyt.gob.pa",
+                            "Former NOC appointed by the IAU OAO until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Paraguay",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Paraguay",
+                "images": [
+                    "/images/nocs/Paraguay/image_1.jpg",
+                    "/images/nocs/Paraguay/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Jorge Luis Maidana-Montiel",
+                            "Affiliation: Centro Paraguayo de Informaciones Astronómicas",
+                            "E-mail: jmaidana18[at]gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Peru",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Peru",
+                "images": [
+                    "/images/nocs/Peru/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Victor Daniel Vera Cervantes",
+                            "Affiliation: Seminario Permanente de Astronomía y Ciencias Espaciales - Universidad Nacional Mayor de San Marcos",
+                            "E-mail: vverac [at] unmsm.edu.pe",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Webpage:https://sites.google.com/unmsm.edu.pe/space/iau-noc-perú",
+                            "Facebook:https://www.facebook.com/IAUOutreach.Peru/",
+                            "Instagram:https://instagram.com/astronomy_peru"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Puerto Rico, United States",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/PuertoRico",
+                "images": [
+                    "/images/nocs/Puerto Rico, United States/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Mayra E. Lebrón Santos",
+                            "Affiliation: Universidad de Puerto Rico - Recinto de Río Piedras",
+                            "E-mail: mayra.lebron3 [at] upr.edu",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Trinidad and Tobago",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/america-trinidadandtobago",
+                "images": [
+                    "/images/nocs/Trinidad and Tobago/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Shirin Haque",
+                            "Affiliation: University of the West Indies",
+                            "E-mail: shirin.haque [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Venezuela, Bolivarian Republic of",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Venezuela",
+                "images": [
+                    "/images/nocs/Venezuela, Bolivarian Republic of/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Angel Diaz",
+                            "Affiliation:The \"Francisco J. Duarte\" Astronomy Research Center (CIDA)",
+                            "E-mail:adiazcida [at] gmail.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024",
+                            ""
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Gladis Magris",
+                            "Affiliation: Centro de Investigaciones de Astronomia (CIDA)",
+                            "E-mail: gladismagris [at] gmail.com",
+                            "Appointed by the IAU until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "Asia",
+        "countries": [
+            {
+                "name": "Afghanistan",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-afghanistan",
+                "images": [
+                    "/images/nocs/Afghanistan/image_1.jpg",
+                    "/images/nocs/Afghanistan/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Mohammad Morawejzada",
+                            "Affiliation: Afghanistan Astronomy Association (AAA)",
+                            "E-mail: mmorawejzada [at] gmail.com",
+                            "Social Mediahttps://www.facebook.com/morawejmohad",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Armenia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Armenia",
+                "images": [
+                    "/images/nocs/Armenia/image_1.jpg",
+                    "/images/nocs/Armenia/image_2.jpg",
+                    "/images/nocs/Armenia/image_3.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Sona Farmanyan",
+                            "Affiliation: Byurakan Astrophysical Observatory",
+                            "E-mail: sona.farmanyan [at] mail.ru",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Lilit Darbinyan",
+                            "Affiliation: Byurakan Astrophysical Observatory",
+                            "E-mail:lilit.darbinyan7 [at] gmail.com",
+                            "Appointed by the IAU NM/NCAuntilAug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Bahrain",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-bahrain",
+                "images": [
+                    "/images/nocs/Bahrain/image_1.jpg",
+                    "/images/nocs/Bahrain/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Myriam Alqassab",
+                            "Affiliation: Bahrain Stargazers Astronomy Club (Founder & President)",
+                            "E-mail: stargazers.bahrain [at] gmail.com",
+                            "Appointed by the OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Bangladesh",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Bangladesh",
+                "images": [
+                    "/images/nocs/Bangladesh/image_1.jpg",
+                    "/images/nocs/Bangladesh/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Farseem M. Mohammedy",
+                            "Affiliation: Bangladesh Astronomical Society",
+                            "E-mail: farseemm [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Rukaiya Binte Rashid",
+                            "Affiliation:Rajshahi University of Engineering & Technology",
+                            "E-mail:hiya1566[at]gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Bhutan",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-bhutan",
+                "images": [
+                    "/images/nocs/Bhutan/image_1.jpg",
+                    "/images/nocs/Bhutan/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Ugyen Pem",
+                            "Affiliation: Samtse College of Education",
+                            "E-mail: upem.sce [at] rub.edu.bt",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Social Media:https://www.facebook.com/SCE-Astronomy-Club-Thinking-Beyond-Earth-105609464636834"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Brunei",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-brunei",
+                "images": [
+                    "/images/nocs/Brunei/image_1.jpg",
+                    "/images/nocs/Brunei/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Hazarry bin Haji Ali Ahmad",
+                            "Affiliation: The Astronomical Society of Brunei Darussalam",
+                            "E-mail:  pabd [at] bruneiastronomy.org | hazarry [at]hotmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cambodia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Cambodia",
+                "images": [
+                    "/images/nocs/Cambodia/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Tharith Sriv",
+                            "Affiliation: Department of Physics, Royal University of Phnom Penh",
+                            "E-mail:tharith@rupp.edu.kh",
+                            "Office phone number: (+855) 23 882716",
+                            "Contact address: Federation of Russia Blvd., Khan Tuol Kork, Phnom Penh, CAMBODIA",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "China Nanjing",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/China-Nanjing",
+                "images": [
+                    "/images/nocs/China Nanjing/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: JinZhu",
+                            "Affiliation: ---",
+                            "E-mail: ---",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "China Taipei",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-china-taipei",
+                "images": [],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Andrew Wang",
+                            "Affiliation: ---",
+                            "E-mail: ---",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "China, Hong Kong",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/China-HongKong",
+                "images": [
+                    "/images/nocs/China, Hong Kong/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Kam Cheung LEUNG",
+                            "Affiliation: Hong Kong Astronomical Society",
+                            "E-mail: kcleung [at] hkas.org.hk",
+                            "Appointed by the IAU OAO until August, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Exodus Chun-Long Sit",
+                            "Affiliation:Exodus Chun-Long Sit",
+                            "E-mail:sitexodus[at]gmail.com",
+                            "Appointed by the IAU OAO until August, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Cyprus",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Cyprus",
+                "images": [
+                    "/images/nocs/Cyprus/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: -",
+                            "Affiliation: Cyprus Space Exploration Organisation",
+                            "E-mail:outreach@astronomy.org.cy",
+                            "Office phone number: -",
+                            "Contact address: -",
+                            "Appointed by the IAU for the period of May 1, 2019 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Georgia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Georgia",
+                "images": [
+                    "/images/nocs/Georgia/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Davit Khutsishvili",
+                            "Affiliation: ---",
+                            "E-mail: daviti.khutsishvili [at] gmail.com",
+                            "Appointed by the IAU until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "India",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/India",
+                "images": [
+                    "/images/nocs/India/image_1.jpg",
+                    "/images/nocs/India/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Samir Dhurde",
+                            "Affiliation:  Inter-University Centre for Astronomy and Astrophysics (IUCAA)",
+                            "E-mail: samir[at]iucaa.in",
+                            "Office phone number: +91-20-25604601",
+                            "Contact address: IUCAA, Pune University Campus, Pune - 411007, India",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Indonesia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Indonesia",
+                "images": [
+                    "/images/nocs/Indonesia/image_1.jpg",
+                    "/images/nocs/Indonesia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Avivah Yamani",
+                            "Affiliation: Langitselatan, 365 days of Astronomy",
+                            "E-mail: avivah [at] langitselatan.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Ronny Syamara",
+                            "Affiliation:Jakarta Planetarium and Observatory, Jakarta Amateur Astronomy Association (HAAJ)",
+                            "E-mail:syamararonny [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "https://langitselatan.com/(in Indonesian)",
+                            "https://cosmoquest.org/x/365daysofastronomy/"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Langitselatan (Twitter/Instagram/Facebook)",
+                            "365 days of Astronomy (Twitter/Facebook)",
+                            "Avivah Yamani (Twitter/Instagram)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Iran, Islamic Republic of",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-iran",
+                "images": [
+                    "/images/nocs/Iran, Islamic Republic of/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Mohammad Javad Torabi",
+                            "Affiliation: ----",
+                            "E-mail: ---",
+                            "Office phone number: ----",
+                            "Contact address: ---",
+                            "Appointed by the IAU until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Iraq",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-iraq",
+                "images": [
+                    "/images/nocs/Iraq/image_1.jpg",
+                    "/images/nocs/Iraq/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Ali Jaber Al-Edhari",
+                            "Affiliation: College of Science Al-Muthanna University",
+                            "E-mail: aliabdsatarg [at] gmail.com",
+                            "Appointed by the IAU until August, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Israel",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Israel",
+                "images": [
+                    "/images/nocs/Israel/image_1.jpg",
+                    "/images/nocs/Israel/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Igal Pat-El",
+                            "Affiliation: Israeli Astronomical Association",
+                            "E-mail: cosmospatel [at] yahoo.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Diana Laufer",
+                            "Affiliation:Givatayim Observatory",
+                            "E-mail:dianal [at] tauex.tau.ac.il; dianal007 [at] gmail.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Japan",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Japan",
+                "images": [
+                    "/images/nocs/Japan/image_1.jpg",
+                    "/images/nocs/Japan/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Hitoshi Yamaoka",
+                            "Affiliation: Associate Professor / Director of Public Relations Center, National Astronomical Observatory of Japan",
+                            "E-mail: hitoshi.yamaoka [at] nao.ac.jp",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Jordan",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Jordan",
+                "images": [
+                    "/images/nocs/Jordan/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Awni Mohammad Khasawneh",
+                            "Affiliation: Arab Union for Astronomy & Space Sciences (www.auass.com) and Jordanian Astronomical Society (JAS)",
+                            "E-mail: kawni [at] yahoo.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Kazakhstan",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-kazakhstan",
+                "images": [
+                    "/images/nocs/Kazakhstan/image_1.jpg",
+                    "/images/nocs/Kazakhstan/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Vitaliy Kim",
+                            "Affiliation:Fesenkov Astrophysical Institute",
+                            "E-mail:ursa-majoris[at]yandex.ru",
+                            "IAU Junior Member: https://www.iau.org/administration/membership/individual/19390/",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Korea, Republic of",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/SouthKorea",
+                "images": [
+                    "/images/nocs/Korea, Republic of/image_1.jpg",
+                    "/images/nocs/Korea, Republic of/image_2.jpg",
+                    "/images/nocs/Korea, Republic of/image_3.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Seo-gu Lee",
+                            "Affiliation: Korea Astronomy and Space Science Institute (KASI)",
+                            "E-mail: sglee[at]kasi.re.kr",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Haeim Jeong",
+                            "Affiliation:KASI (Korea Astronomy and Space Science Institute)",
+                            "E-mail:prstar [at] kasi.re.kr",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Kuwait",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-kuwait",
+                "images": [
+                    "/images/nocs/Kuwait/image_1.jpg",
+                    "/images/nocs/Kuwait/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:KHALED A ALJAMAAN",
+                            "Affiliation:Space Museum - Abdullah Al Salem Cultural Centre",
+                            "E-mail:k.aljamaan [at] ascckw.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Lebanon",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Lebanon",
+                "images": [
+                    "/images/nocs/Lebanon/image_1.jpg",
+                    "/images/nocs/Lebanon/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Ahmad Chaalan",
+                            "Affiliation: Lebanese Outreach Group for Astronomy (LOGA)",
+                            "E-mail: a.chaalan [at] cnrs.edu.lb",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Malaysia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Malaysia",
+                "images": [
+                    "/images/nocs/Malaysia/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Anita Bahari",
+                            "Affiliation: National Planetarium of Malaysia",
+                            "E-mail: anitabahari [at] planet.gov.my",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Mhd Fairos Bin Asillam",
+                            "Affiliation: National Planetarium",
+                            "E-mail: mhdfairos [at] gmail.com",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Maldives",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-maldives",
+                "images": [
+                    "/images/nocs/Maldives/image_1.jpg",
+                    "/images/nocs/Maldives/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Maavin Munthasir",
+                            "Affiliation:---",
+                            "E-mail:maavin2.faure [at] gmail.com",
+                            "Appointed by the IAU OAO untilAugust 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mongolia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Mongolia",
+                "images": [
+                    "/images/nocs/Mongolia/image_1.jpg",
+                    "/images/nocs/Mongolia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Batbayar Batmunkh",
+                            "Affiliation:Institute of Astronomy and Geophysics of Mongolian Academy of Sciences (Astronomer)",
+                            "E-mail:BBAYARAA0731 [at] YAHOO.COM",
+                            "Appointed by the IAU NM/NCAuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Dr.Tsolmon Renchin",
+                            "Affiliation: NUM-ITC-UNESCO Space Science and Remote Sensing Laboratory, National University of Mongolia",
+                            "E-mail: tsolmon [at] num.edu.mn",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Myanmar",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Myanmar",
+                "images": [
+                    "/images/nocs/Myanmar/image_1.jpg",
+                    "/images/nocs/Myanmar/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Boothee Thaik Htun",
+                            "Affiliation: Myanmar Astronomy & Science Enthusiasts Society",
+                            "E-mail:boothee@gmail.com",
+                            "Office phone number: +959 250447913",
+                            "Contact address: Room 302, Building 33, Myakanthar Housing, Hlaing Township, Yangon, MYANMAR",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Nepal",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Nepal",
+                "images": [
+                    "/images/nocs/Nepal/image_1.jpg",
+                    "/images/nocs/Nepal/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Manisha Dwa and Suresh Bhattarai",
+                            "Affiliation: Nepal Astronomical Society (NASO)",
+                            "E-mail: manisha [at] nepalastronomicalsociety.org / suresh [at] nepalastronomicalsociety.org",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Province Representatives:"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Devraj Sapkota, Pradesh 1",
+                            "Vijay Kumar Thakur, Pradesh-2",
+                            "Rupa Manandhar, Bagmati Pradesh",
+                            "Raj Kumar Dhakal, Gandaki Pradesh",
+                            "Pushpa Raj Acharya, Karnali Pradesh",
+                            "Mukti Nath Paudel, Lumbini Pradesh",
+                            "Prem Raj Joshi, Sudurpashchim Pradesh"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Representatives from organization/institution:"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Daya Nidhi Chhatkuli, Tribhuvan University (TU)",
+                            "Geeta Basyal, Ministry of Education, Science and Technology (MoEST)",
+                            "Mani Dahal, Nepal Forum of Science Journalists (NFSJ)",
+                            "Purna Prasad Mishra, Rastriya Samachar Samiti (RSS)",
+                            "Roshan Pandey, Nepal Academy of Science and Technology (NAST)",
+                            "Sristi KC, Blind Rocks"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            ""
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Pakistan",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Pakistan",
+                "images": [
+                    "/images/nocs/Pakistan/image_1.jpg",
+                    "/images/nocs/Pakistan/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Yumna Majeed",
+                            "Affiliation: Exploration by Yumna",
+                            "E-mail: explorationbyyumna[at]gmail.com",
+                            "Appointed by the IAU OAOuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Ghulam Murtaza",
+                            "Affiliation: Pakistan Space and Upper Atmosphere Research Commission (SUPARCO)",
+                            "E-mail: dir.ss [at] suparco.gov.pk",
+                            "Former NOC appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Palestine, State of",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Palestine",
+                "images": [
+                    "/images/nocs/Palestine, State of/image_1.jpg",
+                    "/images/nocs/Palestine, State of/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Dawoud Tarawa",
+                            "Affiliation: Palestinian Astronomical Society",
+                            "E-mail: dawoud.b.tarawa [at] gmail.com",
+                            "Website:http://astropal.org/",
+                            "Facebook:https://www.facebook.com/astropal.org/",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Philippines",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Philippines",
+                "images": [
+                    "/images/nocs/Philippines/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: MA. Rosario C. Ramos",
+                            "Affiliation:Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA)",
+                            "E-mail: ramoschat [at] gmail.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Ma. Angela Lourdes B. Lequiron",
+                            "Affiliation:Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA)",
+                            "E-mail:ghelalequiron13[at]gmail.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Julie Ann G. Delda",
+                            "Affiliation:Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA)",
+                            "E-mail:julieanndelda[at]gmail.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Girlie G. Cortez",
+                            "Affiliation:Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA)",
+                            "E-mail:girleecortez[at]gmail.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Qatar",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-qatar",
+                "images": [
+                    "/images/nocs/Qatar/image_1.jpg",
+                    "/images/nocs/Qatar/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Hani Dalee",
+                            "Affiliation: Arab Union for Astronomy & Space Science",
+                            "E-mail: badr87 [at] yahoo.com",
+                            "Office phone number: --",
+                            "Contact address: --",
+                            "Appointed by the IAU until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Singapore",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-singapore",
+                "images": [
+                    "/images/nocs/Singapore/image_1.jpg",
+                    "/images/nocs/Singapore/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:  Tan Jyh Harng",
+                            "Affiliation: Science Center Singapore / Science Educator (Physical Sciences)",
+                            "E-mail: tan_jyh_harng [at] science.edu.sg",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Sri Lanka",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/SriLanka",
+                "images": [
+                    "/images/nocs/Sri Lanka/image_1.jpg",
+                    "/images/nocs/Sri Lanka/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Dhanushka Subath Amaradasa",
+                            "Affiliation:University of Ruhuna",
+                            "E-mail:subathamaradasa [at] gmail.com",
+                            "Appointed by the IAU OAOuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Thilina Heenatigala",
+                            "Affiliation: Sri Lanka Astronomical Association",
+                            "E-mail: thilinah [at] astroepo.org",
+                            "Former NOC appointed by the IAU OAO for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Syrian Arab Republic",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Syria",
+                "images": [
+                    "/images/nocs/Syrian Arab Republic/image_1.jpg",
+                    "/images/nocs/Syrian Arab Republic/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Mohamad Alassiry",
+                            "Affiliation: Syrian Astronomical Association",
+                            "E-mail: muhammedalassiry [at] gmail.com",
+                            "Appointed by the IAU OAO until August 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Turkieh Jbour",
+                            "Affiliation:Syrian Astronomical Association",
+                            "E-mail:turkiehjbour.saa [at] gmail.com",
+                            "Appointed by the IAU OAO until August 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Sham Alsawaf,Syrian Astronomical Association",
+                            "Email: syastronomy2005 [at] gmail.com"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Nirmeen Alshoufi, Syrian Astronomical Association",
+                            "Email: Nirmeenalshoufi30[at]gmail.com"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Tareq Alkhateb",
+                            "Email: tareqalkhatebnoc [at] gmail.com"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Timor-Leste",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/asia-timorleste",
+                "images": [
+                    "/images/nocs/Timor-Leste/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Luis Nivio de Fatima Soares",
+                            "Affiliation:Freelance",
+                            "E-mail:fire_nivio [at] yahoo.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Thailand",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Thailand",
+                "images": [
+                    "/images/nocs/Thailand/image_1.jpg",
+                    "/images/nocs/Thailand/image_2.jpg",
+                    "/images/nocs/Thailand/image_3.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Wichan Insiri",
+                            "Affiliation: National Astronomical Research Institute of Thailand (NARIT)",
+                            "E-mail: wichan [at] narit.or.th",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Setthawut Thongmee",
+                            "Affiliation: National Astronomical Research Institute of Thailand (NARIT)",
+                            "E-mail:setthawut [at] narit.or.th",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Turkey",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Turkey",
+                "images": [
+                    "/images/nocs/Turkey/image_1.jpg",
+                    "/images/nocs/Turkey/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Sinan ALIS",
+                            "Affiliation: Istanbul University & Turkish Astronomical Society",
+                            "E-mail: salis [at] istanbul.edu.tr",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "United Arab Emirates",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/UAE",
+                "images": [
+                    "/images/nocs/United Arab Emirates/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Prof. Hamid.M.K.AL-Naimiy",
+                            "Affiliation: University of Sharjah",
+                            "E-mail:alnaimiy [at] sharjah.ac.ae",
+                            "Office phone number: --",
+                            "Contact address: --",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Vietnam",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Vietnam",
+                "images": [
+                    "/images/nocs/Vietnam/image_1.jpg",
+                    "/images/nocs/Vietnam/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: HUYNH Phuong Loan",
+                            "Affiliation: VietAstro / Ho Chi Minh City Astronomical Association (HAA)",
+                            "E-mail: loan.hp [at] vietastro.org"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: NGUYEN Tan Vu",
+                            "Affiliation: VietAstro / Ho Chi Minh City Astronomical Association (HAA)",
+                            "E-mail: tan-vu.nguyen [at] vietastro.org"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Appointed by the IAU Office for Astronomy Outreach until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "Europe",
+        "countries": [
+            {
+                "name": "Albania",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/europe-albania",
+                "images": [
+                    "/images/nocs/Albania/image_1.jpg",
+                    "/images/nocs/Albania/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Mirjeta Domi",
+                            "Affiliation: Executive Director of EDU ACT NGO",
+                            "E-mail: domi.mirjeta [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Andorra",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Andorra",
+                "images": [
+                    "/images/nocs/Andorra/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Joan-Marc Miralles Bellera",
+                            "Affiliation: XIP S.L.",
+                            "E-mail: joanmarc.miralles[at]gmail.com",
+                            "Office phone number: +376 356653",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Austria",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Austria",
+                "images": [
+                    "/images/nocs/Austria/image_1.jpg",
+                    "/images/nocs/Austria/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Julia Maria Weratschnig",
+                            "Affiliation:Haus der Natur",
+                            "E-mail:julia.weratschnig [at] hausdernatur.at",
+                            "Appointed by the IAU until August, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Sanje Fenkart",
+                            "Salim Ansari",
+                            "Stefan Wallner"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Belgium",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Belgium",
+                "images": [
+                    "/images/nocs/Belgium/image_1.jpg",
+                    "/images/nocs/Belgium/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Rodrigo Alvarez",
+                            "Affiliation: Planétarium de l'Observatoire Royal de Belgique",
+                            "E-mail: rodrigo.alvarez [at] oma.be",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Bulgaria",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Bulgaria",
+                "images": [
+                    "/images/nocs/Bulgaria/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Lyuba Slavcheva-Mihova",
+                            "Affiliation: Institute of Astronomy and National Astronomical Observatory, Bulgarian Academy of Sciences",
+                            "E-mail: lslav [at] astro.bas.bg",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "http://www.astro.bas.bg/IAU100/",
+                            "http://www.astro.bas.bg/IAU100/Projects.html",
+                            "http://www.astro.bas.bg/IAU100/Education.html",
+                            "http://www.astro.bas.bg/IAU100/Exhibition.html",
+                            "http://www.astro.bas.bg/IAU100/Events.html",
+                            "http://www.astro.bas.bg/IAU100/News.html"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Croatia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Croatia",
+                "images": [
+                    "/images/nocs/Croatia/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Vernesa Smolčić",
+                            "Affiliation: Department of Physics Faculty of Science University of Zagreb",
+                            "E-mail: vs [at] phy.hr , vernesa.smo [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Vernesa Smolčić (Fizički odsjek Prirodoslovno-matematičkog fakulteta Sveučilišta u Zagrebu)",
+                            "Vibor Jelić (Institut Ruđer Bošković)",
+                            "Zvonimir Drvar (Tehnički muzej ”Nikola Tesla”)",
+                            "Sandra Ivković (Osnovna škola Vjenceslava Novaka)",
+                            "Jelena Vlahović (Zajednica tehničke kulture Dubrovnik)",
+                            "Antun Boroš (Astronomsko društvo ”Kumova slama”)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Czech Republic",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Czechia",
+                "images": [
+                    "/images/nocs/Czech Republic/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Soňa Ehlerová",
+                            "Affiliation: Astronomical Institute, Czech Academy of Sciences",
+                            "E-mail: ehlerova [at] asu.cas.cz , sona [at] ig.cas.cz",
+                            "Appointed by the IAU NCA/MN until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Estonia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/europe-estonia",
+                "images": [
+                    "/images/nocs/Estonia/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Kalju Annuk",
+                            "Affiliation: Tartu Observatory, University of Tartu",
+                            "E-mail: annuk [at] to.ee",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Finland",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/europe-finland",
+                "images": [
+                    "/images/nocs/Finland/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Pasi Nurmi",
+                            "Affiliation:University of Turku",
+                            "E-mail:pasnurmi [at] utu.fi",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Päivi Harjunpää",
+                            "Affiliation: Helsinki Observatory",
+                            "E-mail: paivi.harjunpaa [at] helsinki.fi",
+                            "Appointed by the IAU until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "France",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/France",
+                "images": [
+                    "/images/nocs/France/image_1.jpg",
+                    "/images/nocs/France/image_2.jpg",
+                    "/images/nocs/France/image_3.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Miho Janvier",
+                            "Affiliation:Institut d’Astrophysique Spatiale",
+                            "E-mail:miho.janvier [at] universite-paris-saclay.fr",
+                            "Appointed by the IAU NCA/NMuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Lucie Leboulleux",
+                            "Affiliation:Institut de Planétologie et d’Astrophysique de Grenoble",
+                            "E-mail:lucie.leboulleux[at]univ-grenoble-alpes.fr",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Fabrice Mottez",
+                            "Affiliation: Observatoire de Paris-Meudon",
+                            "E-mail: fabrice.mottez [at] obspm.fr",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Germany",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Germany",
+                "images": [
+                    "/images/nocs/Germany/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Carolin Liefke",
+                            "Affiliation: Haus der Astronomie - MPIA",
+                            "E-mail: liefke [at] hda-hd.de"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Appointed by the IAU until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Greece",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Greece",
+                "images": [
+                    "/images/nocs/Greece/image_1.jpg",
+                    "/images/nocs/Greece/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Margarita Metaxa",
+                            "Affiliation:National Observatory of Athens and Arsakeio High School",
+                            "E-mail: marmetaxa [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Kalliopi Dasyra",
+                            "Affiliation:National and Kapodistrian University of Athens",
+                            "E-mail:kdasyra [at] phys.uoa.gr",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Hungary",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Hungary",
+                "images": [
+                    "/images/nocs/Hungary/image_1.jpg",
+                    "/images/nocs/Hungary/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Áron Keve Kiss",
+                            "Affiliation: Hungarian Astronomical Non-profit Ltd.",
+                            "Email: magyarcsillagaszat [at] gmail.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Zoltán Kollath",
+                            "Affiliation: University of West Hungary",
+                            "E-mail: zkollath [at] gmail.com",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Iceland",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Iceland",
+                "images": [
+                    "/images/nocs/Iceland/image_1.jpg",
+                    "/images/nocs/Iceland/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Saevar Helgi Bragason",
+                            "Affiliation: University of Iceland",
+                            "E-mail: saevarhb [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Sigríður Kristjánsdóttir",
+                            "Affiliation:Amateur Astronomical Society of Seltjarnarness",
+                            "E-mail:sissakristjans [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ireland",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Ireland",
+                "images": [
+                    "/images/nocs/Ireland/image_1.jpg",
+                    "/images/nocs/Ireland/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Rob O' Sullivan",
+                            "Affiliation:MTU Blackrock Castle Observatory",
+                            "E-mail:rob.osullivan [at] bco.ie",
+                            "Appointed by the IAU NCA/NMuntilAug 27, 2021"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Clair McSweeney",
+                            "Affiliation: CIT Blackrock Castle Observatory",
+                            "E-mail: clair.mcsweeney [at] bco.ie",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Italy",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Italy",
+                "images": [
+                    "/images/nocs/Italy/image_1.jpg",
+                    "/images/nocs/Italy/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Caterina Boccato",
+                            "Affiliation:Istituto Nazionale di Astrofisica",
+                            "E-mail:caterina.boccato [at] inaf.it",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Stefano Sandrelli",
+                            "Affiliation: INAF-Osservatorio Astronomico di Brera",
+                            "E-mail: iaunocitaly [at] brera.inaf.it",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Francesca Aloisio (INAF);",
+                            "Giuliana Giobbi (INAF and Sait)",
+                            "Walter Riva (Unione Astrofili Italiani - UAI)",
+                            "Ginevra Trinchieri (INAF-IAU)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Latvia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Latvia",
+                "images": [
+                    "/images/nocs/Latvia/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Martins Gills",
+                            "Affiliation: Latvian Astronomical Society",
+                            "E-mail: iya2009.lv [at] gmail.com",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Liechtenstein",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/europe-liechtenstein",
+                "images": [
+                    "/images/nocs/Liechtenstein/image_1.jpg",
+                    "/images/nocs/Liechtenstein/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Cyril Deicha",
+                            "Affiliation: Liechtenstein Scientific Society",
+                            "E-mail: cd [at] nwf.li",
+                            "Appointed by the IAU until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Lithuania",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Lithuania",
+                "images": [
+                    "/images/nocs/Lithuania/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Gražina Tautvaiŝiene",
+                            "Affiliation: Vilnius University",
+                            "E-mail: grazina.tautvaisiene [at] tfai.vu.lt",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Luxembourg",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Luxembourg",
+                "images": [
+                    "/images/nocs/Luxembourg/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Eric Buttini",
+                            "Affiliation: National Museum of Natural History",
+                            "E-mail: Eric.BUTTINI [at] mnhn.lu",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Malta",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/europe-malta",
+                "images": [
+                    "/images/nocs/Malta/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Alexei Pace",
+                            "Affiliation: Centre for Liberal Arts and Sciences at the University of Malta",
+                            "E-mail: alexei.pace [at] gmail.com",
+                            "Appointed by the IAU OAO until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "The Netherlands",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Netherlands",
+                "images": [
+                    "/images/nocs/The Netherlands/image_1.jpg",
+                    "/images/nocs/The Netherlands/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Marieke Baan",
+                            "Affiliation: Dutch Research School for Astronomy (NOVA)",
+                            "E-mail: H.M.Baan [at] uva.nl",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "https://twitter.com/iau100NL",
+                            "https://www.facebook.com/IAU100NL/"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Norway",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/europe-norway",
+                "images": [
+                    "/images/nocs/Norway/image_1.jpg",
+                    "/images/nocs/Norway/image_2.jpg",
+                    "/images/nocs/Norway/image_3.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Martina D'Angelo",
+                            "Affiliation:Institute of Theoretical Astrophysics",
+                            "E-mail:martina.dangelo [at] astro.uio.no",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Maria Hammerstrøm",
+                            "Affiliation:University of Oslo",
+                            "E-mail:maria.hammerstrom [at] astro.uio.no",
+                            "Appointed by the IAU NM/NCA until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Poland",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Poland",
+                "images": [
+                    "/images/nocs/Poland/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Krzysztof Czart",
+                            "Affiliation: Urania",
+                            "E-mail: iau[at]pta.edu.pl",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Magdalena Maszewska",
+                            "Affiliation: ---",
+                            "E-mail:iau[at]pta.edu.pl",
+                            "Appointed byIAU OAOuntil Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Portugal",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Portugal",
+                "images": [
+                    "/images/nocs/Portugal/image_1.jpg",
+                    "/images/nocs/Portugal/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: João Retrê",
+                            "Affiliation: Instituto de Astrofísica e Ciências do Espaço",
+                            "E-mail: jretre[at]iastro.pt",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Romania",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Romania",
+                "images": [
+                    "/images/nocs/Romania/image_1.jpg",
+                    "/images/nocs/Romania/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Marian H. Naiman",
+                            "Affiliation: Bucharest Astroclub",
+                            "E-mail: marian.naiman[at]gmail.com",
+                            "Appointed by the IAU NCA/NMuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Dumitru Pricopi",
+                            "Affiliation: Bucharest Observatory",
+                            "E-mail: dpricopi [at] aira.astro.ro",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024",
+                            "Former NOC appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Iharka Szucs-Csillik",
+                            "Affiliation:Astronomical Institute of Romanian Academy, Cluj-Napoca Observatory, România",
+                            "E-mail:iharka[at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Russian Federation",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Russia",
+                "images": [
+                    "/images/nocs/Russian Federation/image_1.jpg",
+                    "/images/nocs/Russian Federation/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Pavel Skripnichenko",
+                            "Affiliation: Ural Federal University",
+                            "E-mail: savl.silverheart [at] gmail.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Dmitri Wiebe",
+                            "Affiliation: Institute of Astronomy, RAS",
+                            "E-mail: dwiebe [at] inasan.ru",
+                            "Former NOC appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Serbia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Serbia",
+                "images": [
+                    "/images/nocs/Serbia/image_1.jpg",
+                    "/images/nocs/Serbia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Monika Jurković",
+                            "Affiliation: Astronomical Observatory of Belgrade",
+                            "E-mail: mojur [at] aob.rs",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Slovakia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Slovakia",
+                "images": [
+                    "/images/nocs/Slovakia/image_1.jpg",
+                    "/images/nocs/Slovakia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Rudolf Gális",
+                            "Affiliation: Faculty of Science, P. J. Šafárik University in Košice",
+                            "E-mail: rudolf.galis[at]upjs.sk",
+                            "Office phone number: +421 55 234 2241",
+                            "Appointed by the IAU NCA/MN until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Jaroslav Merc",
+                            "Affiliation:P. J. Šafárik University in Košice",
+                            "E-mail:jaroslav.merc[at]gmail.com",
+                            "Appointed by the IAU NCA/MN until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Slovenia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Slovenia",
+                "images": [
+                    "/images/nocs/Slovenia/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Andreja Gomboc",
+                            "Affiliation: Center for Astrophysics and Cosmology, University of Nova Gorica",
+                            "E-mail: andreja.gomboc [at] ung.si",
+                            "Office phone number: +386 5 365 35 33",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Dunja Fabjan",
+                            "Affiliation:Cosmolab",
+                            "E-mail:dunja.fabjan [at] cosmolab.si",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Andrej Guštin",
+                            "Affiliation:----",
+                            "E-mail:----",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Spain",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Spain",
+                "images": [
+                    "/images/nocs/Spain/image_1.jpg",
+                    "/images/nocs/Spain/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Ana Ulla",
+                            "Affiliation: University of Vigo",
+                            "E-mail: ulla [at] uvigo.es",
+                            "Appointed by the IAU NCA/NM until August 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:David Galadí-Enríquez",
+                            "Affiliation:Calar Alto Observatory",
+                            "E-mail:dgaladi [at] caha.es",
+                            "Appointed by the IAU NCA/NM until August 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Amelia Ortiz-Gil",
+                            "Affiliation: University of Valencia",
+                            "E-mail: amelia.ortiz [at] uv.es",
+                            "Previous NOC appointed by the IAU until Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Sweden",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Sweden",
+                "images": [
+                    "/images/nocs/Sweden/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Robert Cumming",
+                            "Affiliation: Onsala Space Observatory, Chalmers University of Technology",
+                            "E-mail: robert.cumming [at] chalmers.se",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name:Katja Lindblom",
+                            "Affiliation:Slottsskogsobservatoriet, Göteborg",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Marianne Eik, Curiosum, Umeå",
+                            "Alex Pietrow, Stockholm University, Stockholm",
+                            "Emily Freeland, Stockholm University, Stockholm",
+                            "Anna Árnadóttir, Lund University, Lund"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ukraine",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Ukraine",
+                "images": [
+                    "/images/nocs/Ukraine/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: Prof. Ivan L.Andronov",
+                            "Affiliation: Odessa National Maritime University",
+                            "E-mail:tt_ari@ukr.net",
+                            "Office phone number: -",
+                            "Contact address: -",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "United Kingdom",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/UK",
+                "images": [
+                    "/images/nocs/United Kingdom/image_1.jpg",
+                    "/images/nocs/United Kingdom/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Dr Jenny Shipway",
+                            "Affiliation:Science Communication Consultant",
+                            "E-mail:jenny [at] jennyshipway.com",
+                            "Appointed by the IAU NCA/NM until Aug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: James Fawcett",
+                            "Affiliation: Planetarium Assistant Manager, Dynamic Earth",
+                            "E-mail:james.fawcett [at] dynamicearth.org.uk"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Gemma Kerr",
+                            "Affiliation: We The Curious",
+                            "E-mail: gemma.kerr [at] wethecurious.org"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Vatican City",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/europe-vatican",
+                "images": [
+                    "/images/nocs/Vatican City/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Jean-Baptiste KIKWAYA ELUO",
+                            "Affiliation:Vatican Observatory",
+                            "E-mail:jbkikwaya [at] gmail.com",
+                            "Appointed by the IAUNCA/NMuntil Aug 27, 2024"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "Oceania",
+        "countries": [
+            {
+                "name": "Australia",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/Australia",
+                "images": [
+                    "/images/nocs/Australia/image_1.jpg",
+                    "/images/nocs/Australia/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Brad Tucker",
+                            "Affiliation:Mt Stromlo Observatory, the Australian National University",
+                            "E-mail:brad [at] mso.anu.edu.au",
+                            "Appointed by the IAU NM/NCAuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Pete Wheeler",
+                            "Affiliation: ICRAR",
+                            "E-mail: pete.wheeler [at] icrar.org",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "New Zealand",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/NewZealand",
+                "images": [
+                    "/images/nocs/New Zealand/image_1.jpg",
+                    "/images/nocs/New Zealand/image_2.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name: John Drummond",
+                            "Affiliation: Royal Astronomical Society of New Zealand (RASNZ)",
+                            "E-mail: kiwiastronomer[at]gmail.com",
+                            "Appointed by the IAU NCA/NMuntilAug 27, 2024"
+                        ]
+                    },
+                    {
+                        "ul": [
+                            "Name: Nicholas Rattenbury",
+                            "Affiliation: The University of Auckland",
+                            "E-mail: n.rattenbury[at]auckland.ac.nz",
+                            "Appointed by the IAU for the period of Sep 1, 2018 to Aug 27, 2021"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Samoa",
+                "url": "https://sites.google.com/oao.iau.org/iauoaonews/national-pages/oceania-samoa",
+                "images": [
+                    "/images/nocs/Samoa/image_1.jpg"
+                ],
+                "info": [
+                    {
+                        "ul": [
+                            "Name:Steven Percival",
+                            "Affiliation:Tiapapata Art Centre",
+                            "E-mail:steven.percival[at] gmail.com",
+                            "Appointed by theIAU OAOuntil Aug 27, 2024"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

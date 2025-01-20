@@ -1,17 +1,39 @@
+import { useEffect, useState } from "react";
 import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
 
 import Button from "@/components/Button";
-
 import Parallax from "@/components/Parallax";
 import ParticleMap from "@/components/ParticleMap";
 import WorldRegions from "@/components/WorldRegions";
+
+import type { Region } from "@/types";
 
 // Cargar el componente solo en el cliente
 
 export default function ProfessionalDevelopment() {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+  const [regions, setRegions] = useState<Region[]>([]);
+
+  useEffect(() => {
+    const fetchRegions = async () => {
+      try {
+        const response = await fetch("/api/regions");
+        if (response.ok) {
+          const data = await response.json();
+          setRegions(data);
+        } else {
+          console.error("Failed to fetch regions");
+        }
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchRegions();
+  }, []);
 
   return (
     <div role="region" aria-labelledby="professional-development-title">
@@ -49,7 +71,7 @@ export default function ProfessionalDevelopment() {
           </p>
         </div>
 
-        <WorldRegions />
+        {regions.length > 0 && <WorldRegions regions={regions} />}
 
         <div
           className="w-full md:w-1/2 items-center rounded-lg bg-teal-700 aspect-auto p-8"
@@ -57,7 +79,7 @@ export default function ProfessionalDevelopment() {
           aria-labelledby="open-call-title"
         >
           <h3 id="open-call-title" className="text-white text-h3 font-bold">
-            pen Call
+            Open Call
           </h3>
           <p className="py-6 text-white">
             Aligned with the IAU Strategic Plan 2020-2030, and specifically with
