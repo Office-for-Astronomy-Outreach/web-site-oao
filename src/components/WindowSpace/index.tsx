@@ -12,16 +12,16 @@ const WindowSpace: React.FC<WindowSpaceProps> = ({ items }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
       {items.map((item, index) => (
-        <GridButton grildItem={ {
-          title: item.title,
-          description: item.description,
-          url: item.url,
-          target: item.target,
-          ariaLabel:`Navigate to ${item.title}`
-        }}
-        key={index}          
-            
-          >
+        <GridButton
+          grildItem={{
+            title: item.title,
+            description: item.description,
+            url: item.url,
+            target: item.target,
+            ariaLabel: `Navigate to ${item.title}`,
+          }}
+          key={index}
+        >
           {index === 0 && (
             <div className="absolute aspect-square sm:w-[80%] sm:h-[80%] w-[250px] h-[250px] md:-bottom-[100px] -bottom-[170px]">
               <div className="sun">
@@ -54,7 +54,6 @@ const WindowSpace: React.FC<WindowSpaceProps> = ({ items }) => {
             </div>
           )}
         </GridButton>
-        
       ))}
     </div>
   );

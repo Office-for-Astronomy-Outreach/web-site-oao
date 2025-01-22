@@ -139,7 +139,7 @@ const ParticleMap: React.FC = () => {
 
       animate();
     };
-  }, []);
+  }, [path]);
 
   return <canvas ref={canvasRef} className="w-full" />;
 };

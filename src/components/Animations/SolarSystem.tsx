@@ -13,7 +13,6 @@ const OrbitSystem = () => {
   ];
 
   return (
-
     <div className="relative flex items-center justify-center">
       {orbits.map((orbit, index) => (
         <div

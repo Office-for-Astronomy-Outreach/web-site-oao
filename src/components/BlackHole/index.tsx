@@ -2,9 +2,9 @@
  * Inspired by Michal's work (https://codepen.io/Mertl/pen/eoRmNY).
  *
  * License:
- * This code is provided under a permissive license. Permission is granted, free of charge, 
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this 
- * software, provided that proper credit is given to the original author. No warranties are 
+ * This code is provided under a permissive license. Permission is granted, free of charge,
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this
+ * software, provided that proper credit is given to the original author. No warranties are
  * provided, and use of this software is at your own risk.
  *
  * Modifications:
@@ -91,10 +91,13 @@ const BlackHole = () => {
         this.q = 1 / 3 + Math.random() * (1 / 2 - 1 / 3); // Ellipticity
         this.h2p = 10; // Perspective offset
         this.x =
-          this.ox + (this.br + this.re + this.size + this.h2p) * Math.cos(this.a);
+          this.ox +
+          (this.br + this.re + this.size + this.h2p) * Math.cos(this.a);
         this.y =
           this.oy +
-          (this.br + this.re + this.size + this.h2p) * this.q * Math.sin(this.a);
+          (this.br + this.re + this.size + this.h2p) *
+            this.q *
+            Math.sin(this.a);
         this.tail = [{ x: this.x, y: this.y, a: this.a }];
         this.tl = Math.floor(Math.random() * 5 + 5); // Random tail length
       }
@@ -104,10 +107,13 @@ const BlackHole = () => {
         this.ox = x;
         this.oy = y;
         this.x =
-          this.ox + (this.br + this.re + this.size + this.h2p) * Math.cos(this.a);
+          this.ox +
+          (this.br + this.re + this.size + this.h2p) * Math.cos(this.a);
         this.y =
           this.oy +
-          (this.br + this.re + this.size + this.h2p) * this.q * Math.sin(this.a);
+          (this.br + this.re + this.size + this.h2p) *
+            this.q *
+            Math.sin(this.a);
         this.tail.push({ x: this.x, y: this.y, a: this.a });
 
         if (this.tail.length > this.tl) {
@@ -122,7 +128,11 @@ const BlackHole = () => {
       show() {
         for (let i = 0; i < this.tail.length; i++) {
           const tailPart = this.tail[i];
-          if (Math.floor((tailPart.a + Math.random() * 0.2 - 0.1) / Math.PI) % 2 !== 0) {
+          if (
+            Math.floor((tailPart.a + Math.random() * 0.2 - 0.1) / Math.PI) %
+              2 !==
+            0
+          ) {
             b?.beginPath();
             b?.arc(tailPart.x, tailPart.y, this.size, 0, 2 * Math.PI);
             b.fillStyle = this.col;
@@ -195,11 +205,22 @@ const BlackHole = () => {
 
   return (
     <div className="black-hole-container absolute" ref={containerRef}>
-        <div className="relative w-full h-full">
-        
-        <canvas className="absolute z-[3] h-full w-full" id="back" ref={backRef}></canvas>
-        <canvas className="absolute z-[3] h-full w-full" id="middle" ref={middleRef}></canvas>
-        <canvas className="absolute z-[3] h-full w-full" id="front" ref={frontRef}></canvas>
+      <div className="relative w-full h-full">
+        <canvas
+          className="absolute z-[3] h-full w-full"
+          id="back"
+          ref={backRef}
+        ></canvas>
+        <canvas
+          className="absolute z-[3] h-full w-full"
+          id="middle"
+          ref={middleRef}
+        ></canvas>
+        <canvas
+          className="absolute z-[3] h-full w-full"
+          id="front"
+          ref={frontRef}
+        ></canvas>
         <div className="accretion-disk sm:w-[80%] sm:h-[34%] lg:w-[100%] lg:h-[45%] xl:w-[80%] xl:h-[35%] h-[150px] w-[280px]"></div>
         <style jsx>{`
           canvas {

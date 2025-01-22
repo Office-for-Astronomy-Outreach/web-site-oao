@@ -65,38 +65,39 @@ export default function OneHundredHoursOfAstronomy() {
         title="100 hours for astronomy"
         breadcrumbs={breadcrumbs}
       />
-    
-
 
       <div className="container mx-auto px-4 py-8 flex flex-col gap-16">
-      <ContentCard
+        <ContentCard
           title="100 Hours of Astronomy"
-          text={<><p className="mb-4">
-            Each year, the Office for Astronomy Outreach (OAO) organises 100
-            Hours of Astronomy, a global event that invites people of all
-            ages and cultures to connect with the night sky and the science
-            behind the stars. This event aims to spark scientific curiosity
-            and bring astronomy to communities worldwide, from bustling
-            cities to the most remote areas. Through public observation
-            events, workshops, talks, and educational activities, 100 Hours
-            of Astronomy facilitates shared experiences that inspire
-            exploration of the Universe and encourage reflection on our
-            place within it.
-          </p>
+          text={
+            <>
+              <p className="mb-4">
+                Each year, the Office for Astronomy Outreach (OAO) organises 100
+                Hours of Astronomy, a global event that invites people of all
+                ages and cultures to connect with the night sky and the science
+                behind the stars. This event aims to spark scientific curiosity
+                and bring astronomy to communities worldwide, from bustling
+                cities to the most remote areas. Through public observation
+                events, workshops, talks, and educational activities, 100 Hours
+                of Astronomy facilitates shared experiences that inspire
+                exploration of the Universe and encourage reflection on our
+                place within it.
+              </p>
 
-          <p>
-            
-            Since its inception during the International Year of Astronomy
-            2009, 100 Hours of Astronomy has shown that astronomy connects us to
-            the stars and one another, becoming a universal celebration of
-            knowledge and cooperation. By reminding us that we all look up
-            at the same sky, we aim to foster community bonds, promote
-            interest in scientific education, and cultivate a sense of
-            global belonging. Anyone interested in engaging the public with
-            astronomy can propose an event and join this international
-            network, making 100 Hours of Astronomy a truly inclusive and
-            collaborative celebration.
-          </p></>}
+              <p>
+                Since its inception during the International Year of Astronomy
+                2009, 100 Hours of Astronomy has shown that astronomy connects
+                us to the stars and one another, becoming a universal
+                celebration of knowledge and cooperation. By reminding us that
+                we all look up at the same sky, we aim to foster community
+                bonds, promote interest in scientific education, and cultivate a
+                sense of global belonging. Anyone interested in engaging the
+                public with astronomy can propose an event and join this
+                international network, making 100 Hours of Astronomy a truly
+                inclusive and collaborative celebration.
+              </p>
+            </>
+          }
           type="secondary"
           twoColums
           wfull
@@ -139,14 +140,15 @@ export default function OneHundredHoursOfAstronomy() {
           </div>
 
           <div className="flex flex-col md:w-2/3 gap-16 w-full">
-            
-
             {/* Second Section: 100 Years of the Planetarium */}
             <section
               aria-labelledby="planetarium-title"
               className="flex flex-col gap-6"
             >
-              <h2 id="planetarium-title" className="text-h2 font-bold scroll-mt-24">
+              <h2
+                id="planetarium-title"
+                className="text-h2 font-bold scroll-mt-24"
+              >
                 100 Years of the Planetarium
               </h2>
               <p>
@@ -207,7 +209,10 @@ export default function OneHundredHoursOfAstronomy() {
               aria-labelledby="involved-title"
               className="flex flex-col gap-6"
             >
-              <h2 id="involved-title" className="text-h2 font-bold scroll-mt-24">
+              <h2
+                id="involved-title"
+                className="text-h2 font-bold scroll-mt-24"
+              >
                 Getting Involved Is Easy!
               </h2>
 
@@ -293,7 +298,10 @@ export default function OneHundredHoursOfAstronomy() {
               aria-labelledby="calendar-title"
               className="flex flex-col gap-6"
             >
-              <h2 id="calendar-title" className="text-h2 font-bold scroll-mt-24">
+              <h2
+                id="calendar-title"
+                className="text-h2 font-bold scroll-mt-24"
+              >
                 Calendar of Astronomy Events
               </h2>
 
@@ -374,7 +382,10 @@ export default function OneHundredHoursOfAstronomy() {
               aria-labelledby="more-info-title"
               className="flex flex-col gap-6"
             >
-              <h2 id="more-info-title" className="text-h2 font-bold scroll-mt-24">
+              <h2
+                id="more-info-title"
+                className="text-h2 font-bold scroll-mt-24"
+              >
                 More Information
               </h2>
 

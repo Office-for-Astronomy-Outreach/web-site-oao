@@ -3,28 +3,21 @@ import React from "react";
 import classNames from "classnames";
 
 export interface GridItem {
-    title: string;
-    description?: string;
-    bgColor?: string;
-    url?: string;
-    target?: "_blank" | "_self" | "_top" | "_parent";
-    ariaLabel?: string;
+  title: string;
+  description?: string;
+  bgColor?: string;
+  url?: string;
+  target?: "_blank" | "_self" | "_top" | "_parent";
+  ariaLabel?: string;
 }
 
 export interface GridButtonProps {
-  grildItem: GridItem
+  grildItem: GridItem;
   children?: React.ReactNode;
-  
 }
 
 const GridButton: React.FC<GridButtonProps> = ({
-    grildItem: {
-        title,
-        description,
-        url = "#",
-        target = "_self",
-        ariaLabel,
-    },
+  grildItem: { title, description, url = "#", target = "_self", ariaLabel },
   children,
 }) => {
   const buttonClass = classNames(
@@ -41,18 +34,19 @@ const GridButton: React.FC<GridButtonProps> = ({
     "overflow-hidden"
   );
 
-  const linkClass = classNames(
-    "z-[5] w-full h-full"
-  )
+  const linkClass = classNames("z-[5] w-full h-full");
 
-  const titleClass = classNames(
-    "text-center uppercase text-h5 font-medium"
-  )
+  const titleClass = classNames("text-center uppercase text-h5 font-medium");
 
   return (
     <div className={buttonClass}>
       {children}
-      <Link href={url} target={target} className={linkClass} aria-label={ariaLabel}>
+      <Link
+        href={url}
+        target={target}
+        className={linkClass}
+        aria-label={ariaLabel}
+      >
         <p className={titleClass}>{title}</p>
         {description && <span className="pt-2 text-xs">{description}</span>}
       </Link>

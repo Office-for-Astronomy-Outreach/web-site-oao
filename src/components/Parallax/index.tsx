@@ -28,7 +28,7 @@ const Parallax: React.FC<ParallaxProps> = ({
   });
 
   const captionClass = clsx(
-    "absolute z-10 bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+    "absolute z-10 bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
   );
 
   return (
@@ -36,7 +36,7 @@ const Parallax: React.FC<ParallaxProps> = ({
       <div
         className={clsx(
           "group relative shadow-md rounded-lg bg-cover bg-center bg-fixed flex flex-col justify-center items-center text-center px-4",
-          sizeClasses,
+          sizeClasses
         )}
         style={{
           backgroundImage: `url(${backgroundImage.imgUrl})`,
