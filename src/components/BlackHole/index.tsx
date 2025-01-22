@@ -135,12 +135,12 @@ const BlackHole = () => {
           ) {
             b?.beginPath();
             b?.arc(tailPart.x, tailPart.y, this.size, 0, 2 * Math.PI);
-            b.fillStyle = this.col;
+            b!.fillStyle = this.col;
             b?.fill();
           } else {
             f?.beginPath();
             f?.arc(tailPart.x, tailPart.y, this.size, 0, 2 * Math.PI);
-            f.fillStyle = this.col;
+            f!.fillStyle = this.col;
             f?.fill();
           }
         }
