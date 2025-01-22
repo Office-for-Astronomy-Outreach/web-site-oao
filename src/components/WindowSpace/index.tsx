@@ -3,6 +3,7 @@ import GridButton, { GridItem } from "@/components/GridButton";
 import SolarSystem from "@/components/Animations/SolarSystem";
 import StarCanvas from "@/components/StarCanvas";
 import BlackHole from "@/components/BlackHole";
+import { projectPath } from "@/utils/path";
 
 export interface WindowSpaceProps {
   items: GridItem[];
@@ -41,7 +42,9 @@ const WindowSpace: React.FC<WindowSpaceProps> = ({ items }) => {
               <div className="comets comets-center comets-long"></div>
               <div
                 className="h-[80%] w-full absolute bg-contain bg-no-repeat bottom-0"
-                style={{ backgroundImage: `url(/images/orion.png)` }}
+                style={{
+                  backgroundImage: `url(${projectPath}/images/orion.png)`,
+                }}
               ></div>
             </>
           )}

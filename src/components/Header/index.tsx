@@ -5,6 +5,7 @@ import Image from "next/image";
 import { menuList } from "./menuList";
 import MobileNavbar from "./MobileNavbar";
 import Navbar from "./Navbar";
+import Link from "next/link";
 
 /**
  * Header component: Displays the main navigation bar with desktop and mobile views.
@@ -44,13 +45,15 @@ const Header: React.FC = () => {
           <div className="flex justify-between items-center uppercase sm:mx-0 mx-3 py-2 px-4">
             {/* Logo */}
             <div className="text-lg font-bold">
-              <Image
-                src={`${path}/images/logo.png`}
-                alt="Office for Astronomy Outreach"
-                width={65}
-                height={65}
-                className="aspect-square"
-              />
+              <Link href="/">
+                <Image
+                  src={`${path}/images/logo.png`}
+                  alt="Office for Astronomy Outreach"
+                  width={65}
+                  height={65}
+                  className="aspect-square"
+                />
+              </Link>
             </div>
 
             {/* Hamburger Menu (Visible only on mobile) */}
