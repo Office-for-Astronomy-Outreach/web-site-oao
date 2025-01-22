@@ -1,18 +1,19 @@
-from rembg import remove
-from PIL import Image
-import io
+import os
+import shutil
 
-# Cargar la imagen
-input_path = "public/images/nocs/Afghanistan/oao-afgnanistan.jpg"  # Ruta de tu imagen original
-output_path = "public/images/nocs/Afghanistan/oao-afghanistan.png"  # Ruta donde guardarás la imagen sin fondo
+def rename_and_save_image(input_path, new_name_with_extension):
+    # Obtener el directorio donde está la imagen original
+    directory = os.path.dirname(input_path)
+    
+    # Crear la ruta de salida con el nuevo nombre
+    output_path = os.path.join(directory, new_name_with_extension)
+    
+    # Renombrar el archivo manteniéndolo en el mismo directorio
+    shutil.copy(input_path, output_path)
+    print(f"Imagen renombrada y guardada en: {output_path}")
 
-# Abrir la imagen y eliminar el fondo
-with open(input_path, "rb") as input_file:
-    input_data = input_file.read()
-    output_data = remove(input_data)
+# Ejemplo de uso
+input_path = "public/images/nocs/Australia/image_02.jpg"
+new_name_with_extension = "oao-australia.png"
 
-# Guardar la imagen resultante
-output_image = Image.open(io.BytesIO(output_data))
-output_image.save(output_path)
-
-print(f"Imagen sin fondo guardada en: {output_path}")
+rename_and_save_image(input_path, new_name_with_extension)

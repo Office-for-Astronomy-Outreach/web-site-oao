@@ -2,6 +2,7 @@ export type TypeMember = {
   coordinator: "coordinator";
   observer: "observer";
   committee: "committee";
+  vice: "vice";
 };
 
 export type Region = {
@@ -36,11 +37,9 @@ export type Member = {
   email?: string;
   description?: string;
   active: boolean;
-  typeMember: TypeMember;
-  appointedPeriod: {
-    start: string;
-    end?: string;
-  };
+  role: TypeMember;
+  appointed_end: "YYYY-MM-DD";
+  appointed_start: "YYYY-MM-DD";
 };
 
 export type RegionData = {

@@ -73,7 +73,7 @@ const RegionPage = () => {
                       <td className="px-4 py-2">
                         <Image
                           src={
-                            country.urlImg ||
+                            country.urlImg ??
                             `/images/nocs/${country.name}/oao-${country.slug}.png`
                           }
                           alt="logo"

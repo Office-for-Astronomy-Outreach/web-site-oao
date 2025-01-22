@@ -8,15 +8,15 @@
         "title": "Build community thorough astronomy Outreach",
         "description": "The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective.",
         "button": "Join",
-        "caption-img": "Nine kids standing in a classroom, each with the name of a planet on their chests, written in Turkish. Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz",
-        "alt-img": "100 Hours of Astronomy Turkey Saadet Manaz"
+        "caption-img": "Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz",
+        "alt-img": "Nine kids standing in a classroom, each with the name of a planet on their chests, written in Turkish. Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz"
     },
     "professional-development": {
         "title": "Professional development",
         "description": "We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy.",
         "button": "Join our team",
-        "caption-img": "Two women standing on a podium, listening to a person in the audience holding the microphone. One of the woman is holding a cane for the blind in her hand. Copyright: IAU100 Flagship Event: Brussels, April 2019.",
-        "alt-img": "AU100 Flagship Event Brussels April 2019"
+        "caption-img": "Copyright: IAU100 Flagship Event: Brussels, April 2019.",
+        "alt-img": "Two women standing on a podium, listening to a person in the audience holding the microphone. One of the woman is holding a cane for the blind in her hand. Copyright: IAU100 Flagship Event: Brussels, April 2019."
     },
     "community": {
         "title": "A community for the stars",
@@ -44,7 +44,7 @@
     "new-letter": {
         "title": "Join Our New Letter",
         "subtitle": "The secrets of the cosmos await you",
-        "caption-img": "A section of the smaller of Comet 67P/Churyumov-Gerasimenko's two lobes, captured by Rosetta's narrow-angle camera from a distance of about 8 km to the surface on 14 October 2014. This image was part of the European Space Agency's Rosetta mission, the first spacecraft to orbit and study a comet up close. Comet 67P has intrigued scientists due to its complex shape, activity, and the possibility that comets like it could have delivered water and organic molecules, essential for life, to early Earth. Copyright: ESA/Rosetta/MPS for OSIRIS Team",
+        "caption-img": "Copyright: ESA/Rosetta/MPS for OSIRIS Team",
         "subscribe": "Subscribe"
     }
 }

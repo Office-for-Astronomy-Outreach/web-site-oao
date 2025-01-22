@@ -185,8 +185,8 @@ h5{
 
 .comets {
   position: absolute;
-  top: 0; /* Asegúrate de que los cometas inicien dentro del contenedor */
-  left: 50%; /* Controla la posición horizontal */
+  top: 0;
+  left: 50%;
   width: 5px;
   height: 212px;
   background-color: #ffffff;
@@ -213,4 +213,115 @@ h5{
 
 .comets-long {
   animation: cometsLong 10s infinite;
+}
+
+
+.halfCircle {
+  bottom: 50%;
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(to bottom, #99b9eb, #f8fafc);
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  transform: translateY(50%);
+}
+
+.halfCircleBlue {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top: solid #969696 1px;
+  position: absolute;
+  bottom: -50%;
+}
+
+.cardBlue {
+  background: linear-gradient(75deg, #0e0e0e 54%, #0e0e0ee6 100%);
+  color: white;
+}
+
+
+@keyframes comets2 {
+  0% {
+    width: 0;
+    opacity: 0;
+    transform: rotate(90deg) translate3d(-10%, -100%, 0); /* Comienzan fuera */
+  }
+  4% {
+    width: 2px;
+    opacity: 1;
+  }
+  8% {
+    width: 0;
+    opacity: 0;
+    transform: rotate(90deg) translate3d(10%, 100%, 0); /* Terminan fuera */
+  }
+}
+
+@keyframes cometsLong2 {
+  0% {
+    width: 0;
+    opacity: 0;
+    transform: rotate(90deg) translate3d(0%, 0%, 0); /* Comienzan fuera */
+  }
+  5% {
+    width: 2px;
+    opacity: 1;
+  }
+  10% {
+    width: 0;
+    opacity: 0;
+    transform: rotate(90deg) translate3d(10%, 200%, 0); /* Terminan fuera */
+  }
+}
+
+.sun {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #facc14 0%, /* Centro brillante */ #fbbf24 40%, /* Amarillo más oscuro */ #f59e0b 70%, /* Tonos más oscuros cerca del borde */ #d97706 100% /* Borde quemado */);
+  box-shadow: 0 0 40px #facc14, 0 0 80px #faeebc;
+}
+
+.shadow-sun {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #212224;
+  top:  -5px;
+  left: 0px;
+  animation: move 20s infinite 1.5s;
+}
+
+@keyframes move {
+  0%{
+      transform: translateX(250px);
+      background-color: #212224;
+  }
+
+  50%{
+      transform: translateX(-10px);
+      background-color: #212224;
+  }
+
+  100%{
+      transform: translateX(-220px);
+      background-color: #212224;
+  }
+}
+
+.black-hole-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.accretion-disk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: conic-gradient(from 248deg, transparent, #ff66008c, #4412005e, #ff9900db, #ff6600ab, transparent 57%);
+  border-radius: 50%;
 }

@@ -10,6 +10,7 @@ import Button from "@/components/Button";
 import SolarSystem from "@/components/Animations/SolarSystem";
 import InfoGrid from "@/components/InfoGrid";
 import GlobalCommunityGrid from "@/components/GlobalCommunity";
+import WindowSpace from "@/components/WindowSpace";
 
 export default function Home() {
   // i18n translation function for multi-language support
@@ -20,8 +21,8 @@ export default function Home() {
   const slides = [
     {
       image: `${path}/images/parallax-bg.jpg`,
-      title: "Welcome to Office for Astronomy Outreach",
-      subtitle: "Discover amazing content and more",
+      title: "Welcome to the Office for Astronomy Outreach",
+      subtitle: "Astronomy for everyone",
     },
   ];
 
@@ -29,25 +30,25 @@ export default function Home() {
     {
       title: t("education.title"),
       description: t("education.description"),
-      bgColor: "bg-blue-200",
+      bgColor: "blue-200",
       url: "/education",
     },
     {
       title: t("rules-to-name-a-start.title"),
       description: t("rules-to-name-a-start.description"),
-      bgColor: "bg-blue-300",
+      bgColor: "blue-300",
       url: "/rules-to-name-a-start",
     },
     {
       title: t("ask-a-question.title"),
       description: t("ask-a-question.description"),
-      bgColor: "bg-blue-400",
+      bgColor: "blue-400",
       url: "/ask-a-question",
     },
     {
       title: t("pluto-qa.title"),
       description: t("pluto-qa.description"),
-      bgColor: "bg-blue-500",
+      bgColor: "blue-500",
       url: "/pluto-qa",
     },
   ];
@@ -105,7 +106,7 @@ export default function Home() {
     <div>
       <Carousel slides={slides} autoPlay={true} interval={7000} />
 
-      <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16 my-8">
+      <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16 md:my-16 my-8">
         <ContentCard
           title={t("accessible-astronomy.title")}
           text={t("accessible-astronomy.description")}
@@ -155,10 +156,10 @@ export default function Home() {
               text={t("community.description")}
               type="secondary"
             />
-            <SolarSystem />
+            
           </div>
           <div className="w-full pt-4">
-            <InfoGrid items={info} />
+            <WindowSpace items={info} />
           </div>
         </div>
 
