@@ -3,7 +3,7 @@ import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
 
 import Button from "@/components/Button";
-import StarCanvas from "@/components/StarCanvas";
+import StarCanvas from "@/components/Animations/StarCanvas";
 
 const NotFound = () => {
   return (
@@ -74,7 +74,7 @@ const NotFound = () => {
       </div>
 
       {/* Título de la página */}
-      <div className="h-[100vh] w-full absolute z-10 flex flex-col justify-end gap-6 p-16 text-white">
+      <div className="h-[100vh] w-full absolute z-10 flex flex-col justify-end gap-8 p-16 text-white">
         <h1 className="md:text-9xl text-5xl font-bold">404</h1>
 
         <div>

@@ -163,7 +163,7 @@ export default function Outreach() {
           </div>
         </section>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           <h2 className="text-h2 font-bold text-body">Working Groups</h2>
           <p className="text-gray-800 w-full mb-4">
             We introduce the new working groups, designed to foster dialogue and
@@ -172,7 +172,7 @@ export default function Outreach() {
             conversations with specialists in the field to help your community
             grow.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {group.map((grup, index) => (
               <CardTeamMember
                 key={index}
@@ -187,7 +187,7 @@ export default function Outreach() {
 
         {/* Collaboration Section */}
         <section
-          className="flex flex-col gap-6"
+          className="flex flex-col gap-8"
           aria-labelledby="resources-title"
         >
           <h2 id="resources-title" className="text-h2 font-bold text-body">

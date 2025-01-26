@@ -20,7 +20,12 @@
 /* Variables para tema oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #212224; /* Fondo oscuro */ /* Texto de botones secundarios */
+    --background: linear-gradient(
+      90deg,
+      #212224 0%,
+      #222326ed 51%,
+      #212224 100%
+    ); /* Fondo oscuro */ /* Texto de botones secundarios */
   }
 }
 
@@ -105,19 +110,6 @@ h5{
     transform: rotate(360deg);
   }
 }
-
-.orbit-slow {
-  animation: orbit 12s linear infinite;
-}
-
-.orbit-medium {
-  animation: orbit 8s linear infinite;
-}
-
-.orbit-fast {
-  animation: orbit 4s linear infinite;
-}
-
 /* Animación para que las órbitas aparezcan */
 @keyframes pulseOrbit {
   0% {
@@ -319,7 +311,7 @@ h5{
 
 .accretion-disk {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: conic-gradient(from 248deg, transparent, #ff66008c, #4412005e, #ff9900db, #ff6600ab, transparent 57%);

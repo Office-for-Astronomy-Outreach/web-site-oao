@@ -103,7 +103,7 @@ export default function OneHundredHoursOfAstronomy() {
           wfull
         />
         <div className="flex md:flex-row flex-col gap-16">
-          <div className="flex md:w-1/3 gap-6 w-full">
+          <div className="flex md:w-1/3 gap-8 w-full">
             <div className="sticky top-6 w-full">
               <details className="group p-6 shadow-md rounded-lg w-full" open>
                 <summary className="font-semibold cursor-pointer list-none flex justify-between items-center">
@@ -143,7 +143,7 @@ export default function OneHundredHoursOfAstronomy() {
             {/* Second Section: 100 Years of the Planetarium */}
             <section
               aria-labelledby="planetarium-title"
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
             >
               <h2
                 id="planetarium-title"
@@ -194,7 +194,7 @@ export default function OneHundredHoursOfAstronomy() {
             {/* Third Section: Event Ideas */}
             <section
               aria-labelledby="events-title"
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
             >
               <h2 id="events-title" className="text-h2 font-bold scroll-mt-24">
                 This Year&apos;s Events and Activity Ideas
@@ -207,7 +207,7 @@ export default function OneHundredHoursOfAstronomy() {
             {/* Getting Involved Section */}
             <section
               aria-labelledby="involved-title"
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
             >
               <h2
                 id="involved-title"
@@ -296,7 +296,7 @@ export default function OneHundredHoursOfAstronomy() {
             {/* Calendar Section */}
             <section
               aria-labelledby="calendar-title"
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
             >
               <h2
                 id="calendar-title"
@@ -320,7 +320,7 @@ export default function OneHundredHoursOfAstronomy() {
             {/* Share Section */}
             <section
               aria-labelledby="share-title"
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
             >
               <h2 id="share-title" className="text-h2 font-bold scroll-mt-24">
                 Let Us Share Your Work!
@@ -355,7 +355,7 @@ export default function OneHundredHoursOfAstronomy() {
             {/* Toolkit Section */}
             <section
               aria-labelledby="toolkit-title"
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
             >
               <h2 id="toolkit-title" className="text-h2 font-bold scroll-mt-24">
                 OAO Outreach Activity Toolkit
@@ -371,7 +371,7 @@ export default function OneHundredHoursOfAstronomy() {
                 We invite you to experiment with the featured activities and
                 share your ideas by contributing to the Toolkit!
               </p>
-              <div className="flex gap-6 sm:flex-row flex-col">
+              <div className="flex gap-8 sm:flex-row flex-col">
                 <Button label={"Go to Toolkit"} color="primary" />
                 <Button label={"Dowdload Toolkit"} color="dark" />
               </div>
@@ -380,7 +380,7 @@ export default function OneHundredHoursOfAstronomy() {
             {/* More Information Section */}
             <section
               aria-labelledby="more-info-title"
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
             >
               <h2
                 id="more-info-title"

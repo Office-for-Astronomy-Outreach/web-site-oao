@@ -29,14 +29,16 @@ const GridButton: React.FC<GridButtonProps> = ({
     "content-card-img",
     "relative",
     "text-center",
-    "bg-dark-main",
+    "bg-dark-dark",
     "text-white",
     "overflow-hidden"
   );
 
   const linkClass = classNames("z-[5] w-full h-full");
 
-  const titleClass = classNames("text-center uppercase text-h5 font-medium");
+  const titleClass = classNames(
+    "text-center uppercase text-h5 font-medium mb-6"
+  );
 
   return (
     <div className={buttonClass}>
@@ -48,7 +50,7 @@ const GridButton: React.FC<GridButtonProps> = ({
         aria-label={ariaLabel}
       >
         <p className={titleClass}>{title}</p>
-        {description && <span className="pt-2 text-xs">{description}</span>}
+        {description && <span className="text-span">{description}</span>}
       </Link>
     </div>
   );

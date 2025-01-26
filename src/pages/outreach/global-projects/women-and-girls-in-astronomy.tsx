@@ -74,7 +74,7 @@ export default function WomenAndGirlsInAstronomy() {
           wfull
         />
         <div className="flex flex-col gap-16">
-          <div className="flex md:w-1/3 gap-6 w-full">
+          <div className="flex md:w-1/3 gap-8 w-full">
             <div className="sticky top-6 w-full">
               <details className="group p-6 shadow-md rounded-lg w-full" open>
                 <summary className="font-semibold cursor-pointer list-none flex justify-between items-center">
@@ -143,7 +143,7 @@ export default function WomenAndGirlsInAstronomy() {
             </p>
 
             <article
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
               id="annie-maunder"
               aria-labelledby="annie-maunder-heading"
             >
@@ -207,7 +207,7 @@ export default function WomenAndGirlsInAstronomy() {
             </article>
 
             <article
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
               id="maria-mitchell"
               aria-labelledby="maria-mitchell-heading"
             >
@@ -251,7 +251,7 @@ export default function WomenAndGirlsInAstronomy() {
             </article>
 
             <article
-              className="flex flex-col gap-6"
+              className="flex flex-col gap-8"
               id="cecilia-payne"
               aria-labelledby="cecilia-heading"
             >

@@ -45,7 +45,7 @@ export default function ProfessionalDevelopment() {
       </section>
 
       <div className="container mx-auto px-4 flex flex-col gap-16">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           <div
             className="md:p-8 p-4 bg-yellow-400 rounded-lg"
             aria-labelledby="resources-title"
@@ -58,7 +58,7 @@ export default function ProfessionalDevelopment() {
               <br /> Coordinators Network
             </h1>
           </div>
-          <p className="text-h5 md:columns-2 gap-6" role="contentinfo">
+          <p className="text-h5 md:columns-2 gap-8" role="contentinfo">
             The IAU National Outreach Coordinators (NOCs) are national-level
             representatives for the IAU Office for Astronomy Outreach (OAO).
             Members of the network act as a point-of-contact for astronomy

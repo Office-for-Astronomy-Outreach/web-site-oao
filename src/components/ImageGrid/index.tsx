@@ -53,7 +53,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ items, title, description }) => {
 
   return (
     <section
-      className="flex flex-wrap gap-6"
+      className="flex flex-wrap gap-8"
       role="region"
       aria-labelledby={`${title}-title`}
     >
@@ -96,7 +96,7 @@ const ImageGrid: React.FC<ImageGridProps> = ({ items, title, description }) => {
 
       {/* Segunda parte: Dividida en 2x2 */}
       <div className="flex flex-1 w-full">
-        <div className="grid grid-cols-2 w-full gap-6">
+        <div className="grid grid-cols-2 w-full gap-8">
           {items.slice(1, 3).map((item, index) => (
             <Link
               href={item.link}

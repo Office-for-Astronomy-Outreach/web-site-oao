@@ -1,8 +1,8 @@
 import React from "react";
 import GridButton, { GridItem } from "@/components/GridButton";
 import SolarSystem from "@/components/Animations/SolarSystem";
-import StarCanvas from "@/components/StarCanvas";
-import BlackHole from "@/components/BlackHole";
+import StarCanvas from "@/components/Animations/StarCanvas";
+import BlackHole from "@/components/Animations/BlackHole";
 import { projectPath } from "@/utils/path";
 
 export interface WindowSpaceProps {
@@ -11,7 +11,7 @@ export interface WindowSpaceProps {
 
 const WindowSpace: React.FC<WindowSpaceProps> = ({ items }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
       {items.map((item, index) => (
         <GridButton
           grildItem={{

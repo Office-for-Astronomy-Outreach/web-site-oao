@@ -7,10 +7,11 @@ import Carousel from "@/components/Carrousel";
 import ContentCard from "@/components/ContentCard";
 import Parallax from "@/components/Parallax";
 import Button from "@/components/Button";
-import SolarSystem from "@/components/Animations/SolarSystem";
-import InfoGrid from "@/components/InfoGrid";
 import GlobalCommunityGrid from "@/components/GlobalCommunity";
 import WindowSpace from "@/components/WindowSpace";
+import BackgroundImg from "@/components/BackgroundImg";
+
+import classNames from "classnames";
 
 export default function Home() {
   // i18n translation function for multi-language support
@@ -53,119 +54,108 @@ export default function Home() {
     },
   ];
 
-  const globalCommunityImages = {
-    firstGrid: [
-      {
-        src: `${path}/images/global-community/iau.jpg`,
-        url: "https://example.com/iau",
-        alt: "IAU image",
-      },
-      {
-        src: `${path}/images/global-community/womeninastronomy.jpg`,
-        url: "https://example.com/womeninastronomy",
-        alt: "Women in Astronomy image",
-      },
-      {
-        src: `${path}/images/global-community/100hours.jpeg`,
-        url: "https://example.com/100hours",
-        alt: "100 Hours of Astronomy image",
-      },
-      {
-        src: `${path}/images/global-community/meet.jpg`,
-        url: "https://example.com/meet",
-        alt: "Meet image",
-      },
-    ],
-    secondGrid: [
-      {
-        src: `${path}/images/global-community/onesky.jpg`,
-        url: "https://example.com/onesky",
-        alt: "One Sky image",
-      },
-      {
-        src: `${path}/images/global-community/dark-and-quiet-skies.jpeg`,
-        url: "https://example.com/dark-and-quiet-skies",
-        alt: "Dark and Quiet Skies image",
-      },
-    ],
-    thirdGrid: [
-      {
-        src: `${path}/images/global-community/quasi-moon.jpg`,
-        url: "https://example.com/quasi-moon",
-        alt: "Quasi Moon image",
-      },
-      {
-        src: `${path}/images/global-community/telescopecollaboration.jpg`,
-        url: "https://example.com/telescopecollaboration",
-        alt: "Telescope Collaboration image",
-      },
-    ],
-  };
+  const globalCommunity = [
+    {
+      src: `${path}/images/global-community/iau.jpg`,
+      url: "https://example.com/iau",
+      alt: "IAU image",
+    },
+
+    {
+      src: `${path}/images/global-community/womeninastronomy.jpg`,
+      url: "https://example.com/womeninastronomy",
+      alt: "Women in Astronomy image",
+    },
+
+    {
+      src: `${path}/images/global-community/100hours.jpeg`,
+      url: "https://example.com/100hours",
+      alt: "100 Hours of Astronomy image",
+    },
+
+    {
+      src: `${path}/images/global-community/meet.jpg`,
+      url: "https://example.com/meet",
+      alt: "Meet image",
+    },
+  ];
+
+  const containerClass = classNames(
+    "md:container",
+    "md:mx-auto mx-2",
+    "my-16",
+    "md:px-4",
+    "py-2",
+    "flex flex-col gap-24"
+  );
 
   return (
-    <div>
+    <>
       <Carousel slides={slides} autoPlay={true} interval={7000} />
 
-      <div className="md:container md:mx-auto mx-2 md:px-4 py-2 flex flex-col gap-16 md:my-16 my-8">
-        <ContentCard
-          title={t("accessible-astronomy.title")}
-          text={t("accessible-astronomy.description")}
-          type="secondary"
-          twoColums
-          wfull
-          link={{
-            url: "/about-us",
-            label: t("accessible-astronomy.button"),
-          }}
-        />
+      <div className={containerClass}>
+        <div className="flex flex-col gap-8">
+          <ContentCard
+            title={t("accessible-astronomy.title")}
+            text={t("accessible-astronomy.description")}
+            type="secondary"
+            twoColums
+            wfull
+            link={{
+              url: "/about-us",
+              label: t("accessible-astronomy.button"),
+            }}
+          />
 
-        <ContentCard
-          title={t("build-community.title")}
-          text={t("build-community.description")}
-          type="transparent"
-          image={{
-            imageUrl: `${path}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`,
-            caption: t("build-community.caption-img"),
-            alt: t("build-community.alt-img"),
-          }}
-          link={{
-            url: "/outreach",
-            label: "Join",
-          }}
-        />
+          <ContentCard
+            title={t("build-community.title")}
+            text={t("build-community.description")}
+            type="transparent"
+            image={{
+              imageUrl: `${path}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`,
+              caption: t("build-community.caption-img"),
+              alt: t("build-community.alt-img"),
+            }}
+            link={{
+              url: "/outreach",
+              label: "Join",
+            }}
+          />
 
-        <ContentCard
-          title={t("professional-development.title")}
-          text={t("professional-development.description")}
-          type={"primary"}
-          image={{
-            imageUrl: `${path}/images/home/AU100 Flagship Event-Brussels-April2019.png`,
-            caption: t("professional-development.caption-img"),
-            alt: t("professional-development.alt-img"),
-          }}
-          link={{
-            url: "/professional-development",
-            label: "Join our team",
-          }}
-        />
-
-        <div>
-          <div className="relative">
-            <ContentCard
-              title={t("community.title")}
-              text={t("community.description")}
-              type="secondary"
-            />
-            
-          </div>
-          <div className="w-full pt-4">
-            <WindowSpace items={info} />
-          </div>
+          <ContentCard
+            title={t("professional-development.title")}
+            text={t("professional-development.description")}
+            type={"primary"}
+            image={{
+              imageUrl: `${path}/images/home/AU100 Flagship Event-Brussels-April2019.png`,
+              caption: t("professional-development.caption-img"),
+              alt: t("professional-development.alt-img"),
+            }}
+            link={{
+              url: "/professional-development",
+              label: "Join our team",
+            }}
+          />
         </div>
 
-        <div className="flex flex-col gap-6">
-          <h2 className="text-h2 font-bold">{t("global-community.title")}</h2>
-          <GlobalCommunityGrid images={globalCommunityImages} />
+        <div className="flex flex-col gap-8">
+          <h2 className="text-h2 font-bold px-8 md:w-1/2">
+            {t("global-community.title")}
+          </h2>
+          <GlobalCommunityGrid images={globalCommunity} />
+        </div>
+
+        <div className="relative">
+          <BackgroundImg
+            title={t("community.title")}
+            text={t("community.description")}
+            image={{
+              imageUrl: `${path}/images/home/palet-blue-dot.jpg`,
+            }}
+          />
+          <div className="w-full pt-8">
+            <WindowSpace items={info} />
+          </div>
         </div>
 
         <Parallax
@@ -178,12 +168,12 @@ export default function Home() {
         >
           <Button
             label={`${t("new-letter.subscribe")}`}
-            variant="transparent"
+            variant="outline"
             color="light"
           />
         </Parallax>
       </div>
-    </div>
+    </>
   );
 }
 

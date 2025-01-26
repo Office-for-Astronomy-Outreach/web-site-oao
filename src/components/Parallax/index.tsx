@@ -9,7 +9,7 @@ interface ParallaxProps {
     imgUrl: string;
     caption?: string;
   };
-  size?: "xs" | "sm" | "md" | "lg" | "xl";
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "auto";
 }
 
 const Parallax: React.FC<ParallaxProps> = ({
@@ -20,6 +20,7 @@ const Parallax: React.FC<ParallaxProps> = ({
   size = "lg",
 }) => {
   const sizeClasses = clsx({
+    "h-auto": size === "auto",
     "h-64": size === "xs",
     "h-80": size === "sm",
     "h-96": size === "md",
@@ -35,7 +36,7 @@ const Parallax: React.FC<ParallaxProps> = ({
     <div className="relative">
       <div
         className={clsx(
-          "group relative shadow-md rounded-lg bg-cover bg-center bg-fixed flex flex-col justify-center items-center text-center px-4",
+          "group relative shadow-md rounded-lg bg-cover bg-center bg-fixed flex flex-col justify-center items-center text-center p-8",
           sizeClasses
         )}
         style={{

@@ -25,13 +25,13 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
   const cardClass = classNames(
     "flex flex-wrap md:flex-nowrap items-stretch rounded-lg",
-    type === "transparent" ? "px-8 md:py-8 py-6" : "px-8 py-8 md:py-16",
+    "px-8 py-8 md:py-16",
     image?.imageUrl ? "justify-between" : "justify-center",
     {
       "bg-primary-main shadow-md text-white": type === "primary",
       "bg-white shadow-md text-gray-600": type === "secondary",
       "bg-transparent text-gray-600": type === "transparent",
-    },
+    }
   );
 
   const titleClass = classNames("font-bold text-h2", {
@@ -41,11 +41,11 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
   const containerClass = classNames(
     image?.imageUrl ? "md:w-5/12" : wSize,
-    type === "primary" ? "md:order-last" : "",
+    type !== "transparent" ? "md:order-last" : ""
   );
 
   const captionClass = classNames(
-    "absolute z-10 bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+    "absolute z-10 bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
   );
 
   return (
@@ -56,14 +56,20 @@ const ContentCard: React.FC<ContentCardProps> = ({
     >
       {/* Title and Text Section */}
       <div className={containerClass}>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           <h2 id={`${title}-header`} className={titleClass}>
             {title}
           </h2>
           {typeof text === "string" ? (
-            <p className={`${twoColums ? "md:columns-2 gap-6" : ""}`}>{text}</p>
+            <p
+              className={`${twoColums ? "md:columns-2 gap-8" : ""} xl:text-h5 text-p`}
+            >
+              {text}
+            </p>
           ) : (
-            <div className={`${twoColums ? "md:columns-2 gap-6" : ""}`}>
+            <div
+              className={`${twoColums ? "md:columns-2 gap-8" : ""} xl:text-h5 text-p`}
+            >
               {text}
             </div>
           )}
