@@ -22,7 +22,7 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items }) => {
     "hover:scale-105 transition-transform",
     "p-8 gap-8",
     "relative",
-    "text-body rounded-lg border  border-gray-400"
+    "text-body rounded-lg border border-gray-300 text-gray-600"
   );
 
   return (

@@ -44,6 +44,7 @@ const WindowSpace: React.FC<WindowSpaceProps> = ({ items }) => {
                 className="h-[80%] w-full absolute bg-contain bg-no-repeat bottom-0"
                 style={{
                   backgroundImage: `url(${projectPath}/images/orion.png)`,
+                  backgroundPosition: "center",
                 }}
               ></div>
             </>

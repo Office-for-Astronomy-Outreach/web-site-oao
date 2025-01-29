@@ -150,7 +150,7 @@ export default function Home() {
             title={t("community.title")}
             text={t("community.description")}
             image={{
-              imageUrl: `${path}/images/home/palet-blue-dot.jpg`,
+              imageUrl: `${path}/images/home/community-for-the-stars.jpg`,
             }}
           />
           <div className="w-full pt-8">

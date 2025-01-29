@@ -16,10 +16,10 @@ const BackgroundImg: React.FC<BackgroundImgProps> = ({
     <section role="region" aria-labelledby={`${title}-header`}>
       {/* Title and Text Section */}
       <div
-        className="w-full px-8 py-16 shadow-md rounded-lg text-white"
+        className="w-full min-h-[400px] px-8 py-16 shadow-md rounded-lg text-white"
         style={{
           background: `url(${image.imageUrl})`,
-          backgroundSize: "cover !important",
+          backgroundSize: "cover",
         }}
       >
         <div className="flex flex-col gap-8">

@@ -29,14 +29,16 @@ const CardTeamMember: React.FC<TeamMemberProps> = ({
 
       {/* Información */}
 
-      <div className="flex flex-col items-center p-8 ">
-        <div>
+      <div className="flex flex-col items-center p-8 gap-8">
+        <div className="flex flex-col gap-2">
           <h3 className="text-h5 font-semibold text-primary-main text-center">
             {name}
           </h3>
-          <p className="text-sm text-gray-700 mt-2 text-center">{role}</p>
+          <p className="text-sm text-gray-500 text-center">{role}</p>
         </div>
-        {/* <p className="text-gray-600 2xl:tex-h5 text-p text-left">{description}</p>*/}
+        <p className="text-gray-600 2xl:text-p text-sm text-left">
+          {description}
+        </p>
       </div>
     </div>
   );

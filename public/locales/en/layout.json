@@ -5,6 +5,32 @@
         "professional-development": "Professional Development",
         "outreach": "Public Engagement",
         "community": "Community",
-        "contact": "Contact"
+        "contact": "Contact",
+        "nocs-network": "Nocs Network"
+    },
+    "footer": {
+        "astronomy-for-everyone" : {
+            "title": "Astronomy for everyone",
+            "description": "The IAU Office for Astronomy Outreach (OAO) is a joint project of  the International Astronomical Union (IAU) and the National Astronomical Observatory of Japan (NAOJ), under the auspices of the National Institutes of Natural Sciences (NINS) of Japan."
+        },
+        "menuLinks": {
+            "quick-links": "Quick Links",
+            "global-projects": "Global Projects",
+            "resources": "Resources",
+            "contact-information": "Contact Information",
+            "home": "Home",
+            "about": "About Us",
+            "nocs-network": "Nocs Network",
+            "astronomy-outreach-map": "Astronomy Outreach Map",
+            "100-hours-of-astronomy": "100 Hours of Astronomy",
+            "women-and-girls-in-astronomy": "Women and Girls in Astronomy",
+            "dark-skies": "Dark Skies",
+            "infographics": "Infographics",
+            "workshops": "Workshops",
+            "astronomy-today": "Astronomy Today",
+            "astronomy-education-materials": "Astronomy Education Materials"
+        },
+        "follow-us": "Follow Us",
+        "copy-right": "Office for Astronomy Outreach. All Rights Reserved."
     }
 }

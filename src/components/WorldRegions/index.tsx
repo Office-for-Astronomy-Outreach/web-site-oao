@@ -57,7 +57,7 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
 
       setBackgroundImage(newImage);
     },
-    [path]
+    [path, defaultBackgroundImage]
   );
 
   // Función para restaurar la imagen de fondo
@@ -75,11 +75,11 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
         <div className="container mx-auto flex md:flex-row flex-col">
           {/* Contenedor para la imagen con la clase de fondo dinámico */}
           <div
-            className="flex flex-1 md:w-1/2 w-full relative aspect-video md:aspect-auto bg-contain bg-no-repeat bg-center"
+            className="flex flex-1 md:w-2/3 h-[450px] w-full relative bg-no-repeat bg-center"
             style={{ backgroundImage: `url(${memoizedBackgroundImage})` }} // Usamos la versión memoizada de la imagen
           ></div>
 
-          <div className="flex md:w-1/2 w-full justify-center items-center flex-wrap gap-3 md:p-4">
+          <div className="flex md:w-1/3 w-full  md:flex-col gap-3 md:p-4">
             {regions.length > 0 &&
               regions.map((region) => (
                 <Button

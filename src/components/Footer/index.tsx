@@ -1,120 +1,183 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import LanguageSelector from "../LanguageSelector";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faLinkedin,
+  faInstagramSquare,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faLocationDot,
+  faEnvelope,
+  faAngleRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { useTranslation } from "react-i18next";
+import { projectPath } from "@/utils/path";
 
 const Footer: React.FC = () => {
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const { t } = useTranslation("layout");
+
+  const socialLinks = [
+    {
+      href: "https://www.facebook.com/IAUoutreach",
+      icon: faFacebookSquare,
+      label: "Facebook",
+    },
+    {
+      href: "https://www.instagram.com/oao_iau/",
+      icon: faInstagramSquare,
+      label: "Instagram",
+    },
+    {
+      href: "https://www.linkedin.com/company/iau-oao/",
+      icon: faLinkedin,
+      label: "LinkedIn",
+    },
+  ];
+
+  const menuLinks = [
+    {
+      title: t("footer.menuLinks.quick-links"),
+      links: [
+        { href: "/", label: t("footer.menuLinks.home") },
+        { href: "/about", label: t("footer.menuLinks.about") },
+        { href: "/nocs-network", label: t("footer.menuLinks.nocs-network") },
+        {
+          href: "/astronomy-outreach-map",
+          label: t("footer.menuLinks.astronomy-outreach-map"),
+        },
+      ],
+    },
+    {
+      title: t("footer.menuLinks.global-projects"),
+      links: [
+        {
+          href: "/100-hours-of-astronomy",
+          label: t("footer.menuLinks.nocs-network"),
+        },
+        {
+          href: "/women-and-girls-in-astronomy",
+          label: t("footer.menuLinks.women-and-girls-in-astronomy"),
+        },
+        { href: "/dark-skies", label: t("footer.menuLinks.dark-skies") },
+      ],
+    },
+    {
+      title: t("footer.menuLinks.resources"),
+      links: [
+        { href: "/infographics", label: t("footer.menuLinks.infographics") },
+        { href: "/workshops", label: t("footer.menuLinks.workshops") },
+        {
+          href: "/astronomy-today",
+          label: t("footer.menuLinks.astronomy-today"),
+        },
+        {
+          href: "/astronomy-education-materials",
+          label: t("footer.menuLinks.astronomy-education-materials"),
+        },
+      ],
+    },
+  ];
 
   return (
-    <footer className="bg-gradient text-white">
-      <div className="container mx-auto px-4 py-12">
-        {/* Sección de logos y descripción */}
-        <div className="flex flex-col sm:flex-row items-center justify-between mb-8">
-          {/* Logo */}
-          <div className="flex items-center mb-4 sm:mb-0">
+    <footer
+      className="bg-gradient text-white rounded-lg shadow-md"
+      role="contentinfo"
+    >
+      <div className="container mx-auto px-8 py-12 flex flex-col gap-16">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-16">
+          <div className="flex items-center gap-16 mb-4 sm:mb-0">
             <Image
-              src={`${path}/images/logo.png`} // Ruta a tu logo
-              alt="Logo OAO"
+              src={`${projectPath}/images/logos/oao-logo-white.png`}
+              alt="Office for Astronomy Outreach Logo"
               width={150}
               height={50}
             />
-            <p className="ml-4 text-lg">Office for Astronomy Outreach</p>
+            <Link
+              href="https://www.nao.ac.jp/en/"
+              target="_blank"
+              className="relative rounded-lg aspect-video hover:scale-105 transition-transform"
+              aria-label="Visit the National Astronomical Observatory of Japan website"
+            >
+              <Image
+                src={`${projectPath}/images/partners/naoj-logo-white.png`}
+                alt="National Astronomical Observatory of Japans Logo"
+                width={150}
+                height={85}
+              />
+            </Link>
           </div>
-
-          {/* Descripción o slogan */}
-          <p className="text-center sm:text-left"></p>
-        </div>
-
-        {/* Sección de enlaces */}
-        <div className="flex flex-wrap sm:justify-between gap-8 mb-8">
-          {/* Enlaces principales */}
-          <div className="w-full sm:w-1/4">
-            <h3 className="font-semibold text-lg mb-4">Enlaces Rápidos</h3>
-            <ul>
-              <li>
-                <Link href="/" className="hover:text-blue-400">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-blue-400">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-blue-400">
-                  Contacto
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Enlaces de redes sociales */}
-          <div className="w-full sm:w-1/4">
-            <h3 className="font-semibold text-lg mb-4">Síguenos</h3>
-            <ul className="flex space-x-6">
-              <li>
-                <a
-                  href="https://www.facebook.com"
-                  className="hover:text-blue-400"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com"
-                  className="hover:text-blue-400"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  X
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com"
-                  className="hover:text-blue-400"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Enlaces adicionales */}
-          <div className="w-full sm:w-1/4">
-            <h3 className="font-semibold text-lg mb-4">Más Información</h3>
-            <ul>
-              <li>
-                <Link href="/terms" className="hover:text-blue-400">
-                  Términos y Condiciones
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="hover:text-blue-400">
-                  Política de Privacidad
-                </Link>
-              </li>
-              <li></li>
-            </ul>
+          <div className="flex-1">
+            <h3 className="text-xl font-bold mb-4">
+              {t("footer.astronomy-for-everyone.title")}
+            </h3>
+            <p className="text-xs md:text-base">
+              {t("footer.astronomy-for-everyone.description")}
+            </p>
           </div>
         </div>
 
-        {/* Copyright */}
+        <div className="flex gap-8 w-full" aria-label="Social Media Links">
+          <h3 className="font-semibold text-xl">{t("footer.follow-us")}:</h3>
+          {socialLinks.map(({ href, icon, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className="hover:text-yellow-400 flex gap-4 items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Follow us on ${label}`}
+            >
+              <FontAwesomeIcon icon={icon} size="xl" />
+            </Link>
+          ))}
+        </div>
+
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-16">
+          <div className="w-full">
+            <h3 className="font-semibold text-xl mb-4">
+              {t("footer.menuLinks.contact-information")}
+            </h3>
+            <ul className="flex flex-col gap-4">
+              <li className="flex gap-4">
+                <FontAwesomeIcon icon={faLocationDot} className="mt-[0.3rem]" />
+                National Astronomical Observatory of Japan, 2 Chome-21-1 Osawa,
+                Mitaka, Tokyo 181-8588, Japan
+              </li>
+              <li className="flex gap-4 items-center">
+                <FontAwesomeIcon icon={faEnvelope} /> public@oao.iau.org
+              </li>
+            </ul>
+          </div>
+
+          {menuLinks.map(({ title, links }) => (
+            <div key={title} className="w-full">
+              <h3 className="font-semibold text-xl mb-4">{title}</h3>
+              <ul className="flex flex-col gap-2">
+                {links.map(({ href, label }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="hover:text-yellow-400 flex gap-4 items-center"
+                    >
+                      <FontAwesomeIcon icon={faAngleRight} />
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
+
       <div className="bg-gray-800 text-white">
-        <div className="flex justify-between align-center p-4">
-          <p className="text-sm">
-            &copy; 2025 Office for Astronomy Outreach. Todos los derechos
-            reservados.
+        <div className="container mx-auto flex justify-between items-center px-8 py-4">
+          <p className="text-sm text-center">
+            © {new Date().getFullYear()} {t("footer.copy-right")}
           </p>
-          <LanguageSelector />
         </div>
       </div>
     </footer>

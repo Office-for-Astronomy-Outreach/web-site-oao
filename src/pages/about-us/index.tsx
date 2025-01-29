@@ -105,7 +105,7 @@ export default function About() {
     <div>
       {/* Hero Section */}
       <Banner
-        image={`${path}/images/about/sardinia-radio-telescope.jpg`}
+        image={`${path}/images/about/background.jpg`}
         title={t("title")}
         breadcrumbs={breadcrumbs}
       />
@@ -208,11 +208,11 @@ export default function About() {
               {t("partners.description")}
             </p>
           </div>
-          <div className="flex w-full sm:flex-row flex-col justify-center items-center gap-8">
+          <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 w-full gap-8">
             <Link
               href="https://www.iau.org/"
               target="_blank"
-              className="relative w-[250px] rounded-lg aspect-video hover:scale-105 transition-transform"
+              className="relative rounded-lg shadow-md bg-primary-light aspect-video hover:scale-105 transition-transform max-w-[350px]"
               aria-label="Visit the International Astronomical Union website"
             >
               <Image
@@ -220,12 +220,13 @@ export default function About() {
                 alt="IAU Logo"
                 layout="fill"
                 objectFit="contain"
+                className="p-4"
               />
             </Link>
             <Link
-              href="https://www.astronomyoutreach.network/"
+              href="https://www.nao.ac.jp/en/"
               target="_blank"
-              className="relative w-[250px] rounded-lg aspect-video hover:scale-105 transition-transform"
+              className="relative rounded-lg shadow-md bg-primary-light aspect-video hover:scale-105 transition-transform max-w-[350px]"
               aria-label="Visit the Astronomy Outreach Network website"
             >
               <Image
@@ -233,6 +234,7 @@ export default function About() {
                 alt="Astronomy Outreach Network Logo"
                 layout="fill"
                 objectFit="contain"
+                className="p-4"
               />
             </Link>
           </div>
