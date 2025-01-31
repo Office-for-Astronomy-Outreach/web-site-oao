@@ -1,0 +1,36 @@
+import Image from "next/image";
+import Link from "next/link";
+import clsx from "classnames";
+import { ImageGridItem } from "./types";
+
+const baseClasses =
+  "relative bg-gray-400 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300 transition-transform duration-300 hover:scale-105";
+const maskClasses = "absolute inset-0 bg-black bg-opacity-40 rounded-lg";
+const textClasses =
+  "absolute inset-0 flex items-center justify-center text-white text-lg font-bold text-center p-4";
+
+const ImageCard: React.FC<{ item: ImageGridItem; extraClasses?: string }> = ({
+  item,
+  extraClasses,
+}) => (
+  <Link
+    href={item.link}
+    className={clsx(baseClasses, extraClasses)}
+    role="link"
+    aria-label={item.title}
+  >
+    <Image
+      src={item.image}
+      alt={item?.alt ?? item.title}
+      layout="fill"
+      objectFit="cover"
+      className="rounded-lg"
+    />
+    <div className={maskClasses}></div>
+    <div className={textClasses}>
+      <h5 className="text-h5">{item.title}</h5>
+    </div>
+  </Link>
+);
+
+export default ImageCard;

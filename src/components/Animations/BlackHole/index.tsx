@@ -89,7 +89,7 @@ const BlackHole = () => {
         this.a = Math.random() * 2 * Math.PI; // Random initial angle
         this.size = Math.random() * 4; // Random particle size
         this.q = 1 / 3 + Math.random() * (1 / 2 - 1 / 3); // Ellipticity
-        this.h2p = 10; // Perspective offset
+        this.h2p = 20; // Perspective offset
         this.x =
           this.ox +
           (this.br + this.re + this.size + this.h2p) * Math.cos(this.a);
@@ -167,7 +167,7 @@ const BlackHole = () => {
 
       // Draw the event horizon
       m.beginPath();
-      m.arc(w / 2, h / 2, 100 + 9, 0, 2 * Math.PI);
+      m.arc(w / 2, h / 2, 85 + 9, 0, 2 * Math.PI);
       m.fillStyle = "black";
       m.shadowBlur = 20;
       m.shadowColor = "#ff6600"; // Glow color

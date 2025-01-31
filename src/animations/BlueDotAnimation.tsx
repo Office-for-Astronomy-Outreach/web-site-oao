@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./BlueDotAnimation.module.css";
 
 export default function BlueDotAnimation() {
   const triggerRef = useRef<HTMLDivElement | null>(null);
@@ -16,7 +15,7 @@ export default function BlueDotAnimation() {
         const windowHeight = window.innerHeight;
 
         if (!animationTriggered && triggerTop < windowHeight / 3) {
-          triggerRef.current.classList.add(styles.animate);
+          triggerRef.current.classList.add("animate");
           animationTriggered = true; // Marcar como activada
         }
       }
@@ -43,38 +42,38 @@ export default function BlueDotAnimation() {
 
   return (
     <div ref={triggerRef}>
-      <div className={styles.animationOrbitContainer}>
-        <div className={styles.verticalLine}></div>
-        <div className={styles.dotMin}></div>
-        <div className={styles.sunDotMin}></div>
-        <div className={styles.orbitDashedMin}></div>
+      <div className="animationOrbitContainer">
+        <div className="verticalLine"></div>
+        <div className="dotMin"></div>
+        <div className="sunDotMin"></div>
+        <div className="orbitDashedMin"></div>
         <div
-          className={styles.orbitRotary}
+          className="orbitRotary"
           style={{
             animation: `orbitPlanet 10s linear infinite`,
           }}
         >
-          <div className={styles.planetInOrbit}></div>
+          <div className="planetInOrbit"></div>
         </div>
-        <div className={styles.dot}></div>
-        <div className={styles.orbitDashedExpand}></div>
-        <div className={styles.orbitExpand}></div>
-        <div className={styles.halfCircle}></div>
+        <div className="dot"></div>
+        <div className="orbitDashedExpand"></div>
+        <div className="orbitExpand"></div>
+        <div className="halfCircle"></div>
       </div>
 
-      <div className={styles.animationOrbitContainer2}>
-        <div className={styles.verticalLineMiddle} ref={lineRef}>
+      <div className="animationOrbitContainer2">
+        <div className="verticalLineMiddle" ref={lineRef}>
           {showElements && (
             <>
-              <div className={styles.sunDotBig}>
+              <div className="sunDotBig">
                 <div
-                  className={styles.orbitRotary2}
+                  className="orbitRotary2"
                   style={{
                     animation: `orbitPlanet 8s linear infinite`,
                   }}
                 >
-                  <div className={styles.paleBlueOrbit}>
-                    <div className={styles.paleBlueDot}></div>
+                  <div className="paleBlueOrbit">
+                    <div className="paleBlueDot"></div>
                   </div>
                 </div>
               </div>

@@ -2,6 +2,7 @@ import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
 import { useTranslation } from "react-i18next";
 import { loadTranslations } from "ni18n";
+import classNames from "classnames";
 
 import Carousel from "@/components/Carrousel";
 import ContentCard from "@/components/ContentCard";
@@ -10,18 +11,15 @@ import Button from "@/components/Button";
 import GlobalCommunityGrid from "@/components/GlobalCommunity";
 import WindowSpace from "@/components/WindowSpace";
 import BackgroundImg from "@/components/BackgroundImg";
-
-import classNames from "classnames";
+import { projectPath } from "@/utils/path";
 
 export default function Home() {
   // i18n translation function for multi-language support
   const { t } = useTranslation("home");
 
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   const slides = [
     {
-      image: `${path}/images/parallax-bg.jpg`,
+      image: `${projectPath}/images/parallax-bg.jpg`,
       title: "Welcome to the Office for Astronomy Outreach",
       subtitle: "Astronomy for everyone",
     },
@@ -56,25 +54,25 @@ export default function Home() {
 
   const globalCommunity = [
     {
-      src: `${path}/images/global-community/iau.jpg`,
+      src: `${projectPath}/images/global-community/iau.jpg`,
       url: "https://example.com/iau",
       alt: "IAU image",
     },
 
     {
-      src: `${path}/images/global-community/womeninastronomy.jpg`,
+      src: `${projectPath}/images/global-community/womeninastronomy.jpg`,
       url: "https://example.com/womeninastronomy",
       alt: "Women in Astronomy image",
     },
 
     {
-      src: `${path}/images/global-community/100hours.jpeg`,
+      src: `${projectPath}/images/global-community/100hours.jpeg`,
       url: "https://example.com/100hours",
       alt: "100 Hours of Astronomy image",
     },
 
     {
-      src: `${path}/images/global-community/meet.jpg`,
+      src: `${projectPath}/images/global-community/meet.jpg`,
       url: "https://example.com/meet",
       alt: "Meet image",
     },
@@ -94,7 +92,7 @@ export default function Home() {
       <Carousel slides={slides} autoPlay={true} interval={7000} />
 
       <div className={containerClass}>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-16">
           <ContentCard
             title={t("accessible-astronomy.title")}
             text={t("accessible-astronomy.description")}
@@ -112,7 +110,7 @@ export default function Home() {
             text={t("build-community.description")}
             type="transparent"
             image={{
-              imageUrl: `${path}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`,
+              imageUrl: `${projectPath}/images/home/100 Hours of Astronomy-Turkey-Saadet Manaz.png`,
               caption: t("build-community.caption-img"),
               alt: t("build-community.alt-img"),
             }}
@@ -127,7 +125,7 @@ export default function Home() {
             text={t("professional-development.description")}
             type={"primary"}
             image={{
-              imageUrl: `${path}/images/home/AU100 Flagship Event-Brussels-April2019.png`,
+              imageUrl: `${projectPath}/images/home/AU100 Flagship Event-Brussels-April2019.png`,
               caption: t("professional-development.caption-img"),
               alt: t("professional-development.alt-img"),
             }}
@@ -138,7 +136,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-16">
           <h2 className="text-h2 font-bold px-8 md:w-1/2">
             {t("global-community.title")}
           </h2>
@@ -150,7 +148,7 @@ export default function Home() {
             title={t("community.title")}
             text={t("community.description")}
             image={{
-              imageUrl: `${path}/images/home/community-for-the-stars.jpg`,
+              imageUrl: `${projectPath}/images/home/community-for-the-stars.jpg`,
             }}
           />
           <div className="w-full pt-8">
@@ -162,7 +160,7 @@ export default function Home() {
           title={t("new-letter.title")}
           subtitle={t("new-letter.subtitle")}
           backgroundImage={{
-            imgUrl: `${path}/images/parallax-bg-01.jpg`,
+            imgUrl: `${projectPath}/images/home/parallax-bg-01.jpg`,
             caption: t("new-letter.caption-img"),
           }}
         >

@@ -12,7 +12,7 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   // Imagen por defecto
-  const defaultBackgroundImage = `${path}/images/mapa.jpg`;
+  const defaultBackgroundImage = `${path}/images/nocs-network/mapa.jpg`;
 
   // Estado para la imagen de fondo
   const [backgroundImage, setBackgroundImage] = useState<string>(
@@ -37,19 +37,19 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
 
       switch (region) {
         case "americas":
-          newImage = `${path}/images/america.jpg`;
+          newImage = `${path}/images/nocs-network/america.jpg`;
           break;
         case "africa":
-          newImage = `${path}/images/africa.jpg`;
+          newImage = `${path}/images/nocs-network/africa.jpg`;
           break;
         case "asia":
-          newImage = `${path}/images/asia.jpg`;
+          newImage = `${path}/images/nocs-network/asia.jpg`;
           break;
         case "europe":
-          newImage = `${path}/images/europa.jpg`;
+          newImage = `${path}/images/nocs-network/europa.jpg`;
           break;
         case "oceania":
-          newImage = `${path}/images/oceania.jpg`;
+          newImage = `${path}/images/nocs-network/oceania.jpg`;
           break;
         default:
           newImage = defaultBackgroundImage;
@@ -73,17 +73,16 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
         </h2>
 
         <div className="container mx-auto flex md:flex-row flex-col">
-          {/* Contenedor para la imagen con la clase de fondo dinámico */}
           <div
             className="flex flex-1 md:w-2/3 h-[450px] w-full relative bg-no-repeat bg-center"
-            style={{ backgroundImage: `url(${memoizedBackgroundImage})` }} // Usamos la versión memoizada de la imagen
+            style={{ backgroundImage: `url(${memoizedBackgroundImage})` }}
           ></div>
 
           <div className="flex md:w-1/3 w-full  md:flex-col gap-3 md:p-4">
             {regions.length > 0 &&
               regions.map((region) => (
                 <Button
-                  key={region.slug} // Cambié `region.name-button` por `region.slug` como key única
+                  key={region.slug}
                   label={region.name}
                   color="dark"
                   variant="outline"

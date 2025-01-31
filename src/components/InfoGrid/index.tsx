@@ -9,7 +9,7 @@ export interface GridItem {
   bgColor?: string;
   url?: string;
   target?: "_blank" | "_self" | "_top" | "_parent";
-  image: string;
+  image?: string;
 }
 
 export interface InfoGridProps {
@@ -34,14 +34,18 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items }) => {
           className={buttonClass}
           key={index}
         >
-          <Image
-            src={item.image}
-            alt={item.title}
-            height={100}
-            width={200}
-            style={{ objectFit: "contain" }}
-            className="aspect-video"
-          />
+          {item.image ? (
+            <Image
+              src={item.image}
+              alt={item.title}
+              height={100}
+              width={200}
+              style={{ objectFit: "contain" }}
+              className="aspect-video"
+            />
+          ) : (
+            <h3>{item.title}</h3>
+          )}
 
           {item?.description && (
             <span className="text-p text-gray-600">{item?.description}</span>

@@ -317,3 +317,264 @@ h5{
   background: conic-gradient(from 248deg, transparent, #ff66008c, #4412005e, #ff9900db, #ff6600ab, transparent 57%);
   border-radius: 50%;
 }
+
+.animationOrbitContainer {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  left: 10%;
+}
+
+.verticalLine {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #66a3f369;
+  z-index: 1;
+}
+
+.dotMin {
+  position: absolute;
+  top: 30px;
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+.sunDotMin {
+  position: absolute;
+  top: 170px;
+  width: 20px;
+  height: 20px;
+  background-color: #facc14;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+.sunDot {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #facc14;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.orbitDashedMin {
+  position: absolute;
+  top: 170px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px dashed #d1d5db;
+  transform: translate(0%, -50%);
+  transition: all 1s ease-in-out;
+}
+
+.orbitRotary {
+  position: absolute;
+  top: 96px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+}
+
+.planetInOrbit {
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+  transform: translate(-48%, -48%);
+  background: white;
+}
+
+.planetInOrbitYellow {
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+  transform: translate(-48%, -48%);
+  @apply bg-yellow-400
+}
+
+.dot {
+  position: absolute;
+  top: 840px;
+  width: 15px;
+  height: 15px;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+.orbitDashedExpand {
+  position: absolute;
+  top: 820px;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  border: 1px dashed #d1d5db;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 3s ease-in-out;
+}
+
+.orbitExpand {
+  position: absolute;
+  top: 900px;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 3s ease-in-out;
+}
+
+.animate .orbitDashedExpand {
+  width: 75px;
+  height: 75px;
+  opacity: 1;
+}
+
+.animate .orbitExpand {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+
+.halfCircle {
+  position: absolute;
+  bottom: 0%;
+  width: 250px;
+  height: 150px;
+  background: linear-gradient(to bottom, #99b9eb, #f8fafc);
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  transform: translateY(50%);
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawLine {
+  from {
+    height: 0;
+  }
+  to {
+    height: 80%;
+  }
+}
+.animate .verticalLineMiddle {
+  animation: drawLine 3s ease-out forwards;
+  opacity: 1;
+}
+
+.animationOrbitContainer2 {
+  position: absolute;
+  width: 250px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  right: 15%;
+}
+
+.verticalLineMiddle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: #66a3f369;
+  z-index: 1;
+  top: 0;
+  opacity: 0;
+}
+
+.orbitRotary2 {
+  position: absolute;
+  top: -90px;
+  left: -90px;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+  margin: 2rem;
+  opacity: 0;
+  transition: all 6s ease-in-out;
+}
+
+.paleBlueDot {
+  width: 10px;
+  height: 10px;
+  background-color: #9cbbeb;
+  border-radius: 50%;
+  margin-top: 6.5px;
+  margin-left: 6.5px;
+}
+
+.paleBlueOrbit {
+  position: absolute;
+  bottom: 70%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px dashed #9cbbeb;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 1; /* Inicialmente oculto */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.sunDotBig {
+  position: absolute;
+  bottom: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: #facc14;
+  border-radius: 50%;
+  z-index: 2;
+  left: -15px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.animate .sunDotBig {
+  animation: fadeIn 3s ease-out forwards;
+  opacity: 1; /* Aparece con el fadeIn */
+}
+
+.animate .orbitRotary2 {
+  width: 150px;
+  height: 150px;
+  animation: fadeIn 8s ease-out forwards;
+  opacity: 1; /* Aparece con el fadeIn */
+}

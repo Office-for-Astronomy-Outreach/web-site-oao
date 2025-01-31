@@ -5,7 +5,7 @@ import { loadTranslations } from "ni18n";
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import ContentCard from "@/components/ContentCard";
-import ImageGrid from "@/components/ImageGrid";
+import ImageGrid from "@/components/ImageGridsSection";
 import InfoGrid from "@/components/InfoGrid";
 import Parallax from "@/components/Parallax";
 import CardTeamMember from "@/components/TeamCard";

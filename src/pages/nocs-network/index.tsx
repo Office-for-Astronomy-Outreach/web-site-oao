@@ -74,7 +74,7 @@ export default function ProfessionalDevelopment() {
         {regions.length > 0 && <WorldRegions regions={regions} />}
 
         <div
-          className="w-full md:w-1/2 items-center rounded-lg bg-teal-700 aspect-auto p-8"
+          className="w-full md:w-1/2 items-center rounded-lg bg-primary-main aspect-auto p-8"
           role="region"
           aria-labelledby="open-call-title"
         >

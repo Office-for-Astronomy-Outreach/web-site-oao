@@ -25,7 +25,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
   const cardClass = classNames(
     "flex flex-wrap md:flex-nowrap items-stretch rounded-lg",
-    "px-8 py-8 md:py-16",
+    "px-8 py-8 md:py-16 gap-16",
     image?.imageUrl ? "justify-between" : "justify-center",
     {
       "bg-primary-main shadow-md text-white": type === "primary",
@@ -49,13 +49,13 @@ const ContentCard: React.FC<ContentCardProps> = ({
   );
 
   return (
-    <section
-      className={cardClass}
-      role="region"
-      aria-labelledby={`${title}-header`}
-    >
+    <section className={cardClass}>
       {/* Title and Text Section */}
-      <div className={containerClass}>
+      <div
+        className={containerClass}
+        role="region"
+        aria-labelledby={`${title}-header`}
+      >
         <div className="flex flex-col gap-8">
           <h2 id={`${title}-header`} className={titleClass}>
             {title}
@@ -90,7 +90,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
       {image?.imageUrl && (
         <div className="content-card-img group w-full md:w-6/12">
           <figure className="relative md:h-full">
-            <div className="relative w-full h-full md:mt-0 mt-10">
+            <div className="relative w-full h-full">
               <Image
                 src={image.imageUrl}
                 alt={image.alt || title}

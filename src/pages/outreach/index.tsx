@@ -5,12 +5,14 @@ import { loadTranslations } from "ni18n";
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import ContentCard from "@/components/ContentCard";
-import ImageGrid from "@/components/ImageGrid";
+import ImageGridsSection from "@/components/ImageGridsSection";
 import InfoGrid from "@/components/InfoGrid";
 import Parallax from "@/components/Parallax";
-import CardTeamMember from "@/components/TeamCard";
 import Image from "next/image";
-
+import classNames from "classnames";
+import StarCanvas from "@/components/Animations/StarCanvas";
+import BackgroundImg from "@/components/BackgroundImg";
+import ImageCard from "@/components/ImageCard";
 export default function Outreach() {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -68,45 +70,28 @@ export default function Outreach() {
     },
   ];
 
-  const group = [
-    {
-      name: "Indigenous studies",
-      role: "",
-      image: `${path}/images/about/about.png`,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    },
-    {
-      name: "Education",
-      role: "",
-      image: `${path}/images/about/about.png`,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    },
-    {
-      name: "Grant and fundraising for our community",
-      role: "",
-      image: `${path}/images/about/about.png`,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    },
-  ];
-
   const breadcrumbs = [
     { label: "Home", href: "/" },
     { label: "Outreach", href: "/outreach" },
   ];
-
+  const containerClass = classNames(
+    "md:container",
+    "md:mx-auto mx-2",
+    "my-16",
+    "md:px-4",
+    "py-2",
+    "flex flex-col gap-24"
+  );
   return (
-    <div role="region" aria-labelledby="outreach-title">
+    <>
       {/* Hero Section */}
       <Banner
-        image={`${path}/images/palet-blue-dot.jpg`}
+        image={`${path}/images/outreach/resources.jpg`}
         title="Outreach"
         breadcrumbs={breadcrumbs}
       />
 
-      <div className="container mx-auto px-4 py-8 flex flex-col gap-16 content-card-img">
+      <div className={containerClass}>
         <ContentCard
           title="Bridge between public and science"
           text="The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
@@ -115,73 +100,101 @@ export default function Outreach() {
           wfull
         />
 
-        <ImageGrid
+        {/** Global Projects */}
+        <ImageGridsSection
           items={items}
           title="Global Projects"
           description="Each year, the IAU OAO hosts a series of Global Outreach Projects to engage the general public with astronomy through our National Outreach Coordinators."
         />
 
         <section aria-labelledby="naoj-program">
-          <div className="container mx-auto px-4 py-8 flex flex-col gap-8">
-            <h2 id="naoj-program" className="text-h2 font-bold text-body">
+          <div className="flex flex-col gap-16">
+            <h2
+              id="naoj-program"
+              className="text-h2 font-bold md:w-1/2 w-full px-8"
+            >
               Meet the Astronomers Program
             </h2>
             <div className="flex flex-wrap w-full gap-8">
-              <div className="flex flex-1 relative rounded-lg aspect-auto">
+              <div className="flex flex-1 relative rounded-lg md:aspect-auto aspect-video bg-black">
                 <Image
-                  src={`${path}/images/professional-development.jpg`}
+                  src={`${path}/images/outreach/meet-the-astronomers.png`}
                   alt=""
                   layout="fill"
-                  objectFit="cover"
+                  objectFit="contain"
                   className="rounded-lg"
+                />
+                <StarCanvas
+                  numStars={450}
+                  starColors={["#ffffff", "#e0e7ff", "#99b9eb"]}
                 />
               </div>
 
               <div
-                className="w-full md:w-1/2 items-center rounded-lg bg-primary-main aspect-auto p-8"
+                className="md:w-1/2 w-full items-center rounded-lg bg-primary-main p-8"
                 role="region"
                 aria-labelledby="open-call-title"
               >
-                <p className="py-6 text-white">
+                <p className="py-6 text-white xl:text-h5 text-p">
                   Meet the IAU Astronomers! is a bridge between the public and
                   IAU astronomers. Through this programme, the OAO aims to make
                   the science of the IAU accessible to a wider public.
                 </p>
-                <p className="py-6 text-white">Would you like to register?</p>
-                <p className="py-4 text-white mb-4">Fill out the form:</p>
-                <div className="flex gap-8 flex-wrap">
+                <p className="py-6 text-white xl:text-h5 text-p">
+                  Would you like to register?
+                </p>
+                <p className="py-4 text-white mb-4 text-p">
+                  Fill out the form:
+                </p>
+                <div className="flex gap-4 flex-wrap ">
                   <Button
                     label="Astronomer"
-                    color="light"
+                    color="dark"
                     variant="solid"
                     className="w-1/2"
                   />
-                  <Button label="Participant" color="light" variant="solid" />
+                  <Button label="Participant" color="dark" variant="solid" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <div className="flex flex-col gap-8">
-          <h2 className="text-h2 font-bold text-body">Working Groups</h2>
-          <p className="text-gray-800 w-full mb-4">
-            We introduce the new working groups, designed to foster dialogue and
-            support community development around the world. These are spaces
-            where you can freely share your ideas, collaborate, and engage in
-            conversations with specialists in the field to help your community
-            grow.
-          </p>
+        <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-8 px-8">
+            <h2 className="text-h2 font-bold md:w-1/2 w-full">
+              We celebrate the diversity in our languages
+            </h2>
+            <p className="text-gray-600 xl:text-h5 text-p w-full">
+              At the OAO, we are committed to embracing the world&apos;s
+              linguistic diversity by translating educational and research
+              materials into languages beyond English. We believe that science
+              should be accessible to everyone, regardless of the language they
+              speak. By breaking language barriers, we aim to ensure that
+              astronomy reaches communities worldwide, fostering inclusion and a
+              shared curiosity about the universe.
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {group.map((grup, index) => (
-              <CardTeamMember
-                key={index}
-                name={grup.name}
-                role={grup.role}
-                image={grup.image}
-                description={grup.description}
-              />
-            ))}
+            <ImageCard
+              item={{
+                title: "Help us translate",
+                link: "",
+                image: "/images/she-is-as-astronomer.jpg",
+                alt: "",
+              }}
+              extraClasses="aspect-[4/3]"
+            />
+
+            <ImageCard
+              item={{
+                title: "Find translated materiale",
+                link: "",
+                image: "/images/outreach/material.jpg",
+                alt: "",
+              }}
+              extraClasses="aspect-[4/3]"
+            />
           </div>
         </div>
 
@@ -190,24 +203,17 @@ export default function Outreach() {
           className="flex flex-col gap-8"
           aria-labelledby="resources-title"
         >
-          <h2 id="resources-title" className="text-h2 font-bold text-body">
-            Resources
-          </h2>
-          <div className="w-full sm:max-h-80 max-h-[30rem] relative rounded-lg overflow-hidden">
-            <Image
-              src={`${path}/images/palet-blue-dot.jpg`}
-              alt="Resources"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
-            <p className="p-4 text-white absolute bottom-0">
-              We have gathered a series of educational, practical, and research
+          <BackgroundImg
+            title={"Resources"}
+            text="We have gathered a series of educational, practical, and research
               resources based on strict scientific standards, for anyone
               interested in getting involved in the dissemination of current
-              astronomy.
-            </p>
-          </div>
+              astronomy."
+            image={{
+              imageUrl: `${path}/images/outreach/resources.jpg`,
+              position: "center",
+            }}
+          />
 
           <InfoGrid items={info} />
         </section>
@@ -215,10 +221,10 @@ export default function Outreach() {
         <Parallax
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
-          backgroundImage={{ imgUrl: `${path}/images/parallax-bg.jpg` }}
+          backgroundImage={{ imgUrl: `${path}/images/home/parallax-bg.jpg` }}
         />
       </div>
-    </div>
+    </>
   );
 }
 

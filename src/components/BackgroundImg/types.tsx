@@ -45,5 +45,7 @@ export interface BackgroundImgProps {
      * Alternative text for the image, used for accessibility.
      */
     alt?: string;
+
+    position?: string;
   };
 }

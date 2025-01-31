@@ -28,7 +28,7 @@ const ParticleMap: React.FC = () => {
 
     // Cargar la imagen
     const image = new Image();
-    image.src = `${path}/images/nocs.png`;
+    image.src = `${path}/images/nocs-network/nocs.png`;
 
     image.onload = () => {
       // Dibujar la imagen en el canvas

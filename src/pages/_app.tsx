@@ -2,6 +2,8 @@ import type { AppProps } from "next/app";
 import { appWithI18Next } from "ni18n";
 import { ni18nConfig } from "ni18n.config";
 
+import Head from "next/head";
+
 import Layout from "@/components/Layout";
 
 import "../styles/globals.css";
@@ -13,6 +15,9 @@ const App = ({ Component, pageProps }: AppProps) => {
     <Component {...pageProps} />
   ) : (
     <Layout>
+      <Head>
+        <title>IAU Office for Astronomy Outreach</title>
+      </Head>
       <Component {...pageProps} />
     </Layout>
   );
