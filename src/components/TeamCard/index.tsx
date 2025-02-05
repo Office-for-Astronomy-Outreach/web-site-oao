@@ -5,7 +5,7 @@ interface TeamMemberProps {
   name: string;
   role: string;
   image: string;
-  description: string;
+  description: string | React.ReactElement;
 }
 
 const CardTeamMember: React.FC<TeamMemberProps> = ({
@@ -17,15 +17,18 @@ const CardTeamMember: React.FC<TeamMemberProps> = ({
   return (
     <div className="flex flex-col bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-105">
       {/* Imagen del miembro del equipo */}
-      <div className="aspect-[4/3] w-full rounded-t-lg overflow-hidden content-card-img">
-        <Image
-          src={image}
-          alt={name}
-          className="w-full h-full object-cover "
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+      {image && (
+        <div className="aspect-[4/3] w-full rounded-t-lg overflow-hidden relative">
+          <Image
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover "
+            fill
+            sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+        </div>
+      )}
 
       {/* Información */}
 
@@ -36,9 +39,9 @@ const CardTeamMember: React.FC<TeamMemberProps> = ({
           </h3>
           <p className="text-sm text-gray-500 text-center">{role}</p>
         </div>
-        <p className="text-gray-600 2xl:text-p text-sm text-left">
-          {description}
-        </p>
+        <div className="text-gray-600 2xl:text-p text-sm text-left w-full relative">
+          {typeof description === "string" ? <p>{description}</p> : description}
+        </div>
       </div>
     </div>
   );

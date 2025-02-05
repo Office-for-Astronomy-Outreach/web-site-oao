@@ -10,6 +10,7 @@ import InfoGrid from "@/components/InfoGrid";
 import Parallax from "@/components/Parallax";
 import CardTeamMember from "@/components/TeamCard";
 import Image from "next/image";
+import classNames from "classnames";
 
 export default function ProfessionalDevelopment() {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -97,16 +98,30 @@ export default function ProfessionalDevelopment() {
     { label: "Professional Development", href: "/professional-development" },
   ];
 
+  const containerClass = classNames(
+    "md:container",
+    "md:mx-auto mx-2",
+    "my-16",
+    "md:px-4",
+    "py-2",
+    "flex flex-col gap-24"
+  );
+
   return (
-    <div role="region" aria-labelledby="professional-development-title">
+    <>
       {/* Hero Section */}
       <Banner
-        image={`${path}/images/professional-development.png`}
+        image={{
+          urlImage: `${path}/images/professional-development/background.jpg`,
+        }}
         title="Professional Development"
         breadcrumbs={breadcrumbs}
       />
-
-      <div className="container mx-auto px-4 py-8 flex flex-col gap-16 content-card-img">
+      <div
+        className={containerClass}
+        role="region"
+        aria-labelledby="professional-development-title"
+      >
         <ContentCard
           title="Professional Development"
           text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
@@ -130,10 +145,11 @@ export default function ProfessionalDevelopment() {
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg sm:aspect-square aspect-video">
                 <Image
-                  src={`${path}/images/professional-development.png`}
+                  src={`${path}/images/professional-development/professional-development.png`}
                   alt="NAOJ Visitor Program"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "center" }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="rounded-lg"
                 />
               </div>
@@ -206,8 +222,8 @@ export default function ProfessionalDevelopment() {
             <Image
               src={`${path}/images/about/resources.jpg`}
               alt="Resources"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover", objectPosition: "center" }}
               className="rounded-lg"
             />
             <p className="p-4 text-white absolute bottom-0">
@@ -232,7 +248,7 @@ export default function ProfessionalDevelopment() {
           backgroundImage={{ imgUrl: `${path}/images/parallax-bg.jpg` }}
         />
       </div>
-    </div>
+    </>
   );
 }
 

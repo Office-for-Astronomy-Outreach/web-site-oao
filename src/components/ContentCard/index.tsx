@@ -96,7 +96,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
                 alt={image.alt || title}
                 className="rounded-lg"
                 style={{ objectFit: "cover" }}
-                sizes="(max-width: 768px) 100vw"
+                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
                 fill
                 priority
               />

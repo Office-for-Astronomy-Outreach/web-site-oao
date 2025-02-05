@@ -87,13 +87,15 @@ const Footer: React.FC = () => {
       role="contentinfo"
     >
       <div className="container mx-auto px-8 py-12 flex flex-col gap-16">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-16">
+        <div className="flex md:flex-row flex-col flex-wrap justify-between items-center gap-16">
           <div className="flex items-center gap-16 mb-4 sm:mb-0">
             <Image
               src={`${projectPath}/images/logos/oao-logo-white.png`}
               alt="Office for Astronomy Outreach Logo"
               width={150}
-              height={50}
+              height={150}
+              style={{ width: 150, height: 150 }}
+              priority
             />
             <Link
               href="https://www.nao.ac.jp/en/"
@@ -106,6 +108,8 @@ const Footer: React.FC = () => {
                 alt="National Astronomical Observatory of Japans Logo"
                 width={150}
                 height={85}
+                style={{ width: "auto", height: "auto" }}
+                priority
               />
             </Link>
           </div>

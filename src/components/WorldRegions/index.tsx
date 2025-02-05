@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback } from "react";
 import Button from "../Button"; // Asegúrate de importar correctamente tu componente Button
 import router from "next/router";
+import Image from "next/image";
 
 import { Region } from "@/types";
 
@@ -68,17 +69,22 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
   return (
     <section aria-labelledby="">
       <div className="container mx-auto flex flex-col gap-8 p-8 bg-white rounded-lg shadow-md">
-        <h2 id="" className="text-h2 font-bold text-teal-700">
-          World
+        <h2 id="" className="text-h2 font-bold text-primary-main">
+          World Regions
         </h2>
 
         <div className="container mx-auto flex md:flex-row flex-col">
-          <div
-            className="flex flex-1 md:w-2/3 h-[450px] w-full relative bg-no-repeat bg-center"
-            style={{ backgroundImage: `url(${memoizedBackgroundImage})` }}
-          ></div>
+          <div className="flex flex-1 md:w-2/3 w-full h-[450px] aspect-[4/3] relative">
+            <Image
+              src={memoizedBackgroundImage}
+              alt="alt"
+              fill
+              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
+              style={{ objectFit: "contain", objectPosition: "center" }}
+            />
+          </div>
 
-          <div className="flex md:w-1/3 w-full  md:flex-col gap-3 md:p-4">
+          <div className="flex md:w-1/3 w-full md:flex-col flex-wrap justify-center gap-8 md:p-4">
             {regions.length > 0 &&
               regions.map((region) => (
                 <Button

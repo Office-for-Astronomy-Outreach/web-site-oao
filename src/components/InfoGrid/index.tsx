@@ -40,7 +40,7 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items }) => {
               alt={item.title}
               height={100}
               width={200}
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "contain", width: "auto", height: "auto" }}
               className="aspect-video"
             />
           ) : (

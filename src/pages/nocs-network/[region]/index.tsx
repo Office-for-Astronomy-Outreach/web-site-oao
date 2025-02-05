@@ -41,7 +41,7 @@ const RegionPage = () => {
     <div>
       {/* Hero Section */}
       <Banner
-        image={`${path}/images/palet-blue-dot.jpg`}
+        image={{ urlImage: `${path}/images/palet-blue-dot.jpg` }}
         title={`National Outreach Coordinators  - ${regionData?.region?.name}`}
         breadcrumbs={breadcrumbs}
       />

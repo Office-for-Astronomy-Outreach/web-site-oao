@@ -94,8 +94,8 @@ const NotFound = () => {
         <div className="flex mt-6 sm:w-1/2">
           <p className="text-xs">
             Did you know? This is a reference to a photograph showing Earth from
-            about 6 billion kilometers away as a {"'"}Pale Blue Dot{"'"} captured
-            by Voyager 1.
+            about 6 billion kilometers away as a {"'"}Pale Blue Dot{"'"}{" "}
+            captured by Voyager 1.
           </p>
         </div>
       </div>

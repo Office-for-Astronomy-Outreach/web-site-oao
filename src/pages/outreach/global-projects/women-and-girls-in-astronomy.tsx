@@ -58,7 +58,7 @@ export default function WomenAndGirlsInAstronomy() {
     <div role="region" aria-labelledby="outreach-title">
       {/* Hero Section */}
       <Banner
-        image={`${path}/images/global-programs/100 hours.png`}
+        image={{ urlImage: `${path}/images/global-programs/100 hours.png` }}
         title="Women and Girls in Astronomy"
         breadcrumbs={breadcrumbs}
       />

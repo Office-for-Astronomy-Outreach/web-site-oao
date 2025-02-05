@@ -61,7 +61,7 @@ export default function OneHundredHoursOfAstronomy() {
     <div role="region" aria-labelledby="outreach-title">
       {/* Hero Section */}
       <Banner
-        image={`${path}/images/global-programs/100 hours.png`}
+        image={{ urlImage: `${path}/images/global-programs/100 hours.png` }}
         title="100 hours for astronomy"
         breadcrumbs={breadcrumbs}
       />

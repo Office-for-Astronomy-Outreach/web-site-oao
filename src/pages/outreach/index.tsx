@@ -72,7 +72,7 @@ export default function Outreach() {
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Outreach", href: "/outreach" },
+    { label: "Public Engagement", href: "/outreach" },
   ];
   const containerClass = classNames(
     "md:container",
@@ -86,8 +86,8 @@ export default function Outreach() {
     <>
       {/* Hero Section */}
       <Banner
-        image={`${path}/images/outreach/resources.jpg`}
-        title="Outreach"
+        image={{ urlImage: `${path}/images/outreach/resources.jpg` }}
+        title="Public Engagement"
         breadcrumbs={breadcrumbs}
       />
 
@@ -120,8 +120,9 @@ export default function Outreach() {
                 <Image
                   src={`${path}/images/outreach/meet-the-astronomers.png`}
                   alt=""
-                  layout="fill"
-                  objectFit="contain"
+                  fill
+                  style={{ objectFit: "contain", objectPosition: "center" }}
+                  sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
                   className="rounded-lg"
                 />
                 <StarCanvas

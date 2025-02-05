@@ -1,12 +1,12 @@
-export type TypeMember = {
-  coordinator: "coordinator";
-  observer: "observer";
-  committee: "committee";
-  vice: "vice";
-};
+export enum typeMember {
+  coordinator = "Coordinator",
+  committee = "Committee",
+  observer = "Observer",
+  vice = "Vice",
+}
 
 export type Region = {
-  id: string;
+  id: number;
   name: string;
   slug: string;
 };
@@ -33,13 +33,13 @@ export type Member = {
   id: string;
   name: string;
   affiliation: string;
-  urlImage: string;
+  url_image: string;
   email?: string;
   description?: string;
   active: boolean;
-  role: TypeMember;
-  appointed_end: "YYYY-MM-DD";
-  appointed_start: "YYYY-MM-DD";
+  role: typeMember;
+  appointed_end: string;
+  appointed_start: string;
 };
 
 export type RegionData = {

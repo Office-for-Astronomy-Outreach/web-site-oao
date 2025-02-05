@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <div>
       <Banner
-        image={`/images/professional-development.png`}
+        image={{ urlImage: `/images/professional-development.png` }}
         title="Contact Ust"
         breadcrumbs={[]}
       />

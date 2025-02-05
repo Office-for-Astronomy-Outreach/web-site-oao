@@ -148,7 +148,8 @@ export default function Home() {
             title={t("community.title")}
             text={t("community.description")}
             image={{
-              imageUrl: `${projectPath}/images/home/community-for-the-stars.jpg`,
+              imageUrl: `${projectPath}/images/home/background.jpg`,
+              caption: "Jason Johnson/IAU OAE (CC BY 4.0)",
             }}
           />
           <div className="w-full pt-8">

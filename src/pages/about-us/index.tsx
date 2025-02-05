@@ -102,7 +102,7 @@ export default function About() {
     <div>
       {/* Hero Section */}
       <Banner
-        image={`${projectPath}/images/about/background.jpg`}
+        image={{ urlImage: `${projectPath}/images/about/background.jpg` }}
         title={t("title")}
         breadcrumbs={breadcrumbs}
       />
@@ -215,8 +215,9 @@ export default function About() {
               <Image
                 src={`${projectPath}/images/partners/iau-logo-white.png`}
                 alt="IAU Logo"
-                layout="fill"
-                objectFit="contain"
+                fill
+                style={{ objectFit: "contain", objectPosition: "center" }}
+                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
                 className="p-4"
               />
             </Link>
@@ -229,8 +230,9 @@ export default function About() {
               <Image
                 src={`${projectPath}/images/partners/naoj-logo-white.png`}
                 alt="Astronomy Outreach Network Logo"
-                layout="fill"
-                objectFit="contain"
+                fill
+                style={{ objectFit: "contain", objectPosition: "center" }}
+                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
                 className="p-4"
               />
             </Link>

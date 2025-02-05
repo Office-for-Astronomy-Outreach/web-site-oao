@@ -13,7 +13,7 @@ const BackgroundImg: React.FC<BackgroundImgProps> = ({
   text,
   image,
 }) => {
-  const maskClasses = "absolute inset-0 bg-black bg-opacity-10 rounded-lg";
+  const maskClasses = "absolute inset-0 bg-black bg-opacity-0 rounded-lg";
   const textClasses =
     "absolute inset-0 flex items-center justify-center text-center flex flex-col gap-8 text-white p-8";
 
@@ -28,10 +28,11 @@ const BackgroundImg: React.FC<BackgroundImgProps> = ({
         <Image
           src={image.imageUrl}
           alt="alt"
-          layout="fill"
-          objectFit="cover"
+          fill
           className="rounded-lg"
-          objectPosition="top"
+          priority
+          sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
+          style={{ objectFit: "cover", objectPosition: "top" }}
         />
         <div className={maskClasses}></div>
         <div className={textClasses}>
