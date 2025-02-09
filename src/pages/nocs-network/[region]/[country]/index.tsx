@@ -99,7 +99,7 @@ const RegionPage = () => {
 
       <div className={containerClass}>
         <div className="flex flex-col gap-16 px-8">
-          <h2 className="text-h2 font-bold w-full">
+          <h2 className="capitalize text-h2 font-bold w-full">
             {countryData?.country.name || ""}
           </h2>
           <div className="flex md:flex-row flex-col gap-8">
@@ -127,7 +127,7 @@ const RegionPage = () => {
 
         <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-8 px-8">
-            <h2 className="text-h2 font-bold md:w-1/2 w-full">
+            <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
               Formal president <br />
               and members of society
             </h2>

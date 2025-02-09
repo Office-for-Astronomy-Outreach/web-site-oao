@@ -4,27 +4,15 @@ import router from "next/router";
 import Image from "next/image";
 
 import { Region } from "@/types";
+import WorldMap from "../WorldMap";
 
 interface WorldRegionsProps {
   regions: Region[];
 }
 
 const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
-  // Imagen por defecto
-  const defaultBackgroundImage = `${path}/images/nocs-network/mapa.jpg`;
-
   // Estado para la imagen de fondo
-  const [backgroundImage, setBackgroundImage] = useState<string>(
-    defaultBackgroundImage
-  );
-
-  // Memorizar la imagen de fondo
-  const memoizedBackgroundImage = useMemo(
-    () => backgroundImage,
-    [backgroundImage]
-  );
+  const [regionSelected, setRegionSelected] = useState<string>("");
 
   // Función para redirigir a la página de la región
   const handleRegionClick = useCallback((region: string) => {
@@ -32,59 +20,24 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
   }, []);
 
   // Función para cambiar la imagen de fondo al pasar el ratón por encima
-  const handleMouseEnter = useCallback(
-    (region: string) => {
-      let newImage = defaultBackgroundImage; // Imagen por defecto
-
-      switch (region) {
-        case "americas":
-          newImage = `${path}/images/nocs-network/america.jpg`;
-          break;
-        case "africa":
-          newImage = `${path}/images/nocs-network/africa.jpg`;
-          break;
-        case "asia":
-          newImage = `${path}/images/nocs-network/asia.jpg`;
-          break;
-        case "europe":
-          newImage = `${path}/images/nocs-network/europa.jpg`;
-          break;
-        case "oceania":
-          newImage = `${path}/images/nocs-network/oceania.jpg`;
-          break;
-        default:
-          newImage = defaultBackgroundImage;
-      }
-
-      setBackgroundImage(newImage);
-    },
-    [path, defaultBackgroundImage]
-  );
+  const handleMouseEnter = useCallback((region: string) => {
+    setRegionSelected(region);
+  }, []);
 
   // Función para restaurar la imagen de fondo
   const handleMouseLeave = useCallback(() => {
-    setBackgroundImage(defaultBackgroundImage); // Restaurar la imagen original
-  }, [defaultBackgroundImage]);
+    setRegionSelected(""); // Restaurar la imagen original
+  }, []);
 
   return (
     <section aria-labelledby="">
-      <div className="container mx-auto flex flex-col gap-8 p-8 bg-white rounded-lg shadow-md">
+      <div className="flex flex-col gap-8 p-8 bg-white rounded-lg shadow-md">
         <h2 id="" className="text-h2 font-bold text-primary-main">
           World Regions
         </h2>
 
-        <div className="container mx-auto flex md:flex-row flex-col">
-          <div className="flex flex-1 md:w-2/3 w-full h-[450px] aspect-[4/3] relative">
-            <Image
-              src={memoizedBackgroundImage}
-              alt="alt"
-              fill
-              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
-              style={{ objectFit: "contain", objectPosition: "center" }}
-            />
-          </div>
-
-          <div className="flex md:w-1/3 w-full md:flex-col flex-wrap justify-center gap-8 md:p-4">
+        <div className="flex md:flex-row flex-col gap-8">
+          <div className="flex md:w-1/3 w-full md:flex-col flex-wrap justify-center gap-4">
             {regions.length > 0 &&
               regions.map((region) => (
                 <Button
@@ -97,6 +50,12 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
                   onClick={() => handleRegionClick(region.slug)}
                 />
               ))}
+          </div>
+          <div className="flex flex-1 relative">
+            <WorldMap
+              handleClick={handleRegionClick}
+              regionSelected={regionSelected}
+            />
           </div>
         </div>
       </div>

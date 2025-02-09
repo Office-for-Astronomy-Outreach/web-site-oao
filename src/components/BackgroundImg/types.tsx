@@ -47,5 +47,9 @@ export interface BackgroundImgProps {
     alt?: string;
 
     position?: string;
+
+    fit?: "cover" | "contain" | "fill";
   };
+
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "auto";
 }

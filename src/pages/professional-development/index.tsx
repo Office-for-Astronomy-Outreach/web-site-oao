@@ -189,7 +189,9 @@ export default function ProfessionalDevelopment() {
         </section>
 
         <div className="flex flex-col gap-8">
-          <h2 className="text-h2 font-bold text-body">Working Groups</h2>
+          <h2 className="capitalize text-h2 font-bold text-body">
+            Working Groups
+          </h2>
           <p className="text-gray-800 w-full mb-4">
             We introduce the new working groups, designed to foster dialogue and
             support community development around the world. These are spaces

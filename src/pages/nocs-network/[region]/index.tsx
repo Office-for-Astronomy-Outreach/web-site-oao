@@ -47,7 +47,7 @@ const RegionPage = () => {
       />
 
       <div className="container mx-auto px-4 py-8">
-        <h2 className="text-2xl font-bold text-center mb-4">
+        <h2 className="capitalize  text-2xl font-bold text-center mb-4">
           Countries in {regionData?.region?.name}
         </h2>
         <div className="relative rounded-xl overflow-auto shadow-sm bg-white">

@@ -20,12 +20,12 @@
 /* Variables para tema oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: linear-gradient(
+    /* --background: linear-gradient(
       90deg,
       #212224 0%,
       #222326ed 51%,
       #212224 100%
-    ); /* Fondo oscuro */ /* Texto de botones secundarios */
+    ); Fondo oscuro */ /* Texto de botones secundarios */
   }
 }
 
@@ -48,6 +48,11 @@ h5{
 
 ::marker {
   color: #0066d0;
+  font-weight: 600;
+}
+
+.bg-primary-main ::marker {
+  color: white;
   font-weight: 600;
 }
 

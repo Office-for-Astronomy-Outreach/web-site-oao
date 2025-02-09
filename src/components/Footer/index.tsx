@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           label: t("footer.menuLinks.nocs-network"),
         },
         {
-          href: "/women-and-girls-in-astronomy",
+          href: "/outreach/global-projects/women-and-girls-in-astronomy",
           label: t("footer.menuLinks.women-and-girls-in-astronomy"),
         },
         { href: "/dark-skies", label: t("footer.menuLinks.dark-skies") },

@@ -27,24 +27,19 @@ const GlobalCommunityGrid: React.FC<GlobalCommunityGridProps> = ({
   images,
 }) => {
   return (
-    <div className="flex flex-wrap w-full gap-4 ">
-      <div className="w-full bg-dark-dark p-4 rounded-lg">
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-          {images?.map((image, index) => (
-            <Link
-              key={index}
-              href={image?.url}
-              target="_blank"
-              className={`bg-cover aspect-video ${linkClass}`}
-              style={{ backgroundImage: `url(${image.src})` }}
-              role="link"
-              aria-label={image?.alt}
-            >
-              <span className="sr-only">{image?.alt}</span>
-            </Link>
-          ))}
-        </div>
-      </div>
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
+      {images?.map((image, index) => (
+        <Link
+          key={index}
+          href={image?.url}
+          className={`bg-cover aspect-video ${linkClass}`}
+          style={{ backgroundImage: `url(${image.src})` }}
+          role="link"
+          aria-label={image?.alt}
+        >
+          <span className="sr-only">{image?.alt}</span>
+        </Link>
+      ))}
     </div>
   );
 };

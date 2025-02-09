@@ -37,7 +37,7 @@ const GridButton: React.FC<GridButtonProps> = ({
   const linkClass = classNames("z-[5] w-full h-full");
 
   const titleClass = classNames(
-    "text-center uppercase text-h5 font-medium mb-6"
+    "text-center capitalize text-h5 font-medium mb-6"
   );
 
   return (

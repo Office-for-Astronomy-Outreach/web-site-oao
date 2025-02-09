@@ -163,7 +163,7 @@ export default function Outreach() {
 
         <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-8 px-8">
-            <h2 className="text-h2 font-bold md:w-1/2 w-full">
+            <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
               We celebrate the diversity in our languages
             </h2>
             <p className="text-gray-600 xl:text-h5 text-p w-full">

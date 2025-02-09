@@ -98,7 +98,7 @@ export default function ProfessionalDevelopment() {
           >
             <h1
               id="nocs-network-title"
-              className="md:text-5xl text-h1 text-end font-bold text-body uppercase"
+              className="md:text-5xl text-h1 text-end font-bold text-body capitalize"
             >
               National <span className="text-primary-main">Outreach</span>
               <br /> Coordinators Network
@@ -128,9 +128,6 @@ export default function ProfessionalDevelopment() {
         </div>
         {regions.length > 0 && <WorldRegions regions={regions} />}
 
-        <div className="flex flex-1 md:w-2/3 w-full h-[450px] aspect-[4/3] bg-white">
-          <WorldMap />
-        </div>
         <ContentCard
           title="NOCs Funding Scheme"
           text="Aligned with the IAU Strategic Plan 2020-2030, and

@@ -11,7 +11,7 @@ const EmailDisplay: React.FC<EmailDisplayProps> = ({ email }) => {
   const [user] = email.split("@");
 
   return (
-    <div className="relative group">
+    <span className="relative group">
       {/* Email oculto o completo */}
       {showFull ? (
         <Link
@@ -42,7 +42,7 @@ const EmailDisplay: React.FC<EmailDisplayProps> = ({ email }) => {
           ></div>
         </div>
       )}
-    </div>
+    </span>
   );
 };
 

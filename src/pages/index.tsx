@@ -19,7 +19,7 @@ export default function Home() {
 
   const slides = [
     {
-      image: `${projectPath}/images/parallax-bg.jpg`,
+      image: `${projectPath}/images/home/parallax-bg.jpg`,
       title: "Welcome to the Office for Astronomy Outreach",
       subtitle: "Astronomy for everyone",
     },
@@ -55,26 +55,26 @@ export default function Home() {
   const globalCommunity = [
     {
       src: `${projectPath}/images/global-community/iau.jpg`,
-      url: "https://example.com/iau",
-      alt: "IAU image",
+      url: "about-us#our-team",
+      alt: "IAU team",
     },
 
     {
-      src: `${projectPath}/images/global-community/womeninastronomy.jpg`,
-      url: "https://example.com/womeninastronomy",
-      alt: "Women in Astronomy image",
+      src: `${projectPath}/images/global-community/portadaWomenAndGirls.png`,
+      url: "/outreach/global-projects/women-and-girls-in-astronomy",
+      alt: "Women in Astronomy",
     },
 
     {
       src: `${projectPath}/images/global-community/100hours.jpeg`,
-      url: "https://example.com/100hours",
-      alt: "100 Hours of Astronomy image",
+      url: "/outreach/global-projects/100-hours-of-astronomy",
+      alt: "100 Hours of Astronomy",
     },
 
     {
       src: `${projectPath}/images/global-community/meet.jpg`,
-      url: "https://example.com/meet",
-      alt: "Meet image",
+      url: "/outreach/global-projects/",
+      alt: "Meet",
     },
   ];
 
@@ -137,7 +137,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-16">
-          <h2 className="text-h2 font-bold px-8 md:w-1/2">
+          <h2 className="capitalize  text-h2 font-bold px-8 md:w-1/2">
             {t("global-community.title")}
           </h2>
           <GlobalCommunityGrid images={globalCommunity} />

@@ -138,7 +138,7 @@ export default function About() {
               <div className="flex flex-row justify-between">
                 <div className="md:w-1/4"></div>
                 <div className="md:w-2/4 px-8 py-8 justify-center flex flex-col gap-8">
-                  <h2 className="font-bold text-h2 text-white">
+                  <h2 className="capitalize font-bold text-h2 text-white">
                     {t("mission.title")}
                   </h2>
                   <p className="xl:text-h5 text-p text-white">
@@ -149,7 +149,7 @@ export default function About() {
               {/* Vision */}
               <div className="flex flex-row justify-between">
                 <div className="md:w-2/4 px-8 py-8 md:py-16 justify-center flex flex-col gap-8">
-                  <h2 className="font-bold text-h2 text-white">
+                  <h2 className="capitalize font-bold text-h2 text-white">
                     {t("vision.title")}
                   </h2>
                   <p className="xl:text-h5 text-p text-white">
@@ -162,7 +162,7 @@ export default function About() {
               <div className="flex flex-row justify-between">
                 <div className="md:w-1/4"></div>
                 <div className="md:w-2/4 px-8 py-8 justify-center flex flex-col gap-8">
-                  <h2 className="font-bold text-h2 text-white">
+                  <h2 className="capitalize font-bold text-h2 text-white">
                     {t("strategic-actions.title")}
                   </h2>
                   <p className="xl:text-h5 text-p text-white">
@@ -176,7 +176,7 @@ export default function About() {
 
         {/* Team Section */}
         <div className="flex flex-col gap-16">
-          <h2 className="text-h2 font-bold text-body px-8">
+          <h2 className="capitalize text-h2 font-bold text-body px-8">
             {t("team.title")}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
@@ -242,7 +242,7 @@ export default function About() {
         {/* Collaboration Section */}
         <section className="flex flex-col gap-16 bg-white shadow-md rounded-lg py-8 md:py-16 px-8">
           <div className="px-8 flex flex-col gap-8">
-            <h2 className="text-h2 font-bold text-primary-main ">
+            <h2 className="capitalize text-h2 font-bold text-primary-main ">
               {t("collaborations.title")}
             </h2>
             <p className="text-gray-600 xl:text-h5 text-p">

@@ -21,6 +21,8 @@ export interface ContentCardProps {
    */
   title: string;
 
+  idTitle?: string;
+
   /**
    * The description or content displayed in the card.
    * Can be a string or a React element for custom rendering.
@@ -60,6 +62,8 @@ export interface ContentCardProps {
      * Label for the link button.
      */
     label: string;
+
+    target?: "_blank" | "_self" | "_top" | "_parent";
   };
 
   /**

@@ -7,6 +7,8 @@ import Button from "@/components/Button";
 import BlueDotAnimation from "@/animations/BlueDotAnimation";
 import { title } from "process";
 import ContentCard from "@/components/ContentCard";
+import classNames from "classnames";
+import BackgroundImg from "@/components/BackgroundImg";
 
 export default function OneHundredHoursOfAstronomy() {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -57,8 +59,17 @@ export default function OneHundredHoursOfAstronomy() {
     },
   ];
 
+  const containerClass = classNames(
+    "md:container",
+    "md:mx-auto mx-2",
+    "my-16",
+    "md:px-4",
+    "py-2",
+    "flex flex-col gap-24"
+  );
+
   return (
-    <div role="region" aria-labelledby="outreach-title">
+    <>
       {/* Hero Section */}
       <Banner
         image={{ urlImage: `${path}/images/global-programs/100 hours.png` }}
@@ -66,7 +77,7 @@ export default function OneHundredHoursOfAstronomy() {
         breadcrumbs={breadcrumbs}
       />
 
-      <div className="container mx-auto px-4 py-8 flex flex-col gap-16">
+      <div className={containerClass}>
         <ContentCard
           title="100 Hours of Astronomy"
           text={
@@ -102,109 +113,110 @@ export default function OneHundredHoursOfAstronomy() {
           twoColums
           wfull
         />
-        <div className="flex md:flex-row flex-col gap-16">
-          <div className="flex md:w-1/3 gap-8 w-full">
-            <div className="sticky top-6 w-full">
-              <details className="group p-6 shadow-md rounded-lg w-full" open>
-                <summary className="font-semibold cursor-pointer list-none flex justify-between items-center">
-                  Content
-                  <svg
-                    className="w-5 h-5 transition-transform transform group-open:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </summary>
-                <ul className="mt-4 ml-4 space-y-2">
-                  {contentTitle.map(({ title, id }) => (
-                    <li key={id} className="list-disc">
-                      <a
-                        href={`#${id}`}
-                        className="text-gray-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400"
-                      >
-                        {title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </details>
+
+        <BackgroundImg
+          title={""}
+          text={""}
+          image={{
+            imageUrl: `${path}/images/global-programs/100 hours.png`,
+            caption: "",
+            alt: "",
+            position: "",
+          }}
+        />
+        <div className="flex md:flex-row flex-col gap-16 px-8">
+          <article className="">
+            <h2
+              id="planetarium-title"
+              className="text-h2 font-bold scroll-mt-24 mb-8"
+            >
+              100 Years of the Planetarium
+            </h2>
+            <div className="sm:float-right max-md:w-full">
+              <div className="md:ml-8 mb-8">
+                <details className="group p-6 shadow-md rounded-lg w-full" open>
+                  <summary className="font-semibold cursor-pointer list-none flex justify-between items-center">
+                    Content
+                    <svg
+                      className="w-5 h-5 transition-transform transform group-open:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </summary>
+                  <ul className="mt-4 ml-4 space-y-2">
+                    {contentTitle.map(({ title, id }) => (
+                      <li key={id} className="list-disc">
+                        <a
+                          href={`#${id}`}
+                          className="text-gray-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        >
+                          {title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </div>
             </div>
-          </div>
 
-          <div className="flex flex-col md:w-2/3 gap-16 w-full">
-            {/* Second Section: 100 Years of the Planetarium */}
-            <section
-              aria-labelledby="planetarium-title"
-              className="flex flex-col gap-8"
-            >
-              <h2
-                id="planetarium-title"
-                className="text-h2 font-bold scroll-mt-24"
-              >
-                100 Years of the Planetarium
-              </h2>
-              <p>
-                From 2 to 5 October 2025, join the IAU Office for Astronomy
-                Outreach for a 100-hour, round-the-clock, round-the-globe
-                celebration of astronomy. This event aims to engage as many
-                people as possible—from children to seniors—with the sky and our
-                astronomical surroundings.
-              </p>
+            <p className="mb-8">
+              From 2 to 5 October 2025, join the IAU Office for Astronomy
+              Outreach for a 100-hour, round-the-clock, round-the-globe
+              celebration of astronomy. This event aims to engage as many people
+              as possible—from children to seniors—with the sky and our
+              astronomical surroundings.
+            </p>
+            <p className="mb-8">
+              <strong>Planetariums</strong> have long been a source of
+              inspiration for children and adults alike. In 1923, the first
+              planetarium projector was invented in Jena, Germany, and two years
+              later, the first planetarium opened its doors in Munich. Between
+              2023 and 2025, the world celebrates the centennial of the
+              planetarium and the countless ways planetariums have impacted
+              society. This year, the IAU Office for Astronomy Outreach (OAO)
+              will team up with the International Planetarium Society (IPS) to
+              continue the legacy of 100 Hours of Astronomy and celebrate 100
+              Years of the Planetarium!
+            </p>
 
-              <p>
-                <strong>Planetariums</strong> have long been a source of
-                inspiration for children and adults alike. In 1923, the first
-                planetarium projector was invented in Jena, Germany, and two
-                years later, the first planetarium opened its doors in Munich.
-                Between 2023 and 2025, the world celebrates the centennial of
-                the planetarium and the countless ways planetariums have
-                impacted society. This year, the IAU Office for Astronomy
-                Outreach (OAO) will team up with the International Planetarium
-                Society (IPS) to continue the legacy of 100 Hours of Astronomy
-                and celebrate 100 Years of the Planetarium!
-              </p>
+            <p className="mb-8">
+              With the increasing levels of light pollution worldwide, it is
+              impossible to experience a truly dark sky in many places.
+              Planetariums are then dark sky oases: sanctuaries for night sky
+              enthusiasts, exposing the public to the Universe. Even in
+              locations where skies are protected from city lights, planetariums
+              are still powerful educational tools for understanding the
+              Universe and our place within it. This year, we encourage everyone
+              to visit their local planetarium—small, large, mobile, or
+              stationary—and immerse themselves in the wonders of our Universe.
+            </p>
 
-              <p>
-                With the increasing levels of light pollution worldwide, it is
-                impossible to experience a truly dark sky in many places.
-                Planetariums are then dark sky oases: sanctuaries for night sky
-                enthusiasts, exposing the public to the Universe. Even in
-                locations where skies are protected from city lights,
-                planetariums are still powerful educational tools for
-                understanding the Universe and our place within it. This year,
-                we encourage everyone to visit their local planetarium—small,
-                large, mobile, or stationary—and immerse themselves in the
-                wonders of our Universe.
-              </p>
+            <p>
+              The OAO and IPS hope to activate planetariums worldwide to
+              participate in this programme.
+            </p>
+          </article>
+        </div>
 
-              <p>
-                The OAO and IPS hope to activate planetariums worldwide to
-                participate in this programme.
-              </p>
-            </section>
+        {/* Third Section: Event Ideas */}
+        <ContentCard
+          title="This Year's Events and Activity Ideas"
+          text={<em>Coming soon!</em>}
+          type="primary"
+          wfull
+        />
 
-            {/* Third Section: Event Ideas */}
-            <section
-              aria-labelledby="events-title"
-              className="flex flex-col gap-8"
-            >
-              <h2 id="events-title" className="text-h2 font-bold scroll-mt-24">
-                This Year&apos;s Events and Activity Ideas
-              </h2>
-              <p>
-                <em>Coming soon!</em>
-              </p>
-            </section>
-
-            {/* Getting Involved Section */}
+        <div className="flex md:flex-row flex-col gap-16">
+          <div className="flex flex-col gap-16 w-full">
             <section
               aria-labelledby="involved-title"
               className="flex flex-col gap-8"
@@ -411,7 +423,7 @@ export default function OneHundredHoursOfAstronomy() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

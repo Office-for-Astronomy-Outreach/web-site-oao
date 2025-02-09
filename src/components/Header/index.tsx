@@ -42,7 +42,7 @@ const Header: React.FC = () => {
         }`}
       >
         <div className="container mx-auto">
-          <div className="flex justify-between items-center uppercase sm:mx-0 mx-3 py-2 px-4">
+          <div className="flex justify-between items-center capitalize sm:mx-0 mx-3 py-2 px-4">
             {/* Logo */}
             <div className="text-lg font-bold">
               <Link href="/">

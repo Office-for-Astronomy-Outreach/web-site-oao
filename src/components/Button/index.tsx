@@ -19,6 +19,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
   onClick?: () => void;
   url?: string;
+  target?: "_blank" | "_self" | "_top" | "_parent";
   newTab?: boolean;
   variant?: "solid" | "outline" | "transparent";
   color?: "primary" | "secondary" | "dark" | "light";
@@ -28,6 +29,7 @@ const Button: React.FC<ButtonProps> = ({
   label,
   onClick,
   url,
+  target,
   newTab = false,
   variant = "solid",
   color = "primary",
@@ -69,8 +71,8 @@ const Button: React.FC<ButtonProps> = ({
 
   const handleClick = () => {
     if (url) {
-      if (newTab) {
-        window.open(url, "_blank");
+      if (newTab || target === "_blank") {
+        window.open(url, target ?? "_blank");
       } else {
         router.push(url);
       }
@@ -80,7 +82,7 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const buttonClass = classNames(
-    "rounded-full uppercase px-6 py-2 text-center font-medium transition duration-300 sm:min-w-52 min-w-full",
+    "rounded-full capitalize px-6 py-2 text-center font-medium transition duration-300 sm:min-w-52 min-w-full",
     colorClasses[color][variant]
   );
 

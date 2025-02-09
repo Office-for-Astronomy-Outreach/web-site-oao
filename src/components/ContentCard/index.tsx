@@ -19,6 +19,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
   type,
   twoColums,
   wfull,
+  idTitle,
 }) => {
   const colorButton = type === "primary" ? "dark" : "primary";
   const wSize = wfull ? "md:w-full" : "md:w-8/12";
@@ -34,19 +35,21 @@ const ContentCard: React.FC<ContentCardProps> = ({
     }
   );
 
-  const titleClass = classNames("font-bold text-h2", {
+  const titleClass = classNames("font-bold text-h2 capitalize scroll-mt-32", {
     "text-body": type === "transparent",
     "text-primary-main": type === "secondary",
   });
 
   const containerClass = classNames(
-    image?.imageUrl ? "md:w-5/12" : wSize,
+    image?.imageUrl ? "md:w-6/12" : wSize,
     type !== "transparent" ? "md:order-last" : ""
   );
 
   const captionClass = classNames(
-    "absolute z-10 bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+    "absolute z-[1] bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
   );
+
+  const imageClass = classNames("content-card-img group w-full md:w-6/12");
 
   return (
     <section className={cardClass}>
@@ -57,7 +60,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
         aria-labelledby={`${title}-header`}
       >
         <div className="flex flex-col gap-8">
-          <h2 id={`${title}-header`} className={titleClass}>
+          <h2 id={idTitle ?? `${title}-header`} className={titleClass}>
             {title}
           </h2>
           {typeof text === "string" ? (
@@ -74,12 +77,13 @@ const ContentCard: React.FC<ContentCardProps> = ({
             </div>
           )}
           {link && (
-            <div className="flex md:w-1/2 md:mt-4">
+            <div className="flex md:w-1/2 md:mt-4 max-w-[500px]">
               <Button
                 label={link.label}
                 variant="solid"
                 color={colorButton}
                 url={link.url}
+                target={link?.target}
               />
             </div>
           )}
@@ -88,7 +92,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
 
       {/* Image Section */}
       {image?.imageUrl && (
-        <div className="content-card-img group w-full md:w-6/12">
+        <div className={imageClass}>
           <figure className="relative md:h-full">
             <div className="relative w-full h-full">
               <Image

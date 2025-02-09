@@ -29,7 +29,7 @@ const Parallax: React.FC<ParallaxProps> = ({
   });
 
   const captionClass = clsx(
-    "absolute z-10 bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+    "absolute z-[1] bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
   );
 
   return (
@@ -46,12 +46,11 @@ const Parallax: React.FC<ParallaxProps> = ({
         aria-labelledby="parallax-title"
         aria-describedby="parallax-subtitle"
       >
-        {/* Overlay para oscurecer la imagen */}
         <div
-          className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"
+          className="absolute inset-0 bg-black bg-opacity-10 rounded-lg"
           aria-hidden="true"
         ></div>
-        {/* Contenido del parallax */}
+        {/* Parallax */}
         <div className="relative z-2">
           <h2 id="parallax-title" className="text-white text-h2 font-bold mb-4">
             {title}
