@@ -91,7 +91,7 @@ export default function Outreach() {
       {/* Hero Section */}
       <Banner
         image={{
-          urlImage: `${projectPath}/images/outreach/background-principal.png`,
+          urlImage: `${projectPath}/images/outreach/background-principal.jpg`,
           caption:
             "Four of the first ALMA antennas at the Array Operations Site (AOS). Credit: ESO/José Francisco Salgado (josefrancisco.org)",
         }}

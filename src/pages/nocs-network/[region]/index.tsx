@@ -39,6 +39,9 @@ const RegionPage = () => {
       <Banner
         image={{
           urlImage: `${projectPath}/images/nocs-network/background-principal.jpg`,
+          alt: "The Milky Way galaxy arching above the platform of ESO's Very Large Telescope",
+          caption:
+            "The Milky Way galaxy arching above the platform of ESO's Very Large Telescope (VLT) on Cerro Paranal, Chile. Credit: John Colosimo (colosimophotography.com)/ESO",
         }}
         title={`National Outreach Coordinators  - ${regionData?.region?.name}`}
         breadcrumbs={breadcrumbs}

@@ -107,9 +107,9 @@ export default function About() {
       {/* Hero Section */}
       <Banner
         image={{
-          urlImage: `${projectPath}/images/about/background.jpg`,
+          urlImage: `${projectPath}/images/about/background-principal.jpg`,
           caption:
-            "Atacama Desert in Chile the Atacama Large Millimeter/submillimeter Array (ALMA) Credit: Kuninori Iwashiro (Public Relations Center, NAOJ)",
+            "Atacama Desert in Chile the Atacama Large Millimeter/submillimeter Array (ALMA) Credit: IAU/ESO/B. Tafreshi",
         }}
         title={t("title")}
         breadcrumbs={breadcrumbs}

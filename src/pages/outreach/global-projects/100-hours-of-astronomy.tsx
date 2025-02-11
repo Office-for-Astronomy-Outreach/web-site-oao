@@ -384,7 +384,12 @@ export default function OneHundredHoursOfAstronomy() {
                 share your ideas by contributing to the Toolkit!
               </p>
               <div className="flex gap-8 sm:flex-row flex-col">
-                <Button label={"Go to Toolkit"} color="primary" />
+                <Button
+                  label={"Go to Toolkit"}
+                  color="primary"
+                  url="https://drive.google.com/drive/folders/1YhlL3HiV3anfJbTVIhFzbpPs3dJykqsT"
+                  newTab
+                />
                 <Button label={"Dowdload Toolkit"} color="dark" />
               </div>
             </section>

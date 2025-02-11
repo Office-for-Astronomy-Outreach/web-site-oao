@@ -27,7 +27,11 @@ export default function Contact() {
   return (
     <div>
       <Banner
-        image={{ urlImage: `${projectPath}/images/contact/background.png` }}
+        image={{
+          urlImage: `${projectPath}/images/contact/background.png`,
+          caption:
+            "The Atacama Large Millimeter/submillimeter Array (ALMA), an international astronomical facility, is a collaboration between Europe, North America and East Asia in cooperation with the Republic of Chile. Credit: ESO/S. Guisard",
+        }}
         title="Contact Us"
         breadcrumbs={[]}
       />

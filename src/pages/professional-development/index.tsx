@@ -115,6 +115,9 @@ export default function ProfessionalDevelopment() {
       <Banner
         image={{
           urlImage: `${projectPath}/images/professional-development/background.jpg`,
+          alt: "The Milky Way arcs across this 360-degree panorama of the night sky above ESO's Paranal Very Large Telescope.",
+          caption:
+            "The Milky Way arcs across this 360-degree panorama of the night sky above ESO's Paranal Very Large Telescope. Credit: ESO/H.H. Heyer",
         }}
         title="Professional Development"
         breadcrumbs={breadcrumbs}

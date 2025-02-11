@@ -173,8 +173,10 @@ export default function Home() {
         >
           <Button
             label={`${t("new-letter.subscribe")}`}
+            url="https://iau.us11.list-manage.com/subscribe?u=0ecb46e29196a0f367daf3dd6&id=9c0d469b8f"
             variant="outline"
             color="light"
+            newTab
           />
         </Parallax>
       </div>
