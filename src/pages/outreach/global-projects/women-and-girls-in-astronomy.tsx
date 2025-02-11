@@ -10,10 +10,9 @@ import Button from "@/components/Button";
 import BackgroundImg from "@/components/BackgroundImg";
 import ActivityCard from "@/components/ActiviyCard";
 import EmailDisplay from "@/components/EmailDisplay";
+import { projectPath } from "@/utils/path";
 
 export default function WomenAndGirlsInAstronomy() {
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   const [copySuccess, setCopySuccess] = useState("");
 
   const copyToClipboard = (text: string) => {
@@ -76,7 +75,7 @@ export default function WomenAndGirlsInAstronomy() {
       {/* Hero Section */}
       <Banner
         image={{
-          urlImage: `${path}/images/global-programs/bg-women-and-girls.jpg`,
+          urlImage: `${projectPath}/images/global-programs/bg-women-and-girls.jpg`,
         }}
         title="Women and Girls in Astronomy"
         breadcrumbs={breadcrumbs}
@@ -86,7 +85,7 @@ export default function WomenAndGirlsInAstronomy() {
         <ContentCard
           title="About the Event"
           text={
-            <>
+            <div className="flex flex-col gap-4">
               <p>
                 Every year, Women and Girls in Astronomy brings together people
                 from around the world to celebrate and highlight the
@@ -100,7 +99,7 @@ export default function WomenAndGirlsInAstronomy() {
                 connect stories, discoveries, and dreams that remind us the
                 Universe is open to everyone.
               </p>
-            </>
+            </div>
           }
           type="secondary"
           twoColums
@@ -111,7 +110,7 @@ export default function WomenAndGirlsInAstronomy() {
           title={""}
           text={""}
           image={{
-            imageUrl: `${path}/images/global-programs/women-in-astronomy/background-2025.png`,
+            imageUrl: `${projectPath}/images/global-programs/women-in-astronomy/background-2025.png`,
             caption: "",
             alt: "",
           }}
@@ -366,7 +365,7 @@ export default function WomenAndGirlsInAstronomy() {
           title="Share your event with the world"
           idTitle="share-your-event-with-the-world"
           image={{
-            imageUrl: `${path}/images/global-programs/women-in-astronomy/share-your-activity.png`,
+            imageUrl: `${projectPath}/images/global-programs/women-in-astronomy/share-your-activity.png`,
           }}
           link={{
             url: "https://docs.google.com/forms/d/e/1FAIpQLSeUAl2FgGTzG6Zli8vIzeclYiBGmK1rf8gj37rx-QDddeoucQ/viewform",
