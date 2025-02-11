@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 export interface Breadcrumb {
   label: string;
@@ -19,7 +21,7 @@ export interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ image, title, breadcrumbs }) => {
   return (
-    <div className="relative w-full h-80 md:h-96">
+    <div className="relative w-full md:h-96 h-80 ">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -28,10 +30,23 @@ const Banner: React.FC<BannerProps> = ({ image, title, breadcrumbs }) => {
           fill
           className="z-0"
           style={{ objectFit: "cover", objectPosition: "center" }}
-          sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 z-1"></div>
+
+        {image?.caption && (
+          <div className="absolute bottom-2 text-end z-10 w-full px-4">
+            <div className="relative group">
+              <p className="text-xs cursor-pointer text-white">
+                <FontAwesomeIcon icon={faCircleInfo} />
+              </p>
+              <div className="absolute w-auto bottom-0 right-8 bg-[#9b9b9b54] text-gray-50 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-xs">{image?.caption}</span>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Content */}

@@ -20,7 +20,7 @@ const BackgroundImg: React.FC<BackgroundImgProps> = ({
     "absolute inset-0 flex items-center justify-center text-center flex flex-col gap-8 text-white p-8";
 
   const containImgClass = classNames(
-    "w-full px-8 py-16 shadow-md relative rounded-lg",
+    "w-full px-8 py-16 shadow-md relative rounded-lg group",
     {
       "h-auto": size === "auto",
       "min-h-64": size === "xs",
@@ -29,6 +29,10 @@ const BackgroundImg: React.FC<BackgroundImgProps> = ({
       "min-h-[25rem]": size === "lg",
       "min-h-screen": size === "xl",
     }
+  );
+
+  const captionClass = classNames(
+    "absolute z-[1] bottom-0 left-0 w-full bg-black/60 p-2 text-sm text-center text-white rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
   );
 
   return (
@@ -45,12 +49,15 @@ const BackgroundImg: React.FC<BackgroundImgProps> = ({
           fill
           className="rounded-lg h-2"
           priority
-          sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
           style={{
             objectFit: image?.fit ?? "cover",
             objectPosition: image?.position ?? "top",
           }}
         />
+        {image?.caption && (
+          <figcaption className={captionClass}>{image?.caption}</figcaption>
+        )}
         <div className={maskClasses}></div>
         <div className={textClasses}>
           <h2 id={`${title}-header`} className="font-bold text-h2">
@@ -68,24 +75,3 @@ const BackgroundImg: React.FC<BackgroundImgProps> = ({
 };
 
 export default BackgroundImg;
-function clsx(
-  p0: string,
-  p1: {
-    "h-auto": boolean;
-    "min-h-64": boolean;
-    "min-h-80": boolean;
-    "min-h-96": boolean;
-    "min-h-[35rem]": boolean;
-    "min-h-screen": boolean;
-  },
-  arg0: {
-    "h-auto": boolean;
-    "h-64": boolean;
-    "h-80": boolean;
-    "h-96": boolean;
-    "h-[35rem]": boolean;
-    "h-screen": boolean;
-  }
-) {
-  throw new Error("Function not implemented.");
-}

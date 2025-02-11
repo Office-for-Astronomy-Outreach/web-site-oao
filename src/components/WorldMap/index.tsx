@@ -26,7 +26,7 @@ const WorldMap: React.FC<WorldMapPros> = ({ handleClick, regionSelected }) => {
         viewBox="0 0 600 400"
         role="img"
         aria-label=""
-        className="w-full aspect-video"
+        className="w-full"
       >
         <g data-z-index="3">
           <g

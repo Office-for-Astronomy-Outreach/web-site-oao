@@ -6,6 +6,7 @@ interface GlobalCommunityItem {
   src: string; // URL de la imagen
   url: string; // URL al que redirige el div al hacer clic
   alt: string; // Texto alternativo para la imagen
+  position?: string;
   caption?: string;
 }
 
@@ -33,11 +34,14 @@ const GlobalCommunityGrid: React.FC<GlobalCommunityGridProps> = ({
           key={index}
           href={image?.url}
           className={`bg-cover aspect-video ${linkClass}`}
-          style={{ backgroundImage: `url(${image.src})` }}
+          style={{
+            backgroundImage: `url(${image.src})`,
+            backgroundPosition: image.position ?? "center",
+          }}
           role="link"
           aria-label={image?.alt}
         >
-          <span className="sr-only">{image?.alt}</span>
+          <p className="sr-only">{image?.alt}</p>
         </Link>
       ))}
     </div>

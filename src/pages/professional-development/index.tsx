@@ -1,6 +1,8 @@
 import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
+import classNames from "classnames";
+import Image from "next/image";
 
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
@@ -9,36 +11,36 @@ import ImageGrid from "@/components/ImageGridsSection";
 import InfoGrid from "@/components/InfoGrid";
 import Parallax from "@/components/Parallax";
 import CardTeamMember from "@/components/TeamCard";
-import Image from "next/image";
-import classNames from "classnames";
+import { projectPath } from "@/utils/path";
 
 export default function ProfessionalDevelopment() {
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   const items = [
     {
       title: "CAP Conference",
       link: "https://capconferences.org/",
-      image: `${path}/images/cap-conference.jpg`,
+      image: `${projectPath}/images/cap-conference-01.jpg`,
       alt: "Invited speaker for the sub-theme “Outreach and Informal Education,” Norio Kaifu, Professor Emeritus of the National Astronomical Observatory of Japan (NAOJ) Advisor to the IAU, writer, and lecturer. CAP 2018",
+      target: "_blank",
     },
     {
       title: "CAP Training",
-      link: "/naoj",
-      image: `${path}/images/cap-training.jpg`,
+      link: "https://www.iau.org/public/oao/cap/cap-training/",
+      image: `${projectPath}/images/cap-training-01.jpg`,
       alt: "The Communicating Astronomy with the Public Journal (CAPj) is a free peer-reviewed journal for astronomy communicators.",
     },
     {
       title: "CAP Journal",
-      link: "/iau",
-      image: `${path}/images/cap-journal.jpg`,
+      link: "https://www.capjournal.org/",
+      image: `${projectPath}/images/cap-journal-01.jpg`,
       alt: "Cover of the CAP Journal showing a representation of astronomical outreach.",
+      target: "_blank",
     },
     {
       title: "CAP Inclusive Astronomy  Working Group",
-      link: "/rectangular",
-      image: `${path}/images/cap-working-group-inclusive.png`,
+      link: "https://iau.org/science/scientific_bodies/working_groups/259/",
+      image: `${projectPath}/images/cap-working-group-inclusive.png`,
       alt: "Students join the Kottamai Observatory staff for two open days organised in the context of NameExoWorlds 2022 on 18 and 19 November 2022, in Cairo, Egypt.",
+      target: "_blank",
     },
   ];
 
@@ -62,7 +64,7 @@ export default function ProfessionalDevelopment() {
       url: "/",
     },
     {
-      title: "Download Astronomy Education Materials",
+      title: "Astronomy Education Materials",
       description: "",
       bgColor: "bg-blue-500",
       url: "/",
@@ -73,21 +75,21 @@ export default function ProfessionalDevelopment() {
     {
       name: "Indigenous studies",
       role: "",
-      image: `${path}/images/about/about.png`,
+      image: `${projectPath}/images/about/about.png`,
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Education",
       role: "",
-      image: `${path}/images/about/about.png`,
+      image: `${projectPath}/images/about/about.png`,
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
     {
       name: "Grant and fundraising for our community",
       role: "",
-      image: `${path}/images/about/about.png`,
+      image: `${projectPath}/images/about/about.png`,
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     },
@@ -112,7 +114,7 @@ export default function ProfessionalDevelopment() {
       {/* Hero Section */}
       <Banner
         image={{
-          urlImage: `${path}/images/professional-development/background.jpg`,
+          urlImage: `${projectPath}/images/professional-development/background.jpg`,
         }}
         title="Professional Development"
         breadcrumbs={breadcrumbs}
@@ -145,7 +147,7 @@ export default function ProfessionalDevelopment() {
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg sm:aspect-square aspect-video">
                 <Image
-                  src={`${path}/images/professional-development/professional-development.png`}
+                  src={`${projectPath}/images/professional-development/professional-development.png`}
                   alt="NAOJ Visitor Program"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center" }}
@@ -222,7 +224,7 @@ export default function ProfessionalDevelopment() {
           </h2>
           <div className="w-full sm:max-h-80 max-h-[30rem] relative rounded-lg overflow-hidden">
             <Image
-              src={`${path}/images/about/resources.jpg`}
+              src={`${projectPath}/images/about/resources.jpg`}
               alt="Resources"
               fill
               style={{ objectFit: "cover", objectPosition: "center" }}
@@ -247,7 +249,7 @@ export default function ProfessionalDevelopment() {
         <Parallax
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
-          backgroundImage={{ imgUrl: `${path}/images/parallax-bg.jpg` }}
+          backgroundImage={{ imgUrl: `${projectPath}/images/parallax-bg.jpg` }}
         />
       </div>
     </>

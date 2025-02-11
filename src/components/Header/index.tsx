@@ -1,18 +1,17 @@
 import { useState, useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import Link from "next/link";
 
 import { menuList } from "./menuList";
 import MobileNavbar from "./MobileNavbar";
 import Navbar from "./Navbar";
-import Link from "next/link";
+import { projectPath } from "@/utils/path";
 
 /**
  * Header component: Displays the main navigation bar with desktop and mobile views.
  */
 const Header: React.FC = () => {
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -47,7 +46,7 @@ const Header: React.FC = () => {
             <div className="text-lg font-bold">
               <Link href="/">
                 <Image
-                  src={`${path}/images/logo.png`}
+                  src={`${projectPath}/images/logo.png`}
                   alt="Office for Astronomy Outreach"
                   width={65}
                   height={65}

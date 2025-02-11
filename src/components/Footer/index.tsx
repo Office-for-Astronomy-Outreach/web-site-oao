@@ -44,10 +44,6 @@ const Footer: React.FC = () => {
         { href: "/", label: t("footer.menuLinks.home") },
         { href: "/about", label: t("footer.menuLinks.about") },
         { href: "/nocs-network", label: t("footer.menuLinks.nocs-network") },
-        {
-          href: "/astronomy-outreach-map",
-          label: t("footer.menuLinks.astronomy-outreach-map"),
-        },
       ],
     },
     {
@@ -55,7 +51,7 @@ const Footer: React.FC = () => {
       links: [
         {
           href: "/100-hours-of-astronomy",
-          label: t("footer.menuLinks.nocs-network"),
+          label: "100 Hours of Astronomy",
         },
         {
           href: "/outreach/global-projects/women-and-girls-in-astronomy",
@@ -108,7 +104,7 @@ const Footer: React.FC = () => {
                 alt="National Astronomical Observatory of Japans Logo"
                 width={150}
                 height={85}
-                style={{ width: "auto", height: "auto" }}
+                style={{ width: 150, height: 85 }}
                 priority
               />
             </Link>

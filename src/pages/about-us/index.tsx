@@ -33,18 +33,18 @@ export default function About() {
         "Kelly Blumenthal is an astrophysicist and science communicator who has had the fortune of living in and working with many communities across the United States and worldwide. These experiences have shaped Kelly’s perspectives on the importance of astronomy communication in building STEM opportunities for under-resourced people worldwide and its role in science writ large.",
     },
     {
-      name: "Dr. Naomi Asabre Frimpong",
+      name: "Dr. Naomi Asabre F.",
       role: "Deputy Director",
       image: `${projectPath}/images/drnaomi.png`,
       description:
-        "Naomi Asabre Frimpong is an astrophysicist, science communicator, and leader in African astronomy. Coming to the OAO from the Ghana Space Science and Technology Institute (GSSTI), Naomi’s work has advanced the field of astronomy and the growth of scientific communities across Africa. As the former Vice President of the African Astronomical Society, she championed the development of astronomy across the continent and continues to do so on a global scale in her new role as Deputy Director of the IAU Office for Astronomy Outreach.",
+        "Naomi Asabre is an astrophysicist, science communicator, and leader in African astronomy. Coming to the OAO from the Ghana Space Science and Technology Institute (GSSTI), Naomi’s work has advanced the field of astronomy and the growth of scientific communities across Africa. As the former Vice President of the African Astronomical Society, she championed the development of astronomy across the continent and continues to do so on a global scale in her new role as Deputy Director of the IAU Office for Astronomy Outreach.",
     },
     {
       name: "Cintia Duran",
       role: "International Outreach Officer",
       image: `${projectPath}/images/cintia.png`,
       description:
-        "Cintia's work focuses on a unique and interdisciplinary approach to astronomy outreach, at the intersection of planetary science, language, and sound, particularly in communicating complex scientific ideas and our place in the universe.",
+        "Cintia Duran is an Educator, science communicator and artist. Her work and research focuses on a unique and interdisciplinary approach to public engagement with astronomy: the intersection of planetary science, language, and sound, particularly in communicating complex scientific ideas and our place in the universe. She works with cultural, civic, and technological organizations to develop educational resources, with the goal of transforming science institutions into diverse, multilingual, and approachable for the general public.",
     },
   ];
 
@@ -56,6 +56,7 @@ export default function About() {
       bgColor: "bg-blue-200",
       url: "https://capconferences.org/",
       image: `${projectPath}/images/collaborates/commissionc2-logo.png`,
+      target: "_blank",
     },
     {
       title: "LEIDEN UNIVERSITY",
@@ -64,6 +65,7 @@ export default function About() {
       bgColor: "bg-blue-300",
       url: "https://www.universiteitleiden.nl/",
       image: `${projectPath}/images/collaborates/universiteit-leiden-logo.png`,
+      target: "_blank",
     },
     {
       title: "SKA ORGANISATION",
@@ -72,6 +74,7 @@ export default function About() {
         "The SKAO provides the funding for our NOC/SKACON Funding Scheme projects - a joint funding program in which NOCs and SKACONS collaborate to perform",
       url: "https://www.skao.int/en",
       image: `${projectPath}/images/collaborates/ska-logo.png`,
+      target: "_blank",
     },
     {
       title: "IUCAA",
@@ -80,6 +83,7 @@ export default function About() {
       bgColor: "bg-blue-500",
       url: "https://www.iucaa.in/",
       image: `${projectPath}/images/collaborates/iucaa-logo.jpg`,
+      target: "_blank",
     },
   ];
 
@@ -102,7 +106,11 @@ export default function About() {
     <div>
       {/* Hero Section */}
       <Banner
-        image={{ urlImage: `${projectPath}/images/about/background.jpg` }}
+        image={{
+          urlImage: `${projectPath}/images/about/background.jpg`,
+          caption:
+            "Atacama Desert in Chile the Atacama Large Millimeter/submillimeter Array (ALMA) Credit: Kuninori Iwashiro (Public Relations Center, NAOJ)",
+        }}
         title={t("title")}
         breadcrumbs={breadcrumbs}
       />
@@ -176,7 +184,10 @@ export default function About() {
 
         {/* Team Section */}
         <div className="flex flex-col gap-16">
-          <h2 className="capitalize text-h2 font-bold text-body px-8">
+          <h2
+            className="capitalize text-h2 font-bold text-body px-8 scroll-mt-32"
+            id="our-team"
+          >
             {t("team.title")}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
@@ -240,9 +251,9 @@ export default function About() {
         </section>
 
         {/* Collaboration Section */}
-        <section className="flex flex-col gap-16 bg-white shadow-md rounded-lg py-8 md:py-16 px-8">
+        <section className="flex flex-col gap-16 py-8 md:py-16 px-8">
           <div className="px-8 flex flex-col gap-8">
-            <h2 className="capitalize text-h2 font-bold text-primary-main ">
+            <h2 className="capitalize text-h2 font-bold text-body ">
               {t("collaborations.title")}
             </h2>
             <p className="text-gray-600 xl:text-h5 text-p">

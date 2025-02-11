@@ -10,6 +10,7 @@ interface ParallaxProps {
     caption?: string;
   };
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "auto";
+  showAnimation?: boolean;
 }
 
 const Parallax: React.FC<ParallaxProps> = ({
@@ -18,6 +19,7 @@ const Parallax: React.FC<ParallaxProps> = ({
   children,
   backgroundImage,
   size = "lg",
+  showAnimation,
 }) => {
   const sizeClasses = clsx({
     "h-auto": size === "auto",
@@ -70,11 +72,13 @@ const Parallax: React.FC<ParallaxProps> = ({
           </figcaption>
         )}
       </div>
-      <div className="absolute top-0 w-full">
-        <div className="comets comets-left comets-long"></div>
-        <div className="comets comets-center comets-long"></div>
-        <div className="comets comets-top comets-long"></div>
-      </div>
+      {showAnimation && (
+        <div className="absolute top-0 w-full">
+          <div className="comets comets-left comets-long"></div>
+          <div className="comets comets-center comets-long"></div>
+          <div className="comets comets-top comets-long"></div>
+        </div>
+      )}
     </div>
   );
 };

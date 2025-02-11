@@ -9,6 +9,7 @@ import Button from "@/components/Button";
 import { RegionData } from "@/types";
 import Image from "next/image";
 import Banner from "@/components/Banner";
+import { projectPath } from "@/utils/path";
 
 // Define el fetcher para SWR
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -16,7 +17,6 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const RegionPage = () => {
   const router = useRouter();
   const { region } = router.query; // Obtenemos la región de la URL
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const {
     data: regionData,
@@ -41,7 +41,9 @@ const RegionPage = () => {
     <div>
       {/* Hero Section */}
       <Banner
-        image={{ urlImage: `${path}/images/palet-blue-dot.jpg` }}
+        image={{
+          urlImage: `${projectPath}/images/nocs-network/background-principal.png`,
+        }}
         title={`National Outreach Coordinators  - ${regionData?.region?.name}`}
         breadcrumbs={breadcrumbs}
       />

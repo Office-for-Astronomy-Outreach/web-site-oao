@@ -13,33 +13,37 @@ import classNames from "classnames";
 import StarCanvas from "@/components/Animations/StarCanvas";
 import BackgroundImg from "@/components/BackgroundImg";
 import ImageCard from "@/components/ImageCard";
-export default function Outreach() {
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
+import { projectPath } from "@/utils/path";
 
+export default function Outreach() {
   const items = [
     {
       title: "100 Hours of Astronomy",
       link: "/outreach/global-projects/100-hours-of-astronomy",
-      image: `${path}/images/global-community/100hours.png`,
+      image: `${projectPath}/images/global-community/100hours.png`,
       alt: "",
+      hiddenTitle: true,
     },
     {
       title: "Dark Skies",
       link: "/",
-      image: `${path}/images/global-community/dark-and-quiet-skies.jpeg`,
+      image: `${projectPath}/images/global-community/dark-and-quiet-skies.jpeg`,
       alt: "",
+      hiddenTitle: true,
     },
     {
       title: "Annual Contest Call",
       link: "/",
-      image: `${path}/images/global-community/quasi-moon.jpg`,
+      image: `${projectPath}/images/global-community/quasi-moon.jpg`,
       alt: "",
+      hiddenTitle: true,
     },
     {
       title: "Girls in Astronomy",
-      link: "/",
-      image: `${path}/images/global-community/womeninastronomy.jpg`,
+      link: "/outreach/global-projects/women-and-girls-in-astronomy",
+      image: `${projectPath}/images/global-community/women-in-astronomy.png`,
       alt: "",
+      hiddenTitle: true,
     },
   ];
 
@@ -63,7 +67,7 @@ export default function Outreach() {
       url: "/",
     },
     {
-      title: "Download Astronomy Education Materials",
+      title: "Astronomy Education Materials",
       description: "",
       bgColor: "bg-blue-500",
       url: "/",
@@ -86,7 +90,11 @@ export default function Outreach() {
     <>
       {/* Hero Section */}
       <Banner
-        image={{ urlImage: `${path}/images/outreach/resources.jpg` }}
+        image={{
+          urlImage: `${projectPath}/images/outreach/background.png`,
+          caption:
+            "Four of the first ALMA antennas at the Array Operations Site (AOS). Credit: ESO/José Francisco Salgado (josefrancisco.org)",
+        }}
         title="Public Engagement"
         breadcrumbs={breadcrumbs}
       />
@@ -118,7 +126,7 @@ export default function Outreach() {
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg md:aspect-auto aspect-video bg-black">
                 <Image
-                  src={`${path}/images/outreach/meet-the-astronomers.png`}
+                  src={`${projectPath}/images/outreach/meet-the-astronomers.png`}
                   alt=""
                   fill
                   style={{ objectFit: "contain", objectPosition: "center" }}
@@ -181,7 +189,7 @@ export default function Outreach() {
               item={{
                 title: "Help us translate",
                 link: "",
-                image: "/images/she-is-as-astronomer.jpg",
+                image: `${projectPath}/images/she-is-as-astronomer.jpg`,
                 alt: "",
               }}
               extraClasses="aspect-[4/3]"
@@ -191,7 +199,7 @@ export default function Outreach() {
               item={{
                 title: "Find translated materiale",
                 link: "",
-                image: "/images/outreach/material.jpg",
+                image: `${projectPath}/images/outreach/material.jpg`,
                 alt: "",
               }}
               extraClasses="aspect-[4/3]"
@@ -211,7 +219,7 @@ export default function Outreach() {
               interested in getting involved in the dissemination of current
               astronomy."
             image={{
-              imageUrl: `${path}/images/outreach/resources.jpg`,
+              imageUrl: `${projectPath}/images/outreach/resources.jpg`,
               position: "center",
             }}
           />
@@ -222,7 +230,9 @@ export default function Outreach() {
         <Parallax
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
-          backgroundImage={{ imgUrl: `${path}/images/home/parallax-bg.jpg` }}
+          backgroundImage={{
+            imgUrl: `${projectPath}/images/home/parallax-bg.jpg`,
+          }}
         />
       </div>
     </>

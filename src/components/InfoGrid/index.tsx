@@ -8,7 +8,7 @@ export interface GridItem {
   description?: string;
   bgColor?: string;
   url?: string;
-  target?: "_blank" | "_self" | "_top" | "_parent";
+  target?: string | "_blank" | "_self" | "_top" | "_parent";
   image?: string;
 }
 
@@ -22,7 +22,8 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items }) => {
     "hover:scale-105 transition-transform",
     "p-8 gap-8",
     "relative",
-    "text-body rounded-lg border border-gray-300 text-gray-600"
+    "text-body rounded-lg shadow-lg text-gray-600",
+    "bg-white"
   );
 
   return (
@@ -34,21 +35,22 @@ const InfoGrid: React.FC<InfoGridProps> = ({ items }) => {
           className={buttonClass}
           key={index}
         >
-          {item.image ? (
-            <Image
-              src={item.image}
-              alt={item.title}
-              height={100}
-              width={200}
-              style={{ objectFit: "contain", width: "auto", height: "auto" }}
-              className="aspect-video"
-            />
-          ) : (
-            <h3>{item.title}</h3>
-          )}
+          <div className="relative aspect-auto w-full">
+            {item.image ? (
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={200}
+                height={100}
+                style={{ objectFit: "contain", width: "100%", height: 100 }}
+              />
+            ) : (
+              <h3>{item.title}</h3>
+            )}
+          </div>
 
           {item?.description && (
-            <span className="text-p text-gray-600">{item?.description}</span>
+            <p className="text-xs text-gray-600">{item?.description}</p>
           )}
         </Link>
       ))}

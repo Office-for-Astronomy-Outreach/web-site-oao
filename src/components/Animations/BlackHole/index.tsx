@@ -167,7 +167,7 @@ const BlackHole = () => {
 
       // Draw the event horizon
       m.beginPath();
-      m.arc(w / 2, h / 2, 85 + 9, 0, 2 * Math.PI);
+      m.arc(w / 2, h / 2, 100 + 9, 0, 2 * Math.PI);
       m.fillStyle = "black";
       m.shadowBlur = 20;
       m.shadowColor = "#ff6600"; // Glow color

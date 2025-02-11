@@ -2,26 +2,18 @@ import { useEffect, useState } from "react";
 import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
+import classNames from "classnames";
 
 import Parallax from "@/components/Parallax";
 import ParticleMap from "@/components/ParticleMap";
 import WorldRegions from "@/components/WorldRegions";
 
 import type { Region } from "@/types";
-import classNames from "classnames";
 import ContentCard from "@/components/ContentCard";
-
-// Cargar el componente solo en el cliente
-
-import dynamic from "next/dynamic";
-
-const WorldMap = dynamic(() => import("@/components/WorldMap"), {
-  ssr: false, // Evita la ejecución en el servidor
-});
+import FAQList from "@/components/FAQList";
+import { projectPath } from "@/utils/path";
 
 export default function ProfessionalDevelopment() {
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   const [regions, setRegions] = useState<Region[]>([
     {
       id: 1,
@@ -58,9 +50,11 @@ export default function ProfessionalDevelopment() {
           const data = await response.json();
           setRegions(data);
         } else {
+          // eslint-disable-next-line no-console
           console.error("Failed to fetch regions");
         }
       } catch (error) {
+        // eslint-disable-next-line no-console
         console.error("Error fetching data: ", error);
       }
     };
@@ -126,6 +120,16 @@ export default function ProfessionalDevelopment() {
             working together to bring the wonders of the astronomy for everyone.
           </p>
         </div>
+        <Parallax
+          title=" Together, they create opportunities for cultural exchange, education, and engagement, making astronomy accessible to diverse audiences across the globe."
+          subtitle=""
+          backgroundImage={{
+            imgUrl: `${projectPath}/images/nocs-network/background-secondary.jpg`,
+          }}
+        ></Parallax>
+
+        <FAQList />
+
         {regions.length > 0 && <WorldRegions regions={regions} />}
 
         <ContentCard
@@ -144,7 +148,7 @@ export default function ProfessionalDevelopment() {
                   international cooperation."
           type="primary"
           image={{
-            imageUrl: `${path}/images/nocs-network/astronomy-global-project.jpg`,
+            imageUrl: `${projectPath}/images/nocs-network/astronomy-global-project.jpg`,
             caption:
               "Activity in Ethiopia in the framework of the 100 Hours of Astronomy Global Project. Credit: IAU100",
             alt: "A group of Ethiopian schoolchildren in uniform watch with enthusiasm as a classmate, standing on a chair, looks through an astronomical telescope mounted on a wooden tripod. A curly-haired instructor guides the activity, ensuring that the students understand how to use the telescope.",
@@ -155,13 +159,10 @@ export default function ProfessionalDevelopment() {
           text="NOCs may be invited to submit an application for microfunding:  small grants, on the order of 500 EUR, meant to support individual NOCs in their work. The indicated need,  sustainability of the planned resources, and demonstrated impact influence the grant selection."
           type="transparent"
           image={{
-            imageUrl: `${path}/images/nocs-network/background.png`,
+            imageUrl: `${projectPath}/images/nocs-network/background.png`,
+            alt: "A group of young girls with solar protection glasses look toward the Sun in an open field.",
+            caption: "Copyright: 100 Hours of Astronomy, India, Neelam Mishra.",
           }}
-        />
-        <Parallax
-          title="Visit Our World"
-          subtitle="Astronomy Outreach Map"
-          backgroundImage={{ imgUrl: `${path}/images/parallax-bg.jpg` }}
         />
       </div>
     </>

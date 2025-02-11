@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export interface CarouselItem {
   image: string; // URL of the image
   title: string; // Title for the slide
+  caption?: string;
   subtitle?: string; // Subtitle for the slide (optional)
   button?: {
     label: string; // Label for the button
@@ -97,6 +100,18 @@ const Carousel: React.FC<CarouselProps> = ({
                 >
                   {slide.button.label}
                 </a>
+              )}
+              {slide?.caption && (
+                <div className="absolute bottom-2 right-4">
+                  <div className="relative group">
+                    <p className="text-xs cursor-pointer">
+                      <FontAwesomeIcon icon={faCircleInfo} />
+                    </p>
+                    <div className="absolute -top-[55px] -right-2 bg-[#9b9b9b54] text-gray-50 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-60">
+                      <span className="text-xs">{slide?.caption}</span>
+                    </div>
+                  </div>
+                </div>
               )}
             </div>
           </div>

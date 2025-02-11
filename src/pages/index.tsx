@@ -22,6 +22,8 @@ export default function Home() {
       image: `${projectPath}/images/home/parallax-bg.jpg`,
       title: "Welcome to the Office for Astronomy Outreach",
       subtitle: "Astronomy for everyone",
+      caption:
+        "The Gran Telescopio Canarias, Spain. Credits: David Monje/Unsplash",
     },
   ];
 
@@ -54,27 +56,30 @@ export default function Home() {
 
   const globalCommunity = [
     {
-      src: `${projectPath}/images/global-community/iau.jpg`,
+      src: `${projectPath}/images/global-community/team-iau.png`,
       url: "about-us#our-team",
       alt: "IAU team",
     },
 
     {
-      src: `${projectPath}/images/global-community/portadaWomenAndGirls.png`,
+      src: `${projectPath}/images/global-community/women-in-astronomy.png`,
       url: "/outreach/global-projects/women-and-girls-in-astronomy",
       alt: "Women in Astronomy",
+      position: "left",
     },
 
     {
-      src: `${projectPath}/images/global-community/100hours.jpeg`,
+      src: `${projectPath}/images/global-community/100-hours-of-astronomy.png`,
       url: "/outreach/global-projects/100-hours-of-astronomy",
       alt: "100 Hours of Astronomy",
+      position: "right",
     },
 
     {
       src: `${projectPath}/images/global-community/meet.jpg`,
-      url: "/outreach/global-projects/",
-      alt: "Meet",
+      url: "/outreach/global-projects/meet-the-iau-astronomers",
+      alt: "Meet the IAU astronomers",
+      position: "left",
     },
   ];
 
@@ -164,6 +169,7 @@ export default function Home() {
             imgUrl: `${projectPath}/images/home/parallax-bg-01.jpg`,
             caption: t("new-letter.caption-img"),
           }}
+          showAnimation={true}
         >
           <Button
             label={`${t("new-letter.subscribe")}`}

@@ -1,7 +1,6 @@
-import { useState, useMemo, useCallback } from "react";
+import { useState, useCallback } from "react";
 import Button from "../Button"; // Asegúrate de importar correctamente tu componente Button
 import router from "next/router";
-import Image from "next/image";
 
 import { Region } from "@/types";
 import WorldMap from "../WorldMap";
@@ -30,14 +29,14 @@ const WorldRegions: React.FC<WorldRegionsProps> = ({ regions }) => {
   }, []);
 
   return (
-    <section aria-labelledby="">
-      <div className="flex flex-col gap-8 p-8 bg-white rounded-lg shadow-md">
-        <h2 id="" className="text-h2 font-bold text-primary-main">
+    <section>
+      <div className="flex flex-col gap-8 px-8 rounded-lg">
+        <h2 id="world-regions" className="text-h2 font-bold text-body">
           World Regions
         </h2>
 
         <div className="flex md:flex-row flex-col gap-8">
-          <div className="flex md:w-1/3 w-full md:flex-col flex-wrap justify-center gap-4">
+          <div className="flex md:w-1/3 w-full md:flex-col flex-wrap justify-top gap-4 mt-8">
             {regions.length > 0 &&
               regions.map((region) => (
                 <Button
