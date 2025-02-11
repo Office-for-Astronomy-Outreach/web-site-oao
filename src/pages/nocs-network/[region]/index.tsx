@@ -18,11 +18,7 @@ const RegionPage = () => {
   const router = useRouter();
   const { region } = router.query; // Obtenemos la región de la URL
 
-  const {
-    data: regionData,
-    error,
-    isLoading,
-  } = useSWR<RegionData>(
+  const { data: regionData, isLoading } = useSWR<RegionData>(
     router.isReady && region ? `/api/regions/${region}` : null,
     fetcher
   );
@@ -35,7 +31,7 @@ const RegionPage = () => {
 
   if (!router.isReady) return <div>Loading...</div>;
   if (isLoading) return <div>Loading region data...</div>;
-  if (error) return <div>Error loading region data</div>;
+  //if (error) return <div>Error loading region data</div>;
 
   return (
     <div>

@@ -46,7 +46,7 @@ const Header: React.FC = () => {
             <div className="text-lg font-bold">
               <Link href="/">
                 <Image
-                  src={`${projectPath}/images/logo.png`}
+                  src={`${projectPath}/images/logos/logo.png`}
                   alt="Office for Astronomy Outreach"
                   width={65}
                   height={65}
