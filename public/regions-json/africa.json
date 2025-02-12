@@ -1,0 +1,330 @@
+{
+    "region": {
+        "id": 1,
+        "name": "Africa",
+        "slug": "africa",
+        "created_at": "2025-01-17T04:43:36.546Z",
+        "updated_at": "2025-01-17T04:43:36.546Z"
+    },
+    "countries": [
+        {
+            "id": 1,
+            "name": "Algeria",
+            "slug": "algeria",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.450Z",
+            "updated_at": "2025-01-17T17:50:15.450Z"
+        },
+        {
+            "id": 2,
+            "name": "Benin",
+            "slug": "benin",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.455Z",
+            "updated_at": "2025-01-17T17:50:15.455Z"
+        },
+        {
+            "id": 3,
+            "name": "Botswana",
+            "slug": "botswana",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.458Z",
+            "updated_at": "2025-01-17T17:50:15.458Z"
+        },
+        {
+            "id": 4,
+            "name": "Burkina Faso",
+            "slug": "burkina-faso",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.462Z",
+            "updated_at": "2025-01-17T17:50:15.462Z"
+        },
+        {
+            "id": 5,
+            "name": "Cameroon",
+            "slug": "cameroon",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.465Z",
+            "updated_at": "2025-01-17T17:50:15.465Z"
+        },
+        {
+            "id": 6,
+            "name": "Cape Verde",
+            "slug": "cape-verde",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.469Z",
+            "updated_at": "2025-01-17T17:50:15.469Z"
+        },
+        {
+            "id": 7,
+            "name": "Chad",
+            "slug": "chad",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.473Z",
+            "updated_at": "2025-01-17T17:50:15.473Z"
+        },
+        {
+            "id": 9,
+            "name": "Egypt",
+            "slug": "egypt",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.481Z",
+            "updated_at": "2025-01-17T17:50:15.481Z"
+        },
+        {
+            "id": 10,
+            "name": "Ethiopia",
+            "slug": "ethiopia",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.484Z",
+            "updated_at": "2025-01-17T17:50:15.484Z"
+        },
+        {
+            "id": 11,
+            "name": "Gabon",
+            "slug": "gabon",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.487Z",
+            "updated_at": "2025-01-17T17:50:15.487Z"
+        },
+        {
+            "id": 12,
+            "name": "Kenya",
+            "slug": "kenya",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.491Z",
+            "updated_at": "2025-01-17T17:50:15.491Z"
+        },
+        {
+            "id": 13,
+            "name": "Libya",
+            "slug": "libya",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.495Z",
+            "updated_at": "2025-01-17T17:50:15.495Z"
+        },
+        {
+            "id": 14,
+            "name": "Madagascar",
+            "slug": "madagascar",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.499Z",
+            "updated_at": "2025-01-17T17:50:15.499Z"
+        },
+        {
+            "id": 15,
+            "name": "Mauritania",
+            "slug": "mauritania",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.502Z",
+            "updated_at": "2025-01-17T17:50:15.502Z"
+        },
+        {
+            "id": 16,
+            "name": "Mauritius",
+            "slug": "mauritius",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.506Z",
+            "updated_at": "2025-01-17T17:50:15.506Z"
+        },
+        {
+            "id": 17,
+            "name": "Morocco",
+            "slug": "morocco",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.509Z",
+            "updated_at": "2025-01-17T17:50:15.509Z"
+        },
+        {
+            "id": 18,
+            "name": "Mozambique",
+            "slug": "mozambique",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.512Z",
+            "updated_at": "2025-01-17T17:50:15.512Z"
+        },
+        {
+            "id": 19,
+            "name": "Namibia",
+            "slug": "namibia",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.516Z",
+            "updated_at": "2025-01-17T17:50:15.516Z"
+        },
+        {
+            "id": 20,
+            "name": "Senegal",
+            "slug": "senegal",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.519Z",
+            "updated_at": "2025-01-17T17:50:15.519Z"
+        },
+        {
+            "id": 21,
+            "name": "Sierra Leone",
+            "slug": "sierra-leone",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.523Z",
+            "updated_at": "2025-01-17T17:50:15.523Z"
+        },
+        {
+            "id": 22,
+            "name": "South Africa",
+            "slug": "south-africa",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.526Z",
+            "updated_at": "2025-01-17T17:50:15.526Z"
+        },
+        {
+            "id": 23,
+            "name": "Sudan",
+            "slug": "sudan",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.530Z",
+            "updated_at": "2025-01-17T17:50:15.530Z"
+        },
+        {
+            "id": 24,
+            "name": "Tanzania, United Republic of",
+            "slug": "tanzania-united-republic-of",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.533Z",
+            "updated_at": "2025-01-17T17:50:15.533Z"
+        },
+        {
+            "id": 25,
+            "name": "Togo",
+            "slug": "togo",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.536Z",
+            "updated_at": "2025-01-17T17:50:15.536Z"
+        },
+        {
+            "id": 26,
+            "name": "Tunisia",
+            "slug": "tunisia",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.540Z",
+            "updated_at": "2025-01-17T17:50:15.540Z"
+        },
+        {
+            "id": 27,
+            "name": "Uganda",
+            "slug": "uganda",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.543Z",
+            "updated_at": "2025-01-17T17:50:15.543Z"
+        },
+        {
+            "id": 28,
+            "name": "Zambia",
+            "slug": "zambia",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.547Z",
+            "updated_at": "2025-01-17T17:50:15.547Z"
+        },
+        {
+            "id": 29,
+            "name": "Zimbabwe",
+            "slug": "zimbabwe",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.550Z",
+            "updated_at": "2025-01-17T17:50:15.550Z"
+        },
+        {
+            "id": 8,
+            "name": "Côte d'Ivoire",
+            "slug": "cote-d-ivoire",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 1,
+            "created_at": "2025-01-17T17:50:15.477Z",
+            "updated_at": "2025-01-17T17:50:15.477Z"
+        }
+    ]
+}

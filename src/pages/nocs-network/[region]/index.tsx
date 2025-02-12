@@ -2,14 +2,15 @@ import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
 
+import Image from "next/image";
+import classNames from "classnames";
 import { useRouter } from "next/router";
 import useSWR from "swr"; // Importa el hook SWR
 
-import Button from "@/components/Button";
-import { RegionData } from "@/types";
-import Image from "next/image";
-import Banner from "@/components/Banner";
 import { projectPath } from "@/utils/path";
+import { RegionData } from "@/types";
+import Button from "@/components/Button";
+import Banner from "@/components/Banner";
 
 // Define el fetcher para SWR
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -18,7 +19,7 @@ const RegionPage = () => {
   const router = useRouter();
   const { region } = router.query; // Obtenemos la región de la URL
 
-  const { data: regionData, isLoading } = useSWR<RegionData>(
+  const { data: regionData } = useSWR<RegionData>(
     router.isReady && region ? `/api/regions/${region}` : null,
     fetcher
   );
@@ -29,12 +30,19 @@ const RegionPage = () => {
     { label: `${regionData?.region?.name}`, href: `/nocs-network/${region}` },
   ];
 
-  if (!router.isReady) return <div>Loading...</div>;
-  if (isLoading) return <div>Loading region data...</div>;
-  //if (error) return <div>Error loading region data</div>;
+   const containerClass = classNames(
+      "md:container",
+      "md:mx-auto mx-2",
+      "my-16",
+      "md:px-4",
+      "py-2",
+      "flex flex-col gap-24"
+    );
+
+  if (!router.isReady) return <div className="h-screen">Loading...</div>;
 
   return (
-    <div>
+    <>
       {/* Hero Section */}
       <Banner
         image={{
@@ -47,31 +55,28 @@ const RegionPage = () => {
         breadcrumbs={breadcrumbs}
       />
 
-      <div className="container mx-auto px-4 py-8">
-        <h2 className="capitalize  text-2xl font-bold text-center mb-4">
-          Countries in {regionData?.region?.name}
-        </h2>
-        <div className="relative rounded-xl overflow-auto shadow-sm bg-white">
+      <div className={containerClass}>
+        <div className="relative rounded-xl overflow-auto shadow-sm bg-white p-8">
           {regionData?.countries && (
-            <table className="border-collapse table-auto w-full">
+            <table className="border-collapse table-auto w-full text-gray-600">
               <thead>
-                <tr className="">
-                  <th className="px-4 py-2 text-left">.</th>
-                  <th className="px-4 py-2 text-left">Country</th>
-                  <th className="px-4 py-2 text-left">Coordinator</th>
+                <tr className="text-primary-main">
+                  <th className="p-4 text-left">Logo</th>
+                  <th className="p-4 text-left">Country</th>
+                  <th className="p-4 text-left">National Outreach Coorninator </th>
                 </tr>
               </thead>
               <tbody>
                 {regionData?.countries?.length === 0 ? (
                   <tr>
-                    <td colSpan={4} className="px-4 py-2 text-center">
+                    <td colSpan={4} className="px-8 py-2 text-center">
                       No countries available for this region
                     </td>
                   </tr>
                 ) : (
                   regionData?.countries?.map((country, index) => (
                     <tr key={index} className="hover:bg-gray-100">
-                      <td className="px-4 py-2">
+                      <td className="p-4">
                         <Image
                           src={
                             country.urlImg ??
@@ -82,9 +87,9 @@ const RegionPage = () => {
                           height={55}
                         />
                       </td>
-                      <td className="px-4 py-2">{country.name}</td>
-                      <td className="px-4 py-2">{country.id}</td>
-                      <td className="px-4 py-2">
+                      <td className="p-4">{country.name}</td>
+                      <td className="p-4">Information not available</td>
+                      <td className="p-4">
                         <Button
                           label="Read More"
                           url={`/nocs-network/${region}/${country?.slug}`}
@@ -98,7 +103,7 @@ const RegionPage = () => {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

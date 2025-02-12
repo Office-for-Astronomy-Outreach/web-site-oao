@@ -1,0 +1,275 @@
+{
+    "region": {
+        "id": 2,
+        "name": "Americas",
+        "slug": "americas",
+        "created_at": "2025-01-17T04:43:36.550Z",
+        "updated_at": "2025-01-17T04:43:36.550Z"
+    },
+    "countries": [
+        {
+            "id": 30,
+            "name": "Argentina",
+            "slug": "argentina",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.554Z",
+            "updated_at": "2025-01-17T17:50:15.554Z"
+        },
+        {
+            "id": 31,
+            "name": "Aruba",
+            "slug": "aruba",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.557Z",
+            "updated_at": "2025-01-17T17:50:15.557Z"
+        },
+        {
+            "id": 32,
+            "name": "Barbados",
+            "slug": "barbados",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.561Z",
+            "updated_at": "2025-01-17T17:50:15.561Z"
+        },
+        {
+            "id": 33,
+            "name": "Bolivia, Plurinational State of",
+            "slug": "bolivia-plurinational-state-of",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.564Z",
+            "updated_at": "2025-01-17T17:50:15.564Z"
+        },
+        {
+            "id": 34,
+            "name": "Brazil",
+            "slug": "brazil",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.568Z",
+            "updated_at": "2025-01-17T17:50:15.568Z"
+        },
+        {
+            "id": 35,
+            "name": "Canada",
+            "slug": "canada",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.571Z",
+            "updated_at": "2025-01-17T17:50:15.571Z"
+        },
+        {
+            "id": 36,
+            "name": "Chile",
+            "slug": "chile",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.575Z",
+            "updated_at": "2025-01-17T17:50:15.575Z"
+        },
+        {
+            "id": 37,
+            "name": "Colombia",
+            "slug": "colombia",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.578Z",
+            "updated_at": "2025-01-17T17:50:15.578Z"
+        },
+        {
+            "id": 38,
+            "name": "Costa Rica",
+            "slug": "costa-rica",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.581Z",
+            "updated_at": "2025-01-17T17:50:15.581Z"
+        },
+        {
+            "id": 40,
+            "name": "Ecuador",
+            "slug": "ecuador",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.589Z",
+            "updated_at": "2025-01-17T17:50:15.589Z"
+        },
+        {
+            "id": 41,
+            "name": "El Salvador",
+            "slug": "el-salvador",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.592Z",
+            "updated_at": "2025-01-17T17:50:15.592Z"
+        },
+        {
+            "id": 42,
+            "name": "Guatemala",
+            "slug": "guatemala",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.595Z",
+            "updated_at": "2025-01-17T17:50:15.595Z"
+        },
+        {
+            "id": 43,
+            "name": "Guyana",
+            "slug": "guyana",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.598Z",
+            "updated_at": "2025-01-17T17:50:15.598Z"
+        },
+        {
+            "id": 44,
+            "name": "Haiti",
+            "slug": "haiti",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.602Z",
+            "updated_at": "2025-01-17T17:50:15.602Z"
+        },
+        {
+            "id": 45,
+            "name": "Honduras",
+            "slug": "honduras",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.605Z",
+            "updated_at": "2025-01-17T17:50:15.605Z"
+        },
+        {
+            "id": 46,
+            "name": "Mexico",
+            "slug": "mexico",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.609Z",
+            "updated_at": "2025-01-17T17:50:15.609Z"
+        },
+        {
+            "id": 47,
+            "name": "Nicaragua",
+            "slug": "nicaragua",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.612Z",
+            "updated_at": "2025-01-17T17:50:15.612Z"
+        },
+        {
+            "id": 48,
+            "name": "Panama",
+            "slug": "panama",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.615Z",
+            "updated_at": "2025-01-17T17:50:15.615Z"
+        },
+        {
+            "id": 49,
+            "name": "Paraguay",
+            "slug": "paraguay",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.619Z",
+            "updated_at": "2025-01-17T17:50:15.619Z"
+        },
+        {
+            "id": 50,
+            "name": "Peru",
+            "slug": "peru",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.622Z",
+            "updated_at": "2025-01-17T17:50:15.622Z"
+        },
+        {
+            "id": 51,
+            "name": "Puerto Rico, United States",
+            "slug": "puerto-rico-united-states",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.626Z",
+            "updated_at": "2025-01-17T17:50:15.626Z"
+        },
+        {
+            "id": 52,
+            "name": "Trinidad and Tobago",
+            "slug": "trinidad-and-tobago",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.629Z",
+            "updated_at": "2025-01-17T17:50:15.629Z"
+        },
+        {
+            "id": 53,
+            "name": "Venezuela, Bolivarian Republic of",
+            "slug": "venezuela-bolivarian-republic-of",
+            "description": null,
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.633Z",
+            "updated_at": "2025-01-17T17:50:15.633Z"
+        },
+        {
+            "id": 39,
+            "name": "Dominican Republic",
+            "slug": "dominican-republic",
+            "description": "The Dominican Republic has been actively promoting astronomical knowledge both nationally and internationally. Through collaboration with universities, observatories, and scientific organizations, we strive to expand access to astronomy and inspire interest in future generations.\n\nOne of our main objectives is to support educational and outreach initiatives that bring astronomy closer to Dominican society. Beyond being a fascinating science, we believe astronomy is a powerful tool to spark curiosity, foster critical thinking, and drive technological innovation in our country.",
+            "url_img": null,
+            "web_site": null,
+            "region_id": 2,
+            "created_at": "2025-01-17T17:50:15.585Z",
+            "updated_at": "2025-01-17T17:50:15.585Z"
+        }
+    ]
+}
