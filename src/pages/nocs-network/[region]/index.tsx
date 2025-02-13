@@ -9,7 +9,6 @@ import useSWR from "swr"; // Importa el hook SWR
 
 import { projectPath } from "@/utils/path";
 import { RegionData } from "@/types";
-import Button from "@/components/Button";
 import Banner from "@/components/Banner";
 
 // Define el fetcher para SWR
@@ -30,14 +29,14 @@ const RegionPage = () => {
     { label: `${regionData?.region?.name}`, href: `/nocs-network/${region}` },
   ];
 
-   const containerClass = classNames(
-      "md:container",
-      "md:mx-auto mx-2",
-      "my-16",
-      "md:px-4",
-      "py-2",
-      "flex flex-col gap-24"
-    );
+  const containerClass = classNames(
+    "md:container",
+    "md:mx-auto mx-2",
+    "my-16",
+    "md:px-4",
+    "py-2",
+    "flex flex-col gap-24"
+  );
 
   if (!router.isReady) return <div className="h-screen">Loading...</div>;
 
@@ -63,7 +62,9 @@ const RegionPage = () => {
                 <tr className="text-primary-main">
                   <th className="p-4 text-left">Logo</th>
                   <th className="p-4 text-left">Country</th>
-                  <th className="p-4 text-left">National Outreach Coorninator </th>
+                  <th className="p-4 text-left">
+                    National Outreach Coorninator{" "}
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -82,9 +83,14 @@ const RegionPage = () => {
                             country.urlImg ??
                             `/images/nocs/${country.name}/oao-${country.slug}.png`
                           }
-                          alt="logo"
+                          alt={`Logo ${country.name}`}
                           width={70}
                           height={55}
+                          style={{
+                            width: 70,
+                            height: 55,
+                            objectFit: "contain",
+                          }}
                         />
                       </td>
                       <td className="p-4">{country.name}</td>

@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
               aria-label="Visit the National Astronomical Observatory of Japan website"
             >
               <Image
-                src={`${projectPath}/images/partners/naoj-logo-white.png`}
+                src={`${projectPath}/images/logos/naoj-logo-white.png`}
                 alt="National Astronomical Observatory of Japans Logo"
                 width={150}
                 height={85}

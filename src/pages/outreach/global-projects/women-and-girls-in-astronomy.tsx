@@ -185,7 +185,7 @@ export default function WomenAndGirlsInAstronomy() {
         {/* How to participate */}
         <ContentCard
           title="How to participate?"
-          idTitle="how-to-participate-header"
+          idTitle="how-to-participate"
           text={
             <div>
               <ol
@@ -420,7 +420,7 @@ export default function WomenAndGirlsInAstronomy() {
           title="More Information"
           idTitle="more-information"
           text={
-            <>
+            <div className="flex flex-col gap-4">
               <p className="text-gray-700 mb-4">
                 All events must respect the general guidelines of the IAU Global
                 Outreach initiatives, which promote the key role of astronomy
@@ -446,7 +446,7 @@ export default function WomenAndGirlsInAstronomy() {
                   “W&amp;GiA Calendar 2025 – Submission Form”.
                 </span>
               </span>
-            </>
+            </div>
           }
           type="secondary"
           wfull

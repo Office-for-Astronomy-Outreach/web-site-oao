@@ -36,7 +36,7 @@ const Banner: React.FC<BannerProps> = ({ image, title, breadcrumbs }) => {
         <div className="absolute inset-0 bg-black bg-opacity-10 z-1"></div>
 
         {image?.caption && (
-          <div className="absolute bottom-2 text-end z-10 w-full px-4">
+          <div className="absolute bottom-2 text-end z-[1] w-full px-4">
             <div className="relative group">
               <p className="text-xs cursor-pointer text-white">
                 <FontAwesomeIcon icon={faCircleInfo} />
