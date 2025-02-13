@@ -91,9 +91,9 @@ export default function Outreach() {
       {/* Hero Section */}
       <Banner
         image={{
-          urlImage: `${projectPath}/images/outreach/background-principal.jpeg`,
+          urlImage: `${projectPath}/images/outreach/background-principal.jpg`,
           caption:
-            "Four of the first ALMA antennas at the Array Operations Site (AOS). Credit: ESO/José Francisco Salgado (josefrancisco.org)",
+            "The Atacama Large Millimeter/submillimeter Array (ALMA) ranged across the unearthly landscape. Credit: ESO/B. Tafreshi ",
         }}
         title="Public Engagement"
         breadcrumbs={breadcrumbs}
@@ -231,9 +231,18 @@ export default function Outreach() {
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
           backgroundImage={{
-            imgUrl: `${projectPath}/images/home/parallax-bg.jpg`,
+            imgUrl: `${projectPath}/images/outreach/background-secondary.png `,
+            caption:
+              "Four of the first ALMA antennas at the Array Operations Site (AOS). Credit: ESO/José Francisco Salgado (josefrancisco.org)",
           }}
-        />
+        >
+          <Button
+            label="Events"
+            url="/outreach/global-projects/astronomy-outreach-map"
+            variant="outline"
+            color="light"
+          />
+        </Parallax>
       </div>
     </>
   );

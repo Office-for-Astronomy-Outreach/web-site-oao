@@ -90,10 +90,11 @@ const RegionPage = () => {
                       <td className="p-4">{country.name}</td>
                       <td className="p-4">Information not available</td>
                       <td className="p-4">
-                        <Button
+                        {/*Button
                           label="Read More"
                           url={`/nocs-network/${region}/${country?.slug}`}
-                        />
+                          disabled
+                        />*/}
                       </td>
                     </tr>
                   ))

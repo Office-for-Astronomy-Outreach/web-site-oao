@@ -14,6 +14,7 @@ import CardTeamMember from "@/components/TeamCard";
 import Banner from "@/components/Banner";
 import BlueDotAnimation from "@/animations/BlueDotAnimation";
 import { projectPath } from "@/utils/path";
+import Button from "@/components/Button";
 
 export default function About() {
   const { t } = useTranslation("about");
@@ -28,21 +29,21 @@ export default function About() {
     {
       name: "Dr. Kelly Blumenthal",
       role: "Director",
-      image: `${projectPath}/images/kelly.jpeg`,
+      image: `${projectPath}/images/about/team/kelly.jpeg`,
       description:
         "Kelly Blumenthal is an astrophysicist and science communicator who has had the fortune of living in and working with many communities across the United States and worldwide. These experiences have shaped Kelly’s perspectives on the importance of astronomy communication in building STEM opportunities for under-resourced people worldwide and its role in science writ large.",
     },
     {
       name: "Dr. Naomi Asabre F.",
       role: "Deputy Director",
-      image: `${projectPath}/images/drnaomi.png`,
+      image: `${projectPath}/images/about/team/drnaomi.png`,
       description:
         "Naomi Asabre is an astrophysicist, science communicator, and leader in African astronomy. Coming to the OAO from the Ghana Space Science and Technology Institute (GSSTI), Naomi’s work has advanced the field of astronomy and the growth of scientific communities across Africa. As the former Vice President of the African Astronomical Society, she championed the development of astronomy across the continent and continues to do so on a global scale in her new role as Deputy Director of the IAU Office for Astronomy Outreach.",
     },
     {
       name: "Cintia Duran",
       role: "International Outreach Officer",
-      image: `${projectPath}/images/cintia.png`,
+      image: `${projectPath}/images/about/team/cintia.png`,
       description:
         "Cintia Duran is an Educator, science communicator and artist. Her work and research focuses on a unique and interdisciplinary approach to public engagement with astronomy: the intersection of planetary science, language, and sound, particularly in communicating complex scientific ideas and our place in the universe. She works with cultural, civic, and technological organizations to develop educational resources, with the goal of transforming science institutions into diverse, multilingual, and approachable for the general public.",
     },
@@ -55,7 +56,7 @@ export default function About() {
         "We work with IAU Commission C2 to co-organise the Communicating Astronomy with the Public Conferences, among other IAU-related events.",
       bgColor: "bg-blue-200",
       url: "https://capconferences.org/",
-      image: `${projectPath}/images/collaborates/commissionc2-logo.png`,
+      image: `${projectPath}/images/about/collaborates/commissionc2-logo.png`,
       target: "_blank",
     },
     {
@@ -64,7 +65,7 @@ export default function About() {
         "We partner with Leiden University for our Telescopes for All project, collaboration on Science and Society, and through our IAU OAO Science Communication Internship",
       bgColor: "bg-blue-300",
       url: "https://www.universiteitleiden.nl/",
-      image: `${projectPath}/images/collaborates/universiteit-leiden-logo.png`,
+      image: `${projectPath}/images/about/collaborates/universiteit-leiden-logo.png`,
       target: "_blank",
     },
     {
@@ -73,7 +74,7 @@ export default function About() {
       description:
         "The SKAO provides the funding for our NOC/SKACON Funding Scheme projects - a joint funding program in which NOCs and SKACONS collaborate to perform",
       url: "https://www.skao.int/en",
-      image: `${projectPath}/images/collaborates/ska-logo.png`,
+      image: `${projectPath}/images/about/collaborates/ska-logo.png`,
       target: "_blank",
     },
     {
@@ -82,7 +83,7 @@ export default function About() {
         "Astronomy communicators from IUCAA work with us on several of our programs throughout the year. In addition, staff from IUCAA provide technical support for",
       bgColor: "bg-blue-500",
       url: "https://www.iucaa.in/",
-      image: `${projectPath}/images/collaborates/iucaa-logo.jpg`,
+      image: `${projectPath}/images/about/collaborates/iucaa-logo.jpg`,
       target: "_blank",
     },
   ];
@@ -130,7 +131,7 @@ export default function About() {
             title={t("astronomy-for-everyone.title")}
             text={t("astronomy-for-everyone.description")}
             image={{
-              imageUrl: `${projectPath}/images/about/100 Hours of Astronomy Ecuador Observatorio Astronomico de Quito.png`,
+              imageUrl: `${projectPath}/images/about/astronomy-for-everywere.png`,
               caption: t("astronomy-for-everyone.caption-img"),
             }}
             type="transparent"
@@ -224,7 +225,7 @@ export default function About() {
               aria-label="Visit the International Astronomical Union website"
             >
               <Image
-                src={`${projectPath}/images/partners/iau-logo-white.png`}
+                src={`${projectPath}/images/about/partners/iau-logo-white.png`}
                 alt="IAU Logo"
                 fill
                 style={{ objectFit: "contain", objectPosition: "center" }}
@@ -239,7 +240,7 @@ export default function About() {
               aria-label="Visit the Astronomy Outreach Network website"
             >
               <Image
-                src={`${projectPath}/images/partners/naoj-logo-white.png`}
+                src={`${projectPath}/images/about/partners/naoj-logo-white.png`}
                 alt="Astronomy Outreach Network Logo"
                 fill
                 style={{ objectFit: "contain", objectPosition: "center" }}
@@ -268,8 +269,19 @@ export default function About() {
         <Parallax
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
-          backgroundImage={{ imgUrl: `${projectPath}/images/parallax-bg.jpg` }}
-        ></Parallax>
+          backgroundImage={{
+            imgUrl: `${projectPath}/images/about/background-secondary.jpg`,
+            caption:
+              "The Swedish-ESO Submillimetre Telescope (SEST) and the Milky Way, apparently almost touching each other. Credit: ESO/A. Ghizzi Panizza",
+          }}
+        >
+          <Button
+            label="Events"
+            url="/outreach/global-projects/astronomy-outreach-map"
+            variant="outline"
+            color="light"
+          />
+        </Parallax>
       </div>
     </div>
   );

@@ -252,8 +252,19 @@ export default function ProfessionalDevelopment() {
         <Parallax
           title="Visit Our World"
           subtitle="Astronomy Outreach Map"
-          backgroundImage={{ imgUrl: `${projectPath}/images/parallax-bg.jpg` }}
-        />
+          backgroundImage={{
+            imgUrl: `${projectPath}/images/professional-development/background-secondary.jpg`,
+            caption:
+              "Clouds over the New Technology Telescope (NTT). Credit: Y. Beletsky (LCO)/ESO",
+          }}
+        >
+          <Button
+            label="Events"
+            url="/outreach/global-projects/astronomy-outreach-map"
+            variant="outline"
+            color="light"
+          />
+        </Parallax>
       </div>
     </>
   );

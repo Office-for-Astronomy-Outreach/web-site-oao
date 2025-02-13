@@ -1,14 +1,10 @@
 import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
-import { useState } from "react";
 import type { GetServerSideProps } from "next";
 import classNames from "classnames";
 
 import Banner from "@/components/Banner";
 import ContentCard from "@/components/ContentCard";
-import Button from "@/components/Button";
-import BackgroundImg from "@/components/BackgroundImg";
-import ActivityCard from "@/components/ActiviyCard";
 import EmailDisplay from "@/components/EmailDisplay";
 
 export default function m() {
@@ -16,7 +12,7 @@ export default function m() {
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Outreach", href: "/outreach" },
+    { label: "Public Engagement", href: "/outreach" },
     { label: "Meet the IAU astronomers", href: "" },
   ];
 
@@ -34,7 +30,10 @@ export default function m() {
       {/* Hero Section */}
       <Banner
         image={{
-          urlImage: `${path}/images/`,
+          urlImage: `${path}/images/global-programs/meet-the-iau-astronomers/background.jpg`,
+          alt: "",
+          caption:
+            "On 2 July 2019 a total solar eclipse passed over ESO’s La Silla Observatory in Chile. Credit: ESO/P. Horálek",
         }}
         title="Meet the IAU astronomers"
         breadcrumbs={breadcrumbs}

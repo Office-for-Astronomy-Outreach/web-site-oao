@@ -30,7 +30,7 @@ export default function WomenAndGirlsInAstronomy() {
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Outreach", href: "/outreach" },
+    { label: "Public Engagement", href: "/outreach" },
     { label: "Global Projects - Women and Girls in Astronomy", href: "" },
   ];
 
@@ -408,7 +408,7 @@ export default function WomenAndGirlsInAstronomy() {
           title="Calendar of Astronomy events"
           idTitle="calendar-of-astronomy-events"
           link={{
-            url: "/outreach/global-projects/calendar-events",
+            url: "/outreach/global-projects/astronomy-outreach-map",
             label: "Check our events calendar",
           }}
           text="To highlight all the amazing activities happening around the globe, we will promote a calendar of events displayed on a world map and our social media channels."
