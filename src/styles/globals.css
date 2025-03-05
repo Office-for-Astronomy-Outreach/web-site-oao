@@ -583,3 +583,7 @@ h5{
   animation: fadeIn 8s ease-out forwards;
   opacity: 1; /* Aparece con el fadeIn */
 }
+
+.pac-logo:after {
+  display: none;
+}

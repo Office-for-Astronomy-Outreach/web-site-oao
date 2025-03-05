@@ -12,7 +12,7 @@ export default function m() {
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Public Engagement", href: "/outreach" },
+    { label: "Public Engagement", href: "/public-engagement" },
     { label: "Meet the IAU astronomers", href: "" },
   ];
 

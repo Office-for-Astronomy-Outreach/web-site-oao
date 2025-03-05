@@ -1,5 +1,51 @@
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
 import Link from "next/link";
 import { TMenuItem } from "./types";
+import { useEffect, useRef, useState } from "react";
+
+const DropdownMenu: React.FC<{
+  options: TMenuItem["options"];
+  name: string;
+  closeDropdown: () => void;
+}> = ({ options, name, closeDropdown }) => {
+  return (
+    <div
+      className="absolute -right-1/4 top-[30px] min-w-[200px] bg-white shadow-lg border rounded text-sm"
+      role="menu"
+      aria-labelledby={name}
+    >
+      {options?.map((option, index) => (
+        <div key={index} className="w-full">
+          {option?.optionGrup && option.optionGrup.length > 0 ? (
+            <div className="w-full">
+              <p className="text-dark-main px-4 py-2">{option.name}</p>
+              <ul>
+                {option.optionGrup.map((opG, idx) => (
+                  <li key={idx} className="w-full" onClick={closeDropdown}>
+                    <Link
+                      href={opG.path}
+                      className="block w-full pl-8 pr-4 py-2 hover:bg-gray-200 text-gray-600"
+                    >
+                      {opG.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            <Link
+              href={option.path!}
+              onClick={closeDropdown}
+              className="block w-full px-4 py-2 text-dark-main hover:bg-gray-200"
+            >
+              {option.name}
+            </Link>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+};
 
 /**
  * MenuItem Component
@@ -11,43 +57,48 @@ import { TMenuItem } from "./types";
  * @param options - The sub-options (if any) for the menu item, each with its own name and path.
  */
 const MenuItem: React.FC<TMenuItem> = ({ name, path, options }) => {
-  // Case: Item with submenu (Dropdown)
-  if (options && options.length > 0) {
-    return (
-      <div
-        className="flex flex-col justify-center group relative"
-        role="menuitem"
-        aria-haspopup="true"
-        aria-expanded="false"
+  const [isOpen, setIsOpen] = useState(false);
+  const hasSubMenu = options && options.length > 0;
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  return hasSubMenu ? (
+    <div
+      className="relative group flex flex-col justify-center"
+      role="menuitem"
+      aria-haspopup="true"
+      aria-expanded={isOpen}
+      ref={menuRef}
+    >
+      <button
+        onClick={toggleMenu}
+        className="cursor-pointer capitalize focus:outline-none"
       >
-        <div className="relative">
-          <span className="cursor-pointer capitalize">{name}</span>
-
-          {/* Dropdown menu */}
-          <div
-            className="absolute right-0 w-[200px] hidden group-hover:block bg-white shadow-lg p-4 space-y-2 border rounded"
-            role="menu"
-            aria-labelledby={name}
-          >
-            {options.map((option) => (
-              <Link
-                href={option.path}
-                key={option.name}
-                className="menu-link capitalize text-body"
-                role="menuitem"
-                aria-label={option.name}
-              >
-                {option.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // Case: Simple Link (No submenu)
-  return (
+        {name}
+      </button>
+      {isOpen && (
+        <DropdownMenu
+          options={options}
+          name={name}
+          closeDropdown={() => setIsOpen(false)}
+        />
+      )}
+    </div>
+  ) : (
     <Link
       href={path!}
       className="menu-link capitalize"

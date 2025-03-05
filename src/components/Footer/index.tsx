@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
         { href: "/about", label: t("footer.menuLinks.about") },
         { href: "/nocs-network", label: t("footer.menuLinks.nocs-network") },
         {
-          href: "/outreach/global-projects/astronomy-outreach-map",
+          href: "/global-projects/astronomy-outreach-map",
           label: "Astronomy Outreach Map",
         },
       ],
@@ -54,15 +54,15 @@ const Footer: React.FC = () => {
       title: t("footer.menuLinks.global-projects"),
       links: [
         {
-          href: "/outreach/global-projects/100-hours-of-astronomy",
+          href: "/global-projects/100-hours-of-astronomy",
           label: "100 Hours of Astronomy",
         },
         {
-          href: "/outreach/global-projects/women-and-girls-in-astronomy",
+          href: "/global-projects/women-and-girls-in-astronomy",
           label: t("footer.menuLinks.women-and-girls-in-astronomy"),
         },
         {
-          href: "/outreach/global-projects/dark-skies",
+          href: "/global-projects/dark-skies",
           label: t("footer.menuLinks.dark-skies"),
         },
       ],

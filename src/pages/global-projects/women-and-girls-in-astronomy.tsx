@@ -11,6 +11,7 @@ import BackgroundImg from "@/components/BackgroundImg";
 import ActivityCard from "@/components/ActiviyCard";
 import EmailDisplay from "@/components/EmailDisplay";
 import { projectPath } from "@/utils/path";
+import Link from "next/link";
 
 export default function WomenAndGirlsInAstronomy() {
   const [copySuccess, setCopySuccess] = useState("");
@@ -28,9 +29,18 @@ export default function WomenAndGirlsInAstronomy() {
     );
   };
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = `${projectPath}/images/global-programs/Mini-Guide-to-Organizing-an-Astronomy-Outreach-Event.pdf`;
+    link.download = "Mini Guide to Organizing an Astronomy Outreach Event.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Public Engagement", href: "/outreach" },
+    { label: "Public Engagement", href: "/public-engagement" },
     { label: "Global Projects - Women and Girls in Astronomy", href: "" },
   ];
 
@@ -75,7 +85,7 @@ export default function WomenAndGirlsInAstronomy() {
       {/* Hero Section */}
       <Banner
         image={{
-          urlImage: `${projectPath}/images/global-programs/bg-women-and-girls.jpg`,
+          urlImage: `${projectPath}/images/global-programs/women-in-astronomy/background.jpg`,
         }}
         title="Women and Girls in Astronomy"
         breadcrumbs={breadcrumbs}
@@ -110,7 +120,7 @@ export default function WomenAndGirlsInAstronomy() {
           title={""}
           text={""}
           image={{
-            imageUrl: `${projectPath}/images/global-programs/women-in-astronomy/background-2025.png`,
+            imageUrl: `${projectPath}/images/global-programs/women-in-astronomy/background-2.png`,
             caption: "",
             alt: "",
           }}
@@ -173,12 +183,17 @@ export default function WomenAndGirlsInAstronomy() {
               <strong>solar physics.</strong>
             </p>
 
-            <p className="xl:text-h5 text-p text-gray-600">
+            <p className="mb-8 xl:text-h5 text-p text-gray-600">
               Will host special events and activities on the International Day
               of Women and Girls in Science <em>(11 February)</em> and
               International Women{"'"}s Day <em>(8 March)</em>, we celebrate
               this theme throughout the year and encourage the public to join us
             </p>
+            <Button
+              label="Register your event"
+              color="primary"
+              url="https://docs.google.com/forms/d/e/1FAIpQLSeUAl2FgGTzG6Zli8vIzeclYiBGmK1rf8gj37rx-QDddeoucQ/viewform"
+            />
           </article>
         </div>
 
@@ -217,9 +232,8 @@ export default function WomenAndGirlsInAstronomy() {
                   label="Copy Hashtag"
                   color="dark"
                 />
-
                 {copySuccess && (
-                  <p className="mt-2 text-white">{copySuccess}</p>
+                  <p className="mt-2 text-white">Register your event</p>
                 )}
               </div>
             </div>
@@ -359,6 +373,17 @@ export default function WomenAndGirlsInAstronomy() {
               />
             </div>
           </div>
+          <div className="px-8 space-y-4">
+            <h4 className="capitalize xl:text-h5 text-p text-gray-600">
+              Do you need more ideas on how to create an event?
+            </h4>
+            <p className="text-p text-gray-600">You can check our mini guide</p>
+            <Button
+              label="Download mini guide"
+              color="primary"
+              onClick={handleDownload}
+             />
+          </div>
         </div>
 
         <ContentCard
@@ -408,7 +433,7 @@ export default function WomenAndGirlsInAstronomy() {
           title="Calendar of Astronomy events"
           idTitle="calendar-of-astronomy-events"
           link={{
-            url: "/outreach/global-projects/astronomy-outreach-map",
+            url: "/astronomy-outreach-map",
             label: "Check our events calendar",
           }}
           text="To highlight all the amazing activities happening around the globe, we will promote a calendar of events displayed on a world map and our social media channels."

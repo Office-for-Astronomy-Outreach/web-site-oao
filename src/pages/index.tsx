@@ -63,21 +63,21 @@ export default function Home() {
 
     {
       src: `${projectPath}/images/global-community/women-in-astronomy.png`,
-      url: "/outreach/global-projects/women-and-girls-in-astronomy",
+      url: "/global-projects/women-and-girls-in-astronomy",
       alt: "Women in Astronomy",
       position: "left",
     },
 
     {
       src: `${projectPath}/images/global-community/100-hours-of-astronomy.png`,
-      url: "/outreach/global-projects/100-hours-of-astronomy",
+      url: "/global-projects/100-hours-of-astronomy",
       alt: "100 Hours of Astronomy",
       position: "right",
     },
 
     {
       src: `${projectPath}/images/global-community/meet.jpg`,
-      url: "/outreach/global-projects/meet-the-iau-astronomers",
+      url: "/global-projects/meet-the-iau-astronomers",
       alt: "Meet the IAU astronomers",
       position: "left",
     },
@@ -120,7 +120,7 @@ export default function Home() {
               alt: t("build-community.alt-img"),
             }}
             link={{
-              url: "/outreach",
+              url: "/public-engagement",
               label: "Join",
             }}
           />

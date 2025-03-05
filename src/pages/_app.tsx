@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { appWithI18Next } from "ni18n";
 import { ni18nConfig } from "ni18n.config";
+import { ToastContainer } from "react-toastify";
 
 import Head from "next/head";
 
@@ -18,6 +19,12 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>IAU Office for Astronomy Outreach</title>
       </Head>
+      <ToastContainer
+        role="alert"
+        position="top-right"
+        autoClose={5000}
+        style={{ zIndex: 1000 }}
+      />
       <Component {...pageProps} />
     </Layout>
   );

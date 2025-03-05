@@ -9,7 +9,7 @@ export const menuList = (t: TFunction): TMenuItem[] => {
     },
     {
       name: t("menu.outreach"),
-      path: "/outreach",
+      path: "/public-engagement",
     },
     {
       name: t("menu.professional-development"),
@@ -17,11 +17,36 @@ export const menuList = (t: TFunction): TMenuItem[] => {
     },
     {
       name: t("menu.community"),
-      path: "",
+      path: "nocs-network",
       options: [
         {
           name: "NOCs Network",
           path: "/nocs-network",
+        },
+        {
+          name: "World Regions",
+          optionGrup: [
+            {
+              name: "Africa",
+              path: "/nocs-network/africa",
+            },
+            {
+              name: "Americas",
+              path: "/nocs-network/americas",
+            },
+            {
+              name: "Asia",
+              path: "/nocs-network/asia",
+            },
+            {
+              name: "Europe",
+              path: "/nocs-network/europe",
+            },
+            {
+              name: "Oceania",
+              path: "/nocs-network/oceania",
+            },
+          ],
         },
       ],
     },

@@ -20,6 +20,7 @@ export type Country = {
   webSite?: string;
   socialMedia: SocialMedia;
   members: Member[];
+  coordinators: Member[];
 };
 
 export type SocialMedia = {
@@ -49,6 +50,44 @@ export type RegionData = {
 
 export type CountryData = {
   country: Country;
-  members: Member[];
+  activer_members: Member[];
+  others_members: Member[];
   social_media: SocialMedia;
+  region: Region;
+};
+
+export const enum TypeEvent {
+  in_person = "in_person",
+  online = "online",
+  hybrid = "hybrid",
+}
+
+type Category = {
+  id: number;
+  name: string;
+};
+
+export type Event = {
+  id: number;
+  name: string;
+  country: string;
+  city: string;
+  latitude: string;
+  longitude: string;
+  brief_description: string;
+  start_date: string;
+  end_date: string;
+  website: string;
+  organizer: string;
+  contact_name: string;
+  contact_email: string;
+  location_of_event: TypeEvent;
+  keywords: string[];
+  participants: number;
+  iau_member: boolean;
+  active: boolean;
+  created_at: string;
+  updated_at: string;
+  event_image_url?: string;
+  categories: Category[];
 };

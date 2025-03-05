@@ -8,10 +8,14 @@
  */
 export type TMenuItem = {
   name: string;
-  path: string;
+  path?: string;
   options?: {
     name: string;
-    path: string;
+    path?: string;
+    optionGrup?: {
+      name: string;
+      path: string;
+    }[];
   }[];
 };
 

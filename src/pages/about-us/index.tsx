@@ -277,7 +277,7 @@ export default function About() {
         >
           <Button
             label="Events"
-            url="/outreach/global-projects/astronomy-outreach-map"
+            url="/astronomy-outreach-map"
             variant="outline"
             color="light"
           />

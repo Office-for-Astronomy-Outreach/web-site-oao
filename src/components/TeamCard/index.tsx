@@ -24,7 +24,7 @@ const CardTeamMember: React.FC<TeamMemberProps> = ({
             alt={name}
             className="w-full h-full object-cover "
             fill
-            sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
+            sizes="(max-width: 1200px) 100vw, 1200px"
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </div>
@@ -34,7 +34,7 @@ const CardTeamMember: React.FC<TeamMemberProps> = ({
 
       <div className="flex flex-col items-center p-8 gap-8">
         <div className="flex flex-col gap-2">
-          <h3 className="text-h5 font-semibold text-primary-main text-center">
+          <h3 className="text-h5 font-semibold text-primary-main text-center leading-none">
             {name}
           </h3>
           <p className="text-sm text-gray-500 text-center">{role}</p>

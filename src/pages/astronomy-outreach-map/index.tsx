@@ -6,11 +6,15 @@ import Banner from "@/components/Banner";
 import { projectPath } from "@/utils/path";
 import classNames from "classnames";
 import EmailDisplay from "@/components/EmailDisplay";
+import EventContainer from "@/components/Event";
+import useSWR from "swr";
+import { Event } from "@/types";
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function CalendarEvent() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Public Engagement", href: "/outreach" },
     { label: "Astronomy Outreach Map", href: "" },
   ];
 
@@ -25,6 +29,8 @@ export default function CalendarEvent() {
 
   const year = new Date().getFullYear();
 
+  const { data: eventsData, isLoading } = useSWR("/api/events", fetcher);
+  console.log(eventsData);
   return (
     <div>
       <Banner
@@ -70,6 +76,12 @@ export default function CalendarEvent() {
             registered events.
           </p>
         </div>
+        <div className="flex flex-col gap-6">
+          {eventsData?.map((event: Event) => (
+            <EventContainer data={event} key={event.id} />
+          ))}
+        </div>
+
         <div className="w-full h-screen flex justify-center items-center">
           <iframe
             src="https://view-awesome-table.com/-Mb8eBRBsk-GNOX7rRJE/view/"

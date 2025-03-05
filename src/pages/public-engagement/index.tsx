@@ -19,28 +19,28 @@ export default function Outreach() {
   const items = [
     {
       title: "100 Hours of Astronomy",
-      link: "/outreach/global-projects/100-hours-of-astronomy",
+      link: "/global-projects/100-hours-of-astronomy",
       image: `${projectPath}/images/global-community/100hours.png`,
       alt: "",
       hiddenTitle: true,
     },
     {
       title: "Dark Skies",
-      link: "/",
+      link: "/global-projects/",
       image: `${projectPath}/images/global-community/dark-and-quiet-skies.jpeg`,
       alt: "",
       hiddenTitle: true,
     },
     {
       title: "Annual Contest Call",
-      link: "/",
+      link: "/global-projects/",
       image: `${projectPath}/images/global-community/quasi-moon.jpg`,
       alt: "",
       hiddenTitle: true,
     },
     {
       title: "Girls in Astronomy",
-      link: "/outreach/global-projects/women-and-girls-in-astronomy",
+      link: "/global-projects/women-and-girls-in-astronomy",
       image: `${projectPath}/images/global-community/women-in-astronomy.png`,
       alt: "",
       hiddenTitle: true,
@@ -76,7 +76,7 @@ export default function Outreach() {
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Public Engagement", href: "/outreach" },
+    { label: "Public Engagement", href: "/public-engagement" },
   ];
   const containerClass = classNames(
     "md:container",
@@ -238,7 +238,7 @@ export default function Outreach() {
         >
           <Button
             label="Events"
-            url="/outreach/global-projects/astronomy-outreach-map"
+            url="/astronomy-outreach-map"
             variant="outline"
             color="light"
           />

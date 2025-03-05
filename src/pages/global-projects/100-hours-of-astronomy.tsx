@@ -8,23 +8,28 @@ import ContentCard from "@/components/ContentCard";
 import classNames from "classnames";
 import BackgroundImg from "@/components/BackgroundImg";
 import EmailDisplay from "@/components/EmailDisplay";
+import { projectPath } from "@/utils/path";
 
 export default function OneHundredHoursOfAstronomy() {
-  const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   const [copySuccess, setCopySuccess] = useState("");
 
   // Function to copy hashtag to clipboard
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text).then(
-      () => setCopySuccess("Copied!"),
-      (err) => setCopySuccess("Failed to copy!")
+      () => {
+        setCopySuccess("Copied!");
+        setTimeout(() => setCopySuccess(""), 2000); // Oculta el mensaje después de 2 segundos
+      },
+      (_err) => {
+        setCopySuccess("Failed to copy!");
+        setTimeout(() => setCopySuccess(""), 2000);
+      }
     );
   };
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Public Engagement", href: "/outreach" },
+    { label: "Public Engagement", href: "/public-engagement" },
   ];
 
   const contentTitle = [
@@ -33,24 +38,24 @@ export default function OneHundredHoursOfAstronomy() {
       id: "planetarium-title",
     },
     {
+      title: "How to participate?",
+      id: "how-to-participate",
+    },
+    {
       title: "This Year's Events and Activity Ideas",
-      id: "events-title",
-    },
-    {
-      title: "Getting Involved",
-      id: "involved-title",
-    },
-    {
-      title: "Let Us Share Your Work!",
-      id: "share-title",
+      id: "ideas-for-your-events",
     },
     {
       title: " OAO Outreach Activity Toolkit",
-      id: "toolkit-title",
+      id: "toolkit",
+    },
+    {
+      title: "Share your event with the world",
+      id: "share-your-event-with-the-world",
     },
     {
       title: "Calendar of Astronomy Events",
-      id: "calendar-title",
+      id: "calendar-of-astronomy-events",
     },
     {
       title: " More Information",
@@ -72,7 +77,7 @@ export default function OneHundredHoursOfAstronomy() {
       {/* Hero Section */}
       <Banner
         image={{
-          urlImage: `${path}/images/global-programs/100-hours/background.jpg`,
+          urlImage: `${projectPath}/images/global-programs/100-hours/background.jpg`,
         }}
         title="100 hours for astronomy"
         breadcrumbs={breadcrumbs}
@@ -119,7 +124,7 @@ export default function OneHundredHoursOfAstronomy() {
           title={""}
           text={""}
           image={{
-            imageUrl: `${path}/images/global-programs/100 hours.png`,
+            imageUrl: `${projectPath}/images/global-programs/100-hours/background-secondary.jpg`,
             caption: "",
             alt: "",
             position: "",
@@ -127,7 +132,7 @@ export default function OneHundredHoursOfAstronomy() {
         />
 
         <div className="flex md:flex-row flex-col gap-16 px-8">
-          <article className="">
+          <article>
             <h2
               id="planetarium-title"
               className="text-h2 font-bold scroll-mt-24 mb-8"
@@ -173,14 +178,14 @@ export default function OneHundredHoursOfAstronomy() {
               </div>
             </div>
 
-            <p className="mb-8">
+            <p className="mb-8 text-gray-600">
               From 2 to 5 October 2025, join the IAU Office for Astronomy
               Outreach for a 100-hour, round-the-clock, round-the-globe
               celebration of astronomy. This event aims to engage as many people
               as possible—from children to seniors—with the sky and our
               astronomical surroundings.
             </p>
-            <p className="mb-8">
+            <p className="mb-8 text-gray-600">
               <strong>Planetariums</strong> have long been a source of
               inspiration for children and adults alike. In 1923, the first
               planetarium projector was invented in Jena, Germany, and two years
@@ -192,8 +197,7 @@ export default function OneHundredHoursOfAstronomy() {
               continue the legacy of 100 Hours of Astronomy and celebrate 100
               Years of the Planetarium!
             </p>
-
-            <p className="mb-8">
+            <p className="mb-8 text-gray-600">
               With the increasing levels of light pollution worldwide, it is
               impossible to experience a truly dark sky in many places.
               Planetariums are then dark sky oases: sanctuaries for night sky
@@ -204,8 +208,7 @@ export default function OneHundredHoursOfAstronomy() {
               to visit their local planetarium—small, large, mobile, or
               stationary—and immerse themselves in the wonders of our Universe.
             </p>
-
-            <p>
+            <p className="text-gray-600 ">
               The OAO and IPS hope to activate planetariums worldwide to
               participate in this programme.
             </p>
@@ -214,7 +217,7 @@ export default function OneHundredHoursOfAstronomy() {
 
         <ContentCard
           title="How to participate?"
-          idTitle="how-to-participate-header"
+          idTitle="how-to-participate"
           text={
             <div>
               <ol
@@ -258,7 +261,6 @@ export default function OneHundredHoursOfAstronomy() {
           wfull
         />
 
-        {/* Third Section: Event Ideas */}
         <ContentCard
           title="This Year's Events and Activity Ideas"
           idTitle="ideas-for-your-events"
@@ -269,7 +271,7 @@ export default function OneHundredHoursOfAstronomy() {
 
         <ContentCard
           title="OAO Outreach Activity Toolkit"
-          idTitle="toolkit-title"
+          idTitle="toolkit"
           link={{
             label: "Go to Toolkit",
             url: "https://drive.google.com/drive/folders/1YhlL3HiV3anfJbTVIhFzbpPs3dJykqsT",
@@ -297,7 +299,7 @@ export default function OneHundredHoursOfAstronomy() {
           title="Share your event with the world"
           idTitle="share-your-event-with-the-world"
           image={{
-            imageUrl: `${path}/images/global-programs/100-hours/register-your-event.png`,
+            imageUrl: `${projectPath}/images/global-programs/100-hours/register-your-event.png`,
           }}
           text={
             <div className="flex flex-col gap-4">
@@ -335,7 +337,7 @@ export default function OneHundredHoursOfAstronomy() {
           title="Calendar of Astronomy events"
           idTitle="calendar-of-astronomy-events"
           link={{
-            url: "/outreach/global-projects/astronomy-outreach-map",
+            url: "/astronomy-outreach-map",
             label: "Check our events calendar",
           }}
           text="To highlight all the amazing activities happening around the globe, we will promote a calendar of events displayed on a world map and our social media channels."
