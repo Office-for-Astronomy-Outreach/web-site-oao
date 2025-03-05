@@ -50,7 +50,7 @@ const MobileMenuItem: React.FC<MobileMenuItemProps> = ({
           >
             {menuItem.options.map((option) => (
               <Link
-                href={option.path}
+                href={option.path ?? ""}
                 key={option.name}
                 className="hover:underline block"
                 onClick={onClose}
