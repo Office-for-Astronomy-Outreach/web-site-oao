@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
         { href: "/about", label: t("footer.menuLinks.about") },
         { href: "/nocs-network", label: t("footer.menuLinks.nocs-network") },
         {
-          href: "/global-projects/astronomy-outreach-map",
+          href: "/astronomy-outreach-map",
           label: "Astronomy Outreach Map",
         },
       ],
@@ -65,6 +65,10 @@ const Footer: React.FC = () => {
           href: "/global-projects/dark-skies",
           label: t("footer.menuLinks.dark-skies"),
         },
+        {
+          href: "/global-projects/meet-the-iau-astronomers",
+          label: "Meet the IAU Astronomers!"
+        }
       ],
     },
     {

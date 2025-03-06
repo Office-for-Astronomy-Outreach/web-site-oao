@@ -94,7 +94,7 @@ const Button: React.FC<ButtonProps> = ({
       aria-label={label}
       role="button"
     >
-      {label}
+      <span className="text-md">{label}</span>
     </button>
   );
 };

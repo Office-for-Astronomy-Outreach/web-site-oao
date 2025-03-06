@@ -18,6 +18,7 @@ interface ActivityCardProps {
   scientist: Scientist;
   objective: string;
   activities: Activity[];
+  type: string;
 }
 
 const ActivityCard: React.FC<ActivityCardProps> = ({
@@ -26,12 +27,17 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
   scientist,
   objective,
   activities,
+  type,
 }) => {
   return (
     <article
       id={id}
       className="flex flex-col gap-6 p-8 border rounded-lg shadow-lg bg-white h-full"
     >
+      <p className="text-end">
+        <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-700 ring-1 ring-yellow-600/20 ring-inset">{type}</span>
+      </p>
+
       {/* Título */}
       <h3 className="text-xl font-bold text-gray-900">{title}</h3>
 

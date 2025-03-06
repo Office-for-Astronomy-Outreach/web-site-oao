@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["127.0.0.1", "lh5.googleusercontent.com"], // Agrega el dominio aquí
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "/web-site-oao", // Lee el prefijo de una variable de entorno
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "/web-site-oao",
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH ?? "/web-site-oao",
   distDir: "out",
 };

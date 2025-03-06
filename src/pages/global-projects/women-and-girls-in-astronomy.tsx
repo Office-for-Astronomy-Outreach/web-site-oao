@@ -46,7 +46,7 @@ export default function WomenAndGirlsInAstronomy() {
 
   const contentTitle = [
     {
-      title: "Title the women of solar physics",
+      title: "The women of solar physics",
       id: "title-the-women-of-solar-physics",
     },
     {
@@ -262,6 +262,7 @@ export default function WomenAndGirlsInAstronomy() {
               <ActivityCard
                 id="annie-maunder"
                 title="Sunspots and the Butterfly Plot"
+                type="Outdoor Activity"
                 scientist={{
                   name: "Annie Maunder",
                   years: "(1868-1947)",
@@ -299,6 +300,7 @@ export default function WomenAndGirlsInAstronomy() {
               <ActivityCard
                 id="maria-mitchell"
                 title="The Structure of Sunspots"
+                type="Indoor activity"
                 scientist={{
                   name: "Maria Mitchell",
                   years: "(1818 - 1889)",
@@ -340,6 +342,7 @@ export default function WomenAndGirlsInAstronomy() {
               <ActivityCard
                 id="cecilia-payne-gaposchkin"
                 title="Many ways to see the Sun"
+                type="Indoor activity"
                 scientist={{
                   name: "Cecilia Payne-Gaposchkin",
                   years: "(1900 – 1979)",

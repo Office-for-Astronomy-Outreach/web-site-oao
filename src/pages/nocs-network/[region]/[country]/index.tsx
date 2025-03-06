@@ -13,6 +13,7 @@ import CardTeamMember from "@/components/TeamCard";
 
 import { typeMember } from "@/types";
 import EmailDisplay from "@/components/EmailDisplay";
+import { projectPath } from "@/utils/path";
 
 const RegionPage = () => {
   const router = useRouter();
@@ -53,7 +54,7 @@ const RegionPage = () => {
   useEffect(() => {
     const fetchRegions = async () => {
       try {
-        const response = await fetch(`/api/countries/${country}`);
+        const response = await fetch(`${projectPath}/api/countries/${country}`);
         if (response.ok) {
           const data = await response.json();
           setCountryData(data);

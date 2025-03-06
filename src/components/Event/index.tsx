@@ -65,12 +65,13 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
         <div className="flex-1 p-4 space-y-4">
           <div>
             <h2 className="text-h4 text-primary-main capitalize line-clamp-3">
-              <span>{typeEvent(data.location_of_event)}</span>
-              <span> - </span>
               <span>{data?.name}</span>
             </h2>
 
-            <div className="space-x-2 mt-2">
+            <div className="flex gap-2 flex-wrap mt-2">
+              <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-yellow-600/20 ring-inset">
+                {typeEvent(data.location_of_event)}
+              </span>
               {data?.categories &&
                 data?.categories.length > 0 &&
                 data?.categories.map((category) => (
