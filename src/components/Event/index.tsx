@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Event, TypeEvent } from "@/types";
-import Button from "../Button";
 import Link from "next/link";
 
 export interface EventProps {

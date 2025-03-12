@@ -51,7 +51,7 @@ export const eventSchema = z
     keywords: z.array(z.string()).min(1, "At least one keyword is required"),
     categories: z.array(z.number()).min(1, "At least one category is required"),
     participants: z.number().min(1, "There must be at least one participant."),
-    iau_member: z.number().min(0, "IAU member status is required."),
+    iau_member: z.number().min(1, "IAU member status is required."),
   })
   .refine((data) => new Date(data.end_date) > new Date(data.start_date), {
     message: "End date must be after to the start date.",

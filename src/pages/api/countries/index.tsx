@@ -1,9 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import type { Region } from "@/types";
+import type { Country } from "@/types";
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Region | { error: string }>
+  res: NextApiResponse<Country | { error: string }>
 ) {
   const apiUrl = process.env.API_BASE_PATH || "";
 
@@ -11,7 +11,7 @@ export default async function handler(
     const response = await fetch(`${apiUrl}/countries`);
 
     if (!response.ok) {
-      throw new Error("Region not found");
+      throw new Error("Countries not found");
     }
 
     const region = await response.json();

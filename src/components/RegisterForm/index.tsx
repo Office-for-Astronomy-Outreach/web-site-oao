@@ -9,10 +9,13 @@ import { z } from "zod";
 import Image from "next/image";
 import makeAnimated from "react-select/animated";
 import Select from "react-select";
+import useSWR from "swr";
 
-import { TypeEvent } from "@/types";
+import { Country, TypeEvent } from "@/types";
 import { eventSchema } from "./validationForm";
 import FormLabel from "../Label";
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const animatedComponents = makeAnimated();
 
@@ -21,32 +24,31 @@ const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
 type EventFormData = z.infer<typeof eventSchema>;
 
 const EventRegisterForm = () => {
+  const { data: nocsData } = useSWR("/api/countries", fetcher);
+  const { data: categoriesData } = useSWR("/api/categories", fetcher);
+
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [categories, setCategories] =
     useState<{ id: number; name: string }[]>();
+  const [isNocMember, setIsNocMember] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const autocompleteRef = useRef<any>(null);
 
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await fetch("/api/categories");
-        if (response.ok) {
-          const data = await response.json();
-          setCategories(data);
-        } else {
-          // eslint-disable-next-line no-console
-          console.error("Failed to fetch regions");
-        }
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.error("Error fetching data: ", error);
-      }
-    };
+  const transformedData: { value: number; label: string }[] = useMemo(() => {
+    return (
+      nocsData?.map(({ id, name }: Country) => ({
+        value: id,
+        label: name,
+      })) || []
+    );
+  }, [nocsData]);
 
-    fetchCategories();
-  }, []);
+  useEffect(() => {
+    if (categoriesData && categoriesData.length > 0) {
+      setCategories(categoriesData);
+    }
+  }, [categoriesData]);
 
   const categoryOptions = useMemo(
     () => categories?.map(({ id, name }) => ({ value: id, label: name })),
@@ -510,20 +512,19 @@ const EventRegisterForm = () => {
         </fieldset>
 
         <fieldset>
-          <FormLabel htmlFor="participants" required>
+          <FormLabel htmlFor="is_iau_member" required>
             Are you a member of the IAU National Outreach Coordinator network at
             the Office for Astronomy Outreach?
           </FormLabel>
           <Select
-            name="iau_member"
+            name="is_iau_member"
             options={[
               { value: 0, label: "No" },
               { value: 1, label: "Yes" },
-              { value: 2, label: "I'am not sure" },
             ]}
             onChange={(e) => {
               if (e) {
-                setValue("iau_member", e.value);
+                setIsNocMember(e.value === 1);
               }
             }}
           />
@@ -532,6 +533,25 @@ const EventRegisterForm = () => {
           )}
         </fieldset>
 
+        {isNocMember && (
+          <fieldset>
+            <FormLabel htmlFor="iau_member" required={isNocMember}>
+              Select your NOC
+            </FormLabel>
+            <Select
+              name="iau_member"
+              options={transformedData ?? []}
+              onChange={(e) => {
+                if (e) {
+                  setValue("iau_member", e.value);
+                }
+              }}
+            />
+            {errors.iau_member && (
+              <p className="text-red-500">{errors.iau_member.message}</p>
+            )}
+          </fieldset>
+        )}
         {/* Botón de enviar */}
         <button
           type="submit"
