@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Event, TypeEvent } from "@/types";
 import Link from "next/link";
-import { useCallback, useMemo } from "react";
+import { useMemo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
