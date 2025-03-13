@@ -172,7 +172,7 @@ const RegionPage = () => {
 
         <Parallax
           title="Visit Our World"
-          subtitle="Astronomy Outreach Map"
+          subtitle="Astronomy Outreach Events"
           backgroundImage={{
             imgUrl: `${projectPath}/images/nocs-network/region/background-secondary.jpg`,
             caption:
@@ -181,7 +181,7 @@ const RegionPage = () => {
         >
           <Button
             label="Events"
-            url="/astronomy-outreach-map"
+            url="/astronomy-outreach"
             variant="outline"
             color="light"
           />

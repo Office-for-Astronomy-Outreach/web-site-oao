@@ -44,7 +44,7 @@ export default function CalendarEvent() {
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Astronomy Outreach Map", href: "" },
+    { label: "Astronomy Outreach Events", href: "" },
   ];
 
   const containerClass = classNames(
@@ -144,7 +144,7 @@ export default function CalendarEvent() {
           caption:
             "Image composition showing all the ESO observatories and the Headquarters. Credit: ESO/M. Kornmesse",
         }}
-        title="Astronomy Outreach Map"
+        title="Astronomy Outreach Events"
         breadcrumbs={breadcrumbs}
       />
       <div className={containerClass}>
@@ -176,7 +176,7 @@ export default function CalendarEvent() {
           type={"transparent"}
           link={{
             label: "Register your event",
-            url: "/astronomy-outreach-map/events/register",
+            url: "/astronomy-outreach/events/register",
           }}
           image={{
             imageUrl: `${projectPath}/images/astronomy-outreach-map/astronomy_event.jpg`,

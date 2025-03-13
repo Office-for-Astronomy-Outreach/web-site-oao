@@ -268,7 +268,7 @@ export default function About() {
 
         <Parallax
           title="Visit Our World"
-          subtitle="Astronomy Outreach Map"
+          subtitle="Astronomy Outreach Events"
           backgroundImage={{
             imgUrl: `${projectPath}/images/about/background-secondary.jpg`,
             caption:
@@ -277,7 +277,7 @@ export default function About() {
         >
           <Button
             label="Events"
-            url="/astronomy-outreach-map"
+            url="/astronomy-outreach"
             variant="outline"
             color="light"
           />

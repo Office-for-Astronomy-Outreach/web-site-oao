@@ -337,7 +337,7 @@ export default function OneHundredHoursOfAstronomy() {
           title="Calendar of Astronomy events"
           idTitle="calendar-of-astronomy-events"
           link={{
-            url: "/astronomy-outreach-map",
+            url: "/astronomy-outreach",
             label: "Check our events calendar",
           }}
           text="To highlight all the amazing activities happening around the globe, we will promote a calendar of events displayed on a world map and our social media channels."
