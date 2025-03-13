@@ -10,7 +10,7 @@ const DropdownMenu: React.FC<{
 }> = ({ options, name, closeDropdown }) => {
   return (
     <div
-      className="absolute -right-1/4 top-[30px] min-w-[200px] bg-white shadow-lg border rounded text-sm"
+      className="absolute -right-1/4 top-[30px] min-w-[225px] bg-white shadow-lg border rounded text-sm"
       role="menu"
       aria-labelledby={name}
     >
@@ -18,7 +18,6 @@ const DropdownMenu: React.FC<{
         <div key={index} className="w-full">
           {option?.optionGrup && option.optionGrup.length > 0 ? (
             <div className="w-full">
-              <p className="text-dark-main px-4 py-2">{option.name}</p>
               <ul>
                 {option.optionGrup.map((opG, idx) => (
                   <li key={idx} className="w-full" onClick={closeDropdown}>

@@ -12,6 +12,7 @@ import type { Region } from "@/types";
 import ContentCard from "@/components/ContentCard";
 import FAQList from "@/components/FAQList";
 import { projectPath } from "@/utils/path";
+import EmailDisplay from "@/components/EmailDisplay";
 
 export default function ProfessionalDevelopment() {
   const [regions, setRegions] = useState<Region[]>([
@@ -155,8 +156,23 @@ export default function ProfessionalDevelopment() {
           }}
         />
         <ContentCard
-          title="NOCs microfunding grants"
-          text="NOCs may be invited to submit an application for microfunding:  small grants, on the order of 500 EUR, meant to support individual NOCs in their work. The indicated need,  sustainability of the planned resources, and demonstrated impact influence the grant selection."
+          title="More Information"
+          text={
+            <div className="space-y-6">
+              <p>
+                The IAU <span>Office for Astronomy Outreach (IAU OAO)</span> is
+                dedicated to engaging the public in astronomy through access to
+                astronomical information and communication of the science of
+                astronomy. The OAO is responsible for managing and maintaining
+                the IAU National Outreach Coordinator (NOC) network, including
+                the NOCs Funding Scheme.
+              </p>
+              <p>
+                If you have any questions you can contact us by email:
+                <EmailDisplay email="public@oao.iau.org" />
+              </p>
+            </div>
+          }
           type="transparent"
           image={{
             imageUrl: `${projectPath}/images/nocs-network/background.png`,

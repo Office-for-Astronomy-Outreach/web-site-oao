@@ -49,12 +49,12 @@ export const menuList = (t: TFunction): TMenuItem[] => {
           ],
         },
         {
-          name: "Astronomy Outreach",
+          name: "Astronomy Outreach Events",
+          path: "/astronomy-outreach",
+        },
+        {
+          name: "Astronomy Outreach Events",
           optionGrup: [
-            {
-              name: "Events",
-              path: "/astronomy-outreach",
-            },
             {
               name: "Register your event",
               path: "/astronomy-outreach/events/register",
