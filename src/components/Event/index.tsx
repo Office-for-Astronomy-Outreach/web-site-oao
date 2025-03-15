@@ -42,11 +42,11 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-md">
-      <div className="flex sm:flex-row flex-col gap-4">
+      <div className="flex sm:flex-row flex-col">
         {/* Event Image */}
         <div className="sm:w-40 w-full">
           {data.event_image_url ? (
-            <div className="relative aspect-square">
+            <div className="relative sm:aspect-square aspect-video">
               <Image
                 src={`http://127.0.0.1:3001${data.event_image_url}`}
                 alt={data.name || "Event image"}
@@ -63,7 +63,7 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
               </div>
             </div>
           ) : (
-            <div className="flex items-center justify-center bg-primary-main text-white text-2xl uppercase p-8 text-center sm:rounded-ss-lg sm:rounded-t-none rounded-t-lg aspect-square">
+            <div className="flex items-center justify-center bg-primary-main text-white text-2xl uppercase p-8 text-center sm:rounded-ss-lg sm:rounded-t-none rounded-t-lg sm:aspect-square">
               <time dateTime={data.start_date}>{formattedDate(startDate)}</time>
             </div>
           )}
@@ -95,50 +95,52 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
         </div>
 
         {/* Event Details */}
-        <div className="flex-1 p-4 space-y-4">
+        <div className="flex-1 flex flex-col justify-between p-4 gap-4">
           <div className="space-y-4">
-            <h2 className="text-h4 text-primary-main capitalize line-clamp-3 font-semibold">
-              {data.name}
-            </h2>
+            <div className="space-y-4">
+              <h2 className="text-h4 text-primary-main capitalize line-clamp-3 font-semibold">
+                {data.name}
+              </h2>
 
-            <div className="flex gap-2 flex-wrap mt-2">
-              <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-yellow-600/20 ring-inset">
-                {eventTypes[data.location_of_event] || ""}
-              </span>
-
-              {data.categories?.map((category) => (
-                <span
-                  key={`${data.id}-${category.name}`}
-                  className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-gray-500/10 ring-inset"
-                >
-                  {category.name}
+              <div className="flex gap-2 flex-wrap mt-2">
+                <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-yellow-600/20 ring-inset">
+                  {eventTypes[data.location_of_event] || ""}
                 </span>
-              ))}
-            </div>
 
-            {/* Keywords */}
-            {data.keywords?.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                <span className="font-medium text-xs text-gray-600">
-                  Keywords:
-                </span>
-                {data.keywords.map((keyword) => (
+                {data.categories?.map((category) => (
                   <span
-                    key={`${data.id}-${keyword}`}
-                    className="text-xs text-primary-light"
+                    key={`${data.id}-${category.name}`}
+                    className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-gray-500/10 ring-inset"
                   >
-                    #{keyword}
+                    {category.name}
                   </span>
                 ))}
               </div>
+
+              {/* Keywords */}
+              {data.keywords?.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  <span className="font-medium text-xs text-gray-600">
+                    Keywords:
+                  </span>
+                  {data.keywords.map((keyword) => (
+                    <span
+                      key={`${data.id}-${keyword}`}
+                      className="text-xs text-primary-light"
+                    >
+                      #{keyword}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {data.brief_description && (
+              <p className="text-p text-gray-600">{data.brief_description}</p>
             )}
           </div>
 
-          {data.brief_description && (
-            <p className="text-p text-gray-600">{data.brief_description}</p>
-          )}
-
-          <div className="flex justify-end  gap-8">
+          <div className="flex flex-wrap justify-end gap-x-8 gap-y-2 items-center">
             <Link
               href={`mailto:${data.contact_email}`}
               target="_blank"

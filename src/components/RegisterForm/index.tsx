@@ -11,6 +11,7 @@ import makeAnimated from "react-select/animated";
 import Select from "react-select";
 import useSWR from "swr";
 
+import { projectPath } from "@/utils/path";
 import { Country, TypeEvent } from "@/types";
 import { eventSchema } from "./validationForm";
 import FormLabel from "../Label";
@@ -24,8 +25,11 @@ const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
 type EventFormData = z.infer<typeof eventSchema>;
 
 const EventRegisterForm = () => {
-  const { data: nocsData } = useSWR("/api/countries", fetcher);
-  const { data: categoriesData } = useSWR("/api/categories", fetcher);
+  const { data: nocsData } = useSWR(`${projectPath}/api/countries`, fetcher);
+  const { data: categoriesData } = useSWR(
+    `${projectPath}/api/categories`,
+    fetcher
+  );
 
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [categories, setCategories] =

@@ -24,9 +24,9 @@ export default function CalendarEvent() {
     data: eventsData,
     isLoading,
   }: { data: { events: Event[]; countries: string[] }; isLoading: boolean } =
-    useSWR("/api/events", fetcher);
+    useSWR(`${projectPath}/api/events`, fetcher);
   const { data: categoriesData }: { data: { id: number; name: string }[] } =
-    useSWR("/api/categories", fetcher);
+    useSWR(`${projectPath}/api/categories`, fetcher);
 
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);

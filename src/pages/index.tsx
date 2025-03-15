@@ -187,11 +187,7 @@ export default function Home() {
 export const get: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await loadTranslations(ni18nConfig, locale, [
-        "home",
-        "layout",
-        "about",
-      ])),
+      ...(await loadTranslations(ni18nConfig, locale, ["home", "layout"])),
     },
   };
 };

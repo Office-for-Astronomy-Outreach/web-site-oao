@@ -13,8 +13,8 @@ import Parallax from "@/components/Parallax";
 import CardTeamMember from "@/components/TeamCard";
 import Banner from "@/components/Banner";
 import BlueDotAnimation from "@/animations/BlueDotAnimation";
-import { projectPath } from "@/utils/path";
 import Button from "@/components/Button";
+import { projectPath } from "@/utils/path";
 
 export default function About() {
   const { t } = useTranslation("about");
@@ -109,8 +109,7 @@ export default function About() {
       <Banner
         image={{
           urlImage: `${projectPath}/images/about/background-principal.jpg`,
-          caption:
-            "Atacama Desert in Chile the Atacama Large Millimeter/submillimeter Array (ALMA) Credit: IAU/ESO/B. Tafreshi",
+          caption: t("background-image.caption"),
         }}
         title={t("title")}
         breadcrumbs={breadcrumbs}
@@ -138,7 +137,7 @@ export default function About() {
           />
 
           {/* Mission and Vision */}
-          <div className="relative">
+          <section className="relative">
             <div className="md:block hidden">
               <BlueDotAnimation />
             </div>
@@ -180,11 +179,11 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
 
         {/* Team Section */}
-        <div className="flex flex-col gap-16">
+        <section className="flex flex-col gap-16">
           <h2
             className="capitalize text-h2 font-bold text-body px-8 scroll-mt-32"
             id="our-team"
@@ -202,7 +201,7 @@ export default function About() {
               />
             ))}
           </div>
-        </div>
+        </section>
 
         {/* Partners Section */}
         <section
@@ -252,7 +251,7 @@ export default function About() {
         </section>
 
         {/* Collaboration Section */}
-        <section className="flex flex-col gap-16 py-8 md:py-16 px-8">
+        <section className="flex flex-col gap-16 md:py-16 ">
           <div className="px-8 flex flex-col gap-8">
             <h2 className="capitalize text-h2 font-bold text-body ">
               {t("collaborations.title")}
@@ -267,16 +266,15 @@ export default function About() {
         </section>
 
         <Parallax
-          title="Visit Our World"
-          subtitle="Astronomy Outreach Events"
+          title={t("parallax.title")}
+          subtitle={t("parallax.subtitle")}
           backgroundImage={{
             imgUrl: `${projectPath}/images/about/background-secondary.jpg`,
-            caption:
-              "The Swedish-ESO Submillimetre Telescope (SEST) and the Milky Way, apparently almost touching each other. Credit: ESO/A. Ghizzi Panizza",
+            caption: t("parallax.caption"),
           }}
         >
           <Button
-            label="Events"
+            label={t("parallax.label-button")}
             url="/astronomy-outreach"
             variant="outline"
             color="light"
@@ -291,11 +289,7 @@ export default function About() {
 export const get: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await loadTranslations(ni18nConfig, locale, [
-        "home",
-        "layout",
-        "about",
-      ])),
+      ...(await loadTranslations(ni18nConfig, locale, ["layout", "about"])),
     },
   };
 };

@@ -1,5 +1,8 @@
 {
     "title": "What is the Office for Astronomy Outreach?",
+    "background-image": {
+        "caption": "Atacama Desert in Chile the Atacama Large Millimeter/submillimeter Array (ALMA) Credit: IAU/ESO/B. Tafreshi"
+    },
     "about": {
         "title": "About Us",
         "description": "<p>The International Astronomical Union's Office for Astronomy Outreach (OAO) was established as a direct outcome of the global celebration of the IAU's 100th anniversary, “100 Years of Astronomy.” This milestone event highlighted the profound impact that astronomy can have when shared with society, inspiring the creation of a dedicated office to strengthen the connection between the academic and scientific community and the public.</p> <p>The OAO works to break down barriers between professional astronomers and society, fostering inclusive engagement and encouraging dialogue about the universe and humanity's place within it. By opening the doors of the scientific community, we aim to make astronomy accessible to everyone, inspiring curiosity, discovery, and a sense of shared wonder.</p>"
@@ -33,5 +36,11 @@
     },
     "team": {
         "title": "Our Team"
+    },
+    "parallax": {
+        "title": "Visit Our World",
+        "subtitle": "Astronomy Outreach Events",
+        "label-button": "Events",
+        "caption": "The Swedish-ESO Submillimetre Telescope (SEST) and the Milky Way, apparently almost touching each other. Credit: ESO/A. Ghizzi Panizza"
     }
 }

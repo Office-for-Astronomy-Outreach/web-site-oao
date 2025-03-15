@@ -1,21 +1,25 @@
 import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
+import { useTranslation } from "react-i18next";
 import { loadTranslations } from "ni18n";
+import Image from "next/image";
+import Link from "next/link";
+import classNames from "classnames";
 
 import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import ContentCard from "@/components/ContentCard";
-import ImageGridsSection from "@/components/ImageGridsSection";
-import InfoGrid from "@/components/InfoGrid";
-import Parallax from "@/components/Parallax";
-import Image from "next/image";
-import classNames from "classnames";
-import StarCanvas from "@/components/Animations/StarCanvas";
-import BackgroundImg from "@/components/BackgroundImg";
 import ImageCard from "@/components/ImageCard";
+import ImageGridsSection from "@/components/ImageGridsSection";
+import Parallax from "@/components/Parallax";
+import StarCanvas from "@/components/Animations/StarCanvas";
+//import InfoGrid from "@/components/InfoGrid";
+//import BackgroundImg from "@/components/BackgroundImg";
 import { projectPath } from "@/utils/path";
 
 export default function Outreach() {
+  const { t } = useTranslation("public-engagement");
+
   const items = [
     {
       title: "100 Hours of Astronomy",
@@ -26,7 +30,7 @@ export default function Outreach() {
     },
     {
       title: "Dark Skies",
-      link: "/global-projects/",
+      link: "https://www.eso.org/public/about-eso/dark-skies-preservation/",
       image: `${projectPath}/images/global-community/dark-and-quiet-skies.jpeg`,
       alt: "",
       hiddenTitle: true,
@@ -47,7 +51,7 @@ export default function Outreach() {
     },
   ];
 
-  const info = [
+  /*const info = [
     {
       title: "Infographics",
       description: "",
@@ -72,7 +76,7 @@ export default function Outreach() {
       bgColor: "bg-blue-500",
       url: "/",
     },
-  ];
+  ];*/
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
@@ -95,14 +99,14 @@ export default function Outreach() {
           caption:
             "The Atacama Large Millimeter/submillimeter Array (ALMA) ranged across the unearthly landscape. Credit: ESO/B. Tafreshi ",
         }}
-        title="Public Engagement"
+        title={t("title")}
         breadcrumbs={breadcrumbs}
       />
 
       <div className={containerClass}>
         <ContentCard
-          title="Bridge between public and science"
-          text="The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
+          title={t("bridge-between-public-and-science.title")}
+          text={t("bridge-between-public-and-science.description")}
           type="secondary"
           twoColums
           wfull
@@ -111,8 +115,8 @@ export default function Outreach() {
         {/** Global Projects */}
         <ImageGridsSection
           items={items}
-          title="Global Projects"
-          description="Each year, the IAU OAO hosts a series of Global Outreach Projects to engage the general public with astronomy through our National Outreach Coordinators."
+          title={t("global-projects.title")}
+          description={t("global-projects.description")}
         />
 
         <section aria-labelledby="naoj-program">
@@ -121,10 +125,13 @@ export default function Outreach() {
               id="naoj-program"
               className="text-h2 font-bold md:w-1/2 w-full px-8"
             >
-              Meet the Astronomers Program
+              {t("astronomers-program.title")}
             </h2>
             <div className="flex flex-wrap w-full gap-8">
-              <div className="flex flex-1 relative rounded-lg md:aspect-auto aspect-video bg-black">
+              <Link
+                className="flex flex-1 relative rounded-lg md:aspect-auto aspect-video bg-black"
+                href="/global-projects/meet-the-iau-astronomers"
+              >
                 <Image
                   src={`${projectPath}/images/outreach/meet-the-astronomers.png`}
                   alt=""
@@ -137,7 +144,7 @@ export default function Outreach() {
                   numStars={450}
                   starColors={["#ffffff", "#e0e7ff", "#99b9eb"]}
                 />
-              </div>
+              </Link>
 
               <div
                 className="md:w-1/2 w-full items-center rounded-lg bg-primary-main p-8"
@@ -145,24 +152,17 @@ export default function Outreach() {
                 aria-labelledby="open-call-title"
               >
                 <p className="py-6 text-white xl:text-h5 text-p">
-                  Meet the IAU Astronomers! is a bridge between the public and
-                  IAU astronomers. Through this programme, the OAO aims to make
-                  the science of the IAU accessible to a wider public.
+                  {t("astronomers-program.description")}
                 </p>
-                <p className="py-6 text-white xl:text-h5 text-p">
-                  Would you like to register?
-                </p>
-                <p className="py-4 text-white mb-4 text-p">
-                  Fill out the form:
-                </p>
+                <div className="min-h-20" />
                 <div className="flex gap-4 flex-wrap ">
                   <Button
-                    label="Astronomer"
+                    label={t("astronomers-program.label-button")}
                     color="dark"
                     variant="solid"
                     className="w-1/2"
+                    url="/global-projects/meet-the-iau-astronomers"
                   />
-                  <Button label="Participant" color="dark" variant="solid" />
                 </div>
               </div>
             </div>
@@ -172,22 +172,16 @@ export default function Outreach() {
         <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-8 px-8">
             <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
-              We celebrate the diversity in our languages
+              {t("diversity-languages.title")}
             </h2>
             <p className="text-gray-600 xl:text-h5 text-p w-full">
-              At the OAO, we are committed to embracing the world&apos;s
-              linguistic diversity by translating educational and research
-              materials into languages beyond English. We believe that science
-              should be accessible to everyone, regardless of the language they
-              speak. By breaking language barriers, we aim to ensure that
-              astronomy reaches communities worldwide, fostering inclusion and a
-              shared curiosity about the universe.
+              {t("diversity-languages.description")}
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <ImageCard
               item={{
-                title: "Help us translate",
+                title: t("diversity-languages.help-us"),
                 link: "",
                 image: `${projectPath}/images/she-is-as-astronomer.jpg`,
                 alt: "",
@@ -197,7 +191,7 @@ export default function Outreach() {
 
             <ImageCard
               item={{
-                title: "Find translated materiale",
+                title: t("diversity-languages.find-translated"),
                 link: "",
                 image: `${projectPath}/images/outreach/material.jpg`,
                 alt: "",
@@ -207,7 +201,7 @@ export default function Outreach() {
           </div>
         </div>
 
-        {/* Collaboration Section */}
+        {/* Collaboration Section
         <section
           className="flex flex-col gap-8"
           aria-labelledby="resources-title"
@@ -225,19 +219,18 @@ export default function Outreach() {
           />
 
           <InfoGrid items={info} />
-        </section>
+        </section>*/}
 
         <Parallax
-          title="Visit Our World"
-          subtitle="Astronomy Outreach Events"
+          title={t("parallax.title")}
+          subtitle={t("parallax.subtitle")}
           backgroundImage={{
             imgUrl: `${projectPath}/images/outreach/background-secondary.png `,
-            caption:
-              "Four of the first ALMA antennas at the Array Operations Site (AOS). Credit: ESO/José Francisco Salgado (josefrancisco.org)",
+            caption: t("parallax.caption"),
           }}
         >
           <Button
-            label="Events"
+            label={t("parallax.label-button")}
             url="/astronomy-outreach"
             variant="outline"
             color="light"
@@ -252,9 +245,8 @@ export const get: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
       ...(await loadTranslations(ni18nConfig, locale, [
-        "home",
         "layout",
-        "about",
+        "public-engagement",
       ])),
     },
   };

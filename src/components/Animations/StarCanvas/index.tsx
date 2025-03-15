@@ -3,10 +3,14 @@ import { useEffect, useRef } from "react";
 interface StarCanvasProps {
   numStars: number;
   starColors: string[];
-  starSize?: number,
+  starSize?: number;
 }
 
-const StarCanvas: React.FC<StarCanvasProps> = ({ numStars, starColors, starSize = 0.6 }) => {
+const StarCanvas: React.FC<StarCanvasProps> = ({
+  numStars,
+  starColors,
+  starSize = 0.6,
+}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -59,7 +63,12 @@ const StarCanvas: React.FC<StarCanvasProps> = ({ numStars, starColors, starSize 
     };
   }, [numStars, starColors]);
 
-  return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full"></canvas>;
+  return (
+    <canvas
+      ref={canvasRef}
+      className="absolute top-0 left-0 w-full h-full"
+    ></canvas>
+  );
 };
 
 export default StarCanvas;

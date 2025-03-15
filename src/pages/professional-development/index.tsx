@@ -73,25 +73,83 @@ export default function ProfessionalDevelopment() {
 
   const group = [
     {
-      name: "Indigenous studies",
+      name: "Indigenous Studies in Astronomy",
       role: "",
-      image: `${projectPath}/images/about/about.png`,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: `${projectPath}/images/professional-development/work-group-1.jpg`,
+      description: (
+        <div className="space-y-4">
+          <p>
+            <strong>What is this group about?</strong> This group focuses on
+            exploring the intersection of indigenous knowledge systems and
+            modern astronomy. We aim to bridge the gap between traditional
+            wisdom and scientific discovery, encouraging the integration of
+            indigenous perspectives in astronomy.
+          </p>
+          <p>
+            <strong>How to join:</strong> If you&apos;re passionate about
+            learning from indigenous cultures and want to collaborate in
+            advancing inclusive astronomy, join us! We welcome researchers,
+            educators, and advocates who wish to explore and promote the
+            valuable contributions of indigenous peoples to the understanding of
+            the universe. Whether you&apos;re an academic, a member of an
+            indigenous community, or just someone who wants to learn more, your
+            voice and expertise are vital.
+          </p>
+        </div>
+      ),
     },
     {
-      name: "Education",
+      name: "Inclusion and Community in Astronomy",
       role: "",
-      image: `${projectPath}/images/about/about.png`,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: `${projectPath}/images/professional-development/work-group-2.jpg`,
+      description: (
+        <div className="space-y-4">
+          <p>
+            <strong>What is this group about?</strong> The goal of this group is
+            to ensure that everyone, regardless of background, has access to the
+            wonders of astronomy. We are committed to promoting inclusivity
+            within the field and addressing barriers faced by underrepresented
+            groups. This includes creating opportunities for individuals from
+            diverse backgrounds to engage with astronomy, from education to
+            professional development.
+          </p>
+          <p>
+            <strong>How to join:</strong> If you believe in the power of
+            inclusion and want to help build a community where everyone feels
+            represented in the field of astronomy, we invite you to participate.
+            This group is open to anyone who wants to create a more inclusive
+            environment, whether through outreach, research, or policy advocacy.
+            Join us in making astronomy a field for all.
+          </p>
+        </div>
+      ),
     },
     {
-      name: "Grant and fundraising for our community",
+      name: "Language and Astronomy: Breaking Language Barriers",
       role: "",
-      image: `${projectPath}/images/about/about.png`,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: `${projectPath}/images/professional-development/work-group-3.jpg`,
+      description: (
+        <div className="space-y-4">
+          <p>
+            <strong>What is this group about?</strong> Language is a powerful
+            tool in shaping how we understand the world. In this group, we focus
+            on the importance of language diversity in the sciences,
+            particularly in astronomy. We aim to challenge the dominance of
+            English and explore how other languages can be used to communicate
+            astronomical knowledge, promoting greater accessibility and
+            inclusion worldwide.
+          </p>
+          <p>
+            <strong>How to join:</strong> If you&apos;re passionate about
+            language and its role in shaping our understanding of the universe,
+            this group is for you. Whether you&apos;re a linguist, an educator,
+            a scientist, or simply someone who believes in the importance of
+            linguistic diversity in science, your input is essential. Join us in
+            promoting the use of diverse languages in the astronomical
+            community.
+          </p>
+        </div>
+      ),
     },
   ];
 
@@ -217,7 +275,7 @@ export default function ProfessionalDevelopment() {
           </div>
         </div>
 
-        {/* Collaboration Section */}
+        {/* Section
         <section
           className="flex flex-col gap-8"
           aria-labelledby="resources-title"
@@ -247,7 +305,7 @@ export default function ProfessionalDevelopment() {
           </div>
 
           <InfoGrid items={info} />
-        </section>
+        </section> */}
 
         <Parallax
           title="Visit Our World"
