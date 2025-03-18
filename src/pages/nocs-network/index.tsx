@@ -46,7 +46,7 @@ export default function ProfessionalDevelopment() {
   useEffect(() => {
     const fetchRegions = async () => {
       try {
-        const response = await fetch("/api/regions");
+        const response = await fetch(`${projectPath}/api/regions`);
         if (response.ok) {
           const data = await response.json();
           setRegions(data);
