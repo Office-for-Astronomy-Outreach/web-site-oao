@@ -108,7 +108,7 @@ export default function CalendarEvent() {
 
       if (filters?.categories?.length > 0) {
         filtered = filtered.filter((event) =>
-          event.categories.some((category) =>
+          event?.categories?.some((category) =>
             filters?.categories.includes(category.id)
           )
         );
@@ -116,13 +116,13 @@ export default function CalendarEvent() {
 
       if (filters?.location_of_event) {
         filtered = filtered.filter(
-          (event) => event.location_of_event === filters?.location_of_event
+          (event) => event?.location_of_event === filters?.location_of_event
         );
       }
 
       if (filters?.location_of_event) {
         filtered = filtered.filter(
-          (event) => event.location_of_event === filters?.location_of_event
+          (event) => event?.location_of_event === filters?.location_of_event
         );
       }
 
@@ -135,7 +135,9 @@ export default function CalendarEvent() {
       setFilteredEvents(filtered);
     };
 
-    applyFilters();
+    if(eventsData?.events) {
+      applyFilters();
+    }
   }, [eventsData?.events, filters]);
 
   useEffect(() => {
