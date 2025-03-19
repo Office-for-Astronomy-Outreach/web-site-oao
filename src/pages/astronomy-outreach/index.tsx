@@ -1,20 +1,20 @@
 import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
+import classNames from "classnames";
+import Select from "react-select";
+import useSWR from "swr";
+import { useEffect, useMemo, useState } from "react";
 
 import Banner from "@/components/Banner";
 import { projectPath } from "@/utils/path";
-import classNames from "classnames";
+import { Event, TypeEvent } from "@/types";
 import EmailDisplay from "@/components/EmailDisplay";
 import EventContainer from "@/components/Event";
-import useSWR from "swr";
-import { Event, TypeEvent } from "@/types";
 import ContentCard from "@/components/ContentCard";
 import EventSkeleton from "@/components/Skeleton/EventSkeleton";
 import Button from "@/components/Button";
-import { useEffect, useMemo, useState } from "react";
 import FormLabel from "@/components/Label";
-import Select from "react-select";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const ITEMS_PER_PAGE = 20;
@@ -78,170 +78,30 @@ export default function CalendarEvent() {
     document.body.removeChild(link);
   };
 
-
   const categoryOptions = useMemo(
     () => {
-      if(categoriesData) {
-        categoriesData?.map(({ id, name }) => ({ value: id, label: name }))
-      };
+      if(categoriesData && categoriesData.length > 0) {
+        return categoriesData?.map(({ id, name }) => ({ value: id, label: name }))
+      }
 
-      return [
-        {
-            "id": 1,
-            "name": "Conference"
-        },
-        {
-            "id": 2,
-            "name": "Exhibition"
-        },
-        {
-            "id": 3,
-            "name": "Festival"
-        },
-        {
-            "id": 4,
-            "name": "Outreach Activities in Schools"
-        },
-        {
-            "id": 5,
-            "name": "Outreach Activities for Development"
-        },
-        {
-            "id": 6,
-            "name": "Citizen Science Programme"
-        },
-        {
-            "id": 7,
-            "name": "Open Days"
-        },
-        {
-            "id": 8,
-            "name": "Online Activities"
-        },
-        {
-            "id": 9,
-            "name": "Star Parties/Stargazing"
-        },
-        {
-            "id": 10,
-            "name": "Lecture"
-        },
-        {
-            "id": 11,
-            "name": "Webinar/Seminar"
-        },
-        {
-            "id": 12,
-            "name": "Workshop"
-        },
-        {
-            "id": 13,
-            "name": "Activities in Museums/Science Centers"
-        },
-        {
-            "id": 14,
-            "name": "Outreach Professionals Training"
-        },
-        {
-            "id": 15,
-            "name": "Live Performance"
-        },
-        {
-            "id": 16,
-            "name": "Contest"
-        },
-        {
-            "id": 17,
-            "name": "Planetarium/Movie Screening"
-        }
-    ]
+      return []
     },
     [categoriesData]
   );
 
   const countryOptions = useMemo(
     () => {
-      if(eventsData) {
+      if(eventsData && eventsData?.countries) {
         return eventsData?.countries?.map((country, index) => ({
           value: index,
           label: country,
         }));
       };
-
-      return  [
-        {
-            value: 1,
-            label: "Conference"
-        },
-        {
-            value: 2,
-            label: "Exhibition"
-        },
-        {
-            value: 3,
-            label: "Festival"
-        },
-        {
-            value: 4,
-            label: "Outreach Activities in Schools"
-        },
-        {
-            value: 5,
-            label: "Outreach Activities for Development"
-        },
-        {
-            value: 6,
-            label: "Citizen Science Programme"
-        },
-        {
-            value: 7,
-            label: "Open Days"
-        },
-        {
-            value: 8,
-            label: "Online Activities"
-        },
-        {
-            value: 9,
-            label: "Star Parties/Stargazing"
-        },
-        {
-            value: 10,
-            label: "Lecture"
-        },
-        {
-            value: 11,
-            label: "Webinar/Seminar"
-        },
-        {
-            value: 12,
-            label: "Workshop"
-        },
-        {
-            value: 13,
-            label: "Activities in Museums/Science Centers"
-        },
-        {
-            value: 14,
-            label: "Outreach Professionals Training"
-        },
-        {
-            value: 15,
-            label: "Live Performance"
-        },
-        {
-            value: 16,
-            label: "Contest"
-        },
-        {
-            value: 17,
-            label: "Planetarium/Movie Screening"
-        }
-    ]
+      return []
     },
     [eventsData]
   );
-  console.log(categoryOptions);
+
   useEffect(() => {
     const applyFilters = () => {
       let filtered = eventsData?.events || [];
@@ -385,7 +245,7 @@ export default function CalendarEvent() {
             </>
           ) : (
             <>
-              {eventsData.events && eventsData.events.length >= 1 && (
+              {eventsData?.events && eventsData?.events?.length >= 1 && (
                 <div className="flex flex-wrap gap-4 p-8">
                   <fieldset className="sm:flex-1 w-full">
                     <FormLabel htmlFor={"category"} className="w-full">
@@ -398,7 +258,7 @@ export default function CalendarEvent() {
                       onChange={(e) => {
                         setFilters({
                           ...filters,
-                          categories: e.map((category) => category?.value),
+                          categories: e.map((item) => item?.value),
                         });
                       }}
                       isMulti
@@ -450,7 +310,7 @@ export default function CalendarEvent() {
               <div className="space-y-8">
                 {currentEvents && currentEvents.length >= 1 ? (
                   currentEvents?.map((event: Event) => (
-                    <EventContainer data={event} key={event.id} />
+                    <EventContainer data={event} key={event?.id} />
                   ))
                 ) : (
                   <div className="min-h-32 flex items-center">

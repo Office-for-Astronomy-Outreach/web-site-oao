@@ -5,7 +5,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Event[] | { error: string }>
 ) {
-  const apiUrl = process.env.API_BASE_PATH || "";
+  const apiUrl = process.env.API_BASE_PATH || "http://127.0.0.1:3001/";
 
   try {
     // Intentar obtener datos del servidor
