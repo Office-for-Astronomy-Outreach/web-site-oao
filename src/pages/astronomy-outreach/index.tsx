@@ -16,7 +16,13 @@ import EventSkeleton from "@/components/Skeleton/EventSkeleton";
 import Button from "@/components/Button";
 import FormLabel from "@/components/Label";
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
+const fetcher = async (url: string) => {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  return response.json();
+};
 const ITEMS_PER_PAGE = 20;
 
 export default function CalendarEvent() {
@@ -69,36 +75,28 @@ export default function CalendarEvent() {
 
   const year = new Date().getFullYear();
 
-  const downloadImage = (url: string, filename: string) => {
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const downloadImages = () => {
+    logos.forEach(({ url, name }) => {
+      const link = document.createElement("a");
+      Object.assign(link, { href: url, download: name });
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
   };
 
   const categoryOptions = useMemo(
-    () => {
-      if(categoriesData && categoriesData.length > 0) {
-        return categoriesData?.map(({ id, name }) => ({ value: id, label: name }))
-      }
-
-      return []
-    },
+    () =>
+      categoriesData?.map(({ id, name }) => ({ value: id, label: name })) || [],
     [categoriesData]
   );
 
   const countryOptions = useMemo(
-    () => {
-      if(eventsData && eventsData?.countries) {
-        return eventsData?.countries?.map((country, index) => ({
-          value: index,
-          label: country,
-        }));
-      };
-      return []
-    },
+    () =>
+      eventsData?.countries?.map((country, index) => ({
+        value: index,
+        label: country,
+      })) || [],
     [eventsData]
   );
 
@@ -120,22 +118,17 @@ export default function CalendarEvent() {
         );
       }
 
-      if (filters?.location_of_event) {
-        filtered = filtered.filter(
-          (event) => event?.location_of_event === filters?.location_of_event
-        );
-      }
-
       if (filters?.country) {
         filtered = filtered.filter(
           (event) => event.country === filters?.country
         );
       }
+
       setCurrentPage(1);
       setFilteredEvents(filtered);
     };
 
-    if(eventsData?.events) {
+    if (eventsData?.events) {
       applyFilters();
     }
   }, [eventsData?.events, filters]);
@@ -221,9 +214,7 @@ export default function CalendarEvent() {
               <Button
                 label={"Dowlonad OAO Logo"}
                 color="dark"
-                onClick={() =>
-                  logos.forEach(({ url, name }) => downloadImage(url, name))
-                }
+                onClick={downloadImages}
               />
             </div>
           }
@@ -257,12 +248,14 @@ export default function CalendarEvent() {
                       name="category"
                       options={categoryOptions}
                       isClearable
-                      onChange={(e) => {
-                        setFilters({
-                          ...filters,
-                          categories: e.map((item) => item?.value),
-                        });
-                      }}
+                      onChange={(selected) =>
+                        setFilters((prev) => ({
+                          ...prev,
+                          categories: selected
+                            ? selected.map((item) => item.value)
+                            : [],
+                        }))
+                      }
                       isMulti
                       className="w-full"
                     />

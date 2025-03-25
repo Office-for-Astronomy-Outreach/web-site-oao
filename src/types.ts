@@ -18,9 +18,10 @@ export type Country = {
   description?: string;
   urlImg: string;
   webSite?: string;
-  socialMedia: SocialMedia;
-  members: Member[];
-  coordinators: Member[];
+  socialMedia?: SocialMedia;
+  members?: Member[];
+  coordinators?: Member[];
+  region_id?: number;
 };
 
 export type SocialMedia = {
@@ -84,7 +85,7 @@ export type Event = {
   location_of_event: TypeEvent;
   keywords: string[];
   participants: number;
-  iau_member: boolean;
+  iau_member?: Country;
   active: boolean;
   created_at: string;
   updated_at: string;

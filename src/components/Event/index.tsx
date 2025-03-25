@@ -40,11 +40,33 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
     [TypeEvent.hybrid]: "Hybrid",
   };
 
+  const regions: { [key: number]: string } = {
+    1: "africa",
+    2: "americas",
+    3: "asia",
+    4: "europe",
+    5: "oceania",
+  };
+
+  const isPastDate = (date: string | Date): boolean => {
+    const inputDate = new Date(date);
+    const currentDate = new Date();
+
+    const normalizeDate = (date: Date) => {
+      return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    };
+
+    const normalizedInputDate = normalizeDate(inputDate);
+    const normalizedCurrentDate = normalizeDate(currentDate);
+
+    return normalizedInputDate < normalizedCurrentDate;
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-md">
       <div className="flex sm:flex-row flex-col">
         {/* Event Image */}
-        <div className="sm:w-40 w-full">
+        <div className="sm:w-60 w-full">
           {data.event_image_url ? (
             <div className="relative sm:aspect-square aspect-video">
               <Image
@@ -52,6 +74,7 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
                 alt={data.name || "Event image"}
                 className="sm:rounded-ss-lg sm:rounded-t-none rounded-t-lg object-cover"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute w-10 bg-primary-main sm:rounded-ss-lg sm:rounded-t-none rounded-t-lg">
                 <time
@@ -76,7 +99,7 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
 
             <div className="flex gap-2">
               <FontAwesomeIcon icon={faCalendarDay} />
-              <p className="uppercase text-xs text-gray-600">
+              <p className="text-xs text-gray-600">
                 <time dateTime={data.start_date}>
                   {formattedDate(startDate)}
                 </time>
@@ -87,9 +110,18 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
 
             <div className="">
               <span className="font-medium text-xs text-gray-600">
-                Organizer:
+                Organizer by:
               </span>
-              <p className="text-xs text-gray-600">{`${data.contact_name}, ${data.organizer}`}</p>
+              <span className="text-xs text-gray-600">{` ${data.contact_name} from ${data.organizer}`}</span>
+              {data?.iau_member && data?.iau_member?.region_id && (
+                <Link
+                  href={`/nocs-network/${regions[data?.iau_member?.region_id]}/${data?.iau_member?.slug}`}
+                >
+                  <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-blue-600 ring-1 ring-blue-500/10 ring-inset">
+                    IAU Member: NOC {data?.iau_member?.name}
+                  </span>
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -106,6 +138,12 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
                 <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-yellow-600/20 ring-inset">
                   {eventTypes[data.location_of_event] || ""}
                 </span>
+
+                {isPastDate(data.start_date) && (
+                  <span className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-red-600/20 ring-inset">
+                    Event Past
+                  </span>
+                )}
 
                 {data.categories?.map((category) => (
                   <span
