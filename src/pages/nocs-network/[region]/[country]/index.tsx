@@ -182,41 +182,6 @@ const RegionPage = () => {
               />
             ))}
           </div>
-          {countryData?.others_members &&
-            countryData?.others_members.length > 0 && (
-              <>
-                <div className="flex flex-col gap-8 px-8">
-                  <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
-                    Former members of the society
-                  </h2>
-                </div>
-                <div className=" relative rounded-xl overflow-auto shadow-sm">
-                  <table className="border-collapse table-auto w-full text-gray-600 bg-white">
-                    <thead className="bg-primary-main">
-                      <tr className="text-white">
-                        <th className="p-4 text-left">Name</th>
-                        <th className="p-4 text-left">Position</th>
-                        <th className="p-4 text-left">Afiliation</th>
-                        <th className="p-4 text-left">Email</th>
-                        <th className="p-4 text-left">{""}</th>
-                      </tr>
-                    </thead>
-                    {countryData?.others_members.map((member, index) => (
-                      <tr key={index}>
-                        <td className="p-4">{member.name}</td>
-                        <td className="p-4">{memberRole(member?.role)}</td>
-                        <td className="p-4">{member.affiliation}</td>
-                        <td className="p-4">
-                          {member?.email && (
-                            <EmailDisplay email={member?.email} />
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </table>
-                </div>
-              </>
-            )}
         </div>
 
         <div className="space-y-16">

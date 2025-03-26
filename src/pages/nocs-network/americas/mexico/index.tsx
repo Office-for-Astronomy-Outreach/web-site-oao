@@ -61,7 +61,7 @@ const RegionPage = () => {
         description:
           "Anaely Pacheco Blanco is a science communicator, specialising in astronomy. She holds a degree in Physics from the Benemérita Universidad Autónoma de Puebla (BUAP) and a Master’s in Science with a specialisation in Astrophysics from the National Institute of Astrophysics, Optics, and Electronics (INAOE). She is passionate about promoting equity, diversity, and inclusion in STEM fields, as well as protecting the night sky as a shared heritage. To advance these goals, she founded the association Astronomía sin barreras: Experiencias en un Universo compartido (Astronomy Without Barriers: Experiences in a Shared Universe).",
         active: true,
-        role: "committeer",
+        role: "committee",
         appointed_start: "2025-03-01",
         appointed_end: "2027-08-01",
         country_id: 46,
@@ -160,7 +160,7 @@ const RegionPage = () => {
         role: "committee",
         appointed_start: "2025-03-01",
         appointed_end: "2027-08-01",
-        country_id: 39,
+        country_id: 46,
         created_at: "2025-02-04T00:00:00.000Z",
         updated_at: "2025-02-04T00:00:00.000Z",
       },
@@ -175,9 +175,41 @@ const RegionPage = () => {
         description: null,
         active: false,
         role: "former-nocs",
-        appointed_start: "2025-03-01",
+        appointed_start: "2021-03-01",
         appointed_end: "2024-08-01",
-        country_id: 39,
+        country_id: 46,
+        created_at: "2025-02-04T00:00:00.000Z",
+        updated_at: "2025-02-04T00:00:00.000Z",
+      },
+      {
+        id: 11,
+        name: "René Alberto Ortega Minakata",
+        affiliation:
+          "Instituto de Radioastronomía y Astrofísica (IRyA) at Universidad Nacional Autónoma de México (UNAM), Campus Morelia",
+        url_image: `${path}/images/nocs/Mexico/nocs/Tania.png`,
+        email: "r.ortega@irya.unam.mx",
+        description: null,
+        active: false,
+        role: "former-nocs",
+        appointed_start: "2018-09-01",
+        appointed_end: "2021-08-27",
+        country_id: 46,
+        created_at: "2025-02-04T00:00:00.000Z",
+        updated_at: "2025-02-04T00:00:00.000Z",
+      },
+      {
+        id: 12,
+        name: "Alejandro Farah",
+        affiliation:
+          "Instituto de Astronomía, Universidad Nacional Autonoma de Mexico",
+        url_image: `${path}/images/nocs/Mexico/nocs/Tania.png`,
+        email: "farah@atastro.unam.mx",
+        description: null,
+        active: false,
+        role: "former-nocs",
+        appointed_start: "2021-03-01",
+        appointed_end: "2024-08-01",
+        country_id: 46,
         created_at: "2025-02-04T00:00:00.000Z",
         updated_at: "2025-02-04T00:00:00.000Z",
       },
@@ -188,7 +220,7 @@ const RegionPage = () => {
       facebook: "https://www.facebook.com/nocmex/",
       x: null,
       youtube: null,
-      country_id: 39,
+      country_id: 46,
       created_at: "2025-01-18T00:00:00.000Z",
       updated_at: "2025-01-18T00:00:00.000Z",
     },
@@ -327,7 +359,7 @@ const RegionPage = () => {
         <div className="space-y-16">
           <div className="flex flex-col gap-8 px-8">
             <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
-              Formal president and active members of the society
+              Mexico&apos;s National Outreach Coordinators
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
@@ -348,6 +380,48 @@ const RegionPage = () => {
               ))}
           </div>
         </div>
+
+        {countryData?.others_members &&
+          countryData?.others_members.length > 0 && (
+            <>
+              <div className="flex flex-col gap-8 px-8">
+                <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
+                  Former members of the society
+                </h2>
+              </div>
+              <div className="relative rounded-xl overflow-auto shadow-sm">
+                <table className="border-collapse table-auto w-full text-gray-600 bg-white">
+                  <thead className="bg-primary-main">
+                    <tr>
+                      <th className="p-4 text-left text-white">Name</th>
+                      <th className="p-4 text-left text-white">Position</th>
+                      <th className="p-4 text-left text-white">Affiliation</th>
+                      <th className="p-4 text-left text-white">Email</th>
+                      <th className="p-4 text-left text-white">Appointed in</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {countryData?.others_members.map((member, index) => (
+                      <tr key={index}>
+                        <td className="p-4">{member.name}</td>
+                        <td className="p-4">{memberRole(member?.role)}</td>
+                        <td className="p-4">{member.affiliation}</td>
+                        <td className="p-4">
+                          {member?.email && (
+                            <EmailDisplay email={member?.email} />
+                          )}
+                        </td>
+                        <td className="p-4">
+                          {member?.appointed_start} until{" "}
+                          {member?.appointed_end}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
 
         <div className="space-y-16">
           <h2 className="capitalize text-h2 font-bold md:w-2/3 w-full px-8">

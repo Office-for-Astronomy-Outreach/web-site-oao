@@ -66,29 +66,30 @@ const CardNocMember: React.FC<NocMemberProps> = ({
             {name}
           </h3>
           <p className="text-md text-gray-500 mb-4">{role}</p>
+          <div>
+            {affiliation && (
+              <p className="font-semibold text-xs text-gray-700">
+                <span>Affiliation: </span>
+                <span className="font-normal">{affiliation}</span>
+              </p>
+            )}
 
-          {affiliation && (
-            <p className="font-semibold text-xs text-gray-700">
-              <span>Affiliation: </span>
-              <span className="font-normal">{affiliation}</span>
-            </p>
-          )}
+            {appointedStart && appointedEnd && (
+              <p className="font-semibold text-xs text-gray-700">
+                <span>Appointed in: </span>
+                <span className="font-normal">
+                  {formattedDate(startDate)} until {formattedDate(endDate)}
+                </span>
+              </p>
+            )}
 
-          {appointedStart && appointedEnd && (
-            <p className="font-semibold text-xs text-gray-700">
-              <span>Appointed in: </span>
-              <span className="font-normal">
-                {formattedDate(startDate)} until {formattedDate(endDate)}
-              </span>
-            </p>
-          )}
-
-          {email && (
-            <p className="font-semibold text-xs">
-              <span className="text-gray-700">Email: </span>
-              <EmailDisplay email={email} />
-            </p>
-          )}
+            {email && (
+              <p className="font-semibold text-xs">
+                <span className="text-gray-700">Email: </span>
+                <EmailDisplay email={email} />
+              </p>
+            )}
+          </div>
         </div>
       </div>
       {description && (
