@@ -8,6 +8,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { projectPath } from "@/utils/path";
 import { Event, TypeEvent } from "@/types";
+import Button from "@/components/Button";
 
 const fetcher = async (url: string) => {
   const response = await fetch(url);
@@ -159,7 +160,7 @@ export default function CalendarEvent() {
                         {event.categories?.map((category) => (
                           <span
                             key={`${event.id}-${category.name}`}
-                            className="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600"
+                            className="inline-flex items-center px-1 py-1 text-xs font-medium text-gray-600"
                           >
                             {category.name}
                           </span>
@@ -181,7 +182,11 @@ export default function CalendarEvent() {
                       <th className="text-sm font-normal">
                         {event.participants}
                       </th>
-                      <th className="text-sm font-normal">Actions</th>
+                      <th className="text-sm font-normal">
+                        <button> Details</button>
+                        <button> Edit</button>
+                        <button> Approval</button>
+                      </th>
                     </tr>
                   ))
                 ) : (

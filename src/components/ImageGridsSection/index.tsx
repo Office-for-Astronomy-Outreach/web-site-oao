@@ -7,7 +7,7 @@ const ImageGridsSection: React.FC<ImageGridProps> = ({
   description,
 }) => (
   <section
-    className="flex flex-wrap gap-16"
+    className="flex flex-wrap gap-8"
     role="region"
     aria-labelledby={`${title}-title`}
   >

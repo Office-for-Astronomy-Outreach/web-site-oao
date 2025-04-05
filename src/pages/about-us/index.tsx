@@ -94,7 +94,7 @@ export default function About() {
     "my-16",
     "md:px-4",
     "py-2",
-    "flex flex-col gap-24"
+    "flex flex-col gap-32"
   );
 
   useEffect(() => {
@@ -116,7 +116,7 @@ export default function About() {
       />
 
       <div className={containerClass}>
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-24">
           {/* About Section */}
           <ContentCard
             title={t("about.title")}
@@ -183,13 +183,16 @@ export default function About() {
         </div>
 
         {/* Team Section */}
-        <section className="flex flex-col gap-16">
+        <section className="flex flex-col gap-8">
           <h2
             className="capitalize text-h2 font-bold text-body px-8 scroll-mt-32"
             id="our-team"
           >
             {t("team.title")}
           </h2>
+          <p className="text-gray-800 w-full mb-4 px-8">
+            {t("team.description")}
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <CardTeamMember
@@ -251,7 +254,7 @@ export default function About() {
         </section>
 
         {/* Collaboration Section */}
-        <section className="flex flex-col gap-16 md:py-16 ">
+        <section className="flex flex-col gap-8 md:py-16 ">
           <div className="px-8 flex flex-col gap-8">
             <h2 className="capitalize text-h2 font-bold text-body ">
               {t("collaborations.title")}

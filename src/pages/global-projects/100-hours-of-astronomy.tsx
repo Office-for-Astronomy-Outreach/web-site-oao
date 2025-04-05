@@ -69,7 +69,7 @@ export default function OneHundredHoursOfAstronomy() {
     "my-16",
     "md:px-4",
     "py-2",
-    "flex flex-col gap-24"
+    "flex flex-col gap-32"
   );
 
   return (
@@ -131,7 +131,7 @@ export default function OneHundredHoursOfAstronomy() {
           }}
         />
 
-        <div className="flex md:flex-row flex-col gap-16 px-8">
+        <div className="flex md:flex-row flex-col gap-8 px-8">
           <article>
             <h2
               id="planetarium-title"

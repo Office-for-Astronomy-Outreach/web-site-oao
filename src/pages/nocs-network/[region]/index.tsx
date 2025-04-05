@@ -40,7 +40,7 @@ const RegionPage = () => {
     "my-16",
     "md:px-4",
     "py-2",
-    "flex flex-col gap-24"
+    "flex flex-col gap-32"
   );
 
   return (
@@ -69,7 +69,7 @@ const RegionPage = () => {
         {!router.isReady || isLoading ? (
           <div className="h-screen">Loading...</div>
         ) : (
-          <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-8">
             <h2 className="capitalize text-h2 font-bold w-full px-8">
               Directory of National Diffusion Coordinators in{" "}
               {regionData?.region?.name}

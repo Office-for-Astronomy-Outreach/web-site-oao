@@ -89,7 +89,7 @@ export default function Home() {
     "my-16",
     "md:px-4",
     "py-2",
-    "flex flex-col gap-24"
+    "flex flex-col gap-32"
   );
 
   return (
@@ -97,7 +97,7 @@ export default function Home() {
       <Carousel slides={slides} autoPlay={true} interval={7000} />
 
       <div className={containerClass}>
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-24">
           <ContentCard
             title={t("accessible-astronomy.title")}
             text={t("accessible-astronomy.description")}
@@ -141,10 +141,13 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-8">
           <h2 className="capitalize  text-h2 font-bold px-8 md:w-1/2">
             {t("global-community.title")}
           </h2>
+          <p className="text-gray-800 w-full mb-4 px-8">
+            {t("global-community.description")}
+          </p>
           <GlobalCommunityGrid images={globalCommunity} />
         </div>
 

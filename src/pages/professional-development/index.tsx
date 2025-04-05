@@ -44,7 +44,7 @@ export default function ProfessionalDevelopment() {
     },
   ];
 
-  const info = [
+  /*const info = [
     {
       title: "Infographics",
       description: "",
@@ -69,7 +69,7 @@ export default function ProfessionalDevelopment() {
       bgColor: "bg-blue-500",
       url: "/",
     },
-  ];
+  ];*/
 
   const group = [
     {
@@ -164,7 +164,7 @@ export default function ProfessionalDevelopment() {
     "my-16",
     "md:px-4",
     "py-2",
-    "flex flex-col gap-24"
+    "flex flex-col gap-32"
   );
 
   return (
@@ -189,8 +189,11 @@ export default function ProfessionalDevelopment() {
           title="Professional Development"
           text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
           type="secondary"
-          twoColums
-          wfull
+          image={{
+            imageUrl: `${projectPath}/images/professional-development/professional-development.png`,
+            caption: "",
+            alt: "",
+          }}
         />
 
         <ImageGrid
@@ -200,15 +203,15 @@ export default function ProfessionalDevelopment() {
         />
 
         <section aria-labelledby="naoj-program">
-          <div className="container mx-auto px-4 py-8 flex flex-col gap-8">
-            <h2 id="naoj-program" className="text-h2 font-bold text-body">
+          <div className="flex flex-col gap-8">
+            <h2 id="naoj-program" className="text-h2 font-bold text-body px-8">
               National Astronomical Observatory of Japan NAOJ Astronomy Outreach
               Trainee
             </h2>
             <div className="flex flex-wrap w-full gap-8">
               <div className="flex flex-1 relative rounded-lg sm:aspect-square aspect-video">
                 <Image
-                  src={`${projectPath}/images/professional-development/professional-development.png`}
+                  src={`${projectPath}/images/professional-development/naoj.jpg`}
                   alt="NAOJ Visitor Program"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center" }}
@@ -252,10 +255,10 @@ export default function ProfessionalDevelopment() {
         </section>
 
         <div className="flex flex-col gap-8">
-          <h2 className="capitalize text-h2 font-bold text-body">
+          <h2 className="capitalize text-h2 font-bold text-body px-8">
             Working Groups
           </h2>
-          <p className="text-gray-800 w-full mb-4">
+          <p className="text-gray-800 w-full mb-4 px-8">
             We introduce the new working groups, designed to foster dialogue and
             support community development around the world. These are spaces
             where you can freely share your ideas, collaborate, and engage in

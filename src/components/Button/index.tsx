@@ -61,7 +61,7 @@ const Button: React.FC<ButtonProps> = ({
         "bg-transparent text-dark-main hover:bg-dark-light hover:bg-opacity-30",
     },
     light: {
-      solid: "bg-white text-body hover:bg-dark-light",
+      solid: "bg-white text-body hover:bg-dark-main hover:text-white",
       outline:
         "outline-2 border-2 outline-white text-white hover:text-body hover:bg-white",
       transparent:

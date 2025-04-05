@@ -25,7 +25,7 @@ const ImageCard: React.FC<{ item: ImageGridItem; extraClasses?: string }> = ({
       alt={item?.alt ?? item.title}
       fill
       sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
-      className="rounded-lg"
+      className="rounded-lg object-top"
       style={{ objectFit: "cover" }}
     />
     <div className={maskClasses}></div>

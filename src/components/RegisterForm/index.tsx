@@ -201,7 +201,9 @@ const EventRegisterForm = () => {
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg">
-      <h2 className="text-2xl font-bold mb-4">Register your event</h2>
+      <h2 className="text-2xl font-bold mb-8 text-primary-main">
+        Register your event
+      </h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
         {/* Nombre */}

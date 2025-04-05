@@ -88,7 +88,7 @@ export default function Outreach() {
     "my-16",
     "md:px-4",
     "py-2",
-    "flex flex-col gap-24"
+    "flex flex-col gap-32"
   );
   return (
     <>
@@ -119,19 +119,21 @@ export default function Outreach() {
           description={t("global-projects.description")}
         />
 
-        <section aria-labelledby="naoj-program">
-          <div className="flex flex-col gap-16">
+        {/** Astronomers program */}
+        <section aria-labelledby="astronomers-program">
+          <div className="flex flex-col gap-8">
             <h2
-              id="naoj-program"
+              id="astronomers-program"
               className="text-h2 font-bold md:w-1/2 w-full px-8"
             >
               {t("astronomers-program.title")}
             </h2>
-            <div className="flex flex-wrap w-full gap-8">
-              <Link
-                className="flex flex-1 relative rounded-lg md:aspect-auto aspect-video bg-black"
-                href="/global-projects/meet-the-iau-astronomers"
-              >
+            <p className="text-gray-800 w-full mb-4 px-8 ">
+              {t("astronomers-program.description")}
+            </p>
+
+            <div className="flex flex-wrap w-full relative bg-black rounded-lg">
+              <div className="w-full relative h-52">
                 <Image
                   src={`${projectPath}/images/outreach/meet-the-astronomers.png`}
                   alt=""
@@ -140,41 +142,30 @@ export default function Outreach() {
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
                   className="rounded-lg"
                 />
+
                 <StarCanvas
                   numStars={450}
                   starColors={["#ffffff", "#e0e7ff", "#99b9eb"]}
                 />
-              </Link>
-
-              <div
-                className="md:w-1/2 w-full items-center rounded-lg bg-primary-main p-8"
-                role="region"
-                aria-labelledby="open-call-title"
-              >
-                <p className="py-6 text-white xl:text-h5 text-p">
-                  {t("astronomers-program.description")}
-                </p>
-                <div className="min-h-20" />
-                <div className="flex gap-4 flex-wrap ">
-                  <Button
-                    label={t("astronomers-program.label-button")}
-                    color="dark"
-                    variant="solid"
-                    className="w-1/2"
-                    url="/global-projects/meet-the-iau-astronomers"
-                  />
-                </div>
+              </div>
+              <div className="text-center w-full mb-16 mx-8">
+                <Button
+                  label={t("astronomers-program.label-button")}
+                  color="light"
+                  variant="solid"
+                  url="/global-projects/meet-the-iau-astronomers"
+                />
               </div>
             </div>
           </div>
         </section>
 
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-8 px-8">
             <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
               {t("diversity-languages.title")}
             </h2>
-            <p className="text-gray-600 xl:text-h5 text-p w-full">
+            <p className="text-gray-600 xl:text-h5 text-p w-full mb-4">
               {t("diversity-languages.description")}
             </p>
           </div>

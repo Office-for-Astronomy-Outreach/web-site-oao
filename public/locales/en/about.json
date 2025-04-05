@@ -35,7 +35,8 @@
         "description": "The IAU OAO collaborates with many international organizations to bring astronomy to the global public and further work toward fulfilling our Strategic Actions."
     },
     "team": {
-        "title": "Our Team"
+        "title": "Our Team",
+        "description": "Meet our team, a group of professionals passionate about astronomy and science communication."
     },
     "parallax": {
         "title": "Visit Our World",

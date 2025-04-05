@@ -49,7 +49,6 @@ export default function CalendarEvent() {
     country: null,
   });
 
-
   const breadcrumbs = [
     { label: "Home", href: "/" },
     { label: "Astronomy Outreach Events", href: "" },
@@ -61,7 +60,7 @@ export default function CalendarEvent() {
     "my-16",
     "md:px-4",
     "py-2",
-    "flex flex-col gap-24"
+    "flex flex-col gap-32"
   );
 
   const logos = [
@@ -224,7 +223,7 @@ export default function CalendarEvent() {
           wfull
         />
 
-        <div className="flex flex-col gap-6" id="eventsList">
+        <div className="flex flex-col gap-8" id="eventsList">
           <div className="px-8">
             <h2 className="font-bold text-h2 capitalize scroll-mt-32 text-body">
               Upcoming Astronomy Events
@@ -241,7 +240,7 @@ export default function CalendarEvent() {
           ) : (
             <>
               {eventsData?.events && eventsData?.events?.length >= 1 && (
-                <div className="flex flex-wrap gap-4 p-8">
+                <div className="flex flex-wrap gap-4 px-8">
                   <fieldset className="sm:flex-1 w-full">
                     <FormLabel htmlFor={"category"} className="w-full">
                       Category

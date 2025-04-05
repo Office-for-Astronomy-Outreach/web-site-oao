@@ -25,102 +25,102 @@ const RegionPage = () => {
   const path = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const events = [
-      {
-        id: 16,
-        name: "Women and girls in astronomy",
-        country: "México",
-        city: "Guadalajara",
-        latitude: "20.6751707",
-        longitude: "-103.3473385",
-        brief_description:
-          "On the occasion of the International Day of Women and Girls in Science, the Syrian Astronomical Society hosted a group of women and girls of various age groups and academic backgrounds, starting from the age of 15 and above, at the Syrian Astronomical Observatory in Damascus. The event included an introduction to the reason behind the global celebration of this day, a glimpse into the most significant contributions of women in the field of space and astronomical sciences, and a 3D tour of the planets in the solar system. Participants also learned about the lives of astronauts, the differences between asteroids, meteors, meteorites, and comets, and an explanation of how the Moon and its craters were formed. The event concluded with an observation of the Moon and the planets visible in the sky, including Venus, Mars, and the stars of the Orion constellation.",
-        start_date: "2025-03-03",
-        end_date: "2025-03-28",
-        website: "http://ejemplo.com",
-        organizer: "Noc Mexico",
-        contact_name: "Cintía Duran",
-        contact_email: "mdanatg@gmail.com",
-        location_of_event: "hybrid",
-        keywords: [
-          "women in astronomy",
-          "astronomy for all",
-          "STEM",
-          "astrophotography",
-        ],
-        participants: 213,
-        iau_member: {
-            id: 46,
-            name: "Mexico",
-            slug: "mexico",
-            description: null,
-            url_img: null,
-            web_site: null,
-            region_id: 2,
-            created_at: "2025-01-17T17:50:15.609Z",
-            updated_at: "2025-01-17T17:50:15.609Z",
-          },
-        active: true,
-        created_at: "2025-03-03T19:17:30.745Z",
-        updated_at: "2025-03-03T19:17:30.807Z",
-        event_image_url: null,
-        categories: [
-          {
-            id: 5,
-            name: "Outreach Activities for Development",
-            created_at: "2025-02-27T04:31:46.988Z",
-            updated_at: "2025-02-27T04:31:46.988Z",
-          },
-          {
-            id: 10,
-            name: "Lecture",
-            created_at: "2025-02-27T04:31:46.997Z",
-            updated_at: "2025-02-27T04:31:46.997Z",
-          },
-        ],
+    {
+      id: 16,
+      name: "Women and girls in astronomy",
+      country: "México",
+      city: "Guadalajara",
+      latitude: "20.6751707",
+      longitude: "-103.3473385",
+      brief_description:
+        "On the occasion of the International Day of Women and Girls in Science, the Syrian Astronomical Society hosted a group of women and girls of various age groups and academic backgrounds, starting from the age of 15 and above, at the Syrian Astronomical Observatory in Damascus. The event included an introduction to the reason behind the global celebration of this day, a glimpse into the most significant contributions of women in the field of space and astronomical sciences, and a 3D tour of the planets in the solar system. Participants also learned about the lives of astronauts, the differences between asteroids, meteors, meteorites, and comets, and an explanation of how the Moon and its craters were formed. The event concluded with an observation of the Moon and the planets visible in the sky, including Venus, Mars, and the stars of the Orion constellation.",
+      start_date: "2025-03-03",
+      end_date: "2025-03-28",
+      website: "http://ejemplo.com",
+      organizer: "Noc Mexico",
+      contact_name: "Cintía Duran",
+      contact_email: "mdanatg@gmail.com",
+      location_of_event: "hybrid",
+      keywords: [
+        "women in astronomy",
+        "astronomy for all",
+        "STEM",
+        "astrophotography",
+      ],
+      participants: 213,
+      iau_member: {
+        id: 46,
+        name: "Mexico",
+        slug: "mexico",
+        description: null,
+        url_img: null,
+        web_site: null,
+        region_id: 2,
+        created_at: "2025-01-17T17:50:15.609Z",
+        updated_at: "2025-01-17T17:50:15.609Z",
       },
-      {
-        id: 5,
-        name: "Una Ventana Al Universo - FM Radio",
-        country: "México",
-        city: "Guadalajara",
-        latitude: "20.6751707",
-        longitude: "-103.3473385",
-        brief_description:
-          "Esta tarde de domingo de astronomía te invitamos a escuchar 'Una Ventana Al Universo - FM Radio' Conversaremos sobre el Maratón Messier con Gerardo Rizo y la Sociedad Astronómica Guadalajara, A.C.",
-        start_date: "2025-03-01",
-        end_date: "2025-03-02",
-        website: "http://ejemplo.com",
-        organizer: "Noc Mexico",
-        contact_name: "Cintía Duran",
-        contact_email: "mdanatg@gmail.com",
-        location_of_event: "online",
-        keywords: ["astronomy"],
-        participants: 46,
-        iau_member: {
-          id: 46,
-          name: "Mexico",
-          slug: "mexico",
-          description: null,
-          url_img: null,
-          web_site: null,
-          region_id: 2,
-          created_at: "2025-01-17T17:50:15.609Z",
-          updated_at: "2025-01-17T17:50:15.609Z",
+      active: true,
+      created_at: "2025-03-03T19:17:30.745Z",
+      updated_at: "2025-03-03T19:17:30.807Z",
+      event_image_url: null,
+      categories: [
+        {
+          id: 5,
+          name: "Outreach Activities for Development",
+          created_at: "2025-02-27T04:31:46.988Z",
+          updated_at: "2025-02-27T04:31:46.988Z",
         },
-        active: true,
-        created_at: "2025-02-28T08:10:26.549Z",
-        updated_at: "2025-02-28T08:10:26.549Z",
-        event_image_url: null,
-        categories: [
-          {
-            id: 5,
-            name: "Outreach Activities for Development",
-            created_at: "2025-02-27T04:31:46.988Z",
-            updated_at: "2025-02-27T04:31:46.988Z",
-          },
-        ],
+        {
+          id: 10,
+          name: "Lecture",
+          created_at: "2025-02-27T04:31:46.997Z",
+          updated_at: "2025-02-27T04:31:46.997Z",
+        },
+      ],
+    },
+    {
+      id: 5,
+      name: "Una Ventana Al Universo - FM Radio",
+      country: "México",
+      city: "Guadalajara",
+      latitude: "20.6751707",
+      longitude: "-103.3473385",
+      brief_description:
+        "Esta tarde de domingo de astronomía te invitamos a escuchar 'Una Ventana Al Universo - FM Radio' Conversaremos sobre el Maratón Messier con Gerardo Rizo y la Sociedad Astronómica Guadalajara, A.C.",
+      start_date: "2025-03-01",
+      end_date: "2025-03-02",
+      website: "http://ejemplo.com",
+      organizer: "Noc Mexico",
+      contact_name: "Cintía Duran",
+      contact_email: "mdanatg@gmail.com",
+      location_of_event: "online",
+      keywords: ["astronomy"],
+      participants: 46,
+      iau_member: {
+        id: 46,
+        name: "Mexico",
+        slug: "mexico",
+        description: null,
+        url_img: null,
+        web_site: null,
+        region_id: 2,
+        created_at: "2025-01-17T17:50:15.609Z",
+        updated_at: "2025-01-17T17:50:15.609Z",
       },
-    ];
+      active: true,
+      created_at: "2025-02-28T08:10:26.549Z",
+      updated_at: "2025-02-28T08:10:26.549Z",
+      event_image_url: null,
+      categories: [
+        {
+          id: 5,
+          name: "Outreach Activities for Development",
+          created_at: "2025-02-27T04:31:46.988Z",
+          updated_at: "2025-02-27T04:31:46.988Z",
+        },
+      ],
+    },
+  ];
 
   const [countryData] = useState({
     country: {
@@ -370,7 +370,7 @@ const RegionPage = () => {
     "my-16",
     "md:px-4",
     "py-2",
-    "flex flex-col gap-24"
+    "flex flex-col gap-32"
   );
 
   const images = [
@@ -432,7 +432,7 @@ const RegionPage = () => {
       />
 
       <div className={containerClass}>
-        <div className="space-y-16 px-8">
+        <div className="space-y-8 px-8">
           <h2 className="capitalize text-h2 font-bold w-full">
             {countryData?.country.name || ""}
           </h2>
@@ -456,7 +456,7 @@ const RegionPage = () => {
           </div>
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-8">
           <div className="flex flex-col gap-8 px-8">
             <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
               Mexico&apos;s National Outreach Coordinators
@@ -483,12 +483,10 @@ const RegionPage = () => {
 
         {countryData?.others_members &&
           countryData?.others_members.length > 0 && (
-            <>
-              <div className="flex flex-col gap-8 px-8">
-                <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full">
-                  Former members of the society
-                </h2>
-              </div>
+            <div className="flex flex-col gap-8">
+              <h2 className="capitalize text-h2 font-bold md:w-1/2 w-full  px-8">
+                Former members of the society
+              </h2>
               <div className="relative rounded-xl overflow-auto shadow-sm">
                 <table className="border-collapse table-auto w-full text-gray-600 bg-white">
                   <thead className="bg-primary-main">
@@ -520,10 +518,10 @@ const RegionPage = () => {
                   </tbody>
                 </table>
               </div>
-            </>
+            </div>
           )}
 
-        <div className="space-y-16">
+        <div className="space-y-8">
           <h2 className="capitalize text-h2 font-bold md:w-2/3 w-full px-8">
             Images of Activites in {countryData?.country.name}
           </h2>
@@ -549,19 +547,22 @@ const RegionPage = () => {
           </div>
         </div>
 
-        <div className="space-y-16">
-            <h2 className="capitalize text-h2 font-bold md:w-2/3 w-full px-8">
+        <div className="space-y-8">
+          <h2 className="capitalize text-h2 font-bold md:w-2/3 w-full px-8">
             Recent events
           </h2>
 
-        {events && events.length >= 1 && (
+          {events &&
+            events.length >= 1 &&
             events?.map((event) => (
-            <EventContainer data={event as unknown as Event} key={event?.id} />
-            ))
-        )}
+              <EventContainer
+                data={event as unknown as Event}
+                key={event?.id}
+              />
+            ))}
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-8">
           <h2 className="capitalize text-h2 font-bold md:w-2/3 w-full px-8">
             Contact Noc Mexico through
           </h2>
