@@ -97,7 +97,7 @@ const RegionPage = () => {
                           <td className="px-4">
                             <Image
                               src={
-                                country.urlImg ??
+                                country.url_img ??
                                 `/images/nocs/${country.name}/oao-${country.slug}.png`
                               }
                               alt={`Logo ${country.name}`}

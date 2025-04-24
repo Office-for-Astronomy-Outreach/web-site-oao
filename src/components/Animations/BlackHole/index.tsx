@@ -149,7 +149,7 @@ const BlackHole = () => {
 
     // Create and initialize particles
     const particles: Particle[] = [];
-    const numParticles = 600; // Number of particles
+    const numParticles = 800; // Number of particles
 
     for (let i = 0; i < numParticles; i++) {
       particles.push(new Particle(w / 2, h / 2, 100)); // Initial position and orbit radius
@@ -167,7 +167,7 @@ const BlackHole = () => {
 
       // Draw the event horizon
       m.beginPath();
-      m.arc(w / 2, h / 2, 100 + 9, 0, 2 * Math.PI);
+      m.arc(w / 2, h / 2, 110, 0, 2 * Math.PI);
       m.fillStyle = "black";
       m.shadowBlur = 20;
       m.shadowColor = "#ff6600"; // Glow color
@@ -221,7 +221,7 @@ const BlackHole = () => {
           id="front"
           ref={frontRef}
         ></canvas>
-        <div className="accretion-disk sm:w-[80%] sm:h-[34%] lg:w-[100%] lg:h-[45%] xl:w-[80%] xl:h-[35%] h-[150px] w-[280px]"></div>
+        <div className="accretion-disk sm:w-[80%] sm:h-[34%] lg:w-[100%] lg:h-[45%] xl:w-[90%] xl:h-[35%] h-[170px] w-[280px]"></div>
         <style jsx>{`
           canvas {
             top: 0;

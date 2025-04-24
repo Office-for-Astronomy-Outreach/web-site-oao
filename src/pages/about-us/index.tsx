@@ -190,7 +190,7 @@ export default function About() {
           >
             {t("team.title")}
           </h2>
-          <p className="text-gray-800 w-full mb-4 px-8">
+          <p className="text-gray-600 xl:text-h5 text-p  w-full mb-4 px-8">
             {t("team.description")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
@@ -207,49 +207,133 @@ export default function About() {
         </section>
 
         {/* Partners Section */}
-        <section
-          aria-labelledby="partners-section"
-          className="bg-primary-main shadow-md rounded-lg py-8 md:py-16 px-8"
-        >
-          <div className="flex flex-col w-full gap-8 mb-16">
-            <h2 id="partners-section" className="text-h2 font-bold text-white">
+
+        <section aria-labelledby="partners-section" className="space-y-8">
+          <div className="flex flex-col w-full gap-8 px-8 ">
+            <h2
+              id="partners-section"
+              className="capitalize text-h2 font-bold w-full"
+            >
               {t("partners.title")}
             </h2>
-            <p className="text-white xl:text-h5 text-p">
+            <p className="xl:text-h5 text-p text-gray-600">
               {t("partners.description")}
             </p>
           </div>
-          <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 w-full gap-8">
-            <Link
-              href="https://www.iau.org/"
-              target="_blank"
-              className="relative rounded-lg shadow-md bg-primary-light aspect-video hover:scale-105 transition-transform max-w-[350px]"
-              aria-label="Visit the International Astronomical Union website"
-            >
-              <Image
-                src={`${projectPath}/images/about/partners/iau-logo-white.png`}
-                alt="IAU Logo"
-                fill
-                style={{ objectFit: "contain", objectPosition: "center" }}
-                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
-                className="p-4"
-              />
-            </Link>
-            <Link
-              href="https://www.nao.ac.jp/en/"
-              target="_blank"
-              className="relative rounded-lg shadow-md bg-primary-light aspect-video hover:scale-105 transition-transform max-w-[350px]"
-              aria-label="Visit the Astronomy Outreach Network website"
-            >
-              <Image
-                src={`${projectPath}/images/about/partners/naoj-logo-white.png`}
-                alt="Astronomy Outreach Network Logo"
-                fill
-                style={{ objectFit: "contain", objectPosition: "center" }}
-                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
-                className="p-4"
-              />
-            </Link>
+
+          <div aria-labelledby="iau">
+            <div className="flex flex-wrap w-full">
+              <div className="md:w-1/2 items-center" role="region">
+                <div className="md:mr-4 bg-white aspect-auto rounded-lg shadow-lg p-8 h-full">
+                  <h3 id="" className="text-h3 font-bold text-primary-main">
+                    International Astronomical Union (IAU)
+                  </h3>
+                  <p className="py-6 text-gray-600">
+                    The International Astronomical Union (IAU) is the
+                    world&apos;s leading organisation for professional
+                    astronomers. Founded in 1919, it brings together over 13,000
+                    members from around the globe to promote and safeguard the
+                    science of astronomy. The Office for Astronomy Outreach
+                    (OAO) is one of the IAU&apos;s key initiatives, working to
+                    connect astronomy with society through education,
+                    communication, and engagement.
+                  </p>
+                  <div className="relative w-[250px] h-[150px] rounded-lg shadow-md bg-primary-light hover:scale-105 transition-transform">
+                    <Link
+                      href="https://www.iau.org/"
+                      target="_blank"
+                      className=""
+                      aria-label="Visit the Astronomy Outreach Network website"
+                    >
+                      <Image
+                        src={`${projectPath}/images/about/partners/iau-logo-white.png`}
+                        alt="IAU Logo"
+                        fill
+                        style={{
+                          objectFit: "contain",
+                          objectPosition: "center",
+                        }}
+                        sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
+                        className="p-4"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="flex md:w-1/2 w-full rounded-lg">
+                <div className="relative w-full md:ml-4">
+                  <Image
+                    src={`${projectPath}/images/professional-development/naoj.jpg`}
+                    alt="NAOJ Visitor Program"
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "center" }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div aria-labelledby="naoj-program">
+            <div className="flex flex-wrap w-full">
+              <div className="flex md:w-1/2 w-full rounded-lg">
+                <div className="relative w-full md:mr-4">
+                  <Image
+                    src={`${projectPath}/images/professional-development/naoj.jpg`}
+                    alt="NAOJ Visitor Program"
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "center" }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <div
+                className="md:w-1/2 items-center"
+                role="region"
+                aria-labelledby="open-call-title"
+              >
+                <div className="md:ml-4 bg-primary-main aspect-auto rounded-lg shadow-lg p-8 h-full">
+                  <h3
+                    id="open-call-title"
+                    className="text-white text-h3 font-bold"
+                  >
+                    National Astronomical Observatory of Japan (NAOJ)
+                  </h3>
+                  <p className="py-6 text-white">
+                    The Office for Astronomy Outreach (OAO) is based in Japan,
+                    thanks to the generous support of our host institution, the
+                    National Astronomical Observatory of Japan (NAOJ). NAOJ is
+                    one of the leading research institutes in astronomy,
+                    operating world-class observatories and promoting
+                    cutting-edge astronomical research. It also plays a key role
+                    in science communication and public engagement in Japan and
+                    internationally.
+                  </p>
+                  <div className="relative w-[250px] h-[150px] rounded-lg shadow-md bg-primary-light hover:scale-105 transition-transform">
+                    <Link
+                      href="https://www.nao.ac.jp/en/"
+                      target="_blank"
+                      className=""
+                      aria-label="Visit the Astronomy Outreach Network website"
+                    >
+                      <Image
+                        src={`${projectPath}/images/about/partners/naoj-logo-white.png`}
+                        alt="Astronomy Outreach Network Logo"
+                        fill
+                        style={{
+                          objectFit: "contain",
+                          objectPosition: "center",
+                        }}
+                        sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
+                        className="p-4"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

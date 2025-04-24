@@ -41,12 +41,17 @@ const CardNocMember: React.FC<NocMemberProps> = ({
     "flex",
     "flex-col",
     "justify-between",
-    image && image.length > 0 ? "p-4" : "pt-4 px-8"
+    image && image.length > 0 && "px-8"
+  );
+
+  const cardInfo = classNames(
+    "flex sm:flex-row flex-col",
+    image && image.length > 0 ? "p-4" : "py-4 px-8"
   );
 
   return (
     <div className="bg-white rounded-lg shadow-sm">
-      <div className="flex sm:flex-row flex-col">
+      <div className={cardInfo}>
         {image && (
           <div className="sm:w-36 w-full">
             <div className="relative sm:aspect-square aspect-video">

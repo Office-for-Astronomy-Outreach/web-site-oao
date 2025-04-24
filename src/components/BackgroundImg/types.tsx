@@ -25,7 +25,7 @@ export interface BackgroundImgProps {
    * The description or content displayed in the card.
    * Can be a string or a React element for custom rendering.
    */
-  text: string | React.ReactElement;
+  text?: string | React.ReactElement;
 
   /**
    *  Image object.

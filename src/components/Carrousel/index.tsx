@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 export interface CarouselItem {
   image: string; // URL of the image
@@ -84,30 +85,32 @@ const Carousel: React.FC<CarouselProps> = ({
               style={{ objectFit: "cover" }}
               quality={95}
             />
-            <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-center items-center text-center p-4 text-white">
-              <h1 className="text-xl sm:text-4xl font-bold leading-relaxed tracking-wide">
-                {slide.title}
-              </h1>
-              {slide.subtitle && (
-                <p className="text-sm sm:text-lg mt-2">{slide.subtitle}</p>
-              )}
+            <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col justify-center items-center text-center p-4 text-white space-y-8">
+              <div>
+                <h1 className="text-xl sm:text-4xl font-bold leading-relaxed tracking-wide">
+                  {slide.title}
+                </h1>
+                {slide.subtitle && (
+                  <p className="text-sm sm:text-lg mt-2">{slide.subtitle}</p>
+                )}
+              </div>
               {slide.button && (
-                <a
+                <Link
                   href={slide.button.url}
-                  className="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                  className="rounded-full capitalize px-6 py-2 text-center font-medium transition duration-300 sm:min-w-52 min-w-full bg-dark-main text-white hover:bg-dark-light"
                   role="button"
                   aria-label={slide.button.label}
                 >
                   {slide.button.label}
-                </a>
+                </Link>
               )}
               {slide?.caption && (
-                <div className="absolute bottom-2 right-4">
+                <div className="absolute bottom-2 text-end z-[1] w-full px-4">
                   <div className="relative group">
-                    <p className="text-xs cursor-pointer">
+                    <p className="text-xs cursor-pointer text-white">
                       <FontAwesomeIcon icon={faCircleInfo} />
                     </p>
-                    <div className="absolute -top-[55px] -right-2 bg-[#9b9b9b54] text-gray-50 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-60">
+                    <div className="absolute w-auto bottom-0 right-8 bg-[#9b9b9b54] text-gray-50 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <span className="text-xs">{slide?.caption}</span>
                     </div>
                   </div>

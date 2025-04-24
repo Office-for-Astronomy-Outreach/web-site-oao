@@ -128,7 +128,7 @@ export default function Outreach() {
             >
               {t("astronomers-program.title")}
             </h2>
-            <p className="text-gray-800 w-full mb-4 px-8 ">
+            <p className="text-gray-600 xl:text-h5 text-p w-full mb-4 px-8">
               {t("astronomers-program.description")}
             </p>
 

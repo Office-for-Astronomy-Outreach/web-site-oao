@@ -7,7 +7,7 @@
     "build-community": {
         "title": "Build community thorough public engagement",
         "description": "The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective.",
-        "button": "Join",
+        "button": "Read more",
         "caption-img": "Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz",
         "alt-img": "Nine kids standing in a classroom, each with the name of a planet on their chests, written in Turkish. Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz"
     },
@@ -20,7 +20,9 @@
     },
     "community": {
         "title": "A community for the stars",
-        "description": "At the OAO and the IAU, we deeply value the thoughts, questions, and ideas shared by the public. We believe that listening to you is essential for building a stronger connection between society and astronomy. This space is designed for you to easily express your doubts, share your curiosity, and get in touch with an astronomy expert who can guide you. Your voice matters, and we're here to listen."
+        "description": "At the OAO and the IAU, we deeply value the thoughts, questions, and ideas shared by the public. We believe that listening to you is essential for building a stronger connection between society and astronomy. This space is designed for you to easily express your doubts, share your curiosity, and get in touch with an astronomy expert who can guide you. Your voice matters, and we're here to listen.",
+        "alt-img": "",
+        "caption-img": "La Silla is located on the outskirts of the Chilean Atacama Desert, 600 km north of Santiago de Chile and at an altitude of 2400 metres. Set so far from light pollution the site has one of the darkest night skies on Earth. Credit: Diana Juncher/ESO"
     },
     "global-community": {
         "title": "Global community of Astronomy Communicator",
@@ -31,8 +33,8 @@
         "description":  "Here you can find basic information to star in the world of astronomy."
     },
     "rules-to-name-a-start": {
-        "title": "Rules to name a star",
-        "description": "Check the official rules that the IAU has to name a star."
+        "title": "Rules to name a start",
+        "description": "Check the official rules that the IAU has to name a start."
     },
     "ask-a-question": {
         "title": "Ask a question",
@@ -49,4 +51,3 @@
         "subscribe": "Subscribe"
     }
 }
-  

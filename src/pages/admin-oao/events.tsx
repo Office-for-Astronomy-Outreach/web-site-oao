@@ -8,7 +8,6 @@ import { useEffect, useMemo, useState } from "react";
 
 import { projectPath } from "@/utils/path";
 import { Event, TypeEvent } from "@/types";
-import Button from "@/components/Button";
 
 const fetcher = async (url: string) => {
   const response = await fetch(url);

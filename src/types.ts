@@ -16,8 +16,9 @@ export type Country = {
   name: string;
   slug: string;
   description?: string;
-  urlImg: string;
+  url_img: string;
   webSite?: string;
+  email?: string;
   socialMedia?: SocialMedia;
   members?: Member[];
   coordinators?: Member[];

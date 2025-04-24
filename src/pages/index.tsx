@@ -145,22 +145,24 @@ export default function Home() {
           <h2 className="capitalize  text-h2 font-bold px-8 md:w-1/2">
             {t("global-community.title")}
           </h2>
-          <p className="text-gray-800 w-full mb-4 px-8">
+          <p className="text-gray-600 xl:text-h5 text-p  w-full mb-4 px-8">
             {t("global-community.description")}
           </p>
           <GlobalCommunityGrid images={globalCommunity} />
         </div>
 
-        <div className="relative">
+        <div className="relative space-y-16">
           <BackgroundImg
             title={t("community.title")}
-            text={t("community.description")}
             image={{
               imageUrl: `${projectPath}/images/home/background.jpg`,
-              caption: "Jason Johnson/IAU OAE (CC BY 4.0)",
+              caption: t("community.caption-img"),
             }}
           />
-          <div className="w-full pt-8">
+          <p className="text-gray-600 xl:text-h4 text-h5 w-full px-8 font-semibold">
+            {t("community.description")}
+          </p>
+          <div className="w-full">
             <WindowSpace items={info} />
           </div>
         </div>

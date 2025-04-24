@@ -7,7 +7,7 @@ const baseClasses =
   "relative bg-gray-400 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300 transition-transform duration-300 hover:scale-105";
 const maskClasses = "absolute inset-0 bg-black bg-opacity-10 rounded-lg";
 const textClasses =
-  "absolute inset-0 flex items-center justify-center text-white text-lg font-bold text-center p-4";
+  "absolute inset-0 flex items-end justify-center text-white text-lg font-bold text-center";
 
 const ImageCard: React.FC<{ item: ImageGridItem; extraClasses?: string }> = ({
   item,
@@ -31,7 +31,7 @@ const ImageCard: React.FC<{ item: ImageGridItem; extraClasses?: string }> = ({
     <div className={maskClasses}></div>
     <div className={textClasses}>
       <h5
-        className={`text-h5 read ${item.hiddenTitle ? "sr-only" : "not-sr-only"}`}
+        className={`text-h5 read ${item.hiddenTitle ? "sr-only" : "not-sr-only"} bg-black/70 w-full rounded-b-lg`}
       >
         {item.title}
       </h5>

@@ -8,7 +8,7 @@ import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import ContentCard from "@/components/ContentCard";
 import ImageGrid from "@/components/ImageGridsSection";
-import InfoGrid from "@/components/InfoGrid";
+
 import Parallax from "@/components/Parallax";
 import CardTeamMember from "@/components/TeamCard";
 import { projectPath } from "@/utils/path";
@@ -258,7 +258,7 @@ export default function ProfessionalDevelopment() {
           <h2 className="capitalize text-h2 font-bold text-body px-8">
             Working Groups
           </h2>
-          <p className="text-gray-800 w-full mb-4 px-8">
+          <p className="text-gray-600 xl:text-h5 text-p w-full mb-4 px-8">
             We introduce the new working groups, designed to foster dialogue and
             support community development around the world. These are spaces
             where you can freely share your ideas, collaborate, and engage in

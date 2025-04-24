@@ -11,7 +11,6 @@ import BackgroundImg from "@/components/BackgroundImg";
 import ActivityCard from "@/components/ActiviyCard";
 import EmailDisplay from "@/components/EmailDisplay";
 import { projectPath } from "@/utils/path";
-import Link from "next/link";
 
 export default function WomenAndGirlsInAstronomy() {
   const [copySuccess, setCopySuccess] = useState("");

@@ -63,16 +63,21 @@ const Banner: React.FC<BannerProps> = ({ image, title, breadcrumbs }) => {
               <li key={index} className="flex items-center">
                 {index < breadcrumbs.length - 1 ? (
                   <>
-                    <Link href={breadcrumb.href} className="hover:underline">
+                    <Link
+                      href={breadcrumb.href}
+                      className="hover:underline capitalize"
+                    >
                       {breadcrumb.label}
                     </Link>
 
-                    <span className="mx-2 text-white leading-relaxed tracking-wide">
+                    <span className="mx-2 text-white leading-relaxed tracking-wide capitalize">
                       /
                     </span>
                   </>
                 ) : (
-                  <span>{breadcrumb.label}</span>
+                  <span className="capitalize text-white leading-relaxed tracking-wide">
+                    {breadcrumb.label}
+                  </span>
                 )}
               </li>
             ))}

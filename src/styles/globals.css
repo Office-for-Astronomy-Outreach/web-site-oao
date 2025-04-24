@@ -319,7 +319,7 @@ h5{
   top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: conic-gradient(from 248deg, transparent, #ff66008c, #4412005e, #ff9900db, #ff6600ab, transparent 57%);
+  background: conic-gradient(from 248deg, transparent, #ff66008c, #4412005e, #ff9900db, #ff6600ab, transparent 60%);
   border-radius: 50%;
 }
 

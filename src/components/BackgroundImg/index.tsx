@@ -63,10 +63,14 @@ const BackgroundImg: React.FC<BackgroundImgProps> = ({
           <h2 id={`${title}-header`} className="font-bold text-h2">
             {title}
           </h2>
-          {typeof text === "string" ? (
-            <p className="xl:text-h5 text-p">{text}</p>
-          ) : (
-            <div className="xl:text-h5 text-p">{text}</div>
+          {text && (
+            <>
+              {typeof text === "string" ? (
+                <p className="xl:text-h5 text-p">{text}</p>
+              ) : (
+                <div className="xl:text-h5 text-p">{text}</div>
+              )}
+            </>
           )}
         </div>
       </div>
