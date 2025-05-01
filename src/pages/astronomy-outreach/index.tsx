@@ -63,7 +63,9 @@ export default function CalendarEvent() {
     "flex flex-col gap-32"
   );
 
-  const logos = [
+  const year = new Date().getFullYear();
+
+  /* const logos = [
     {
       name: "oao-logo-white.png",
       url: `${projectPath}/images/logos/oao-logo-white.png`,
@@ -74,8 +76,6 @@ export default function CalendarEvent() {
     },
   ];
 
-  const year = new Date().getFullYear();
-
   const downloadImages = () => {
     logos.forEach(({ url, name }) => {
       const link = document.createElement("a");
@@ -84,7 +84,7 @@ export default function CalendarEvent() {
       link.click();
       document.body.removeChild(link);
     });
-  };
+  };*/
 
   const categoryOptions = useMemo(
     () =>
@@ -205,18 +205,12 @@ export default function CalendarEvent() {
                 with the subject line “IAU Outreach Event Calendar {year} -
                 Request Form”.
               </p>
-
-              <p>
-                Note: Once your activity is visible on our event calendar you
-                are free to use the IAU Office for Astronomy Outreach Logo in
-                your registered events.
-              </p>
               <div></div>
-              <Button
+              {/*<Button
                 label={"Dowlonad OAO Logo"}
                 color="dark"
                 onClick={downloadImages}
-              />
+              />*/}
             </div>
           }
           type={"primary"}

@@ -47,6 +47,20 @@ export default function About() {
       description:
         "Cintia Duran is an Educator, science communicator and artist. Her work and research focuses on a unique and interdisciplinary approach to public engagement with astronomy: the intersection of planetary science, language, and sound, particularly in communicating complex scientific ideas and our place in the universe. She works with cultural, civic, and technological organizations to develop educational resources, with the goal of transforming science institutions into diverse, multilingual, and approachable for the general public.",
     },
+    {
+      name: "Miho Matsumoto",
+      role: "",
+      image: "",
+      description:
+        "She holds a Master's degree in Aesthetics and Art History and is a certified museum curator. She began her career as a gallery assistant in the cultural projects department at ISSEY MIYAKE, where she worked on contemporary art and product design initiatives. Over the past two decades, she has built a career in public relations, serving in roles at Prada Japan, Cassina ixc. (interior design), Harrods' apparel division in the UK, the Mori Art Museum (marketing & PR), and several hotel PR departments. She joined the OAO (Office for Astronomy Outreach) at the National Astronomical Observatory of Japan (NAOJ) in 2022.",
+    },
+    {
+      name: "Makiko Aoki",
+      role: "",
+      image: "",
+      description:
+        "She holds a Master's degree in Aesthetics and Art History and is a certified museum curator. She began her career as a gallery assistant in the cultural projects department at ISSEY MIYAKE, where she worked on contemporary art and product design initiatives. Over the past two decades, she has built a career in public relations, serving in roles at Prada Japan, Cassina ixc. (interior design), Harrods' apparel division in the UK, the Mori Art Museum (marketing & PR), and several hotel PR departments. She joined the OAO (Office for Astronomy Outreach) at the National Astronomical Observatory of Japan (NAOJ) in 2022.",
+    },
   ];
 
   const info = [

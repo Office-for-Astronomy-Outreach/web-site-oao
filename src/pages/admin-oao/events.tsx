@@ -1,7 +1,6 @@
 import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
-import classNames from "classnames";
 
 import useSWR from "swr";
 import { useEffect, useMemo, useState } from "react";

@@ -11,6 +11,9 @@ import BackgroundImg from "@/components/BackgroundImg";
 import ActivityCard from "@/components/ActiviyCard";
 import EmailDisplay from "@/components/EmailDisplay";
 import { projectPath } from "@/utils/path";
+import YoutubePlaylist from "@/components/YoutubePlaylist";
+
+const playlistId: string = "PLqscU0F-NkNSRU9r-SCpC4j3KwHGMKP-m";
 
 export default function WomenAndGirlsInAstronomy() {
   const [copySuccess, setCopySuccess] = useState("");
@@ -115,17 +118,6 @@ export default function WomenAndGirlsInAstronomy() {
           wfull
         />
 
-        <BackgroundImg
-          title={""}
-          text={""}
-          image={{
-            imageUrl: `${projectPath}/images/global-programs/women-in-astronomy/background-2.png`,
-            caption: "",
-            alt: "",
-          }}
-          size="md"
-        />
-
         {/** Theme */}
         <div className="flex md:flex-row flex-col gap-16 md:py-16 py-8 px-8">
           <article>
@@ -178,7 +170,7 @@ export default function WomenAndGirlsInAstronomy() {
               In 2025, the Sun will experience a maximum in its activity,
               providing the citizens of Earth with a magnificent show of solar
               events. To celebrate this Solar System-wide event, this year{"'"}s
-              Women and Girls in Astronomy events will focus on the women of
+              Women and Girls in Astronomy events will focus on the women of{" "}
               <strong>solar physics.</strong>
             </p>
 
@@ -442,6 +434,19 @@ export default function WomenAndGirlsInAstronomy() {
           type="transparent"
           wfull
         />
+
+        <BackgroundImg
+          title={""}
+          text={""}
+          image={{
+            imageUrl: `${projectPath}/images/global-programs/women-in-astronomy/SolarPhysicsWebBanner.png`,
+            caption: "",
+            alt: "",
+          }}
+          size="md"
+        />
+
+        <YoutubePlaylist playlistId={playlistId} />
 
         <ContentCard
           title="More Information"

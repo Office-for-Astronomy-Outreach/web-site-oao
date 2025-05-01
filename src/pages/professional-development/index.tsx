@@ -151,6 +151,21 @@ export default function ProfessionalDevelopment() {
         </div>
       ),
     },
+    {
+      name: "The Use of AI in Astronomy Engage",
+      role: "",
+      image: `${projectPath}/images/professional-development/work-group-3.jpg`,
+      description: (
+        <div className="space-y-4">
+          <p>
+            <strong>What is this group about?</strong> Artificial Intelligence (AI) is rapidly becoming an integral part of how humans gather and interact with information. The growing prominence of AI has sparked many debates about ethics, the misinformation landscape, and the future of science communication itself.
+          </p>
+          <p>
+            <strong>How to join:</strong> There is no stopping the integration of AI into science communication, but we can find ways to use this tool — and build our own — that improve the field, rather than render it obsolete. This group aims to bring discussions related to AI to our community of astronomy communication. If you are interested in or concerned about the rise of AI, join us as we investigate ways to navigate this new terrain
+          </p>
+        </div>
+      ),
+    },
   ];
 
   const breadcrumbs = [
@@ -189,11 +204,7 @@ export default function ProfessionalDevelopment() {
           title="Professional Development"
           text="We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy."
           type="secondary"
-          image={{
-            imageUrl: `${projectPath}/images/professional-development/professional-development.png`,
-            caption: "",
-            alt: "",
-          }}
+          wfull
         />
 
         <ImageGrid
@@ -256,16 +267,17 @@ export default function ProfessionalDevelopment() {
 
         <div className="flex flex-col gap-8">
           <h2 className="capitalize text-h2 font-bold text-body px-8">
-            Working Groups
+            Community of Practice Discord Server
           </h2>
           <p className="text-gray-600 xl:text-h5 text-p w-full mb-4 px-8">
-            We introduce the new working groups, designed to foster dialogue and
-            support community development around the world. These are spaces
-            where you can freely share your ideas, collaborate, and engage in
-            conversations with specialists in the field to help your community
-            grow.
+          The CAP Community of Practice Discord is a vibrant global hub for astronomy communicators, educators, and National Outreach Coordinators (NOCs). Our mission is to foster collaboration, professional growth, and the exchange of best practices in astronomy communication.
+
+We aim to provide resources, promote the professionalisation of science communication, and empower our community to use astronomy as a tool for education, inclusion, and societal impact. Through shared learning, peer support, and global collaboration, we are building a stronger, more connected network of science communicators.
+
+Join us in shaping the future of astronomy outreach — together, we make the universe more accessible and meaningful to all.
+
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {group.map((grup, index) => (
               <CardTeamMember
                 key={index}
