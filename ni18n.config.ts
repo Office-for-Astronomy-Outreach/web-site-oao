@@ -14,7 +14,7 @@ export const ni18nConfig: Ni18nOptions = {
   backend: {
     loadPath:
       process.env.NODE_ENV === "production"
-        ? "/web-site-oao/locales/{{lng}}/{{ns}}.json" // Ruta para producción
+        ? "/locales/{{lng}}/{{ns}}.json" // Ruta para producción
         : "/locales/{{lng}}/{{ns}}.json", // Ruta para desarrollo local
   },
 };
