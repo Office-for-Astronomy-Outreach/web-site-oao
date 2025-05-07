@@ -5,10 +5,10 @@ import { loadTranslations } from "ni18n";
 import Banner from "@/components/Banner";
 
 import classNames from "classnames";
-import StarCanvas from "@/components/Animations/StarCanvas";
 
 import { projectPath } from "@/utils/path";
 import ContentCard from "@/components/ContentCard";
+import StarCanvas from "@/components/Animations/StarCanvas";
 
 export default function Outreach() {
   const breadcrumbs = [
@@ -23,6 +23,50 @@ export default function Outreach() {
     "py-2",
     "flex flex-col gap-24"
   );
+
+  const astronomyIdeas = [
+    {
+      title: "🔭 Join Your Local Astronomy Community",
+      description:
+        "Astronomy clubs, planetariums, and observatories often hold stargazing events, talks, and activities that allow you to engage with the universe in a deeper way. You can meet people who share your passion, learn more about the stars, and even participate in real astronomical discoveries.",
+    },
+    {
+      title: "🌌 Find “Your” Star and Make It Yours",
+      description:
+        "Even if stars already have official names, you can choose one that feels special to you. Use a sky map or an astronomy app to find a star that shines at the time and place of your important moment, and make it a tradition to observe it. Over time, that star will carry your story.",
+    },
+    {
+      title: "📖 Discover the Stories Behind the Stars",
+      description:
+        "The stars have been named and celebrated by cultures all over the world. Instead of creating a new name, you can explore the rich traditions, myths, and scientific discoveries associated with the stars and constellations. Did you know that in Nāhuatl, Venus is called Tlahuizcalpantecuhtli, meaning 'Lord of the House of Dawn'? Learning how different cultures have connected with the night sky for centuries is a beautiful way to deepen your own relationship with it.",
+    },
+    {
+      title: "🎨 Create Your Own Cosmic Tribute",
+      description:
+        "Stars have inspired poets, musicians, and artists for millennia. Why not create your own tribute? Write a poem, compose a song, paint a celestial scene, or even name a project, book, or artwork after the star that means something to you. Creativity allows us to leave a mark as lasting as the stars themselves.",
+    },
+    {
+      title: "🌍 Support Astronomy and Space Exploration",
+      description:
+        "If you want to honour someone in a meaningful way, consider supporting initiatives that bring astronomy to schools, communities, and future generations. Many observatories, planetariums, and educational programmes rely on public support to inspire new generations of stargazers and scientists.",
+    },
+    {
+      title: "🔎 Take Part in Citizen Science Projects",
+      description:
+        "You don’t have to be a professional astronomer to contribute to real discoveries. There are incredible projects where anyone can help identify exoplanets, track asteroids, or even classify galaxies. Some initiatives to explore include NASA’s Citizen Science Projects, Globe at Night, and Galaxy Zoo.",
+    },
+    {
+      title: "🌠 Explore Astronomy Through Language",
+      description:
+        "Languages shape the way we see the universe. Some cultures describe celestial objects differently, highlighting aspects that Western astronomy often overlooks. You could explore how different languages talk about the sky or even learn an astronomical term from an originating culture.",
+    },
+    {
+      title: "✨ Share the Sky With Others",
+      description:
+        "Perhaps the most meaningful way to celebrate a star is to share it. Host a stargazing night with friends and family, tell stories about the constellations, or simply take a moment to admire the vastness of the universe with someone you love. The night sky belongs to all of us.",
+    },
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -64,7 +108,6 @@ export default function Outreach() {
             twoColums
             wfull
           />
-
           <ContentCard
             title="Echoes of the Sky: Cultural Star Names and the IAU"
             text={
@@ -96,7 +139,6 @@ export default function Outreach() {
             }}
             type="transparent"
           />
-
           <ContentCard
             title="The IAU's Position on Commercial Star-Naming Services"
             text={
@@ -136,6 +178,45 @@ export default function Outreach() {
             }}
             type="primary"
           />
+          <section className="rounded-lg shadow-md  p-8 min-h-screen bg-gradient-to-b from-[#0b0c2a] to-black text-white font-sans relative overflow-hidden">
+            <StarCanvas
+              numStars={1200}
+              starColors={["#ffffff", "#e0e7ff", "#99b9eb"]}
+            />
+            <div
+              className={`absolute inset-0 bg-[url("")] bg-cover opacity-10 pointer-events-none`}
+            ></div>
+
+            <section className="max-w-5xl mx-auto px-4 py-16 relative z-1">
+              <h1 className="text-h2 font-bold w-full text-center mb-5 text-white drop-shadow-md">
+                🌟 Ways to Connect With the Night Sky Without Naming a Star
+              </h1>
+              <p className="text-white xl:text-h5 text-p w-full mb-10">
+                For many, the desire to name a star comes from a deep emotional
+                place—a way to honour someone special, mark a significant
+                moment, or create a lasting connection with the universe. While
+                stars already have official names and designations, there are
+                beautiful and meaningful ways to celebrate the cosmos and make
+                it part of your story:
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {astronomyIdeas.map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#141637] p-6 rounded-2xl shadow-lg border border-indigo-900 hover:shadow-indigo-500/30 transition-all duration-300"
+                  >
+                    <h2 className="text-xl font-semibold text-indigo-200 mb-2">
+                      {item.title}
+                    </h2>
+                    <p className="text-slate-200 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </section>
         </div>
       </div>
     </>
