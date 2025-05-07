@@ -199,6 +199,11 @@ export default function Outreach() {
                 beautiful and meaningful ways to celebrate the cosmos and make
                 it part of your story:
               </p>
+              <div className="absolute top-0 w-full">
+                <div className="comets comets-left comets-long"></div>
+                <div className="comets comets-center comets-long"></div>
+                <div className="comets comets-top comets-long"></div>
+              </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {astronomyIdeas.map((item, index) => (
