@@ -6,7 +6,7 @@ export default async function handler(
     { id: string | number; name: string }[] | { error: string }
   >
 ) {
-  const apiUrl = process.env.API_BASE_PATH || "";
+  const apiUrl = process.env.API_BASE_PATH || "http://api.iauoutreach.org";
 
   try {
     const response = await fetch(`${apiUrl}/categories`);

@@ -6,7 +6,7 @@ export default async function handler(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   formData: any
 ) {
-  const apiUrl = process.env.API_BASE_PATH || "";
+  const apiUrl = process.env.API_BASE_PATH || "http://api.iauoutreach.org";
 
   try {
     const response = await fetch(`${apiUrl}/events`, {

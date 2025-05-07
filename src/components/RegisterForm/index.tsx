@@ -20,7 +20,9 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const animatedComponents = makeAnimated();
 
-const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
+const GOOGLE_MAPS_API_KEY =
+  process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ||
+  "AIzaSyDvIhjO0GdiGLxvSR1gYslaomTbS0RRJjc";
 
 type EventFormData = z.infer<typeof eventSchema>;
 
@@ -149,7 +151,7 @@ const EventRegisterForm = () => {
         formData.append("event[event_image]", data.event_image);
       }
 
-      const response = await fetch("http://localhost:3001/events", {
+      const response = await fetch("http://api.iauoutreach.org/events", {
         method: "POST",
         body: formData,
       });

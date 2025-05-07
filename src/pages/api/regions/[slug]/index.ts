@@ -8,7 +8,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Region | { error: string }>
 ) {
-  const apiUrl = process.env.API_BASE_PATH || "";
+  const apiUrl = process.env.API_BASE_PATH || "http://api.iauoutreach.org";
   const { slug } = req.query;
 
   try {
