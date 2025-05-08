@@ -30,13 +30,15 @@ const RegionPage = () => {
   useEffect(() => {
     const fetchRegions = async () => {
       try {
-        const response = await fetch(`${projectPath}/api/countries/${country}`);
+        const response = await fetch(
+          `https://api.iauoutreach.org/countries/${country}`
+        );
         if (response.ok) {
           const data = await response.json();
           setCountryData(data);
 
           const eventsResponse = await fetch(
-            `${projectPath}/api/events?iau_member=${data?.country.id}`
+            `https://api.iauoutreach.org/events?iau_member=${data?.country.id}`
           );
 
           if (eventsResponse.ok) {

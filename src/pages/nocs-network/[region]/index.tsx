@@ -24,7 +24,9 @@ const RegionPage = () => {
   const { region } = router.query; // Obtenemos la región de la URL
 
   const { data: regionData, isLoading } = useSWR<RegionData>(
-    router.isReady && region ? `${projectPath}/api/regions/${region}` : null,
+    router.isReady && region
+      ? `https://api.iauoutreach.org/regions/${region}`
+      : null,
     fetcher
   );
 

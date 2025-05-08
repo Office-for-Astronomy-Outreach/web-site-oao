@@ -5,7 +5,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Event[] | { error: string }>
 ) {
-  const apiUrl = process.env.API_BASE_PATH || "http://api.iauoutreach.org";
+  const apiUrl = "http://api.iauoutreach.org";
 
   // Normaliza los parámetros: convierte arrays a strings (usando solo el primero)
   const safeQuery: Record<string, string> = {};

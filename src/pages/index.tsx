@@ -76,9 +76,9 @@ export default function Home() {
     },
 
     {
-      src: `${projectPath}/images/global-community/meet.jpg`,
+      src: `${projectPath}/images/home/DarkSkies.png`,
       url: "/global-projects/meet-the-iau-astronomers",
-      alt: "Meet the IAU astronomers",
+      alt: "Dark and Quiet Skies",
       position: "left",
     },
   ];

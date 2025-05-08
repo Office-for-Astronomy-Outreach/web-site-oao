@@ -27,9 +27,12 @@ const GOOGLE_MAPS_API_KEY =
 type EventFormData = z.infer<typeof eventSchema>;
 
 const EventRegisterForm = () => {
-  const { data: nocsData } = useSWR(`${projectPath}/api/countries`, fetcher);
+  const { data: nocsData } = useSWR(
+    `https://api.iauoutreach.org/countries`,
+    fetcher
+  );
   const { data: categoriesData } = useSWR(
-    `${projectPath}/api/categories`,
+    `https://api.iauoutreach.org/categories`,
     fetcher
   );
 

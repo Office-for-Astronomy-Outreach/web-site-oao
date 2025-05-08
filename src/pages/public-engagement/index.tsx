@@ -29,9 +29,9 @@ export default function Outreach() {
       hiddenTitle: true,
     },
     {
-      title: "Dark Skies",
+      title: "Dark and Quiet Skies",
       link: "https://www.eso.org/public/about-eso/dark-skies-preservation/",
-      image: `${projectPath}/images/global-community/dark-and-quiet-skies.jpeg`,
+      image: `${projectPath}/images/global-community/dark-and-quiet-skies.png`,
       alt: "",
       hiddenTitle: true,
     },

@@ -30,10 +30,10 @@ export default function CalendarEvent() {
     data: eventsData,
     isLoading,
   }: { data: { events: Event[]; countries: string[] }; isLoading: boolean } =
-    useSWR(`${projectPath}/api/events`, fetcher);
+    useSWR(`https://api.iauoutreach.org/events`, fetcher);
 
   const { data: categoriesData }: { data: { id: number; name: string }[] } =
-    useSWR(`${projectPath}/api/categories`, fetcher);
+    useSWR(`https://api.iauoutreach.org/categories`, fetcher);
 
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
