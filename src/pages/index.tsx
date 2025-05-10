@@ -35,10 +35,10 @@ export default function Home() {
       url: "/education",
     },
     {
-      title: t("rules-to-name-a-start.title"),
-      description: t("rules-to-name-a-start.description"),
+      title: t("rules-to-name-a-star.title"),
+      description: t("rules-to-name-a-star.description"),
       bgColor: "blue-300",
-      url: "/rules-to-name-a-start",
+      url: "/rules-to-name-a-star",
     },
     {
       title: t("ask-a-question.title"),
@@ -56,15 +56,22 @@ export default function Home() {
 
   const globalCommunity = [
     {
-      src: `${projectPath}/images/global-community/team-iau.png`,
-      url: "about-us#our-team",
+      src: `${projectPath}/images/global-community/nocs.png`,
+      url: "/nocs-network",
       alt: "IAU team",
     },
 
     {
-      src: `${projectPath}/images/global-community/women-in-astronomy.png`,
+      src: `${projectPath}/images/global-community/solar-website.png`,
       url: "/global-projects/women-and-girls-in-astronomy",
       alt: "Women in Astronomy",
+      position: "left",
+    },
+
+    {
+      src: `${projectPath}/images/global-community/DarkAndQuietSkies.png`,
+      url: "/global-projects/", //WIP
+      alt: "Dark and Quiet Skies",
       position: "left",
     },
 
@@ -73,13 +80,6 @@ export default function Home() {
       url: "/global-projects/100-hours-of-astronomy",
       alt: "100 Hours of Astronomy",
       position: "right",
-    },
-
-    {
-      src: `${projectPath}/images/home/DarkSkies.png`,
-      url: "/global-projects/meet-the-iau-astronomers",
-      alt: "Dark and Quiet Skies",
-      position: "left",
     },
   ];
 
@@ -121,7 +121,7 @@ export default function Home() {
             }}
             link={{
               url: "/public-engagement",
-              label: "Join",
+              label: t("build-community.button"),
             }}
           />
 

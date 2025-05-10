@@ -4,29 +4,29 @@
         "caption": "Atacama Desert in Chile the Atacama Large Millimeter/submillimeter Array (ALMA) Credit: IAU/ESO/B. Tafreshi"
     },
     "bridge-between-public-and-science": {
-        "title": "Bridge between public and science",
-        "description": "The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
+        "title": "Bridge between the public and science",
+        "description": "The Office for Astronomy Outreach is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective."
     },
     "global-projects" : {
-        "title": "Global Projects",
-        "description": "Each year, the IAU OAO hosts a series of Global Outreach Projects to engage the general public with astronomy through our National Outreach Coordinators."
+        "title": "Global Projects and Themes",
+        "description": "Each year, the OAO hosts a Global Project, 100 Hours of Astronomy, and encourages the world to celebrate astronomy under our three themes: Women and Girls in Astronomy, Dark and Quiet Skies and Inclusive Astronomy Communication. Through our network of National Outreach Communicators, we reach countless communities worldwide"
     },
     "astronomers-program": {
-        "title": "Meet the Astronomers Program",
+        "title": "Meet the Astronomers! Program",
         "description": " Meet the IAU Astronomers! is a bridge between the public and IAU astronomers. Through this programme, the OAO aims to make the science of the IAU accessible to a wider public.",
         "label-button": "More information"
     },
 
     "diversity-languages": {
         "title": "We celebrate the diversity in our languages",
-        "description": "At the OAO, we are committed to embracing the world's linguistic diversity by translating educational and research materials into languages beyond English. We believe that science should be accessible to everyone, regardless of the language they speak. By breaking language barriers, we aim to ensure that astronomy reaches communities worldwide, fostering inclusion and a shared curiosity about the universe.",
+        "description": "At the Office for Astronomy Outreach, we are committed to embracing the world's linguistic diversity by translating educational and research materials into languages beyond English. We believe that science should be accessible to everyone, regardless of the language they speak. By breaking language barriers, we aim to ensure that astronomy reaches communities worldwide, fostering inclusion and a shared curiosity about the universe.",
         "help-us": "Help us translate",
-        "find-translated": "Find translated materiale"
+        "find-translated": "Find translated materials"
     },
 
     "parallax": {
         "title": "Visit Our World",
-        "subtitle": "Astronomy Outreach Events",
+        "subtitle": "Astronomy Engagement Events",
         "label-button": "Events",
         "caption": "Four of the first ALMA antennas at the Array Operations Site (AOS). Credit: ESO/José Francisco Salgado (josefrancisco.org)"
     }

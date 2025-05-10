@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     locales: ["en", "es"],
   },
   images: {
-    domains: ["127.0.0.1", "drive.google.com"], // Agrega el dominio aquí
+    domains: ["drive.google.com", "apod.nasa.gov", "api.iauoutreach.org"],
   },
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",

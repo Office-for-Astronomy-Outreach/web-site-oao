@@ -6,6 +6,7 @@ import {
   faFacebookSquare,
   faLinkedin,
   faInstagramSquare,
+  faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faLocationDot,
@@ -15,6 +16,7 @@ import {
 
 import { useTranslation } from "react-i18next";
 import { projectPath } from "@/utils/path";
+import ApodPage from "../ImageToday";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation("layout");
@@ -35,18 +37,41 @@ const Footer: React.FC = () => {
       icon: faLinkedin,
       label: "LinkedIn",
     },
+    {
+      href: "https://www.youtube.com/@IAUoutreach",
+      icon: faYoutubeSquare,
+      label: "Youtube",
+    },
   ];
 
   const menuLinks = [
     {
-      title: t("footer.menuLinks.quick-links"),
+      title: t("footer.iau-centers.iau"),
       links: [
-        { href: "/", label: t("footer.menuLinks.home") },
-        { href: "/about", label: t("footer.menuLinks.about") },
-        { href: "/nocs-network", label: t("footer.menuLinks.nocs-network") },
         {
-          href: "/astronomy-outreach",
-          label: "Astronomy Outreach Events",
+          href: "https://astro4dev.org/ ",
+          label: t("footer.iau-centers.oad"),
+          target: "_blank",
+        },
+        {
+          href: "https://astro4edu.org/",
+          label: t("footer.iau-centers.oae"),
+          target: "_blank",
+        },
+        {
+          href: "https://iau.org/OYA/About-ISYAs",
+          label: t("footer.iau-centers.oya"),
+          target: "_blank",
+        },
+        {
+          href: "https://www.minorplanetcenter.net/",
+          label: t("footer.iau-centers.mpc"),
+          target: "_blank",
+        },
+        {
+          href: "https://cps.iau.org/",
+          label: t("footer.iau-centers.darkqs"),
+          target: "_blank",
         },
       ],
     },
@@ -56,18 +81,38 @@ const Footer: React.FC = () => {
         {
           href: "/global-projects/100-hours-of-astronomy",
           label: "100 Hours of Astronomy",
+          target: "_self",
         },
         {
           href: "/global-projects/women-and-girls-in-astronomy",
           label: t("footer.menuLinks.women-and-girls-in-astronomy"),
+          target: "_self",
         },
         {
-          href: "/global-projects/dark-skies",
+          href: "/global-projects/dark-and-quiet-skies",
           label: t("footer.menuLinks.dark-skies"),
+          target: "_self",
+        },
+      ],
+    },
+    {
+      title: t("footer.menuLinks.quick-links"),
+      links: [
+        { href: "/education", label: t("footer.menuLinks.education") },
+        {
+          href: "/rules-to-name-a-star",
+          label: t("footer.menuLinks.rules-to-name-a-star"),
+          target: "_self",
         },
         {
-          href: "/global-projects/meet-the-iau-astronomers",
-          label: "Meet the IAU Astronomers!",
+          href: "/ask-a-question",
+          label: t("footer.menuLinks.ask-a-question"),
+          target: "_self",
+        },
+        {
+          href: "/pluto-qa",
+          label: t("footer.menuLinks.pluto-qa"),
+          target: "_self",
         },
       ],
     },
@@ -76,14 +121,6 @@ const Footer: React.FC = () => {
       links: [
         { href: "/infographics", label: t("footer.menuLinks.infographics") },
         { href: "/workshops", label: t("footer.menuLinks.workshops") },
-        {
-          href: "/astronomy-today",
-          label: t("footer.menuLinks.astronomy-today"),
-        },
-        {
-          href: "/astronomy-education-materials",
-          label: t("footer.menuLinks.astronomy-education-materials"),
-        },
       ],
     },
   ];
@@ -146,7 +183,7 @@ const Footer: React.FC = () => {
           ))}
         </div>
 
-        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-16">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-16">
           <div className="w-full">
             <h3 className="font-semibold text-xl mb-4">
               {t("footer.menuLinks.contact-information")}
@@ -167,11 +204,12 @@ const Footer: React.FC = () => {
             <div key={title} className="w-full">
               <h3 className="font-semibold text-xl mb-4">{title}</h3>
               <ul className="flex flex-col gap-2">
-                {links.map(({ href, label }) => (
+                {links.map(({ href, label, target = "" }) => (
                   <li key={href}>
                     <Link
                       href={href}
                       className="hover:text-yellow-400 flex gap-4 items-center"
+                      target={target ?? ""}
                     >
                       <FontAwesomeIcon icon={faAngleRight} />
                       {label}
@@ -181,7 +219,10 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           ))}
+
+          <ApodPage />
         </div>
+        <div></div>
       </div>
 
       <div className="bg-gray-800 text-white">

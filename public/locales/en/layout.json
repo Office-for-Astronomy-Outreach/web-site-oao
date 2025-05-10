@@ -10,25 +10,33 @@
     },
     "footer": {
         "astronomy-for-everyone" : {
-            "title": "Astronomy for everyone",
+            "title":"Astronomy for everyone",
             "description": "The IAU Office for Astronomy Outreach (OAO) is a joint project of  the International Astronomical Union (IAU) and the National Astronomical Observatory of Japan (NAOJ), under the auspices of the National Institutes of Natural Sciences (NINS) of Japan."
+        },
+        "iau-centers": {
+            "iau": "IAU Offices and Centers",
+            "oad": "Office for Astronomy for Development",
+            "oae": "Office for Astronomy for Education",
+            "oya": "Office for Young Astronomers",
+            "mpc": "Minor Planet Center (MPC)",
+            "darkqs": "Centre for the Protection of the Dark and Quiet Sky from Satellite Constellation Interference"
         },
         "menuLinks": {
             "quick-links": "Quick Links",
-            "global-projects": "Global Projects",
+            "global-projects": "Global Projects and Themes",
             "resources": "Resources",
             "contact-information": "Contact Information",
-            "home": "Home",
-            "about": "About Us",
-            "nocs-network": "Nocs Network",
-            "astronomy-outreach": "Astronomy Outreach Events",
+            "education": "Education",
+            "rules-to-name-a-star" :"Rules to name a star",
+            "ask-a-question": "Ask a question",
+            "pluto-qa": "Pluto Q&A",
+            "astronomy-outreach": "Astronomy Engagement Events",
             "100-hours-of-astronomy": "100 Hours of Astronomy",
             "women-and-girls-in-astronomy": "Women and Girls in Astronomy",
-            "dark-skies": "Dark Skies",
+            "dark-skies": "Dark and Quiet Skies",
             "infographics": "Infographics",
             "workshops": "Workshops",
-            "astronomy-today": "Astronomy Today",
-            "astronomy-education-materials": "Astronomy Education Materials"
+            "astronomy-today": "Astronomy Today"
         },
         "follow-us": "Follow Us",
         "copy-right": "Office for Astronomy Outreach. All Rights Reserved."

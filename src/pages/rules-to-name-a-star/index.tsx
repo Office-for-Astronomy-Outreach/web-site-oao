@@ -1,19 +1,18 @@
 import type { GetServerSideProps } from "next";
 import { ni18nConfig } from "ni18n.config";
 import { loadTranslations } from "ni18n";
-
-import Banner from "@/components/Banner";
-
+import Link from "next/link";
 import classNames from "classnames";
 
 import { projectPath } from "@/utils/path";
+import Banner from "@/components/Banner";
 import ContentCard from "@/components/ContentCard";
 import StarCanvas from "@/components/Animations/StarCanvas";
 
 export default function Outreach() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Rules to name a start", href: "" },
+    { label: "How to name a star", href: "" },
   ];
   const containerClass = classNames(
     "md:container",
@@ -53,7 +52,7 @@ export default function Outreach() {
     {
       title: "🔎 Take Part in Citizen Science Projects",
       description:
-        "You don’t have to be a professional astronomer to contribute to real discoveries. There are incredible projects where anyone can help identify exoplanets, track asteroids, or even classify galaxies. Some initiatives to explore include NASA’s Citizen Science Projects, Globe at Night, and Galaxy Zoo.",
+        "You don't have to be a professional astronomer to contribute to real discoveries. There are incredible projects where anyone can help identify exoplanets, track asteroids, or even classify galaxies. Some initiatives to explore include NASA’s Citizen Science Projects, Globe at Night, and Galaxy Zoo.",
     },
     {
       title: "🌠 Explore Astronomy Through Language",
@@ -75,14 +74,14 @@ export default function Outreach() {
           urlImage: `${projectPath}/images/banner-rules-to-name-a-start.jpg`,
           caption: "Credits: Aperture Vintage",
         }}
-        title="Naming Stars and Other Astronomical Objects"
+        title="Naming Stars"
         breadcrumbs={breadcrumbs}
       />
 
       <div className={containerClass}>
         <div className="flex flex-col gap-24">
           <ContentCard
-            title="Naming Stars and Other Astronomical Objects"
+            title="Naming Stars"
             text={
               <>
                 <p>
@@ -94,6 +93,7 @@ export default function Outreach() {
                     validity whatsoever.
                   </b>
                 </p>
+                <br />
 
                 <p>
                   Some bright stars have proper names, often with Arabic, Greek,
@@ -105,7 +105,6 @@ export default function Outreach() {
               </>
             }
             type="secondary"
-            twoColums
             wfull
           />
           <ContentCard
@@ -113,10 +112,25 @@ export default function Outreach() {
             text={
               <div className="space-y-4">
                 <p>
-                  The IAU supports a Working Group on Star Names (WGSN) under
-                  Division C, which catalogs star names from various cultures
-                  and maintains a list of approved and unique proper names
-                  (e.g., Sirius, Proxima Centauri).
+                  The IAU supports a{" "}
+                  <Link
+                    href="https://iau.org/WG280/WG280/Home.aspx"
+                    target="_blank"
+                    className="font-bold"
+                  >
+                    Working Group on Star Names (WGSN)
+                  </Link>{" "}
+                  under{" "}
+                  <Link
+                    href="https://iau.org/DivisionC/DivisionC/Home.aspx"
+                    target="_blank"
+                    className="font-bold"
+                  >
+                    Division C
+                  </Link>
+                  , which catalogs star names from various cultures and
+                  maintains a list of approved and unique proper names (e.g.,
+                  Sirius, Proxima Centauri).
                 </p>{" "}
                 <p>
                   After investigating cultural star names worldwide, the WGSN
@@ -133,10 +147,7 @@ export default function Outreach() {
                 </p>
               </div>
             }
-            image={{
-              imageUrl: `${projectPath}/images/about/astronomy-for-everywere.png`,
-              caption: "",
-            }}
+            wfull
             type="transparent"
           />
           <ContentCard
@@ -172,11 +183,8 @@ export default function Outreach() {
                 </p>
               </>
             }
-            image={{
-              imageUrl: `${projectPath}/images/about/astronomy-for-everywere.png`,
-              caption: "",
-            }}
             type="primary"
+            wfull
           />
           <section className="rounded-lg shadow-md  p-8 min-h-screen bg-gradient-to-b from-[#0b0c2a] to-black text-white font-sans relative overflow-hidden">
             <StarCanvas
@@ -209,9 +217,9 @@ export default function Outreach() {
                 {astronomyIdeas.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-[#141637] p-6 rounded-2xl shadow-lg border border-indigo-900 hover:shadow-indigo-500/30 transition-all duration-300"
+                    className="bg-[#70729070] p-6 rounded-2xl shadow-lg border border-indigo-900 hover:shadow-indigo-500/30 transition-all duration-300"
                   >
-                    <h2 className="text-xl font-semibold text-indigo-200 mb-2">
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">
                       {item.title}
                     </h2>
                     <p className="text-slate-200 leading-relaxed">

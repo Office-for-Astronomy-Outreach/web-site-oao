@@ -7,14 +7,14 @@
     "build-community": {
         "title": "Build community thorough public engagement",
         "description": "The OAO is dedicated to bringing astronomy closer to everyone, building bridges between the public and the discoveries of the cosmos. Through interactive projects and global collaborations, we aim to inspire new generations and strengthen the understanding of the universe from an accessible and exciting perspective.",
-        "button": "Read more",
+        "button": "Join in",
         "caption-img": "Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz",
         "alt-img": "Nine kids standing in a classroom, each with the name of a planet on their chests, written in Turkish. Copyright: 100 Hours of Astronomy, Turkey, Saadet Manaz"
     },
     "professional-development": {
         "title": "Professional development",
-        "description": "We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programs, we support the professionalization of science communication and foster the growth of skills and networks within astronomy.",
-        "button": "Join our team",
+        "description": "We work to empower the professional astronomy community by providing continuous development opportunities. Through resources, events, and programmes, we support the professionalisation of science communication and foster the growth of skills and networks within astronomy.",
+        "button": "Learn more",
         "caption-img": "Copyright: IAU100 Flagship Event: Brussels, April 2019.",
         "alt-img": "Two women standing on a podium, listening to a person in the audience holding the microphone. One of the woman is holding a cane for the blind in her hand. Copyright: IAU100 Flagship Event: Brussels, April 2019."
     },
@@ -25,27 +25,27 @@
         "caption-img": "La Silla is located on the outskirts of the Chilean Atacama Desert, 600 km north of Santiago de Chile and at an altitude of 2400 metres. Set so far from light pollution the site has one of the darkest night skies on Earth. Credit: Diana Juncher/ESO"
     },
     "global-community": {
-        "title": "Global community of Astronomy Communicator",
-        "description": "Discover our most relevant projects in astronomy and science communication. Stay up to date with our initiatives and contributions to the understanding of the universe."
+        "title": "Global community of Astronomy Communicators",
+        "description": "Discover our most relevant projects in astronomy and science communication. Stay up to date with our initiatives and contributions to the understanding of the Universe."
     },
     "education": {
         "title": "Education",
-        "description":  "Here you can find basic information to star in the world of astronomy."
+        "description":  "Find all the information you need to become a star in astronomy!"
     },
-    "rules-to-name-a-start": {
-        "title": "Rules to name a start",
-        "description": "Check the official rules that the IAU has to name a start."
+    "rules-to-name-a-star": {
+        "title": "Rules to name a star",
+        "description": "Check out the IAU's Official Rules to name a star."
     },
     "ask-a-question": {
         "title": "Ask a question",
-        "description": "Give us all your questions and thoughts."
+        "description": "Send us your thoughts and questions!."
     },
     "pluto-qa": {
-        "title": "Pluto Q & A",
-        "description": "Here you can ask and learn everything about our dear Pluto."
+        "title": "Pluto Q&A",
+        "description": "Ask and learn everything about our dear Pluto."
     },
     "new-letter": {
-        "title": "Join Our New Letter",
+        "title": "Join Our Newsletter",
         "subtitle": "The secrets of the cosmos await you",
         "caption-img": "Copyright: ESA/Rosetta/MPS for OSIRIS Team",
         "subscribe": "Subscribe"

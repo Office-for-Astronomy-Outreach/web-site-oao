@@ -11,6 +11,7 @@ import ImageGrid from "@/components/ImageGridsSection";
 
 import Parallax from "@/components/Parallax";
 import CardTeamMember from "@/components/TeamCard";
+import Link from "next/link";
 import { projectPath } from "@/utils/path";
 
 export default function ProfessionalDevelopment() {
@@ -95,6 +96,15 @@ export default function ProfessionalDevelopment() {
             indigenous community, or just someone who wants to learn more, your
             voice and expertise are vital.
           </p>
+          <p className="flex justify-center">
+            <Link
+              href={""}
+              className="rounded-full capitalize px-6 py-2 text-center font-medium transition duration-300 sm:min-w-52 min-w-full bg-primary-main text-white hover:bg-primary-light"
+              role="button"
+            >
+              Apply
+            </Link>
+          </p>
         </div>
       ),
     },
@@ -120,6 +130,15 @@ export default function ProfessionalDevelopment() {
             This group is open to anyone who wants to create a more inclusive
             environment, whether through outreach, research, or policy advocacy.
             Join us in making astronomy a field for all.
+          </p>
+          <p className="flex justify-center">
+            <Link
+              href={""}
+              className="rounded-full capitalize px-6 py-2 text-center font-medium transition duration-300 sm:min-w-52 min-w-full bg-primary-main text-white hover:bg-primary-light"
+              role="button"
+            >
+              Apply
+            </Link>
           </p>
         </div>
       ),
@@ -148,20 +167,48 @@ export default function ProfessionalDevelopment() {
             promoting the use of diverse languages in the astronomical
             community.
           </p>
+          <p className="flex justify-center">
+            <Link
+              href={""}
+              className="rounded-full capitalize px-6 py-2 text-center font-medium transition duration-300 sm:min-w-52 min-w-full bg-primary-main text-white hover:bg-primary-light"
+              role="button"
+            >
+              Apply
+            </Link>
+          </p>
         </div>
       ),
     },
     {
       name: "The Use of AI in Astronomy Engage",
       role: "",
-      image: `${projectPath}/images/professional-development/work-group-3.jpg`,
+      image: `${projectPath}/images/professional-development/ia-oao.jpeg`,
       description: (
         <div className="space-y-4">
           <p>
-            <strong>What is this group about?</strong> Artificial Intelligence (AI) is rapidly becoming an integral part of how humans gather and interact with information. The growing prominence of AI has sparked many debates about ethics, the misinformation landscape, and the future of science communication itself.
+            <strong>What is this group about?</strong> Artificial Intelligence
+            (AI) is rapidly becoming an integral part of how humans gather and
+            interact with information. The growing prominence of AI has sparked
+            many debates about ethics, the misinformation landscape, and the
+            future of science communication itself.
           </p>
           <p>
-            <strong>How to join:</strong> There is no stopping the integration of AI into science communication, but we can find ways to use this tool — and build our own — that improve the field, rather than render it obsolete. This group aims to bring discussions related to AI to our community of astronomy communication. If you are interested in or concerned about the rise of AI, join us as we investigate ways to navigate this new terrain
+            <strong>How to join:</strong> There is no stopping the integration
+            of AI into science communication, but we can find ways to use this
+            tool — and build our own — that improve the field, rather than
+            render it obsolete. This group aims to bring discussions related to
+            AI to our community of astronomy communication. If you are
+            interested in or concerned about the rise of AI, join us as we
+            investigate ways to navigate this new terrain
+          </p>
+          <p className="flex justify-center">
+            <Link
+              href={""}
+              className="rounded-full capitalize px-6 py-2 text-center font-medium transition duration-300 sm:min-w-52 min-w-full bg-primary-main text-white hover:bg-primary-light"
+              role="button"
+            >
+              Apply
+            </Link>
           </p>
         </div>
       ),
@@ -269,14 +316,28 @@ export default function ProfessionalDevelopment() {
           <h2 className="capitalize text-h2 font-bold text-body px-8">
             Community of Practice Discord Server
           </h2>
-          <p className="text-gray-600 xl:text-h5 text-p w-full mb-4 px-8">
-          The CAP Community of Practice Discord is a vibrant global hub for astronomy communicators, educators, and National Outreach Coordinators (NOCs). Our mission is to foster collaboration, professional growth, and the exchange of best practices in astronomy communication.
+          <div>
+            <p className="text-gray-600 xl:text-h5 text-p w-full mb-4 px-8">
+              The CAP Community of Practice Discord is a vibrant global hub for
+              astronomy communicators, educators, and National Outreach
+              Coordinators (NOCs). Our mission is to foster collaboration,
+              professional growth, and the exchange of best practices in
+              astronomy communication.
+            </p>
+            <p className="text-gray-600 xl:text-h5 text-p w-full mb-4 px-8">
+              We aim to provide resources, promote the professionalisation of
+              science communication, and empower our community to use astronomy
+              as a tool for education, inclusion, and societal impact. Through
+              shared learning, peer support, and global collaboration, we are
+              building a stronger, more connected network of science
+              communicators.
+            </p>
+            <p className="text-gray-600 xl:text-h5 text-p w-full mb-4 px-8">
+              Join us in shaping the future of astronomy outreach — together, we
+              make the universe more accessible and meaningful to all
+            </p>
+          </div>
 
-We aim to provide resources, promote the professionalisation of science communication, and empower our community to use astronomy as a tool for education, inclusion, and societal impact. Through shared learning, peer support, and global collaboration, we are building a stronger, more connected network of science communicators.
-
-Join us in shaping the future of astronomy outreach — together, we make the universe more accessible and meaningful to all.
-
-          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {group.map((grup, index) => (
               <CardTeamMember
@@ -324,7 +385,7 @@ Join us in shaping the future of astronomy outreach — together, we make the un
 
         <Parallax
           title="Visit Our World"
-          subtitle="Astronomy Outreach Events"
+          subtitle=""
           backgroundImage={{
             imgUrl: `${projectPath}/images/professional-development/background-secondary.jpg`,
             caption:

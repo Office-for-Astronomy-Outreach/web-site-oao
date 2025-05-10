@@ -23,7 +23,7 @@ export default function EventForm() {
           caption:
             "Image composition showing all the ESO observatories and the Headquarters. Credit: ESO/M. Kornmesse",
         }}
-        title="Astronomy Outreach Events"
+        title="Astronomy Engagement Events"
         breadcrumbs={[]}
       />
       <div className={containerClass}>

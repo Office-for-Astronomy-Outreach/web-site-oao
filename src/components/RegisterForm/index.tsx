@@ -11,7 +11,6 @@ import makeAnimated from "react-select/animated";
 import Select from "react-select";
 import useSWR from "swr";
 
-import { projectPath } from "@/utils/path";
 import { Country, TypeEvent } from "@/types";
 import { eventSchema } from "./validationForm";
 import FormLabel from "../Label";
@@ -22,7 +21,7 @@ const animatedComponents = makeAnimated();
 
 const GOOGLE_MAPS_API_KEY =
   process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ||
-  "AIzaSyDvIhjO0GdiGLxvSR1gYslaomTbS0RRJjc";
+  "AIzaSyAU8g8foKqKdHr6C_mHzmc3Op_VfJdYTGs";
 
 type EventFormData = z.infer<typeof eventSchema>;
 

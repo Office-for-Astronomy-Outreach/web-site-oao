@@ -27,14 +27,14 @@ export default function About() {
 
   const teamMembers = [
     {
-      name: "Dr. Kelly Blumenthal",
+      name: "Kelly Blumenthal, PhD, EdM",
       role: "Director",
       image: `${projectPath}/images/about/team/kelly.jpeg`,
       description:
         "Kelly Blumenthal is an astrophysicist and science communicator who has had the fortune of living in and working with many communities across the United States and worldwide. These experiences have shaped Kelly’s perspectives on the importance of astronomy communication in building STEM opportunities for under-resourced people worldwide and its role in science writ large.",
     },
     {
-      name: "Dr. Naomi Asabre F.",
+      name: "Naomi Asabre-Frimpong, PhD",
       role: "Deputy Director",
       image: `${projectPath}/images/about/team/drnaomi.png`,
       description:
@@ -49,17 +49,16 @@ export default function About() {
     },
     {
       name: "Miho Matsumoto",
-      role: "",
+      role: "Assistant Outreach Officer",
       image: "",
       description:
-        "She holds a Master's degree in Aesthetics and Art History and is a certified museum curator. She began her career as a gallery assistant in the cultural projects department at ISSEY MIYAKE, where she worked on contemporary art and product design initiatives. Over the past two decades, she has built a career in public relations, serving in roles at Prada Japan, Cassina ixc. (interior design), Harrods' apparel division in the UK, the Mori Art Museum (marketing & PR), and several hotel PR departments. She joined the OAO (Office for Astronomy Outreach) at the National Astronomical Observatory of Japan (NAOJ) in 2022.",
+        "Miho Matsumoto holds a Master's degree in Aesthetics and Art History and is a certified museum curator. She began her career as a gallery assistant in the cultural projects department at ISSEY MIYAKE, where she worked on contemporary art and product design initiatives. Over the past two decades, she has built a career in public relations, serving in roles at Prada Japan, Cassina ixc. (interior design), Harrods' apparel division in the UK, the Mori Art Museum (marketing & PR), and several hotel PR departments. She joined the OAO (Office for Astronomy Outreach) at the National Astronomical Observatory of Japan (NAOJ) in 2022.",
     },
     {
       name: "Makiko Aoki",
       role: "",
       image: "",
-      description:
-        "She holds a Master's degree in Aesthetics and Art History and is a certified museum curator. She began her career as a gallery assistant in the cultural projects department at ISSEY MIYAKE, where she worked on contemporary art and product design initiatives. Over the past two decades, she has built a career in public relations, serving in roles at Prada Japan, Cassina ixc. (interior design), Harrods' apparel division in the UK, the Mori Art Museum (marketing & PR), and several hotel PR departments. She joined the OAO (Office for Astronomy Outreach) at the National Astronomical Observatory of Japan (NAOJ) in 2022.",
+      description: "",
     },
   ];
 
@@ -67,16 +66,16 @@ export default function About() {
     {
       title: "IAU COMMISSION C2",
       description:
-        "We work with IAU Commission C2 to co-organise the Communicating Astronomy with the Public Conferences, among other IAU-related events.",
+        "We collaborate with IAU Commission C2 – Communicating Astronomy with the Public (CAP) on the CAP projects, including the CAP Conference series and CAPjournal, among other IAU-related events.",
       bgColor: "bg-blue-200",
-      url: "https://capconferences.org/",
+      url: "https://iau.org/CommissionC2/CommissionC2/Home.aspx",
       image: `${projectPath}/images/about/collaborates/commissionc2-logo.png`,
       target: "_blank",
     },
     {
       title: "LEIDEN UNIVERSITY",
       description:
-        "We partner with Leiden University for our Telescopes for All project, collaboration on Science and Society, and through our IAU OAO Science Communication Internship",
+        "We work closely with Leiden University's Astronomy & Society group, as well as through the IAU OAO Science Communication Internship programme.",
       bgColor: "bg-blue-300",
       url: "https://www.universiteitleiden.nl/",
       image: `${projectPath}/images/about/collaborates/universiteit-leiden-logo.png`,
@@ -86,7 +85,7 @@ export default function About() {
       title: "SKA ORGANISATION",
       bgColor: "bg-blue-400",
       description:
-        "The SKAO provides the funding for our NOC/SKACON Funding Scheme projects - a joint funding program in which NOCs and SKACONS collaborate to perform",
+        "The SKAO provides the funding for our NOC/SKACON Funding Scheme projects - a joint funding program in which NOCs and SKACONS collaborate to perform cross-national public engagement projects",
       url: "https://www.skao.int/en",
       image: `${projectPath}/images/about/collaborates/ska-logo.png`,
       target: "_blank",
@@ -94,10 +93,54 @@ export default function About() {
     {
       title: "IUCAA",
       description:
-        "Astronomy communicators from IUCAA work with us on several of our programs throughout the year. In addition, staff from IUCAA provide technical support for",
+        "Astronomy communicators from IUCAA work with us on several of our programmes throughout the year.",
       bgColor: "bg-blue-500",
       url: "https://www.iucaa.in/",
       image: `${projectPath}/images/about/collaborates/iucaa-logo.jpg`,
+      target: "_blank",
+    },
+    {
+      title: "Stars Shine for Everyone (SSVI)",
+      url: "https://www.ssvi.be/",
+      bgColor: "bg-blue-500",
+      description:
+        "Alongside SSVI, we provide opportunities for members of our network to have access to cutting-edge telescopes.",
+      image: `${projectPath}/images/about/collaborates/SSVI.png`,
+      target: "_blank",
+    },
+    {
+      title: "Bresser Corporation",
+      description:
+        "The Bresser Corporation donates the telescopes that are distributed with the help of SSVI.",
+      bgColor: "bg-blue-500",
+      url: "https://www.bresser.com/",
+      image: `${projectPath}/images/about/collaborates/bresser.png`,
+      target: "_blank",
+    },
+    {
+      title: "ASTRON",
+      description:
+        "The OAO collaborates with ASTRON in the management of Space Scoop, a project that brings real research to beginning astronomy learners.",
+      bgColor: "bg-blue-500",
+      url: "https://www.astron.nl/",
+      image: `${projectPath}/images/about/collaborates/Astron.jpg`,
+      target: "_blank",
+    },
+    {
+      title: "ESO",
+      description:
+        "Science writing interns at the European Southern Observatory (ESO) are trained to write for non-specialist audiences through the OAO project, Space Scoop.",
+      bgColor: "bg-blue-500",
+      url: "https://www.eso.org/public/",
+      image: `${projectPath}/images/about/collaborates/eso.tif`,
+      target: "_blank",
+    },
+    {
+      title: "Hong Kong University",
+      description: "Together with Hong Kong University, the OAO manages a database of dark sky brightness measurements from institutions worldwide.",
+      bgColor: "bg-blue-500",
+      url: "https://www.hku.hk/",
+      image: `${projectPath}/images/about/collaborates/hku.jpeg`,
       target: "_blank",
     },
   ];
@@ -136,7 +179,6 @@ export default function About() {
             title={t("about.title")}
             text={<Trans i18nKey={t("about.description")} />}
             type="secondary"
-            twoColums
             wfull
           />
 
@@ -217,6 +259,59 @@ export default function About() {
                 description={member.description}
               />
             ))}
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-8">
+          <h2
+            className="capitalize text-h2 font-bold text-body px-8 scroll-mt-32"
+            id="our-team"
+          >
+            Steering Committee
+          </h2>
+
+          <div className="rounded-lg shadow-lg">
+            <table className="table-auto border-collapse w-full text-gray-600 bg-white text-start rounded-lg">
+              <thead className="bg-primary-main text-white rounded-t-lg">
+                <tr>
+                  <th className="text-start p-3">{""}</th>
+                  <th className="text-start p-3">Name</th>
+                  <th className="text-start p-3">Organization</th>
+                </tr>
+              </thead>
+              <tbody className="">
+                <tr className="text-sm font-light border-b border-gray-300 text-start">
+                  <th className="text-sm font-normal text-start  p-3">{""}</th>
+                  <th className="text-sm font-normal text-start  p-3">
+                    Kazuhiro Sekiguchi
+                  </th>
+                  <th className="text-sm font-normal text-start  p-3">
+                    NAOJ/NINS
+                  </th>
+                </tr>
+                <tr className="text-sm font-light border-b border-gray-300 text-start">
+                  <th className="text-sm font-normal text-start  p-3">{""}</th>
+                  <th className="text-sm font-normal text-start  p-3">
+                    Diana Worrall
+                  </th>
+                  <th className="text-sm font-normal text-start  p-3">IAU</th>
+                </tr>
+                <tr className="text-sm font-light border-b border-gray-300 text-start">
+                  <th className="text-sm font-normal text-start  p-3">{""}</th>
+                  <th className="text-sm font-normal text-start  p-3">
+                    John B. Hearnshaw
+                  </th>
+                  <th className="text-sm font-normal text-start  p-3">IAU</th>
+                </tr>
+                <tr className="text-sm font-light border-b border-gray-300 text-start">
+                  <th className="text-sm font-normal text-start  p-3">{""}</th>
+                  <th className="text-sm font-normal text-start  p-3">
+                    Masaaki Hiramatsu
+                  </th>
+                  <th className="text-sm font-normal text-start  p-3">NAOJ</th>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
 

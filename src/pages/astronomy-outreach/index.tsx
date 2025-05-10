@@ -51,7 +51,7 @@ export default function CalendarEvent() {
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Astronomy Outreach Events", href: "" },
+    { label: "Astronomy Engagement Events", href: "" },
   ];
 
   const containerClass = classNames(
@@ -150,12 +150,12 @@ export default function CalendarEvent() {
           caption:
             "Image composition showing all the ESO observatories and the Headquarters. Credit: ESO/M. Kornmesse",
         }}
-        title="Astronomy Outreach Events"
+        title="Astronomy Engagement Events"
         breadcrumbs={breadcrumbs}
       />
       <div className={containerClass}>
         <ContentCard
-          title={"IAU Global Outreach Events"}
+          title={"Astronomy Engagement Events"}
           text={
             "The IAU Global Outreach Events are international outreach activities supported by the IAU outreach office, with the intent of promoting and disseminating best practices internationally. These events are developed and implemented by independent organisers internationally and we encourage outreach professionals, educators, amateur and professional astronomers, to share their stories and join our inspiring outreach community."
           }

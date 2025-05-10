@@ -3,7 +3,6 @@ import { ni18nConfig } from "ni18n.config";
 import { useTranslation } from "react-i18next";
 import { loadTranslations } from "ni18n";
 import Image from "next/image";
-import Link from "next/link";
 import classNames from "classnames";
 
 import Banner from "@/components/Banner";
@@ -13,8 +12,7 @@ import ImageCard from "@/components/ImageCard";
 import ImageGridsSection from "@/components/ImageGridsSection";
 import Parallax from "@/components/Parallax";
 import StarCanvas from "@/components/Animations/StarCanvas";
-//import InfoGrid from "@/components/InfoGrid";
-//import BackgroundImg from "@/components/BackgroundImg";
+
 import { projectPath } from "@/utils/path";
 
 export default function Outreach() {
@@ -36,9 +34,9 @@ export default function Outreach() {
       hiddenTitle: true,
     },
     {
-      title: "Annual Contest Call",
-      link: "/global-projects/",
-      image: `${projectPath}/images/global-community/quasi-moon.jpg`,
+      title: "Inclusive Astronomy Communication",
+      link: "/global-projects/inclusive-astronomy-communication",
+      image: `${projectPath}/images/global-community/InclusiveComm.png`,
       alt: "",
       hiddenTitle: true,
     },
@@ -50,33 +48,6 @@ export default function Outreach() {
       hiddenTitle: true,
     },
   ];
-
-  /*const info = [
-    {
-      title: "Infographics",
-      description: "",
-      bgColor: "bg-blue-200",
-      url: "/",
-    },
-    {
-      title: "Workshops",
-      description: "",
-      bgColor: "bg-blue-300",
-      url: "/",
-    },
-    {
-      title: "Astronomy Today",
-      bgColor: "bg-blue-400",
-      description: "",
-      url: "/",
-    },
-    {
-      title: "Astronomy Education Materials",
-      description: "",
-      bgColor: "bg-blue-500",
-      url: "/",
-    },
-  ];*/
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
@@ -108,7 +79,6 @@ export default function Outreach() {
           title={t("bridge-between-public-and-science.title")}
           text={t("bridge-between-public-and-science.description")}
           type="secondary"
-          twoColums
           wfull
         />
 
@@ -128,11 +98,10 @@ export default function Outreach() {
             >
               {t("astronomers-program.title")}
             </h2>
-            <p className="text-gray-600 xl:text-h5 text-p w-full mb-4 px-8">
+            <p className="text-gray-600 xl:text-h5 text-p w-full mb-0 px-8">
               {t("astronomers-program.description")}
             </p>
-
-            <div className="flex flex-wrap w-full relative bg-black rounded-lg">
+            <div className="flex flex-wrap w-full h-80 relative bg-black rounded-lg">
               <div className="w-full relative h-52">
                 <Image
                   src={`${projectPath}/images/outreach/meet-the-astronomers.png`}
@@ -142,13 +111,12 @@ export default function Outreach() {
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw"
                   className="rounded-lg"
                 />
-
-                <StarCanvas
-                  numStars={450}
-                  starColors={["#ffffff", "#e0e7ff", "#99b9eb"]}
-                />
               </div>
-              <div className="text-center w-full mb-16 mx-8">
+              <StarCanvas
+                numStars={450}
+                starColors={["#ffffff", "#e0e7ff", "#99b9eb"]}
+              />
+              <div className="text-center w-full mb-16 absolute bottom-0 px-8">
                 <Button
                   label={t("astronomers-program.label-button")}
                   color="light"
@@ -159,6 +127,62 @@ export default function Outreach() {
             </div>
           </div>
         </section>
+
+        <ContentCard
+          title="Pathways to the Cosmos"
+          text={
+            <>
+              <p className="w-full mb-0">
+                Pathways to the Cosmos is a live series by the IAU Office for
+                Astronomy Outreach (OAO) that opens the door to informal,
+                heartfelt conversations around astronomy, public engagement, and
+                inclusion. Through engaging discussions, the OAO team shares
+                their own stories and invites special guests to reflect on their
+                personal journeys in science communication and
+                community-building.
+              </p>
+              <p className="w-full mb-4">
+                Each episode centers on real people and real
+                experiences—celebrating diverse pathways into astronomy and
+                addressing the urgent need for greater inclusion and
+                representation in the field. By putting faces and voices to the
+                work behind the scenes, we aim to humanize astronomy
+                communication and build meaningful, trusted relationships with
+                our global community. Join us for conversations that matter and
+                be inspired by stories of passion, purpose, and perseverance.
+              </p>
+            </>
+          }
+          type="transparent"
+          wfull
+          image={{
+            imageUrl: `${projectPath}/images/outreach/pathways.png`,
+            alt: "pathways logo",
+          }}
+        />
+
+        <ContentCard
+          title="Space Scoop"
+          text=" Space Scoop takes the latest and greatest articles in astronomy
+              and transforms them into stories written in a language that is
+              easy to understand. With Space Scoop, readers can take a journey
+              through time to learn about how young galaxies grow, search for
+              cosmic clues about the creation of the Universe and much more.
+              Space Scoop's news and images are sourced from some of the
+              most prestigious observatories and astronomy institutions
+              worldwide, and we bring them to you without delay."
+          type="secondary"
+          wfull
+          image={{
+            imageUrl: `${projectPath}/images/outreach/SpaceScoop.jpeg`,
+            alt: "Space Scoop logo",
+          }}
+          link={{
+            url: "https://www.spacescoop.org/",
+            label: "Read more",
+            target: "_blank",
+          }}
+        />
 
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-8 px-8">
@@ -191,26 +215,6 @@ export default function Outreach() {
             />
           </div>
         </div>
-
-        {/* Collaboration Section
-        <section
-          className="flex flex-col gap-8"
-          aria-labelledby="resources-title"
-        >
-          <BackgroundImg
-            title={"Resources"}
-            text="We have gathered a series of educational, practical, and research
-              resources based on strict scientific standards, for anyone
-              interested in getting involved in the dissemination of current
-              astronomy."
-            image={{
-              imageUrl: `${projectPath}/images/outreach/resources.jpg`,
-              position: "center",
-            }}
-          />
-
-          <InfoGrid items={info} />
-        </section>*/}
 
         <Parallax
           title={t("parallax.title")}

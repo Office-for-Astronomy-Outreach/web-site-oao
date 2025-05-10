@@ -174,7 +174,7 @@ const RegionPage = () => {
 
         <Parallax
           title="Visit Our World"
-          subtitle="Astronomy Outreach Events"
+          subtitle="Astronomy Engagement Events"
           backgroundImage={{
             imgUrl: `${projectPath}/images/nocs-network/region/background-secondary.jpg`,
             caption:

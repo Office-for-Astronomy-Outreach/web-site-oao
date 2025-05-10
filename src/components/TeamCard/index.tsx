@@ -39,7 +39,7 @@ const CardTeamMember: React.FC<TeamMemberProps> = ({
           </h3>
           <p className="text-sm text-gray-500 text-center">{role}</p>
         </div>
-        <div className="text-gray-600 2xl:text-p text-sm text-left w-full relative">
+        <div className="text-gray-600 2xl:text-p text-sm text-left w-full relative h-full">
           {typeof description === "string" ? <p>{description}</p> : description}
         </div>
       </div>

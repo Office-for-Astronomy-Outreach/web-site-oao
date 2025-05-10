@@ -5,11 +5,11 @@
     },
     "about": {
         "title": "About Us",
-        "description": "<p>The International Astronomical Union's Office for Astronomy Outreach (OAO) was established as a direct outcome of the global celebration of the IAU's 100th anniversary, “100 Years of Astronomy.” This milestone event highlighted the profound impact that astronomy can have when shared with society, inspiring the creation of a dedicated office to strengthen the connection between the academic and scientific community and the public.</p> <p>The OAO works to break down barriers between professional astronomers and society, fostering inclusive engagement and encouraging dialogue about the universe and humanity's place within it. By opening the doors of the scientific community, we aim to make astronomy accessible to everyone, inspiring curiosity, discovery, and a sense of shared wonder.</p>"
+        "description": "<p>The International Astronomical Union's Office for Astronomy Outreach (OAO) was established in 2012 as a legacy of the International Year of Astronomy in 2009. This milestone celebration highlighted the profound impact that astronomy can have when shared with society, inspiring the creation of a dedicated office - the OAO - to strengthen the connection between the academic and scientific community and the public.</p><br><p>The OAO works to break down barriers between professional astronomers and society, fostering inclusive engagement and encouraging dialogue about the universe and humanity's place within it. By opening the doors of the scientific community, we aim to make astronomy accessible to everyone, inspiring curiosity, discovery, and a sense of shared wonder.</p>"
     },
     "astronomy-for-everyone": {
         "title": "Astronomy for everyone",
-        "description": "Leveraging astronomy’s capacity to inspire awe, the OAO is dedicated to empowering learners of all ages to engage with science through astronomy, building up global science capital through localising resources and opportunities, fostering trusting community relationships, and building an international coalition of astronomy communicators. Through its National Outreach Coordinator network that spans more than 120 countries, and with the support of the IAU membership, the OAO connects diverse communities, bridging professional and amateur astronomers, citizen scientists, communicators, and the public. ",
+        "description": "Leveraging astronomy's capacity to inspire awe, the OAO is dedicated to empowering learners of all ages to engage with science through astronomy, building up global science capital through localising resources and opportunities, fostering trusting community relationships, and building an international coalition of astronomy communicators. Through its National Outreach Coordinator network that spans more than 120 countries, and with the support of the IAU membership, the OAO connects diverse communities, bridging professional and amateur astronomers, citizen scientists, communicators, and the public. ",
         "alt": "A kid wearing a black and white hoodie, holding a paper astronaut helmet",
         "caption-img": "Copyright: 100 Hours of Astronomy, Ecuador, Observatorio Astronómico de Quito."
     },
@@ -32,15 +32,15 @@
     },
     "collaborations": {
         "title": "Collaborations",
-        "description": "The IAU OAO collaborates with many international organizations to bring astronomy to the global public and further work toward fulfilling our Strategic Actions."
+        "description": "The IAU OAO collaborates with many organisations to bring astronomy to the global public and further work toward professionalising astronomy communication"
     },
     "team": {
         "title": "Our Team",
-        "description": "Meet our team, a group of professionals passionate about astronomy and science communication."
+        "description": "Meet our team: a group of professionals passionate about astronomy and science communication."
     },
     "parallax": {
         "title": "Visit Our World",
-        "subtitle": "Astronomy Outreach Events",
+        "subtitle": "Astronomy Engagement Events",
         "label-button": "Events",
         "caption": "The Swedish-ESO Submillimetre Telescope (SEST) and the Milky Way, apparently almost touching each other. Credit: ESO/A. Ghizzi Panizza"
     }
