@@ -153,7 +153,7 @@ const EventRegisterForm = () => {
         formData.append("event[event_image]", data.event_image);
       }
 
-      const response = await fetch("http://api.iauoutreach.org/events", {
+      const response = await fetch("https://api.iauoutreach.org/events", {
         method: "POST",
         body: formData,
       });
