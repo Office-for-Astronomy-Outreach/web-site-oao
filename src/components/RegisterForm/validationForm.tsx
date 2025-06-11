@@ -9,8 +9,8 @@ export const eventSchema = z
         3,
         "The name of the event is required and must have at least 3 characters."
       ),
-    country: z.string().min(1, "the address is requiered"),
-    city: z.string(),
+    country: z.string().min(1, "The address is requiered"),
+    city: z.string().min(1, "You need to add a city"),
     latitude: z.string(),
     longitude: z.string(),
     brief_description: z
@@ -51,9 +51,21 @@ export const eventSchema = z
     keywords: z.array(z.string()).min(1, "At least one keyword is required"),
     categories: z.array(z.number()).min(1, "At least one category is required"),
     participants: z.number().min(1, "There must be at least one participant."),
-    iau_member: z.number().min(1, "IAU member status is required."),
+    iau_member: z.number().min(0, "IAU member status is required."),
   })
-  .refine((data) => new Date(data.end_date) > new Date(data.start_date), {
-    message: "End date must be after to the start date.",
-    path: ["end_date"],
-  });
+  .refine(
+    (data) => {
+      const start = new Date(data.start_date);
+      const end = new Date(data.end_date);
+
+      // Elimina la parte de hora, minutos, segundos
+      start.setHours(0, 0, 0, 0);
+      end.setHours(0, 0, 0, 0);
+
+      return end > start;
+    },
+    {
+      message: "End date must be after the start date.",
+      path: ["end_date"],
+    }
+  );

@@ -14,6 +14,7 @@ import useSWR from "swr";
 import { Country, TypeEvent } from "@/types";
 import { eventSchema } from "./validationForm";
 import FormLabel from "../Label";
+import { useRouter } from "next/router";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -26,6 +27,8 @@ const GOOGLE_MAPS_API_KEY =
 type EventFormData = z.infer<typeof eventSchema>;
 
 const EventRegisterForm = () => {
+  const router = useRouter();
+
   const { data: nocsData } = useSWR(
     `https://api.iauoutreach.org/countries`,
     fetcher
@@ -163,10 +166,10 @@ const EventRegisterForm = () => {
       }
 
       const result = await response.json();
-      console.log("Event created:", result);
       return result;
     } catch (error) {
       console.error("Error creating event:", error);
+      toast.error("Error creating event, please try again.");
     }
   };
 
@@ -191,15 +194,16 @@ const EventRegisterForm = () => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
+            onClose: () => {
+              reset();
+              setImagePreview(null);
+              router.reload();
+            },
           }
         );
-        reset(); // Limpia el formulario
-        setImagePreview(null);
       }
     } catch (error) {
       toast.error("Error creating event, please try again.");
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -255,6 +259,7 @@ const EventRegisterForm = () => {
           {errors.country && (
             <p className="text-red-500">{errors.country.message}</p>
           )}
+          {errors.city && <p className="text-red-500">{errors.city.message}</p>}
         </fieldset>
 
         <fieldset>
@@ -529,18 +534,20 @@ const EventRegisterForm = () => {
           <Select
             name="is_iau_member"
             options={[
-              { value: 0, label: "No" },
+              { value: 2, label: "No" },
               { value: 1, label: "Yes" },
             ]}
             onChange={(e) => {
               if (e) {
-                setIsNocMember(e.value === 1);
+                const isMember = e.value === 1;
+                setIsNocMember(isMember);
+
+                if (!isMember) {
+                  setValue("iau_member", 0);
+                }
               }
             }}
           />
-          {errors.iau_member && (
-            <p className="text-red-500">{errors.iau_member.message}</p>
-          )}
         </fieldset>
 
         {isNocMember && (
@@ -562,6 +569,7 @@ const EventRegisterForm = () => {
             )}
           </fieldset>
         )}
+
         {/* Botón de enviar */}
         <button
           type="submit"

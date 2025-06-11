@@ -70,7 +70,7 @@ const EventContainer: React.FC<EventProps> = ({ data }) => {
           {data.event_image_url ? (
             <div className="relative sm:aspect-square aspect-video">
               <Image
-                src={`http://127.0.0.1:3001${data.event_image_url}`}
+                src={`https://api.iauoutreach.org${data.event_image_url}`}
                 alt={data.name || "Event image"}
                 className="sm:rounded-ss-lg sm:rounded-t-none rounded-t-lg object-cover"
                 fill
