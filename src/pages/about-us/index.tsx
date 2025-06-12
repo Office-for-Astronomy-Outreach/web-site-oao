@@ -34,11 +34,11 @@ export default function About() {
         "Kelly Blumenthal is an astrophysicist and science communicator who has had the fortune of living in and working with many communities across the United States and worldwide. These experiences have shaped Kelly’s perspectives on the importance of astronomy communication in building STEM opportunities for under-resourced people worldwide and its role in science writ large.",
     },
     {
-      name: "Naomi Asabre-Frimpong, PhD",
+      name: "Naomi Asabre Frimpong, PhD",
       role: "Deputy Director",
       image: `${projectPath}/images/about/team/drnaomi.png`,
       description:
-        "Naomi Asabre is an astrophysicist, science communicator, and leader in African astronomy. Coming to the OAO from the Ghana Space Science and Technology Institute (GSSTI), Naomi’s work has advanced the field of astronomy and the growth of scientific communities across Africa. As the former Vice President of the African Astronomical Society, she championed the development of astronomy across the continent and continues to do so on a global scale in her new role as Deputy Director of the IAU Office for Astronomy Outreach.",
+        "Naomi Asabre Frimpong is an astrophysicist, science communicator, and leader in African astronomy. Coming to the OAO from the Ghana Space Science and Technology Institute (GSSTI), Naomi’s work has advanced the field of astronomy and the growth of scientific communities across Africa. As the former Vice President of the African Astronomical Society, she championed the development of astronomy across the continent and continues to do so on a global scale in her new role as Deputy Director of the IAU Office for Astronomy Outreach.",
     },
     {
       name: "Cintia Duran",
